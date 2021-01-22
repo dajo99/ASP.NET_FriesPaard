@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BSFP</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gold box-shadow mb-3" id="mainNav">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+            <img src="~/Images/logo-website.png" width="340" alt="">
+        </a>
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active mt-3 my-lg-0">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item mt-3 my-lg-0">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="FriesPaard">Het Friese Paard</a>
+                    </li>
+                    <li class="nav-item mt-3 my-lg-0">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Agenda" asp-action="Index">Agenda</a>
+                    </li>
+                    <li class="nav-item mt-3 my-lg-0">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+                    </li>
+                </ul>
+                <partial name="_LoginPartial" />
+            </div>
+        </div>
+    </nav>
+
+    @RenderBody()
+
+
+    <footer class="py-4 flex-shrink-0">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 mb-md-0">
+                        <p><img src="~/Images/logo_footer.png" alt="" width="220"></p>
+                    </div>
+                    <div class="col-md-4 mb-md-0 pl-md-4 mt-2 ">
+                        <h2>Gegevens</h2>
+                        <ul class="mb-sm-2 fa-ul">
+                            <li>
+                                <span class="fa-li"><i class="fas fa-phone-alt"></i></span><a href="tel:+32472667299">+32.(0)472.66.72.99</a>
+                            </li>
+                            <li class="foot-link ">
+                                <span class="fa-li"><i class="far fa-envelope"></i></span><a href="mailto:bsfp@gmail.be">bsfp&commat;gmail.be</a>
+                            </li>
+                            <li><small>BTW </small>BE40.7352.2302.0263</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb-0 my-md-2 ">
+                        <h2>Adres</h2>
+                        <p>
+                            <strong>BSFP-SBCF</strong> <br>
+                            <span class="text-nowrap">Maastrichtersteenweg 308</span><br>
+                            B-3500 Hasselt - België
+                        </p>
+                    </div>
+                </div>
+                <hr class="mb-sm-2 my-0">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="mb-0 text-muted">
+                            <p>
+                                Belgisch Stamboek v/h Friese Paard vzw
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <p class="foot-link copyright mb-0">
+                    &copy; 2021 BSFP-SBCF&nbsp;&nbsp;|&nbsp;&nbsp;<a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/ecadc53a85.js" crossorigin="anonymous"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

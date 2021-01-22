@@ -1,0 +1,62 @@
+﻿@model BSFP.ViewModels.ListAgendaViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>Agenda</h1>
+        </div>
+    </div>
+
+</header>
+
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+        <p>
+            <a asp-action="Create">Create New</a>
+        </p>
+       
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.AgendaLijst[0].Datum)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.AgendaLijst[0].Titel)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.AgendaLijst[0].Locatie)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.AgendaLijst)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Datum)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Titel)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Locatie)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.AgendaID">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.AgendaID">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.AgendaID">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </section>
+</main>
