@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Index";
+    int totaal = Model.AgendaLijst.Count;
 }
 
 <header class="intro bg-image">
@@ -14,12 +15,37 @@
 
 </header>
 
+<style>
+    .zoekbalk {
+        background-color: #1C3153;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        color: white;
+    }
+</style>
+
 <main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
     <section class="container py-4">
-        <p>
-            <a asp-action="Create">Create New</a>
-        </p>
-       
+        @if (this.User.IsInRole("Admin"))
+        {
+            <p>
+                <a asp-action="Create">Create New</a>
+            </p>
+        }
+
+
+        <form asp-controller="Tijdslots" asp-action="Search" method="get">
+            <div class="input-group" style="width:40%">
+                <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">Zoek</button>
+                </div>
+            </div>
+        </form>
+        <br />
+
+
         <table class="table">
             <thead>
                 <tr>
@@ -32,15 +58,20 @@
                     <th>
                         @Html.DisplayNameFor(model => model.AgendaLijst[0].Locatie)
                     </th>
-                    <th></th>
+                    <td style="vertical-align:bottom ; text-align:right">
+                        Totaal @totaal Evenementen
+                    </td>
                 </tr>
             </thead>
             <tbody>
                 @foreach (var item in Model.AgendaLijst)
                 {
+                    totaal += 1;
                     <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Datum)
+                        <td style="padding: 1rem; text-align:center">
+                            <div style="background-color: #1C3153; color:white; padding:1.5rem">
+                                @Html.DisplayFor(modelItem => item.Datum)
+                            </div>
                         </td>
                         <td>
                             @Html.DisplayFor(modelItem => item.Titel)
@@ -48,10 +79,18 @@
                         <td>
                             @Html.DisplayFor(modelItem => item.Locatie)
                         </td>
-                        <td>
-                            <a asp-action="Edit" asp-route-id="@item.AgendaID">Edit</a> |
-                            <a asp-action="Details" asp-route-id="@item.AgendaID">Details</a> |
-                            <a asp-action="Delete" asp-route-id="@item.AgendaID">Delete</a>
+                        <td style=" float: right">
+                            @if (this.User.IsInRole("Admin"))
+                            {
+                                <a asp-action="Details" asp-route-id="@item.AgendaID">Details |</a>
+                                <a asp-action="Edit" asp-route-id="@item.AgendaID"> Edit |</a>
+                                <a asp-action="Delete" asp-route-id="@item.AgendaID"> Delete</a>
+                            }
+                            else
+                            {
+                                <a asp-action="Details" asp-route-id="@item.AgendaID">Bekijk Details</a>
+                            }
+
                         </td>
                     </tr>
                 }
