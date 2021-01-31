@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BSFP.Migrations
 {
     [DbContext(typeof(BSFPContext))]
-    [Migration("20210122232812_UpdateAgenda1")]
-    partial class UpdateAgenda1
+    [Migration("20210129204726_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -1,0 +1,61 @@
+﻿@model IEnumerable<BSFP.Models.Nieuws>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>Nieuws</h1>
+        </div>
+    </div>
+
+</header>
+
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+        <p>
+            <a asp-action="Create">Create New</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Titel)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Omschrijving)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Datum)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Titel)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Omschrijving)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Datum)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.NieuwsID">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.NieuwsID">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.NieuwsID">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </section>
+</main>
+

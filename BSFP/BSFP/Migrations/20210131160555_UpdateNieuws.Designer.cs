@@ -10,14 +10,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BSFP.Migrations
 {
     [DbContext(typeof(BSFPContext))]
-    [Migration("20210120033947_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20210131160555_UpdateNieuws")]
+    partial class UpdateNieuws
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.10")
+                .HasAnnotation("ProductVersion", "3.1.11")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -90,6 +90,57 @@ namespace BSFP.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
+                });
+
+            modelBuilder.Entity("BSFP.Models.Agenda", b =>
+                {
+                    b.Property<int>("AgendaID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Datum")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("Eindtijd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Locatie")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Omschrijving")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Starttijd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Titel")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("AgendaID");
+
+                    b.ToTable("Agenda");
+                });
+
+            modelBuilder.Entity("BSFP.Models.Nieuws", b =>
+                {
+                    b.Property<int>("NieuwsID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Datum")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Omschrijving")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Titel")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("NieuwsID");
+
+                    b.ToTable("Nieuws");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

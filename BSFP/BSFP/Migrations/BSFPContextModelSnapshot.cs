@@ -15,7 +15,7 @@ namespace BSFP.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.10")
+                .HasAnnotation("ProductVersion", "3.1.11")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -118,6 +118,27 @@ namespace BSFP.Migrations
                     b.HasKey("AgendaID");
 
                     b.ToTable("Agenda");
+                });
+
+            modelBuilder.Entity("BSFP.Models.Nieuws", b =>
+                {
+                    b.Property<int>("NieuwsID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Datum")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Omschrijving")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Titel")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("NieuwsID");
+
+                    b.ToTable("Nieuws");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
