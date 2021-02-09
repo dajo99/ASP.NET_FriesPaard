@@ -26,6 +26,9 @@
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="FriesPaard">Het Friese Paard</a>
                     </li>
                     <li class="nav-item mt-3 my-lg-0">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Nieuws" asp-action="Index">Nieuws</a>
+                    </li>
+                    <li class="nav-item mt-3 my-lg-0">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Agenda" asp-action="Index">Agenda</a>
                     </li>
                     <li class="nav-item mt-3 my-lg-0">
@@ -90,6 +93,10 @@
     <script src="https://kit.fontawesome.com/ecadc53a85.js" crossorigin="anonymous"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- include summernote css/js-->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.7.0/summernote.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.7.0/summernote.js"></script>
+    <script src="https://cdn.tiny.cloud/1/am35mr6dakc9b1tkibv7ikg5ynkhv31p4yn7yd9fjeikfytb/tinymce/5/tinymce.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 </body>

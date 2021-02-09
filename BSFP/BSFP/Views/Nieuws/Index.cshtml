@@ -1,0 +1,99 @@
+﻿@model BSFP.ViewModels.ListNieuwsViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>Nieuws</h1>
+        </div>
+    </div>
+
+</header>
+<style>
+    .fill {
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-image: url('../Images/cover.jpg');
+    }
+
+    .type {
+        background-color: #fdd023;
+        padding: 5px 15px;
+        position: absolute;
+        top: 25px;
+        left: -10px;
+        color: #1C3153;
+        font-family: 'Ropa Sans', sans-serif;
+        font-size: 1.5em;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        color: #147e9e;
+        margin-top: 80px;
+    }
+</style>
+
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+
+        @if (this.User.IsInRole("Admin"))
+        {
+            <p>
+                <a asp-action="Create">Create New</a>
+            </p>
+        }
+        <form asp-controller="Tijdslots" asp-action="Search" method="get">
+            <div class="input-group" style="width:40%; margin: auto">
+                <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">Zoek</button>
+                </div>
+            </div>
+        </form>
+        <br />
+
+        @foreach (var item in Model.NieuwsLijst)
+        {
+            <div class="row" style="box-shadow: 5px 10px 18px #888888; margin-top: 40px">
+                <div class="col-sm-12">
+                    <div class="row d-flex article">
+                        <div class="col-md-5 fill">
+                        </div>
+                        <div class="col-md-7 content">
+                            <div class="type">BSFP-SBCF</div>
+                            <h3 style="text-transform:uppercase">@Html.DisplayFor(modelItem => item.Titel)</h3>
+                            <p style="font-weight: bold">Geplaatst op @Convert.ToDateTime(item.Datum).ToString("dd/MM/yyyy HH:mm")</p>
+                            <div class="post-text">
+                                <p>@Html.DisplayFor(modelItem => item.Intro)</p><br>
+
+                                @if (this.User.IsInRole("Admin"))
+                                {
+                                    <a asp-action="Details" asp-route-id="@item.NieuwsID">Details |</a>
+                                    <a asp-action="Edit" asp-route-id="@item.NieuwsID"> Edit |</a>
+                                    <a asp-action="Delete" asp-route-id="@item.NieuwsID"> Delete</a>
+                                }
+                                else
+                                {
+                                    <p>U kan het artikel <a asp-action="Details" asp-route-id="@item.NieuwsID">HIER</a> bekijken.</p>
+                                }
+                                </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <br />
+        }
+
+
+    </section>
+</main>
+

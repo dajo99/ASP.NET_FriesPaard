@@ -1,0 +1,83 @@
+﻿@model BSFP.Models.Nieuws
+
+@{
+    ViewData["Title"] = "Details";
+    DateTime datum = Model.Datum;
+}
+
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>Nieuws</h1>
+        </div>
+    </div>
+
+</header>
+
+<style>
+    .entry-title {
+        color: #002e52;
+        margin-top: 0;
+        margin-bottom: 7px;
+        word-wrap: break-word;
+        font-size: 41px;
+    }
+    header .td-module-meta-info {
+        margin-bottom: 16px;
+    }
+
+    .td-module-meta-info {
+        font-family: 'Open Sans', arial, sans-serif;
+        font-size: 11px;
+        line-height: 1;
+        min-height: 5px;
+    }
+
+    header .td-post-date {
+        margin-left: 4px;
+        color: #444;
+        float: left;
+    }
+
+    .center {
+        display: block;
+        margin-top:20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+</style>
+
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+        <article>
+            <section>
+                <h2 class="entry-title">@Html.DisplayFor(model => model.Titel)</h2>
+                <div class="td-module-meta-info">
+                    <span class="td-post-date td-post-date-no-dot">@Convert.ToDateTime(datum).ToString("MMMM dd, yyyy")</span>
+                </div>
+                <img src="~/Images/cover.jpg" class="img-fluid center" />
+                <div>
+                    @Html.Raw(Model.Omschrijving);
+                </div>
+                <div class="text-center">
+                    @if (this.User.IsInRole("Admin"))
+                    {
+                        <a asp-action="Edit" asp-route-id="@Model.NieuwsID"> Edit </a><a asp-action="Index"> Back to List </a>
+                    }
+                    else
+                    {
+                        <a class="btn btn-primary" asp-action="Index">Terug naar Overzicht</a>
+                    }
+
+                </div>
+            </section>
+        </article>
+
+       
+    </section>
+</main>
+

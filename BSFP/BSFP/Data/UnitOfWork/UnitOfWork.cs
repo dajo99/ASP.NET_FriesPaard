@@ -11,6 +11,7 @@ namespace BSFP.Data.UnitOfWork
     {
         private readonly BSFPContext _context;
         private IGenericRepository<Agenda> agendaRepository;
+        private IGenericRepository<Nieuws> nieuwsRepository;
 
 
         public UnitOfWork(BSFPContext context)
@@ -27,6 +28,18 @@ namespace BSFP.Data.UnitOfWork
                     this.agendaRepository = new GenericRepository<Agenda>(_context);
                 }
                 return agendaRepository;
+            }
+        }
+
+        public IGenericRepository<Nieuws> NieuwsRepository
+        {
+            get
+            {
+                if (this.nieuwsRepository == null)
+                {
+                    this.nieuwsRepository = new GenericRepository<Nieuws>(_context);
+                }
+                return nieuwsRepository;
             }
         }
 

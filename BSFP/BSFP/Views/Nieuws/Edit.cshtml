@@ -1,0 +1,56 @@
+﻿@model BSFP.ViewModels.EditNieuwsViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>Nieuws</h1>
+        </div>
+    </div>
+
+</header>
+
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+        <h4>Artikel Aanpassen</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-12">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Nieuws.NieuwsID" />
+                    <div class="form-group">
+                        <label asp-for="Nieuws.Titel" class="control-label"></label>
+                        <input asp-for="Nieuws.Titel" class="form-control" />
+                        <span asp-validation-for="Nieuws.Titel" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Nieuws.Intro" class="control-label"></label>
+                        <input asp-for="Nieuws.Intro" class="form-control" />
+                        <span asp-validation-for="Nieuws.Intro" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Nieuws.Omschrijving" class="control-label"></label>
+                        <textarea asp-for="Nieuws.Omschrijving" class="form-control" cols="100" rows="16"></textarea>
+                        <span asp-validation-for="Nieuws.Omschrijving" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </section>
+</main>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
