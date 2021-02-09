@@ -28,11 +28,11 @@ namespace BSFP.Data
        
 
 
-        public DbSet<BSFP.Models.Agenda> Agenda { get; set; }
+        public DbSet<Agenda> Agenda { get; set; }
 
        
 
 
-        public DbSet<BSFP.Models.Nieuws> Nieuws { get; set; }
+        public DbSet<Nieuws> Nieuws { get; set; }
     }
 }

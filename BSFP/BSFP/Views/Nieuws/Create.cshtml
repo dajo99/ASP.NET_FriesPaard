@@ -1,42 +1,66 @@
-﻿@model BSFP.Models.Nieuws
+﻿@model BSFP.ViewModels.CreateNieuwsViewModel
 
 @{
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
 
-<h4>Nieuws</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Titel" class="control-label"></label>
-                <input asp-for="Titel" class="form-control" />
-                <span asp-validation-for="Titel" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Omschrijving" class="control-label"></label>
-                <input asp-for="Omschrijving" class="form-control" />
-                <span asp-validation-for="Omschrijving" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Datum" class="control-label"></label>
-                <input asp-for="Datum" class="form-control" />
-                <span asp-validation-for="Datum" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>Nieuws</h1>
+        </div>
     </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+</header>
+
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+        <h4>Nieuw Artikel</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-12">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Nieuws.Titel" class="control-label"></label>
+                        <input asp-for="Nieuws.Titel" class="form-control" />
+                        <span asp-validation-for="Nieuws.Titel" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Nieuws.Intro" class="control-label"></label>
+                        <input asp-for="Nieuws.Intro" class="form-control" />
+                        <span asp-validation-for="Nieuws.Intro" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Nieuws.Omschrijving" class="control-label"></label>
+                        <textarea asp-for="Nieuws.Omschrijving" class="form-control" cols="100" rows="16"></textarea>
+                        <span asp-validation-for="Nieuws.Omschrijving" class="text-danger"></span>
+                    </div>
+
+
+
+
+
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </section>
+</main>
+
+<script>
+
+</script>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

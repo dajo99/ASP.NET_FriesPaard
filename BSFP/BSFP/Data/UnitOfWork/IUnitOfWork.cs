@@ -10,6 +10,7 @@ namespace BSFP.Data.UnitOfWork
     public interface IUnitOfWork
     {
         IGenericRepository<Agenda> AgendaRepository { get; }
+        IGenericRepository<Nieuws> NieuwsRepository { get; }
         Task Save();
     }
 }
