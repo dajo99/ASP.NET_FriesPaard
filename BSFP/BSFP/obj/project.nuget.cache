@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gSHRe4I5HZKoX1rCXe6VIdX3CCe2f6eUhgOmSBi8+Xo5BWhKXM+Y7zaE9rHHenixHdxCFzRvfjqi+CzCZ6E2MQ==",
+  "dgSpecHash": "m5JBnw1gohK0mtqE8XKDpBUP7LzpGMJCem8zsH4zmeWDUtoeFAxZ3/IgFsCbwtuiqLTN1CkKdqpCRGnwPspLig==",
   "success": true,
   "projectFilePath": "D:\\Bureaublad\\BSFP\\BSFP\\BSFP\\BSFP.csproj",
   "expectedPackageFiles": [
@@ -182,7 +182,8 @@
     "C:\\Users\\alain\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\alain\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\alain\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\alain\\.nuget\\packages\\tinymce\\5.6.2\\tinymce.5.6.2.nupkg.sha512"
+    "C:\\Users\\alain\\.nuget\\packages\\tinymce\\5.6.2\\tinymce.5.6.2.nupkg.sha512",
+    "C:\\Users\\alain\\.nuget\\packages\\windowsazure.storage\\9.3.3\\windowsazure.storage.9.3.3.nupkg.sha512"
   ],
   "logs": []
 }

@@ -59,8 +59,8 @@
                 <div class="td-module-meta-info">
                     <span class="td-post-date td-post-date-no-dot">@Convert.ToDateTime(datum).ToString("MMMM dd, yyyy")</span>
                 </div>
-                <img src="~/Images/cover.jpg" class="img-fluid center" />
-                <div>
+                <img src="@Model.ImagePath" class="img-fluid center" />
+                <div style="margin:30px">
                     @Html.Raw(Model.Omschrijving);
                 </div>
                 <div class="text-center">

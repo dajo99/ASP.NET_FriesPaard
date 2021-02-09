@@ -21,7 +21,7 @@
         <hr />
         <div class="row">
             <div class="col-md-12">
-                <form asp-action="Create">
+                <form asp-action="Create" enctype="multipart/form-data">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div class="form-group">
                         <label asp-for="Nieuws.Titel" class="control-label"></label>
@@ -38,6 +38,12 @@
                         <label asp-for="Nieuws.Omschrijving" class="control-label"></label>
                         <textarea asp-for="Nieuws.Omschrijving" class="form-control" cols="100" rows="16"></textarea>
                         <span asp-validation-for="Nieuws.Omschrijving" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Nieuws.File" class="control-label"></label>
+                        <input asp-for="Nieuws.File" class="form-control" accept="image/*" />
+                        <span asp-validation-for="Nieuws.File" class="text-danger"></span>
                     </div>
 
 

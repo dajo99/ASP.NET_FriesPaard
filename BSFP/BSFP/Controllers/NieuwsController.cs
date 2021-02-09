@@ -9,17 +9,24 @@ using BSFP.Data;
 using BSFP.Models;
 using BSFP.Data.UnitOfWork;
 using BSFP.ViewModels;
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Blob;
 
 namespace BSFP.Controllers
 {
     public class NieuwsController : Controller
     {
         private readonly IUnitOfWork _uow;
+        private readonly IConfiguration _configuration;
 
 
-        public NieuwsController(IUnitOfWork uow)
+        public NieuwsController(IUnitOfWork uow, IConfiguration configuration)
         {
             _uow = uow;
+            _configuration = configuration;
         }
 
         // GET: Nieuws
@@ -60,6 +67,33 @@ namespace BSFP.Controllers
         {
             if (ModelState.IsValid)
             {
+                string blobstorageconnection =  _configuration.GetValue<string>("blobstorage");
+
+                byte[] dataFiles;
+                // Retrieve storage account from connection string.
+                CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(blobstorageconnection);
+                // Create the blob client.
+                CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
+                // Retrieve a reference to a container.
+                CloudBlobContainer cloudBlobContainer = cloudBlobClient.GetContainerReference("testcontainer");
+
+                BlobContainerPermissions permissions = new BlobContainerPermissions
+                {
+                    PublicAccess = BlobContainerPublicAccessType.Blob
+                };
+                string systemFileName = viewModel.Nieuws.File.FileName;
+                viewModel.Nieuws.ImageName = systemFileName;
+                viewModel.Nieuws.ImagePath = "https://bsfp.blob.core.windows.net/testcontainer/" + systemFileName;
+                await cloudBlobContainer.SetPermissionsAsync(permissions);
+                await using (var target = new MemoryStream())
+                {
+                    viewModel.Nieuws.File.CopyTo(target);
+                    dataFiles = target.ToArray();
+                }
+                // This also does not make a service call; it only creates a local object.
+                CloudBlockBlob cloudBlockBlob = cloudBlobContainer.GetBlockBlobReference(systemFileName);
+                await cloudBlockBlob.UploadFromByteArrayAsync(dataFiles, 0, dataFiles.Length);
+
                 viewModel.Nieuws.Datum = DateTime.Now;
                 _uow.NieuwsRepository.Create(viewModel.Nieuws);
                 await _uow.Save();
@@ -119,7 +153,7 @@ namespace BSFP.Controllers
         // GET: Nieuws/Delete/5
         public async Task<IActionResult> Delete(int id)
         {
-            var nieuws = await _uow.AgendaRepository.GetById(id);
+            var nieuws = await _uow.NieuwsRepository.GetById(id);
             if (nieuws == null)
             {
                 return NotFound();
@@ -133,8 +167,8 @@ namespace BSFP.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var nieuws = await _uow.AgendaRepository.GetById(id);
-            _uow.AgendaRepository.Delete(nieuws);
+            var nieuws = await _uow.NieuwsRepository.GetById(id);
+            _uow.NieuwsRepository.Delete(nieuws);
             await _uow.Save();
             return RedirectToAction(nameof(Index));
         }
