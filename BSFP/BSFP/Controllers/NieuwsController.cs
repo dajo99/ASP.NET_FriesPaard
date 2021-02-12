@@ -81,18 +81,27 @@ namespace BSFP.Controllers
                 {
                     PublicAccess = BlobContainerPublicAccessType.Blob
                 };
-                string systemFileName = viewModel.Nieuws.File.FileName;
-                viewModel.Nieuws.ImageName = systemFileName;
-                viewModel.Nieuws.ImagePath = "https://bsfp.blob.core.windows.net/testcontainer/" + systemFileName;
-                await cloudBlobContainer.SetPermissionsAsync(permissions);
-                await using (var target = new MemoryStream())
+
+                if (viewModel.Nieuws.File != null)
                 {
-                    viewModel.Nieuws.File.CopyTo(target);
-                    dataFiles = target.ToArray();
+                    string systemFileName = viewModel.Nieuws.File.FileName;
+                    viewModel.Nieuws.ImageName = systemFileName;
+                    viewModel.Nieuws.ImagePath = "https://bsfp.blob.core.windows.net/testcontainer/" + systemFileName;
+                    await cloudBlobContainer.SetPermissionsAsync(permissions);
+                    await using (var target = new MemoryStream())
+                    {
+                        viewModel.Nieuws.File.CopyTo(target);
+                        dataFiles = target.ToArray();
+                    }
+                    // This also does not make a service call; it only creates a local object.
+                    CloudBlockBlob cloudBlockBlob = cloudBlobContainer.GetBlockBlobReference(systemFileName);
+                    await cloudBlockBlob.UploadFromByteArrayAsync(dataFiles, 0, dataFiles.Length);
                 }
-                // This also does not make a service call; it only creates a local object.
-                CloudBlockBlob cloudBlockBlob = cloudBlobContainer.GetBlockBlobReference(systemFileName);
-                await cloudBlockBlob.UploadFromByteArrayAsync(dataFiles, 0, dataFiles.Length);
+                else
+                {
+                    viewModel.Nieuws.ImagePath = "../Images/logo_footer.png";
+                }
+                
 
                 viewModel.Nieuws.Datum = DateTime.Now;
                 _uow.NieuwsRepository.Create(viewModel.Nieuws);
@@ -127,27 +136,62 @@ namespace BSFP.Controllers
             {
                 return NotFound();
             }
-            else
-            {
-                var nieuws = await _uow.NieuwsRepository.GetById(id);
-                viewModel.Nieuws.Datum = nieuws.Datum;
-            }
 
+            Nieuws nieuws = await _uow.NieuwsRepository.GetById(id);
             if (ModelState.IsValid)
             {
+                
                 try
                 {
-                    _uow.NieuwsRepository.Update(viewModel.Nieuws);
+                    nieuws.Titel = viewModel.Nieuws.Titel;
+                    nieuws.Intro = viewModel.Nieuws.Intro;
+                    nieuws.Omschrijving = viewModel.Nieuws.Omschrijving;
+
+                    string blobstorageconnection = _configuration.GetValue<string>("blobstorage");
+                    CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(blobstorageconnection);
+                    CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
+                    string strContainerName = "testcontainer";
+                    CloudBlobContainer cloudBlobContainer = cloudBlobClient.GetContainerReference(strContainerName);
+                    var blob = cloudBlobContainer.GetBlobReference(nieuws.ImageName);
+                    await blob.DeleteIfExistsAsync();
+
+                    byte[] dataFiles;
+                    BlobContainerPermissions permissions = new BlobContainerPermissions
+                    {
+                        PublicAccess = BlobContainerPublicAccessType.Blob
+                    };
+                    string systemFileName = viewModel.Nieuws.File.FileName;
+                    nieuws.ImageName = systemFileName;
+                    nieuws.ImagePath = "https://bsfp.blob.core.windows.net/testcontainer/" + systemFileName;
+                    await cloudBlobContainer.SetPermissionsAsync(permissions);
+                    await using (var target = new MemoryStream())
+                    {
+                        viewModel.Nieuws.File.CopyTo(target);
+                        dataFiles = target.ToArray();
+                    }
+                    // This also does not make a service call; it only creates a local object.
+                    CloudBlockBlob cloudBlockBlob = cloudBlobContainer.GetBlockBlobReference(systemFileName);
+                    await cloudBlockBlob.UploadFromByteArrayAsync(dataFiles, 0, dataFiles.Length);
+
+
+                    _uow.NieuwsRepository.Update(nieuws);
                     await _uow.Save();
+                   
+
                 }
                 catch (DbUpdateConcurrencyException)
                 {
                     return NotFound();
 
                 }
+
                 return RedirectToAction(nameof(Index));
+
+                
+
             }
-            return View(viewModel.Nieuws);
+            return View(nieuws);
+
         }
 
         // GET: Nieuws/Delete/5
@@ -168,6 +212,17 @@ namespace BSFP.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var nieuws = await _uow.NieuwsRepository.GetById(id);
+            if (nieuws.File != null)
+            {
+                string blobstorageconnection = _configuration.GetValue<string>("blobstorage");
+                CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(blobstorageconnection);
+                CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
+                string strContainerName = "testcontainer";
+                CloudBlobContainer cloudBlobContainer = cloudBlobClient.GetContainerReference(strContainerName);
+                var blob = cloudBlobContainer.GetBlobReference(nieuws.ImageName);
+                await blob.DeleteIfExistsAsync();
+            }
+            
             _uow.NieuwsRepository.Delete(nieuws);
             await _uow.Save();
             return RedirectToAction(nameof(Index));

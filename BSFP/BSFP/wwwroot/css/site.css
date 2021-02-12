@@ -318,18 +318,13 @@ hr {
 
 
 .btn-primary {
-    color: white;
-    background-color: #1C3153 !important;
-    border-color: #147e9e !important;
+    text-align: center;
+    background: #1C3153;
+    font: 14px/18px Helvetica, Calibri, sans-serif;
+    font-weight: 700;
+    color: #fff;
 }
 
-.btn-outline-primary {
-    border-color: #caa500 !important;
-}
-
-    .btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:visited {
-        background-color: dimgrey !important;
-    }
 
 
 /*======================================
@@ -366,7 +361,7 @@ card-deck .card {
 .table-condensed tr th {
     border: 0px solid #6e7bd9;
     color: white;
-    background-color: #6e7bd9;
+    background-color: #1C3153;
 }
 
 .table-condensed, .table-condensed tr td {

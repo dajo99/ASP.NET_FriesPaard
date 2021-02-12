@@ -6,6 +6,7 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using BSFP.Areas.Identity.Data;
+using BSFP.Areas.Identity.Email;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -46,21 +47,37 @@ namespace BSFP.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Required]
+            [Required(ErrorMessage = "Email vereist!")]
             [EmailAddress]
             [Display(Name = "Email")]
             public string Email { get; set; }
 
-            [Required]
-            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+            [Required(ErrorMessage = "Wachtwoord vereist!")]
+            [StringLength(100, ErrorMessage = "Het wachtwoord moet minimaal {0} lang zijn!", MinimumLength = 6)]
             [DataType(DataType.Password)]
             [Display(Name = "Password")]
             public string Password { get; set; }
 
             [DataType(DataType.Password)]
             [Display(Name = "Confirm password")]
-            [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+            [Compare("Password", ErrorMessage = "Wachtwoorden komen niet overeen!")]
             public string ConfirmPassword { get; set; }
+
+            [Required(ErrorMessage = "Voornaam vereist!")]
+            [Display(Name = "Voornaam")]
+            public string Voornaam { get; set; }
+
+            [Required(ErrorMessage = "Achternaam vereist!")]
+            [Display(Name = "Achternaam")]
+            public string Achternaam { get; set; }
+
+            [Required(ErrorMessage = "Telefoonnummer vereist!")]
+            [Display(Name = "Telefoonnummer")]
+            public string Telefoonnummer { get; set; }
+
+            [Required(ErrorMessage = "Lidnummer vereist!")]
+            [Display(Name = "Lidnummer")]
+            public string Lidnummer { get; set; }
         }
 
         public async Task OnGetAsync(string returnUrl = null)
@@ -75,31 +92,26 @@ namespace BSFP.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new CustomUser { UserName = Input.Email, Email = Input.Email };
+                var user = new CustomUser { UserName = Input.Voornaam, Email = Input.Email, Voornaam = Input.Voornaam, Achternaam = Input.Achternaam, PhoneNumber = Input.Telefoonnummer, Lidnummer = Input.Lidnummer };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
-                    _logger.LogInformation("User created a new account with password.");
+                    await _userManager.AddToRoleAsync(user, "Member");
 
-                    var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                    code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
-                    var callbackUrl = Url.Page(
-                        "/Account/ConfirmEmail",
-                        pageHandler: null,
-                        values: new { area = "Identity", userId = user.Id, code = code, returnUrl = returnUrl },
-                        protocol: Request.Scheme);
+                    _logger.LogInformation("Gebruiker heeft een nieuw account met wachtwoord aangemaakt.");
 
-                    await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                    var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                    var confirmationLink = Url.Action("ConfirmEmail", "Email", new { token, email = user.Email }, Request.Scheme);
+                    EmailHelper emailHelper = new EmailHelper();
+                    bool emailResponse = emailHelper.SendEmail(user.Email, confirmationLink);
 
-                    if (_userManager.Options.SignIn.RequireConfirmedAccount)
+                    if (emailResponse)
                     {
-                        return RedirectToPage("RegisterConfirmation", new { email = Input.Email, returnUrl = returnUrl });
+                        return RedirectToAction("Index");
                     }
                     else
                     {
-                        await _signInManager.SignInAsync(user, isPersistent: false);
-                        return LocalRedirect(returnUrl);
+                        return RedirectToAction("Index");
                     }
                 }
                 foreach (var error in result.Errors)

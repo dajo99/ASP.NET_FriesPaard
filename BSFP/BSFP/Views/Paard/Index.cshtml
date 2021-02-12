@@ -1,0 +1,129 @@
+﻿@model BSFP.ViewModels.ListPaardViewModel
+
+@{
+    ViewData["Title"] = "Marktplaats";
+    int totaal = Model.PaardenLijst.Count;
+}
+
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>Marktplaats</h1>
+        </div>
+    </div>
+
+</header>
+
+<style>
+    .MP_IMGBOX {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        margin-right: 12px;
+        border: 1px solid #dfe8ea;
+    }
+
+    .MP_IMG {
+        float: left;
+        max-width: none !important;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 100%;
+        width: auto;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }
+
+    h4 {
+        padding: 0;
+        margin: 0;
+        font: 18px/24px Helvetica, Calibri, sans-serif;
+        font-weight: 400;
+        color: #064158;
+        text-transform: uppercase;
+    }
+</style>
+
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+        @if (this.User.IsInRole("Admin"))
+        {
+            <p>
+                <a asp-action="Create">Create New</a>
+            </p>
+        }
+
+
+    <form asp-controller="Tijdslots" asp-action="Search" method="get">
+        <div class="input-group" style="width:40%">
+            <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-primary">Zoek</button>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center" style="float:right">
+            <button class="btn btn-primary text-center" asp-action="Index">Plaats een Advertentie</button>
+            <div class="text-center">
+                <i class="fab fa-facebook-square fa-3x"></i>
+                <i class="fab fa-instagram-square fa-3x"></i>
+                <i class="fab fa-facebook-square fa-3x"></i>
+            </div>
+
+        </div>
+    </form>
+        <br />
+
+        
+
+
+        <div class="col-lg-8 col-md-12 col-sm-10 col-xs-10">
+            
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th style="240px"></th>
+                        <th style="vertical-align:bottom ; text-align:right;">
+                            Totaal @totaal Advertenties
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < 10; i++)
+                    {
+                        totaal += 1;
+
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="MP_IMGBOX">
+                                    <img class="MP_IMG" src="~/Images/cover.jpg" />
+                                </div>
+                            </td>
+                            <td>
+                                <h4>Helena van de Bist</h4>
+                                <div>
+                                    <p>10 jaar</p>
+                                    <p>10 jaar</p>
+                                    <p>10 jaar</p>
+                                </div>
+                            </td>
+                        </tr>
+
+
+                    }
+                </tbody>
+            </table>
+        </div>
+
+
+
+    </section>
+</main>

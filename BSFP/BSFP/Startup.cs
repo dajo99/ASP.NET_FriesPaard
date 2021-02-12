@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -40,6 +41,11 @@ namespace BSFP
             services.AddControllersWithViews();
             services.AddRazorPages();
 
+            services.AddLocalization(options => options.ResourcesPath = "Resources");
+            services.AddMvc()
+                .AddViewLocalization(Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat.Suffix)
+                .AddDataAnnotationsLocalization();
+
             services.Configure<IdentityOptions>(options =>
             {
                 // Password settings.
@@ -59,6 +65,9 @@ namespace BSFP
                 options.User.AllowedUserNameCharacters =
                 "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
                 options.User.RequireUniqueEmail = true;
+
+                // ConfirmedEmail
+                options.SignIn.RequireConfirmedEmail = true;
             });
         }
 
@@ -80,6 +89,18 @@ namespace BSFP
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            var cultures = new List<CultureInfo> {
+                new CultureInfo("nl-NL"),
+                new CultureInfo("fr-FR"),
+                new CultureInfo("de-DE"),
+                new CultureInfo("en-US")
+            };
+            app.UseRequestLocalization(options => {
+                options.DefaultRequestCulture = new Microsoft.AspNetCore.Localization.RequestCulture("en-US");
+                options.SupportedCultures = cultures;
+                options.SupportedUICultures = cultures;
+            });
 
             app.UseAuthentication();
             app.UseAuthorization();

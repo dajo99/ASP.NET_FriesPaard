@@ -28,6 +28,7 @@ namespace BSFP.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Achternaam")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ConcurrencyStamp")
@@ -40,6 +41,10 @@ namespace BSFP.Migrations
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
+
+                    b.Property<string>("Lidnummer")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
@@ -75,6 +80,7 @@ namespace BSFP.Migrations
                         .HasMaxLength(256);
 
                     b.Property<string>("Voornaam")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -151,6 +157,77 @@ namespace BSFP.Migrations
                     b.HasKey("NieuwsID");
 
                     b.ToTable("Nieuws");
+                });
+
+            modelBuilder.Entity("BSFP.Models.Paard", b =>
+                {
+                    b.Property<int>("PaardID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Aanmaakdatum")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CustomUserID")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("Geboortedatum")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Gebruiksdiscipline")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Geslacht")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Informatie")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Leeftijd")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Levensnummer")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LocatiePaard")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Niveau")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Paardnaam")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Prijs")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Stokmaat")
+                        .HasColumnType("int");
+
+                    b.HasKey("PaardID");
+
+                    b.HasIndex("CustomUserID");
+
+                    b.ToTable("Paarden");
+                });
+
+            modelBuilder.Entity("BSFP.Models.Sponsor", b =>
+                {
+                    b.Property<int>("SponsorID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Omschrijving")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Titel")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("SponsorID");
+
+                    b.ToTable("Sponsors");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -286,6 +363,13 @@ namespace BSFP.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("BSFP.Models.Paard", b =>
+                {
+                    b.HasOne("BSFP.Areas.Identity.Data.CustomUser", "CustomUser")
+                        .WithMany("Paarden")
+                        .HasForeignKey("CustomUserID");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
