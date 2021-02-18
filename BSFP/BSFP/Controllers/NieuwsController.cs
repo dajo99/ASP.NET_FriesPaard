@@ -33,7 +33,7 @@ namespace BSFP.Controllers
         public async Task<IActionResult> Index()
         {
             ListNieuwsViewModel viewModel = new ListNieuwsViewModel();
-            viewModel.NieuwsLijst = await _uow.NieuwsRepository.GetAll().ToListAsync();
+            viewModel.NieuwsLijst = await _uow.NieuwsRepository.GetAll().OrderByDescending(x=>x.Datum).ToListAsync();
 
             return View(viewModel);
         }
@@ -82,9 +82,27 @@ namespace BSFP.Controllers
                     PublicAccess = BlobContainerPublicAccessType.Blob
                 };
 
+                
                 if (viewModel.Nieuws.File != null)
                 {
-                    string systemFileName = viewModel.Nieuws.File.FileName;
+                    bool fileExist = await FileExists(viewModel.Nieuws.File.FileName, cloudBlobContainer);
+                    string systemFileName;
+                    if (fileExist)
+                    {
+                        int getal = 0;
+                        do
+                        {
+                            getal += 1;
+                            
+                            systemFileName = viewModel.Nieuws.File.FileName + "_" + getal + "";
+                            fileExist = await FileExists(systemFileName, cloudBlobContainer);
+                        } while (fileExist);
+                    }
+                    else
+                    {
+                        systemFileName = viewModel.Nieuws.File.FileName;
+                    }
+                    
                     viewModel.Nieuws.ImageName = systemFileName;
                     viewModel.Nieuws.ImagePath = "https://bsfp.blob.core.windows.net/testcontainer/" + systemFileName;
                     await cloudBlobContainer.SetPermissionsAsync(permissions);
@@ -160,18 +178,38 @@ namespace BSFP.Controllers
                     {
                         PublicAccess = BlobContainerPublicAccessType.Blob
                     };
-                    string systemFileName = viewModel.Nieuws.File.FileName;
-                    nieuws.ImageName = systemFileName;
-                    nieuws.ImagePath = "https://bsfp.blob.core.windows.net/testcontainer/" + systemFileName;
-                    await cloudBlobContainer.SetPermissionsAsync(permissions);
-                    await using (var target = new MemoryStream())
+                    if (viewModel.Nieuws.File != null)
                     {
-                        viewModel.Nieuws.File.CopyTo(target);
-                        dataFiles = target.ToArray();
+                        bool fileExist = await FileExists(viewModel.Nieuws.File.FileName, cloudBlobContainer);
+                        string systemFileName;
+                        if (fileExist)
+                        {
+                            int getal = 0;
+                            do
+                            {
+                                getal += 1;
+
+                                systemFileName = viewModel.Nieuws.File.FileName + "_" + getal + "";
+                                fileExist = await FileExists(systemFileName, cloudBlobContainer);
+                            } while (fileExist);
+                        }
+                        else
+                        {
+                            systemFileName = viewModel.Nieuws.File.FileName;
+                        }
+                        nieuws.ImageName = systemFileName;
+                        nieuws.ImagePath = "https://bsfp.blob.core.windows.net/testcontainer/" + systemFileName;
+                        await cloudBlobContainer.SetPermissionsAsync(permissions);
+                        await using (var target = new MemoryStream())
+                        {
+                            viewModel.Nieuws.File.CopyTo(target);
+                            dataFiles = target.ToArray();
+                        }
+                        // This also does not make a service call; it only creates a local object.
+                        CloudBlockBlob cloudBlockBlob = cloudBlobContainer.GetBlockBlobReference(systemFileName);
+                        await cloudBlockBlob.UploadFromByteArrayAsync(dataFiles, 0, dataFiles.Length);
                     }
-                    // This also does not make a service call; it only creates a local object.
-                    CloudBlockBlob cloudBlockBlob = cloudBlobContainer.GetBlockBlobReference(systemFileName);
-                    await cloudBlockBlob.UploadFromByteArrayAsync(dataFiles, 0, dataFiles.Length);
+                    
 
 
                     _uow.NieuwsRepository.Update(nieuws);
@@ -212,7 +250,7 @@ namespace BSFP.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var nieuws = await _uow.NieuwsRepository.GetById(id);
-            if (nieuws.File != null)
+            if (nieuws.ImageName != "")
             {
                 string blobstorageconnection = _configuration.GetValue<string>("blobstorage");
                 CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(blobstorageconnection);
@@ -226,6 +264,12 @@ namespace BSFP.Controllers
             _uow.NieuwsRepository.Delete(nieuws);
             await _uow.Save();
             return RedirectToAction(nameof(Index));
+        }
+
+
+        public async Task<bool> FileExists(string fileName, CloudBlobContainer directory)
+        {
+            return await directory.GetBlockBlobReference(fileName).ExistsAsync();
         }
 
     }

@@ -8,6 +8,7 @@ using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -62,6 +63,100 @@ namespace BSFP.Controllers
         {
             if (ModelState.IsValid)
             {
+                string blobstorageconnection = _configuration.GetValue<string>("blobstorage");
+
+                byte[] dataFiles;
+                // Retrieve storage account from connection string.
+                CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(blobstorageconnection);
+                // Create the blob client.
+                CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
+                // Retrieve a reference to a container.
+                CloudBlobContainer cloudBlobContainer = cloudBlobClient.GetContainerReference("marktplaats");
+
+                BlobContainerPermissions permissions = new BlobContainerPermissions
+                {
+                    PublicAccess = BlobContainerPublicAccessType.Blob
+                };
+
+                if (viewModel.Paard.Image1 != null)
+                {
+                    string systemFileName = viewModel.Paard.Image1.FileName;
+                    viewModel.Paard.ImageName1 = systemFileName;
+                    viewModel.Paard.ImagePath1 = "https://bsfp.blob.core.windows.net/marktplaats/" + systemFileName;
+                    await cloudBlobContainer.SetPermissionsAsync(permissions);
+                    await using (var target = new MemoryStream())
+                    {
+                        viewModel.Paard.Image1.CopyTo(target);
+                        dataFiles = target.ToArray();
+                    }
+                    // This also does not make a service call; it only creates a local object.
+                    CloudBlockBlob cloudBlockBlob = cloudBlobContainer.GetBlockBlobReference(systemFileName);
+                    await cloudBlockBlob.UploadFromByteArrayAsync(dataFiles, 0, dataFiles.Length);
+                }
+                else
+                {
+                    viewModel.Paard.ImagePath1 = "../Images/logo_footer.png";
+                }
+
+                if (viewModel.Paard.Image2 != null)
+                {
+                    string systemFileName = viewModel.Paard.Image2.FileName;
+                    viewModel.Paard.ImageName2 = systemFileName;
+                    viewModel.Paard.ImagePath2 = "https://bsfp.blob.core.windows.net/marktplaats/" + systemFileName;
+                    await cloudBlobContainer.SetPermissionsAsync(permissions);
+                    await using (var target = new MemoryStream())
+                    {
+                        viewModel.Paard.Image2.CopyTo(target);
+                        dataFiles = target.ToArray();
+                    }
+                    // This also does not make a service call; it only creates a local object.
+                    CloudBlockBlob cloudBlockBlob = cloudBlobContainer.GetBlockBlobReference(systemFileName);
+                    await cloudBlockBlob.UploadFromByteArrayAsync(dataFiles, 0, dataFiles.Length);
+                }
+                else
+                {
+                    viewModel.Paard.ImagePath2 = "../Images/logo_footer.png";
+                }
+
+                if (viewModel.Paard.Image3 != null)
+                {
+                    string systemFileName = viewModel.Paard.Image3.FileName;
+                    viewModel.Paard.ImageName3 = systemFileName;
+                    viewModel.Paard.ImagePath3 = "https://bsfp.blob.core.windows.net/marktplaats/" + systemFileName;
+                    await cloudBlobContainer.SetPermissionsAsync(permissions);
+                    await using (var target = new MemoryStream())
+                    {
+                        viewModel.Paard.Image3.CopyTo(target);
+                        dataFiles = target.ToArray();
+                    }
+                    // This also does not make a service call; it only creates a local object.
+                    CloudBlockBlob cloudBlockBlob = cloudBlobContainer.GetBlockBlobReference(systemFileName);
+                    await cloudBlockBlob.UploadFromByteArrayAsync(dataFiles, 0, dataFiles.Length);
+                }
+                else
+                {
+                    viewModel.Paard.ImagePath4 = "../Images/logo_footer.png";
+                }
+
+                if (viewModel.Paard.Image4 != null)
+                {
+                    string systemFileName = viewModel.Paard.Image4.FileName;
+                    viewModel.Paard.ImageName4 = systemFileName;
+                    viewModel.Paard.ImagePath4 = "https://bsfp.blob.core.windows.net/testcontainer/" + systemFileName;
+                    await cloudBlobContainer.SetPermissionsAsync(permissions);
+                    await using (var target = new MemoryStream())
+                    {
+                        viewModel.Paard.Image4.CopyTo(target);
+                        dataFiles = target.ToArray();
+                    }
+                    // This also does not make a service call; it only creates a local object.
+                    CloudBlockBlob cloudBlockBlob = cloudBlobContainer.GetBlockBlobReference(systemFileName);
+                    await cloudBlockBlob.UploadFromByteArrayAsync(dataFiles, 0, dataFiles.Length);
+                }
+                else
+                {
+                    viewModel.Paard.ImagePath4 = "../Images/logo_footer.png";
+                }
                 _uow.PaardRepository.Create(viewModel.Paard);
                 await _uow.Save();
                 return RedirectToAction(nameof(Index));

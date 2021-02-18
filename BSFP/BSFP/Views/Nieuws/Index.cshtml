@@ -68,7 +68,7 @@
                             <h3 style="text-transform:uppercase">@Html.DisplayFor(modelItem => item.Titel)</h3>
                             <p style="font-weight: bold">Geplaatst op @Convert.ToDateTime(item.Datum).ToString("dd/MM/yyyy HH:mm")</p>
                             <div class="post-text">
-                                <p>@Html.DisplayFor(modelItem => item.Intro)</p><br>
+                                <p>@Html.Raw(item.Intro)</p><br>
 
                                 @if (this.User.IsInRole("Admin"))
                                 {
