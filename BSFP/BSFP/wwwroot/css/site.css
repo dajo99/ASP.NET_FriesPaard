@@ -92,11 +92,7 @@ h3 {
     background-color: white !important;
 }
 
-.navbar-brand {
-    margin-left: 20%;
-    padding-top: 0;
-    padding-bottom: 0;
-}
+
 
 .nav-link,
 .com-header {
@@ -174,6 +170,17 @@ a:visited,
         }
 }
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #navLogo{
+        width:240px;
+    }
+
+    #locatie{
+        visibility:hidden;
+    }
+}
+
 /*======================================
 //--//-->   INTRO
 ======================================*/
@@ -246,207 +253,212 @@ body.safari .bg-image {
     }
 }
 
-/*======================================
+
+
+    /*======================================
 //--//-->   FOOTER
 ======================================*/
-footer {
-    margin-top: auto;
-    background-color: #1C3153;
-    color: white;
-    font-size: 95%;
-    position: relative;
-}
-
-    footer h2 {
-        color: white;
+    footer {
+        margin-top: auto;
         background-color: #1C3153;
-        margin-bottom: 0.2rem;
+        color: white;
+        font-size: 95%;
+        position: relative;
     }
 
-    footer hr {
-        border-color: #333;
+        footer h2 {
+            color: white;
+            background-color: #1C3153;
+            margin-bottom: 0.2rem;
+        }
+
+        footer hr {
+            border-color: #333;
+        }
+
+    .text-muted {
+        color: #caa500 !important;
+        background-color: #1C3153;
     }
 
-.text-muted {
-    color: #caa500 !important;
-    background-color: #1C3153;
-}
-
-a[href^=tel],
-a[href^=fax] {
-    text-decoration: none;
-    color: #caa500;
-    background-color: #1C3153;
-}
-
-    a[href^=tel]:hover,
-    a[href^=fax]:hover {
-        text-decoration: underline;
+    a[href^=tel],
+    a[href^=fax] {
+        text-decoration: none;
+        color: #caa500;
+        background-color: #1C3153;
     }
 
-footer .fa-ul {
-    padding-left: 0;
-    margin-left: 0;
-}
+        a[href^=tel]:hover,
+        a[href^=fax]:hover {
+            text-decoration: underline;
+        }
 
-    footer .fa-li,
+    footer .fa-ul {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+        footer .fa-li,
+        footer .fa-ul small {
+            position: static;
+            left: initial;
+            width: 2rem;
+            vertical-align: middle;
+            display: inline-block;
+            text-align: left;
+        }
+
+    footer .fa-li {
+        padding-left: 1px;
+    }
+
     footer .fa-ul small {
-        position: static;
-        left: initial;
-        width: 2rem;
-        vertical-align: middle;
-        display: inline-block;
-        text-align: left;
+        font-size: 60%;
+        margin-top: -1px;
     }
 
-footer .fa-li {
-    padding-left: 1px;
-}
+    hr {
+        border-top: 1px solid #147e9e !important;
+    }
 
-footer .fa-ul small {
-    font-size: 60%;
-    margin-top: -1px;
-}
-
-hr {
-    border-top: 1px solid #147e9e !important;
-}
-
-/*======================================
+    /*======================================
 //--//-->   Buttons
 ======================================*/
 
 
-.btn-primary {
-    text-align: center;
-    background: #1C3153;
-    font: 14px/18px Helvetica, Calibri, sans-serif;
-    font-weight: 700;
-    color: #fff;
-}
-
-.navbar-dark .navbar-toggler {
-    color: rgba(255,255,255,.5);
-    border: 2px solid #caa500;
-    background-color: #1C3153;
-}
+    .btn-primary {
+        text-align: center;
+        background: #1C3153;
+        font: 14px/18px Helvetica, Calibri, sans-serif;
+        font-weight: 700;
+        color: #fff;
+    }
 
 
+    .navbar-dark .navbar-toggler {
+        color: rgba(255,255,255,.5);
+        border: 2px solid #caa500;
+        background-color: #1C3153;
+    }
 
-/*======================================
+
+
+
+    /*======================================
 //--//-->   Producten
 ======================================*/
 
 
-card-deck .card {
-    min-width: 220px;
-}
+    card-deck .card {
+        min-width: 220px;
+    }
 
-.card-header:first-child {
-    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
-}
+    .card-header:first-child {
+        border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+    }
 
-.card-header {
-    padding: .75rem 1.25rem;
-    margin-bottom: 0;
-    background-color: rgba(0,0,0,.03);
-    border-bottom: 1px solid rgba(0,0,0,.125);
-}
+    .card-header {
+        padding: .75rem 1.25rem;
+        margin-bottom: 0;
+        background-color: rgba(0,0,0,.03);
+        border-bottom: 1px solid rgba(0,0,0,.125);
+    }
 
-.card-body {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 1.25rem;
-}
+    .card-body {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 1.25rem;
+    }
 
 
-/*======================================
+    /*======================================
 //--//-->   Tabellen
 ======================================*/
-.table-condensed tr th {
-    border: 0px solid #6e7bd9;
-    color: white;
-    background-color: #1C3153;
-}
+    .table-condensed tr th {
+        border: 0px solid #6e7bd9;
+        color: white;
+        background-color: #1C3153;
+    }
 
-.table-condensed, .table-condensed tr td {
-    border: 0px solid #000;
-}
+    .table-condensed, .table-condensed tr td {
+        border: 0px solid #000;
+    }
 
-tr:nth-child(even) {
-    background: #f8f7ff
-}
+    tr:nth-child(even) {
+        background: #f8f7ff
+    }
 
-tr:nth-child(odd) {
-    background: #fff;
-}
+    tr:nth-child(odd) {
+        background: #fff;
+    }
 
-tr:hover {
-    background-color: #f5f5f5;
-}
+    tr:hover {
+        background-color: #f5f5f5;
+    }
 
 
-/*======================================
+    /*======================================
 //--//-->   Youtube
 ======================================*/
 
 
-#video {
-    position: relative;
-    width: 80%;
-    height: 100%;
-}
+    #video {
+        position: relative;
+        width: 80%;
+        height: 100%;
+    }
 
-.video-container {
-    margin-bottom: 20%
-}
+    .video-container {
+        margin-bottom: 20%
+    }
 
-/*======================================
+    /*======================================
 //--//-->   CONTACT
 ======================================*/
 
-#contact-image-1 div {
-    background: url("../Images/contact.jpg") no-repeat 10%;
-    background-size: cover;
-    min-height: 212px;
-}
+    #contact-image-1 div {
+        background: url("../Images/contact.jpg") no-repeat 10%;
+        background-size: cover;
+        min-height: 212px;
+    }
 
-iframe {
-    filter: grayscale(0.7);
-    display: block;
-}
+    iframe {
+        filter: grayscale(0.7);
+        display: block;
+    }
 
-#maps,
-#maps iframe {
-    height: 450px;
-    width: 100%;
-    overflow: hidden;
-}
-
-
-.tel-fix [href^=tel],
-.tel-fix [href^=fax] {
-    color: #555;
-    background-color: white;
-}
-
-.table-con {
-    width: 220px;
-    text-align: left;
-}
-
-    .table-con th,
-    .table-con td {
-        padding: 3px 8px;
+    #maps,
+    #maps iframe {
+        height: 450px;
+        width: 100%;
+        overflow: hidden;
     }
 
 
-@media (max-width: 767px) {
+    .tel-fix [href^=tel],
+    .tel-fix [href^=fax] {
+        color: #555;
+        background-color: white;
+    }
+
     .table-con {
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-        max-width: 280px;
+        width: 220px;
+        text-align: left;
     }
-}
+
+        .table-con th,
+        .table-con td {
+            padding: 3px 8px;
+        }
+
+
+    @media (max-width: 767px) {
+        .table-con {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            max-width: 280px;
+        }
+    }
+

@@ -46,14 +46,21 @@
                 <a asp-action="Create">Create New</a>
             </p>
         }
-        <form asp-controller="Tijdslots" asp-action="Search" method="get">
-            <div class="input-group" style="width:40%; margin: auto">
-                <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-primary" type="button">Zoek</button>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <form asp-controller="Nieuws" asp-action="Search" method="get">
+                <div class="input-group col-sm-12 col-md-8 col-lg-5" style="margin: auto">
+                    <input asp-for="Search" type="text" class="form-control" aria-label="Nieuws" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit">Zoek</button>
+                    </div>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
+        
+    </div>
+
         <br />
 
         @foreach (var item in Model.NieuwsLijst)

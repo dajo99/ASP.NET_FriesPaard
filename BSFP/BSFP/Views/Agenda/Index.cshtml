@@ -1,8 +1,11 @@
 ﻿@model BSFP.ViewModels.ListAgendaViewModel
+@using System.Globalization;
+
 
 @{
     ViewData["Title"] = "Index";
     int totaal = Model.AgendaLijst.Count;
+    CultureInfo dutch = new CultureInfo("nl-NL", false);
 }
 
 <header class="intro bg-image">
@@ -23,6 +26,34 @@
         padding-bottom: 20px;
         color: white;
     }
+
+    .eventdate {
+        float: left;
+        width: 100%;
+        text-align: center;
+        height: 53px;
+        margin-right: 23px;
+        background: #1C3153;
+        color: #fff;
+        font: 20px/18px 'droid_serifbold';
+        padding-top: 16px;
+        background-color: #1C3153;
+    }
+    .titelsZoekAgenda {
+        padding: 0.6em;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.4em;
+        font-family: 'TrajanProBold';
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+
+    .fa.fa-instagram-square {
+        color: transparent;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    }
 </style>
 
 <main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
@@ -34,68 +65,110 @@
             </p>
         }
 
+        <div class="row" style="visibility: hidden">
+            <div class="col-12">
+                <form asp-controller="Agenda" asp-action="Search" method="get">
+                    <div class="input-group col-sm-12 col-md-8 col-lg-5">
+                        <input type="text" class="form-control" aria-label="Agenda" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button">Zoek</button>
+                        </div>
+                    </div>
+                </form>
+           </div>
+        </div>
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 col-sm-10 col-xs-10">
+                        <table class="table table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.AgendaLijst[0].Datum)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.AgendaLijst[0].Titel)
+                                    </th>
+                                    <th style="vertical-align:bottom ; text-align:right">
+                                        Totaal @totaal Evenementen
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.AgendaLijst)
+                                {
+                                    totaal += 1;
 
-        <form asp-controller="Tijdslots" asp-action="Search" method="get">
-            <div class="input-group" style="width:40%">
-                <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-primary" type="button">Zoek</button>
-                </div>
-            </div>
-        </form>
-        <br />
+                                    <tr>
+                                        <td style="padding: 1rem; text-align:center">
+                                            <div class="eventdate">
+                                                @Convert.ToDateTime(item.Datum).ToString("dd MMMM", dutch)
+                                            </div>
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Titel)
+                                        </td>
+                                        <td style=" float: right">
+                                            @if (this.User.IsInRole("Admin"))
+                                            {
+                                                <a asp-action="Details" asp-route-id="@item.AgendaID">Details |</a>
+                                                <a asp-action="Edit" asp-route-id="@item.AgendaID"> Edit |</a>
+                                                <a asp-action="Delete" asp-route-id="@item.AgendaID"> Delete</a>
+                                            }
+                                            else
+                                            {
+                                                <a asp-action="Details" asp-route-id="@item.AgendaID">Bekijk Details</a>
+                                            }
 
+                                        </td>
+                                    </tr>
 
-        <table class="table table-condensed">
-            <thead>
-                <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.AgendaLijst[0].Datum)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.AgendaLijst[0].Titel)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.AgendaLijst[0].Locatie)
-                    </th>
-                    <th style="vertical-align:bottom ; text-align:right">
-                        Totaal @totaal Evenementen
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model.AgendaLijst)
-                {
-                    totaal += 1;
-                    <tr>
-                        <td style="padding: 1rem; text-align:center">
-                            <div style="background-color: #1C3153; color:white; padding:1.5rem">
-                                @Html.DisplayFor(modelItem => item.Datum)
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-lg-4 ml-auto">
+                        <div class="col-12" style="background-color: #1C3153; border: 3px solid #147e9e;">
+                            <h4 class="titelsZoekAgenda">Zoek</h4>
+                            <form asp-controller="Agenda" asp-action="Search" method="get">
+                                <div class="input-group col-12 mb-4">
+                                    <input asp-for="SearchName" type="text" class="form-control" aria-label="Agenda" aria-describedby="basic-addon2">
+                                </div>
+                                <div class="input-group col-12 mb-4">
+                                    <input asp-for="SearchPlace" type="text" class="form-control" aria-label="Agenda" aria-describedby="basic-addon2">
+                                </div>
+                                <div class="input-group col-12 mb-4">
+                                    <input asp-for="SearchDate" type="date" class="form-control" aria-label="Agenda" aria-describedby="basic-addon2">
+                                </div>
+
+                                <div class="input-group col-12 mb-4">
+                                    <input type="submit" value="Zoeken" class="form-control" style="background-color: #caa500; border: 1px solid #caa500; color:#1C3153;" />
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="col-12">
+                            <h4 class="titelsZoekAgenda" style="color: #1C3153">Volg ons op</h4>
+                            <div class="col-12 mb-3">
+                                <i class="fab fa-facebook-square fa-3x" style="color:#3b5998;"></i>
+                                <i class="fab fa-instagram-square fa-3x" style=" color: #E1306C"></i>
+                                <i class="fab fa-youtube-square fa-3x" style="color: #FF0000;"></i>
                             </div>
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Titel)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Locatie)
-                        </td>
-                        <td style=" float: right">
-                            @if (this.User.IsInRole("Admin"))
-                            {
-                                <a asp-action="Details" asp-route-id="@item.AgendaID">Details |</a>
-                                <a asp-action="Edit" asp-route-id="@item.AgendaID"> Edit |</a>
-                                <a asp-action="Delete" asp-route-id="@item.AgendaID"> Delete</a>
-                            }
-                            else
-                            {
-                                <a asp-action="Details" asp-route-id="@item.AgendaID">Bekijk Details</a>
-                            }
+                        </div>
 
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
+                    </div>
+                    
+
+                        
+                        
+                        
+                        
+                    
+                </div>
 
     </section>
 </main>

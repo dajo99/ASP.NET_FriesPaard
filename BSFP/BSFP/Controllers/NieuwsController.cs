@@ -14,19 +14,19 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
+using Microsoft.AspNetCore.Http;
+using BSFP.Blobstorage;
 
 namespace BSFP.Controllers
 {
     public class NieuwsController : Controller
     {
         private readonly IUnitOfWork _uow;
-        private readonly IConfiguration _configuration;
 
 
-        public NieuwsController(IUnitOfWork uow, IConfiguration configuration)
+        public NieuwsController(IUnitOfWork uow)
         {
             _uow = uow;
-            _configuration = configuration;
         }
 
         // GET: Nieuws
@@ -36,6 +36,20 @@ namespace BSFP.Controllers
             viewModel.NieuwsLijst = await _uow.NieuwsRepository.GetAll().OrderByDescending(x=>x.Datum).ToListAsync();
 
             return View(viewModel);
+        }
+
+        public async Task<IActionResult> Search(ListNieuwsViewModel viewModel)
+        {
+            IQueryable<Nieuws> queryableNieuws = _uow.NieuwsRepository.GetAll().OrderByDescending(x => x.Datum).AsQueryable();
+
+            if (!string.IsNullOrEmpty(viewModel.Search))
+            {
+                queryableNieuws = queryableNieuws.Where(k => k.Intro.Contains(viewModel.Search));
+            }
+
+            viewModel.NieuwsLijst = await queryableNieuws.ToListAsync();
+
+            return View("Index", viewModel);
         }
 
         // GET: Nieuws/Details/5
@@ -67,60 +81,10 @@ namespace BSFP.Controllers
         {
             if (ModelState.IsValid)
             {
-                string blobstorageconnection =  _configuration.GetValue<string>("blobstorage");
+                Nieuws nieuws = await BlobCRUD.CreateBlobFile("testcontainer",viewModel.Nieuws.File);
 
-                byte[] dataFiles;
-                // Retrieve storage account from connection string.
-                CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(blobstorageconnection);
-                // Create the blob client.
-                CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
-                // Retrieve a reference to a container.
-                CloudBlobContainer cloudBlobContainer = cloudBlobClient.GetContainerReference("testcontainer");
-
-                BlobContainerPermissions permissions = new BlobContainerPermissions
-                {
-                    PublicAccess = BlobContainerPublicAccessType.Blob
-                };
-
-                
-                if (viewModel.Nieuws.File != null)
-                {
-                    bool fileExist = await FileExists(viewModel.Nieuws.File.FileName, cloudBlobContainer);
-                    string systemFileName;
-                    if (fileExist)
-                    {
-                        int getal = 0;
-                        do
-                        {
-                            getal += 1;
-                            
-                            systemFileName = viewModel.Nieuws.File.FileName + "_" + getal + "";
-                            fileExist = await FileExists(systemFileName, cloudBlobContainer);
-                        } while (fileExist);
-                    }
-                    else
-                    {
-                        systemFileName = viewModel.Nieuws.File.FileName;
-                    }
-                    
-                    viewModel.Nieuws.ImageName = systemFileName;
-                    viewModel.Nieuws.ImagePath = "https://bsfp.blob.core.windows.net/testcontainer/" + systemFileName;
-                    await cloudBlobContainer.SetPermissionsAsync(permissions);
-                    await using (var target = new MemoryStream())
-                    {
-                        viewModel.Nieuws.File.CopyTo(target);
-                        dataFiles = target.ToArray();
-                    }
-                    // This also does not make a service call; it only creates a local object.
-                    CloudBlockBlob cloudBlockBlob = cloudBlobContainer.GetBlockBlobReference(systemFileName);
-                    await cloudBlockBlob.UploadFromByteArrayAsync(dataFiles, 0, dataFiles.Length);
-                }
-                else
-                {
-                    viewModel.Nieuws.ImagePath = "../Images/logo_footer.png";
-                }
-                
-
+                viewModel.Nieuws.ImageName = nieuws.ImageName;
+                viewModel.Nieuws.ImagePath = nieuws.ImagePath;
                 viewModel.Nieuws.Datum = DateTime.Now;
                 _uow.NieuwsRepository.Create(viewModel.Nieuws);
                 await _uow.Save();
@@ -165,56 +129,16 @@ namespace BSFP.Controllers
                     nieuws.Intro = viewModel.Nieuws.Intro;
                     nieuws.Omschrijving = viewModel.Nieuws.Omschrijving;
 
-                    string blobstorageconnection = _configuration.GetValue<string>("blobstorage");
-                    CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(blobstorageconnection);
-                    CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
-                    string strContainerName = "testcontainer";
-                    CloudBlobContainer cloudBlobContainer = cloudBlobClient.GetContainerReference(strContainerName);
-                    var blob = cloudBlobContainer.GetBlobReference(nieuws.ImageName);
-                    await blob.DeleteIfExistsAsync();
-
-                    byte[] dataFiles;
-                    BlobContainerPermissions permissions = new BlobContainerPermissions
-                    {
-                        PublicAccess = BlobContainerPublicAccessType.Blob
-                    };
                     if (viewModel.Nieuws.File != null)
                     {
-                        bool fileExist = await FileExists(viewModel.Nieuws.File.FileName, cloudBlobContainer);
-                        string systemFileName;
-                        if (fileExist)
-                        {
-                            int getal = 0;
-                            do
-                            {
-                                getal += 1;
-
-                                systemFileName = viewModel.Nieuws.File.FileName + "_" + getal + "";
-                                fileExist = await FileExists(systemFileName, cloudBlobContainer);
-                            } while (fileExist);
-                        }
-                        else
-                        {
-                            systemFileName = viewModel.Nieuws.File.FileName;
-                        }
-                        nieuws.ImageName = systemFileName;
-                        nieuws.ImagePath = "https://bsfp.blob.core.windows.net/testcontainer/" + systemFileName;
-                        await cloudBlobContainer.SetPermissionsAsync(permissions);
-                        await using (var target = new MemoryStream())
-                        {
-                            viewModel.Nieuws.File.CopyTo(target);
-                            dataFiles = target.ToArray();
-                        }
-                        // This also does not make a service call; it only creates a local object.
-                        CloudBlockBlob cloudBlockBlob = cloudBlobContainer.GetBlockBlobReference(systemFileName);
-                        await cloudBlockBlob.UploadFromByteArrayAsync(dataFiles, 0, dataFiles.Length);
+                        Nieuws nieuwsCreate = await BlobCRUD.EditBlobFile(nieuws, viewModel.Nieuws, "testcontainer");
+                        nieuws.ImageName = nieuwsCreate.ImageName;
+                        nieuws.ImagePath = nieuwsCreate.ImagePath;
                     }
                     
-
-
                     _uow.NieuwsRepository.Update(nieuws);
                     await _uow.Save();
-                   
+
 
                 }
                 catch (DbUpdateConcurrencyException)
@@ -231,6 +155,10 @@ namespace BSFP.Controllers
             return View(nieuws);
 
         }
+
+       
+
+
 
         // GET: Nieuws/Delete/5
         public async Task<IActionResult> Delete(int id)
@@ -250,15 +178,9 @@ namespace BSFP.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var nieuws = await _uow.NieuwsRepository.GetById(id);
-            if (nieuws.ImageName != "")
+            if (nieuws.ImageName != null)
             {
-                string blobstorageconnection = _configuration.GetValue<string>("blobstorage");
-                CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(blobstorageconnection);
-                CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
-                string strContainerName = "testcontainer";
-                CloudBlobContainer cloudBlobContainer = cloudBlobClient.GetContainerReference(strContainerName);
-                var blob = cloudBlobContainer.GetBlobReference(nieuws.ImageName);
-                await blob.DeleteIfExistsAsync();
+                await BlobCRUD.DeleteBlobFile("testcontainer", nieuws);
             }
             
             _uow.NieuwsRepository.Delete(nieuws);
@@ -267,10 +189,9 @@ namespace BSFP.Controllers
         }
 
 
-        public async Task<bool> FileExists(string fileName, CloudBlobContainer directory)
-        {
-            return await directory.GetBlockBlobReference(fileName).ExistsAsync();
-        }
+        
+
+
 
     }
 }

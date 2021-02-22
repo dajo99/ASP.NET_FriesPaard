@@ -42,7 +42,15 @@
                     <div class="form-group">
                         <label asp-for="Nieuws.File" class="control-label"></label>
                         <input asp-for="Nieuws.File" class="form-control" accept="image/*" onchange="document.getElementById('DemoImage').src = window.URL.createObjectURL(this.files[0])" />
-                        <img id="DemoImage" src="@Model.Nieuws.ImagePath" class="text-center" alt="" width="200" height="200" style="border:1px ;margin-top:20px; margin-left:120px;" />
+                        @if (Model.Nieuws.ImageName != null)
+                        {
+                            <img id="DemoImage" src="@Model.Nieuws.ImagePath" class="text-center" alt="" width="200" height="200" style="border:1px ;margin-top:20px; margin-left:120px;" />
+                        }
+                        else
+                        {
+                            <img id="DemoImage" src="~/Images/demo.png" class="text-center" alt="" width="200" height="200" style="border:1px ;margin-top:20px; margin-left:120px;" />
+                        }
+
                         <span asp-validation-for="Nieuws.File" class="text-danger"></span>
                     </div>
 
