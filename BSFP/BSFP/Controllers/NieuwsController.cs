@@ -9,6 +9,13 @@ using BSFP.Data;
 using BSFP.Models;
 using BSFP.Data.UnitOfWork;
 using BSFP.ViewModels;
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Blob;
+using Microsoft.AspNetCore.Http;
+using BSFP.Blobstorage;
 
 namespace BSFP.Controllers
 {
@@ -16,19 +23,34 @@ namespace BSFP.Controllers
     {
         private readonly IUnitOfWork _uow;
 
-
-        public NieuwsController(IUnitOfWork uow)
+        private readonly IConfiguration _configuration;
+        public NieuwsController(IUnitOfWork uow, IConfiguration configuration)
         {
             _uow = uow;
+            _configuration = configuration;
         }
 
         // GET: Nieuws
         public async Task<IActionResult> Index()
         {
             ListNieuwsViewModel viewModel = new ListNieuwsViewModel();
-            viewModel.NieuwsLijst = await _uow.NieuwsRepository.GetAll().ToListAsync();
+            viewModel.NieuwsLijst = await _uow.NieuwsRepository.GetAll().OrderByDescending(x=>x.Datum).ToListAsync();
 
             return View(viewModel);
+        }
+
+        public async Task<IActionResult> Search(ListNieuwsViewModel viewModel)
+        {
+            IQueryable<Nieuws> queryableNieuws = _uow.NieuwsRepository.GetAll().OrderByDescending(x => x.Datum).AsQueryable();
+
+            if (!string.IsNullOrEmpty(viewModel.Search))
+            {
+                queryableNieuws = queryableNieuws.Where(k => k.Intro.Contains(viewModel.Search));
+            }
+
+            viewModel.NieuwsLijst = await queryableNieuws.ToListAsync();
+
+            return View("Index", viewModel);
         }
 
         // GET: Nieuws/Details/5
@@ -60,6 +82,10 @@ namespace BSFP.Controllers
         {
             if (ModelState.IsValid)
             {
+                Nieuws nieuws = await BlobCRUD.CreateBlobFile("testcontainer",viewModel.Nieuws.File, _configuration);
+
+                viewModel.Nieuws.ImageName = nieuws.ImageName;
+                viewModel.Nieuws.ImagePath = nieuws.ImagePath;
                 viewModel.Nieuws.Datum = DateTime.Now;
                 _uow.NieuwsRepository.Create(viewModel.Nieuws);
                 await _uow.Save();
@@ -93,33 +119,52 @@ namespace BSFP.Controllers
             {
                 return NotFound();
             }
-            else
-            {
-                var nieuws = await _uow.NieuwsRepository.GetById(id);
-                viewModel.Nieuws.Datum = nieuws.Datum;
-            }
 
+            Nieuws nieuws = await _uow.NieuwsRepository.GetById(id);
             if (ModelState.IsValid)
             {
+                
                 try
                 {
-                    _uow.NieuwsRepository.Update(viewModel.Nieuws);
+                    nieuws.Titel = viewModel.Nieuws.Titel;
+                    nieuws.Intro = viewModel.Nieuws.Intro;
+                    nieuws.Omschrijving = viewModel.Nieuws.Omschrijving;
+
+                    if (viewModel.Nieuws.File != null)
+                    {
+                        Nieuws nieuwsCreate = await BlobCRUD.EditBlobFile(nieuws, viewModel.Nieuws, "testcontainer",_configuration);
+                        nieuws.ImageName = nieuwsCreate.ImageName;
+                        nieuws.ImagePath = nieuwsCreate.ImagePath;
+                    }
+                    
+                    _uow.NieuwsRepository.Update(nieuws);
                     await _uow.Save();
+
+
                 }
                 catch (DbUpdateConcurrencyException)
                 {
                     return NotFound();
 
                 }
+
                 return RedirectToAction(nameof(Index));
+
+                
+
             }
-            return View(viewModel.Nieuws);
+            return View(nieuws);
+
         }
+
+       
+
+
 
         // GET: Nieuws/Delete/5
         public async Task<IActionResult> Delete(int id)
         {
-            var nieuws = await _uow.AgendaRepository.GetById(id);
+            var nieuws = await _uow.NieuwsRepository.GetById(id);
             if (nieuws == null)
             {
                 return NotFound();
@@ -133,11 +178,21 @@ namespace BSFP.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var nieuws = await _uow.AgendaRepository.GetById(id);
-            _uow.AgendaRepository.Delete(nieuws);
+            var nieuws = await _uow.NieuwsRepository.GetById(id);
+            if (nieuws.ImageName != null)
+            {
+                await BlobCRUD.DeleteBlobFile("testcontainer", nieuws, _configuration);
+            }
+            
+            _uow.NieuwsRepository.Delete(nieuws);
             await _uow.Save();
             return RedirectToAction(nameof(Index));
         }
+
+
+        
+
+
 
     }
 }

@@ -15,10 +15,10 @@
 
 <main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
     <section class="container py-4">
-        <h4>Create</h4>
+        <h4>Activiteit aanmaken</h4>
         <hr />
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-12">
                 <form asp-action="Create">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div class="form-group">
@@ -28,7 +28,7 @@
                     </div>
                     <div class="form-group">
                         <label asp-for="Agenda.Omschrijving" class="control-label"></label>
-                        <input asp-for="Agenda.Omschrijving" class="form-control" />
+                        <textarea asp-for="Agenda.Omschrijving" class="form-control" cols="100" rows="16" placeholder="Vertel over de activiteit"></textarea>
                         <span asp-validation-for="Agenda.Omschrijving" class="text-danger"></span>
                     </div>
                     <div class="form-group">
@@ -59,7 +59,7 @@
         </div>
 
         <div>
-            <a asp-action="Index">Back to List</a>
+            <a asp-action="Index">Terug naar overzicht</a>
         </div>
     </section>
 </main>

@@ -1,0 +1,78 @@
+﻿@model BSFP.ViewModels.ListMemberViewModel
+@using BSFP.Areas.Identity.Data
+
+@{ ViewData["Title"] = "Index"; }
+
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>Members</h1>
+        </div>
+    </div>
+
+</header>
+
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+            @if (this.User.IsInRole("Admin"))
+            {
+                <div style="border: 1px solid black">
+                    <div style="background-color: #1C3153">
+                        <p style="color: white; margin: 0px 10px">Memberlijst</p>
+                    </div>
+
+                    <form asp-controller="Member" asp-action="Search" method="get">
+                        <div class="form-actions no-color">
+                            <p style="margin: 10px 10px">
+                                Zoek op Voornaam: <input asp-for="VoornaamSearch" /> Zoek op Naam: <input asp-for="AchternaamSearch" /><br />
+                                <input type="submit" value="Zoeken" class="btn btn-default" /><br />
+                                <a asp-controller="Member" asp-action="Index">Terug naar volledige lijst</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>}
+            <br />
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Members[0].Voornaam)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Members[0].Achternaam)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Members[0].Lidnummer)
+                        </th>
+
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (CustomUser member in Model.Members)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => member.Voornaam)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => member.Achternaam)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => member.Lidnummer)
+                            </td>
+
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@member.Id">Edit</a> |
+                                <a asp-action="Details" asp-route-id="@member.Id">Details</a> |
+
+                                <a asp-action="Delete" asp-route-id="@member.Id">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+    </section>
+</main>

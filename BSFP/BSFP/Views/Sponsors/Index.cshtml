@@ -1,0 +1,67 @@
+﻿@model BSFP.ViewModels.ListSponsorViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>Sponsors</h1>
+        </div>
+    </div>
+
+</header>
+
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+        @if (this.User.IsInRole("Admin"))
+        {
+            <p>
+                <a asp-action="Create">Nieuwe sponsor aanmaken</a>
+            </p>
+        }
+        <header class="text-center">
+            <h2 class="fix-trans mb-2">Wij zijn steeds op zoek naar nieuwe sponsors die ons stamboek willen steunen.</h2>
+            <p>Neem contact op met sarah@bsfp-sbcf.be om de verschillende formules te bekijken.</p>
+        </header>
+        @foreach (var item in Model.SponsorLijst)
+        {
+        <article class="row justify-content-center">
+            <div class="col-12 col-md-9 mt-2 mb-4">
+                <div class="accordion">
+                    <header>
+                        <h3>
+                            <button class="btn dropdown-toggle btn-style collapsed" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-controls="collapseOne" type="button"
+                                    id="dropdownMenuButton1" aria-haspopup="true" aria-expanded="false">
+                                <img class="img-fluid" src="@Html.DisplayFor(modelItem => item.ImagePath)" />
+                                @Html.DisplayFor(modelItem => item.Titel)
+                                <i class="fas fa-chevron-down float-right"></i>
+                            </button>
+                        </h3>
+                    </header>
+                    <div class="collapse" aria-labelledby="dropdownMenuButton1" id="collapseOne">
+                        <div class="accordion-content pt-4">
+                            <ul>
+                                <li>
+                                    @Html.Raw(item.Omschrijving);
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        }
+    </section>
+</main>
+
+
+<script>
+    $(window).click(function () {
+        $('.collapse').collapse('hide');
+    });
+</script>

@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -10,7 +12,11 @@ namespace BSFP.Models
     {
         public int NieuwsID { get; set; }
 
-        public string Image { get; set; }
+        [Column(TypeName = "varchar(50)")]
+        public string ImageName { get; set; }
+
+        [Column(TypeName = "varchar(250)")]
+        public string ImagePath { get; set; }
 
         [Required]
         public string Titel { get; set; }
@@ -22,5 +28,8 @@ namespace BSFP.Models
         public string Omschrijving { get; set; }
 
         public DateTime Datum { get; set; }
+
+        [NotMapped]
+        public IFormFile File { get; set; }
     }
 }

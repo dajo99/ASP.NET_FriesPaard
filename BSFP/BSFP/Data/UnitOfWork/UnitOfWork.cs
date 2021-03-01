@@ -1,4 +1,5 @@
-﻿using BSFP.Data.Repository;
+﻿using BSFP.Areas.Identity.Data;
+using BSFP.Data.Repository;
 using BSFP.Models;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,9 @@ namespace BSFP.Data.UnitOfWork
         private readonly BSFPContext _context;
         private IGenericRepository<Agenda> agendaRepository;
         private IGenericRepository<Nieuws> nieuwsRepository;
+        private IGenericRepository<CustomUser> userRepository;
+        private IGenericRepository<Sponsor> sponsorRepository;
+        private IGenericRepository<Paard> paardRepository;
 
 
         public UnitOfWork(BSFPContext context)
@@ -43,6 +47,41 @@ namespace BSFP.Data.UnitOfWork
             }
         }
 
+        public IGenericRepository<CustomUser> UserRepository
+        {
+            get
+            {
+                if (this.userRepository == null)
+                {
+                    this.userRepository = new GenericRepository<CustomUser>(_context);
+                }
+                return userRepository;
+            }
+        }
+
+        public IGenericRepository<Sponsor> SponsorRepository
+        {
+            get
+            {
+                if (this.sponsorRepository == null)
+                {
+                    this.sponsorRepository = new GenericRepository<Sponsor>(_context);
+                }
+                return sponsorRepository;
+            }
+        }
+
+        public IGenericRepository<Paard> PaardRepository
+        {
+            get
+            {
+                if (this.paardRepository == null)
+                {
+                    this.paardRepository = new GenericRepository<Paard>(_context);
+                }
+                return paardRepository;
+            }
+        }
 
         public async Task Save()
         {

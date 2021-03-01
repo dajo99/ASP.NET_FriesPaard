@@ -20,7 +20,7 @@
         <hr />
         <div class="row">
             <div class="col-md-12">
-                <form asp-action="Edit">
+                <form asp-action="Edit" enctype="multipart/form-data">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <input type="hidden" asp-for="Nieuws.NieuwsID" />
                     <div class="form-group">
@@ -38,9 +38,26 @@
                         <textarea asp-for="Nieuws.Omschrijving" class="form-control" cols="100" rows="16"></textarea>
                         <span asp-validation-for="Nieuws.Omschrijving" class="text-danger"></span>
                     </div>
+
+                    <div class="form-group">
+                        <label asp-for="Nieuws.File" class="control-label"></label>
+                        <input asp-for="Nieuws.File" class="form-control" accept="image/*" onchange="document.getElementById('DemoImage').src = window.URL.createObjectURL(this.files[0])" />
+                        @if (Model.Nieuws.ImageName != null)
+                        {
+                            <img id="DemoImage" src="@Model.Nieuws.ImagePath" class="text-center" alt="" width="200" height="200" style="border:1px ;margin-top:20px; margin-left:120px;" />
+                        }
+                        else
+                        {
+                            <img id="DemoImage" src="~/Images/demo.png" class="text-center" alt="" width="200" height="200" style="border:1px ;margin-top:20px; margin-left:120px;" />
+                        }
+
+                        <span asp-validation-for="Nieuws.File" class="text-danger"></span>
+                    </div>
+
                     <div class="form-group">
                         <input type="submit" value="Save" class="btn btn-primary" />
                     </div>
+
                 </form>
             </div>
         </div>

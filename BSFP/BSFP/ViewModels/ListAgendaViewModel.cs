@@ -8,7 +8,9 @@ namespace BSFP.ViewModels
 {
     public class ListAgendaViewModel
     {
-        public string Search { get; set; }
+        public string SearchName { get; set; }
+        public string SearchPlace { get; set; }
+        public DateTime SearchDate { get; set; }
         public List<Agenda> AgendaLijst { get; set; }
     }
 }

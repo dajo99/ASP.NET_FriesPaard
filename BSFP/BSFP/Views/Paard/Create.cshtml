@@ -1,0 +1,165 @@
+﻿@model BSFP.ViewModels.CreatePaardViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>Marktplaats</h1>
+        </div>
+    </div>
+
+</header>
+
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+        <h4>Advertentie Aanmaken</h4>
+        <hr />
+        <div class="row">
+            <div class="col-lg-12">
+                <form asp-action="Create" enctype="multipart/form-data">
+                    <div class="row" style="margin:1px">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group col-lg-6">
+                            <label asp-for="Paard.Paardnaam" class="control-label">Naam van het Paard</label>
+                            <input asp-for="Paard.Paardnaam" class="form-control" />
+                            <span asp-validation-for="Paard.Paardnaam" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <label asp-for="Paard.Geslacht" class="control-label"></label>
+                            <select asp-for="Paard.Geslacht" class="form-control">
+                                <option value="1">HENGST</option>
+                                <option value="2">MERRIE</option>
+                                <option value="3">RUIN</option>
+                            </select>
+                            <span asp-validation-for="Paard.Geslacht" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <label asp-for="Paard.Leeftijd" class="control-label"></label>
+                            <input asp-for="Paard.Leeftijd" class="form-control" />
+                            <span asp-validation-for="Paard.Leeftijd" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <label asp-for="Paard.Levensnummer" class="control-label"></label>
+                            <input asp-for="Paard.Levensnummer" class="form-control" />
+                            <span asp-validation-for="Paard.Levensnummer" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <label asp-for="Paard.Gebruiksdiscipline" class="control-label"></label>
+                            <select asp-for="Paard.Gebruiksdiscipline" class="form-control">
+                                <option value="1">DRESSUURPAARD</option>
+                                <option value="2">MENPAARD</option>
+                                <option value="3">TUIGPAARD</option>
+                                <option value="4">Niet van Toepassing</option>
+                            </select>
+                            <span asp-validation-for="Paard.Gebruiksdiscipline" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <label asp-for="Paard.Stokmaat" class="control-label">Stokmaat(in cm)</label>
+                            <input asp-for="Paard.Stokmaat" class="form-control" />
+                            <span asp-validation-for="Paard.Stokmaat" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <label asp-for="Paard.Prijs" class="control-label">Prijs(in €)</label>
+                            <input asp-for="Paard.Prijs" class="form-control" />
+                            <span asp-validation-for="Paard.Prijs" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group col-lg-6">
+                            <label asp-for="Paard.LocatiePaard" class="control-label">Locatie van het Paard</label>
+                            <select asp-for="Paard.LocatiePaard" class="form-control">
+                                <option value="1">Antwerpen</option>
+                                <option value="2">Limburg</option>
+                                <option value="3">Oost-Vlaanderen</option>
+                                <option value="4">Vlaams-Brabant</option>
+                                <option value="5">West-Vlaanderen</option>
+                                <option value="6">Henegouwen</option>
+                                <option value="7">Luik</option>
+                                <option value="8">Luxemburg</option>
+                                <option value="9">Namen</option>
+                                <option value="10">Waals-Brabant</option>
+                                <option value="11">In het Buitenland</option>
+                                <option value="12">Niet van Toepassing</option>
+                            </select>
+                            <span asp-validation-for="Paard.LocatiePaard" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-lg-12">
+                        <label asp-for="Paard.Informatie" class="control-label"></label>
+                        <textarea asp-for="Paard.Informatie" class="form-control" cols="100" rows="10" placeholder="Beschrijf het paard"></textarea>
+                        <span asp-validation-for="Paard.Informatie" class="text-danger"></span>
+                    </div>
+
+                    <div class="row" style="margin:1px">
+                        <div id="divImage1" class="form-group col-6">
+                            <label asp-for="Paard.Image1" class="control-label">Voeg foto 1 toe</label>
+                            <input id="inputImage1" asp-for="Paard.Image1" class="form-control" accept="image/*" />
+                            <img id="Image1" src="~/Images/demo.png" class="text-center" alt="" width="200" height="200" style="border:1px ;margin-top:20px; margin-left:120px;" />
+
+                            <span asp-validation-for="Paard.Image1" class="text-danger"></span>
+                        </div>
+                        <div id="divImage2" class="form-group col-6" style="visibility:hidden" >
+                            <label asp-for="Paard.Image2" class="control-label">Nog een 2de foto?</label>
+                            <input id="inputImage2" asp-for="Paard.Image2" class="form-control" accept="image/* "/>
+                            <img id="Image2" src="~/Images/demo.png" class="text-center" alt="" width="200" height="200" style="border:1px ;margin-top:20px; margin-left:120px;" />
+
+                            <span asp-validation-for="Paard.Image2" class="text-danger"></span>
+                        </div>
+                        <div id="divImage3" class="form-group col-6" style="visibility:hidden">
+                            <label asp-for="Paard.Image3" class="control-label">Nog een 3de foto?</label>
+                            <input id="inputImage3" asp-for="Paard.Image3" class="form-control" accept="image/*" />
+                            <img id="Image3" src="~/Images/demo.png" class="text-center" alt="" width="200" height="200" style="border:1px ;margin-top:20px; margin-left:120px;" />
+
+                            <span asp-validation-for="Paard.Image3" class="text-danger"></span>
+                        </div>
+                        <div id="divImage4" class="form-group col-6" style="visibility:hidden">
+                            <label asp-for="Paard.Image4" class="control-label">Nog een 4de foto?</label>
+                            <input id="inputImage4" asp-for="Paard.Image4" class="form-control" accept="image/*" onchange="document.getElementById('Image4').src = window.URL.createObjectURL(this.files[0])" />
+                            <img id="Image4" src="~/Images/demo.png" class="text-center" alt="" width="200" height="200" style="border:1px ;margin-top:20px; margin-left:120px;" />
+
+                            <span asp-validation-for="Paard.Image4" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </section>
+</main>
+
+<script>
+    document.getElementById('inputImage1').addEventListener('change', function(event){
+        document.getElementById('Image1').src = window.URL.createObjectURL(this.files[0])
+        var x = document.getElementById("divImage2");
+        x.style.visibility = "visible";
+    });
+
+    document.getElementById('inputImage2').addEventListener('change', function (event) {
+        document.getElementById('Image2').src = window.URL.createObjectURL(this.files[0])
+        var x = document.getElementById("divImage3");
+        x.style.visibility = "visible";
+    });
+
+    document.getElementById('inputImage3').addEventListener('change', function (event) {
+        document.getElementById('Image3').src = window.URL.createObjectURL(this.files[0])
+        var x = document.getElementById("divImage4");
+        x.style.visibility = "visible";
+    });
+
+</script>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

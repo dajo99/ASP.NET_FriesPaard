@@ -1,10 +1,12 @@
-﻿@{ ViewData["Title"] = "Home Page"; }
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+
+@{ ViewData["Title"] = "Home Page"; }
 <header class="intro bg-image">
     <div class="overlay"></div>
     <div class="intro-content text-center">
         <div class="container">
             <h1 class="intro-title mb-2">BSFP</h1>
-            <p class="intro-subtitle">Belgisch Stamboek Van Het Fries Paard</p>
+            <p class="intro-subtitle">@localizer["Belgisch Stamboek Van Het Fries Paard"]</p>
         </div>
     </div>
 
@@ -12,8 +14,8 @@
 
 <main role="main" class="flex-shrink-0" style=" border-top: 6px solid #147e9e; box-shadow: 18px 18px 18px 0px #888888">
     <section class="container py-4">
-        <div class="row mt-sm-3">
-            <div class="col-sm-12 col-lg-6 pr-lg-5 mb-sm-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6">
                 <article>
                     <header>
                         <h2>Welkom</h2>
@@ -33,16 +35,11 @@
                     </p>
                 </article>
             </div>
-            <div class="col-sm-12 col-lg-6 text-right mb-4 mb-sm-2 align-self-center">
+            <div class="col-sm-12 col-md-12 col-lg-6 text-right align-self-center">
                 <img src="~/Images/Friesianhorse1.jpg" class="img-fluid" alt="">
             </div>
-        </div>
-        <div class="row mb-sm-3 mt-sm-4">
-            <div class="col-sm-12 col-lg-6 order-lg-2">
+            <div class="col-12 mt-3">
                 <article>
-                    <header>
-                        <h2>Het BSFP</h2>
-                    </header>
                     <p>
                         In België hebben de eigenaars van Friese paarden zich sinds 1985 verenigd in de vzw Belgisch Stamboek van het Friese Paard.
                         (BSFP) Op 10 september 1995 werd het Belgische stamboek officieel erkend als dochterstamboek van het Nederlandse moederstamboek
@@ -58,11 +55,15 @@
                     </p>
                 </article>
             </div>
-            <div class="video-container">
-                <iframe id="video" src="https://www.youtube-nocookie.com/embed/Y5XJbSqwriM?rel=0" class="embed-responsive-item" frameborder="0" allowfullscreen></iframe>
+            <div class="col-12 mt-3">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe id="video" src="https://www.youtube-nocookie.com/embed/Y5XJbSqwriM?rel=0" class="embed-responsive-item" frameborder="0" allowfullscreen style="width: 100%; position: absolute;"></iframe>
+                </div>
             </div>
-        </div>
 
+
+        </div>
+        
     </section>
 
     <section class="bg-image">
