@@ -13,8 +13,8 @@ namespace BSFP.Blobstorage
 {
     public class BlobCRUD
     {
-        private static readonly IConfiguration _configuration;
-        public static async Task<Nieuws> CreateBlobFile(string container, IFormFile file)
+        
+        public static async Task<Nieuws> CreateBlobFile(string container, IFormFile file, IConfiguration _configuration)
         {
             string blobstorageconnection = _configuration.GetValue<string>("blobstorage");
 
@@ -72,16 +72,16 @@ namespace BSFP.Blobstorage
             return nieuws;
         }
 
-        public static async Task<Nieuws> EditBlobFile(Nieuws nieuwsOLD, Nieuws nieuwsNEW, string container)
+        public static async Task<Nieuws> EditBlobFile(Nieuws nieuwsOLD, Nieuws nieuwsNEW, string container,IConfiguration _configuration)
         {
-            await DeleteBlobFile(container, nieuwsOLD);
+            await DeleteBlobFile(container, nieuwsOLD, _configuration);
 
-            Nieuws nieuws = await CreateBlobFile(container, nieuwsNEW.File);
+            Nieuws nieuws = await CreateBlobFile(container, nieuwsNEW.File, _configuration);
             return nieuws;
         }
 
 
-        public static async Task DeleteBlobFile(string container, Nieuws nieuws)
+        public static async Task DeleteBlobFile(string container, Nieuws nieuws, IConfiguration _configuration)
         {
             if (nieuws.ImageName != null)
             {

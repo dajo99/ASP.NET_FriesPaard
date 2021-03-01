@@ -4,55 +4,68 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
-
-<h4>Agenda</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="AgendaID" />
-            <div class="form-group">
-                <label asp-for="Titel" class="control-label"></label>
-                <input asp-for="Titel" class="form-control" />
-                <span asp-validation-for="Titel" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Omschrijving" class="control-label"></label>
-                <input asp-for="Omschrijving" class="form-control" />
-                <span asp-validation-for="Omschrijving" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Datum" class="control-label"></label>
-                <input asp-for="Datum" class="form-control" />
-                <span asp-validation-for="Datum" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Starttijd" class="control-label"></label>
-                <input asp-for="Starttijd" class="form-control" />
-                <span asp-validation-for="Starttijd" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Eindtijd" class="control-label"></label>
-                <input asp-for="Eindtijd" class="form-control" />
-                <span asp-validation-for="Eindtijd" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Locatie" class="control-label"></label>
-                <input asp-for="Locatie" class="form-control" />
-                <span asp-validation-for="Locatie" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>Agenda</h1>
+        </div>
     </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+</header>
+
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+        <h4>Activiteit aanpassen</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-12">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="AgendaID" />
+                    <div class="form-group">
+                        <label asp-for="Titel" class="control-label"></label>
+                        <input asp-for="Titel" class="form-control" />
+                        <span asp-validation-for="Titel" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Omschrijving" class="control-label"></label>
+                        <textarea asp-for="Omschrijving" class="form-control" cols="100" rows="16" placeholder="Vertel over de activiteit"></textarea>
+                        <span asp-validation-for="Omschrijving" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Datum" class="control-label"></label>
+                        <input asp-for="Datum" class="form-control" />
+                        <span asp-validation-for="Datum" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Starttijd" class="control-label"></label>
+                        <input asp-for="Starttijd" class="form-control" />
+                        <span asp-validation-for="Starttijd" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Eindtijd" class="control-label"></label>
+                        <input asp-for="Eindtijd" class="form-control" />
+                        <span asp-validation-for="Eindtijd" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Locatie" class="control-label"></label>
+                        <input asp-for="Locatie" class="form-control" />
+                        <span asp-validation-for="Locatie" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <a asp-action="Index">Terug naar overzicht</a>
+        </div>
+
+    </section>
+</main>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

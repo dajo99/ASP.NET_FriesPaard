@@ -688,3 +688,7 @@ D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Email\ConfirmEm
 D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Email\Error.cshtml.g.cs
 D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Paard\Index.cshtml.g.cs
 D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Paard\Create.cshtml.g.cs
+D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Sponsors\Create.cshtml.g.cs
+D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Sponsors\Delete.cshtml.g.cs
+D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Sponsors\Edit.cshtml.g.cs
+D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Sponsors\Index.cshtml.g.cs

@@ -14,6 +14,7 @@ namespace BSFP.Data.UnitOfWork
         private IGenericRepository<Agenda> agendaRepository;
         private IGenericRepository<Nieuws> nieuwsRepository;
         private IGenericRepository<CustomUser> userRepository;
+        private IGenericRepository<Sponsor> sponsorRepository;
         private IGenericRepository<Paard> paardRepository;
 
 
@@ -55,6 +56,18 @@ namespace BSFP.Data.UnitOfWork
                     this.userRepository = new GenericRepository<CustomUser>(_context);
                 }
                 return userRepository;
+            }
+        }
+
+        public IGenericRepository<Sponsor> SponsorRepository
+        {
+            get
+            {
+                if (this.sponsorRepository == null)
+                {
+                    this.sponsorRepository = new GenericRepository<Sponsor>(_context);
+                }
+                return sponsorRepository;
             }
         }
 

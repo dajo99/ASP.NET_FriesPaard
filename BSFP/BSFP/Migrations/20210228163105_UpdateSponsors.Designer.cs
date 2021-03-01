@@ -4,18 +4,20 @@ using BSFP.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BSFP.Migrations
 {
     [DbContext(typeof(BSFPContext))]
-    partial class BSFPContextModelSnapshot : ModelSnapshot
+    [Migration("20210228163105_UpdateSponsors")]
+    partial class UpdateSponsors
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.12")
+                .HasAnnotation("ProductVersion", "3.1.11")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -239,12 +241,6 @@ namespace BSFP.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("ImageName")
-                        .HasColumnType("varchar(50)");
-
-                    b.Property<string>("ImagePath")
-                        .HasColumnType("varchar(250)");
 
                     b.Property<string>("Omschrijving")
                         .HasColumnType("nvarchar(max)");
