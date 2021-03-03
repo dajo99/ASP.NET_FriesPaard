@@ -82,10 +82,10 @@ namespace BSFP.Controllers
         {
             if (ModelState.IsValid)
             {
-                Nieuws nieuws = await BlobCRUD.CreateBlobFile("testcontainer",viewModel.Nieuws.File, _configuration);
+                BlobCRUD blob = await BlobCRUD.CreateBlobFile("testcontainer",viewModel.Nieuws.File, _configuration);
 
-                viewModel.Nieuws.ImageName = nieuws.ImageName;
-                viewModel.Nieuws.ImagePath = nieuws.ImagePath;
+                viewModel.Nieuws.ImageName = blob.ImageName;
+                viewModel.Nieuws.ImagePath = blob.ImagePath;
                 viewModel.Nieuws.Datum = DateTime.Now;
                 _uow.NieuwsRepository.Create(viewModel.Nieuws);
                 await _uow.Save();
@@ -132,9 +132,9 @@ namespace BSFP.Controllers
 
                     if (viewModel.Nieuws.File != null)
                     {
-                        Nieuws nieuwsCreate = await BlobCRUD.EditBlobFile(nieuws, viewModel.Nieuws, "testcontainer",_configuration);
-                        nieuws.ImageName = nieuwsCreate.ImageName;
-                        nieuws.ImagePath = nieuwsCreate.ImagePath;
+                        BlobCRUD blob = await BlobCRUD.EditBlobFile(nieuws.ImageName, viewModel.Nieuws.File, "testcontainer",_configuration);
+                        nieuws.ImageName = blob.ImageName;
+                        nieuws.ImagePath = blob.ImagePath;
                     }
                     
                     _uow.NieuwsRepository.Update(nieuws);
@@ -181,7 +181,7 @@ namespace BSFP.Controllers
             var nieuws = await _uow.NieuwsRepository.GetById(id);
             if (nieuws.ImageName != null)
             {
-                await BlobCRUD.DeleteBlobFile("testcontainer", nieuws, _configuration);
+                await BlobCRUD.DeleteBlobFile("testcontainer", nieuws.ImageName, _configuration);
             }
             
             _uow.NieuwsRepository.Delete(nieuws);

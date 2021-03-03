@@ -23,14 +23,15 @@
                     <li class="nav-item active">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="FriesPaard">Het Friese Paard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Nieuws" asp-action="Index">Nieuws</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Agenda" asp-action="Index">Agenda</a>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdownActueel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Actueel
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownActueel">
+                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Nieuws" asp-action="Index">Nieuws</a>
+                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Agenda" asp-action="Index">Agenda</a>
+                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Home" asp-action="FriesPaard">Het Friese Paard</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Member" asp-action="Index">Members</a>

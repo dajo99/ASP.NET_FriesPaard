@@ -13,8 +13,10 @@ namespace BSFP.Blobstorage
 {
     public class BlobCRUD
     {
-        
-        public static async Task<Nieuws> CreateBlobFile(string container, IFormFile file, IConfiguration _configuration)
+        public string ImageName { get; set; }
+        public string ImagePath { get; set; }
+        public IFormFile File { get; set; }
+        public static async Task<BlobCRUD> CreateBlobFile(string container, IFormFile file, IConfiguration _configuration)
         {
             string blobstorageconnection = _configuration.GetValue<string>("blobstorage");
 
@@ -31,7 +33,8 @@ namespace BSFP.Blobstorage
                 PublicAccess = BlobContainerPublicAccessType.Blob
             };
 
-            Nieuws nieuws = new Nieuws();
+            BlobCRUD blob = new BlobCRUD();
+            
             if (file != null)
             {
                 bool fileExist = await FileExists(file.FileName, cloudBlobContainer);
@@ -52,13 +55,13 @@ namespace BSFP.Blobstorage
                     systemFileName = file.FileName;
                 }
 
-                nieuws.ImageName = systemFileName;
-                nieuws.ImagePath = "https://bsfp.blob.core.windows.net/testcontainer/" + systemFileName;
-                nieuws.File = file;
+                blob.ImageName = systemFileName;
+                blob.ImagePath = "https://bsfp.blob.core.windows.net/" + container + "/" + systemFileName;
+                blob.File = file;
                 await cloudBlobContainer.SetPermissionsAsync(permissions);
                 await using (var target = new MemoryStream())
                 {
-                    nieuws.File.CopyTo(target);
+                    blob.File.CopyTo(target);
                     dataFiles = target.ToArray();
                 }
                 // This also does not make a service call; it only creates a local object.
@@ -67,29 +70,29 @@ namespace BSFP.Blobstorage
             }
             else
             {
-                nieuws.ImagePath = "../Images/logo_footer.png";
+                blob.ImagePath = "../Images/logo_footer.png";
             }
-            return nieuws;
+            return blob;
         }
 
-        public static async Task<Nieuws> EditBlobFile(Nieuws nieuwsOLD, Nieuws nieuwsNEW, string container,IConfiguration _configuration)
+        public static async Task<BlobCRUD> EditBlobFile(string imageNameOld, IFormFile fileNEW, string container,IConfiguration _configuration)
         {
-            await DeleteBlobFile(container, nieuwsOLD, _configuration);
+            await DeleteBlobFile(container,imageNameOld, _configuration);
 
-            Nieuws nieuws = await CreateBlobFile(container, nieuwsNEW.File, _configuration);
-            return nieuws;
+            BlobCRUD blob = await CreateBlobFile(container, fileNEW, _configuration);
+            return blob;
         }
 
 
-        public static async Task DeleteBlobFile(string container, Nieuws nieuws, IConfiguration _configuration)
+        public static async Task DeleteBlobFile(string container,string imageName, IConfiguration _configuration)
         {
-            if (nieuws.ImageName != null)
+            if (imageName != null)
             {
                 string blobstorageconnection = _configuration.GetValue<string>("blobstorage");
                 CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(blobstorageconnection);
                 CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
                 CloudBlobContainer cloudBlobContainer = cloudBlobClient.GetContainerReference(container);
-                var blob = cloudBlobContainer.GetBlobReference(nieuws.ImageName);
+                var blob = cloudBlobContainer.GetBlobReference(imageName);
                 await blob.DeleteIfExistsAsync();
             }
 

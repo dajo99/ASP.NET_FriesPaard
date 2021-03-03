@@ -1,44 +1,62 @@
-﻿@model BSFP.Models.Sponsor
+﻿@model BSFP.ViewModels.EditSponsorViewModel
 
 @{
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
-
-<h4>Sponsor</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="SponsorID" />
-            <div class="form-group">
-                <label asp-for="Titel" class="control-label"></label>
-                <input asp-for="Titel" class="form-control" />
-                <span asp-validation-for="Titel" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Omschrijving" class="control-label"></label>
-                <input asp-for="Omschrijving" class="form-control" />
-                <span asp-validation-for="Omschrijving" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="WebsiteLink" class="control-label"></label>
-                <input asp-for="WebsiteLink" class="form-control" />
-                <span asp-validation-for="WebsiteLink" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>Sponsors</h1>
+        </div>
     </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+</header>
 
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+        <h4>Deze sponsor aanpassen?</h4>
+        <hr />
+        <div class="row">
+            <div class="col-12">
+                <form asp-action="Edit" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Sponsor.SponsorID" />
+                    <div class="form-group">
+                        <label asp-for="Sponsor.Titel" class="control-label"></label>
+                        <input asp-for="Sponsor.Titel" class="form-control" />
+                        <span asp-validation-for="Sponsor.Titel" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Sponsor.Omschrijving" class="control-label"></label>
+                        <textarea asp-for="Sponsor.Omschrijving" class="form-control" cols="100" rows="5" placeholder="Geef extra info"></textarea>
+                        <span asp-validation-for="Sponsor.Omschrijving" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Sponsor.WebsiteLink" class="control-label"></label>
+                        <input asp-for="Sponsor.WebsiteLink" class="form-control" />
+                        <span asp-validation-for="Sponsor.WebsiteLink" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-5">
+                        <label asp-for="Sponsor.File" class="control-label">Voeg een foto toe</label>
+                        <input asp-for="Sponsor.File" class="form-control" accept="image/*" onchange="document.getElementById('DemoImage').src = window.URL.createObjectURL(this.files[0])" />
+                        <img id="DemoImage" src="~/Images/demo.png" class="text-center" alt="" width="200" height="200" style="border:1px ;margin-top:20px; margin-left:120px;" />
+
+                        <span asp-validation-for="Sponsor.File" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </section>
+</main>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

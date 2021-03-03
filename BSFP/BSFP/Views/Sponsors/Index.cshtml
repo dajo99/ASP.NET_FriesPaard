@@ -2,8 +2,28 @@
 
 @{
     ViewData["Title"] = "Index";
+    int getal = 0;
 }
+<style>
+    .MP_IMG {
+        float: left;
+        max-width: none !important;
+        position: absolute;
+        left: 25%;
+        top: 50%;
+        height: 65%;
+        width: auto;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }
 
+    .fill {
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+    }
+</style>
 <header class="intro bg-image">
     <div class="overlay"></div>
     <div class="intro-content">
@@ -28,32 +48,31 @@
         </header>
         @foreach (var item in Model.SponsorLijst)
         {
-        <article class="row justify-content-center">
-            <div class="col-12 col-md-9 mt-2 mb-4">
-                <div class="accordion">
-                    <header>
-                        <h3>
-                            <button class="btn dropdown-toggle btn-style collapsed" data-toggle="collapse"
-                                    data-target="#collapseOne" aria-controls="collapseOne" type="button"
-                                    id="dropdownMenuButton1" aria-haspopup="true" aria-expanded="false">
-                                <img class="img-fluid" src="@Html.DisplayFor(modelItem => item.ImagePath)" />
-                                @Html.DisplayFor(modelItem => item.Titel)
-                                <i class="fas fa-chevron-down float-right"></i>
-                            </button>
-                        </h3>
-                    </header>
-                    <div class="collapse" aria-labelledby="dropdownMenuButton1" id="collapseOne">
-                        <div class="accordion-content pt-4">
-                            <ul>
-                                <li>
-                                    @Html.Raw(item.Omschrijving);
-                                </li>
-                            </ul>
+            getal += 1;
+            string collapse = "Collapse" + getal;
+            <article class="row justify-content-center">
+                <div class="col-12 col-md-9 mt-2 mb-4">
+                    <div class="accordion">
+                        <button class="btn dropdown-toggle btn-style collapsed" data-toggle="collapse"
+                                data-target="#@collapse" aria-controls="@collapse" type="button"
+                                aria-haspopup="true" aria-expanded="false">
+                            @Html.DisplayFor(modelItem => item.Titel)
+                            <i class="fas fa-chevron-down float-right"></i>
+                        </button>
+                        @if (this.User.IsInRole("Admin"))
+                        {
+                            <a asp-action="Edit" asp-route-id="@item.SponsorID"> Edit |</a>
+                            <a asp-action="Delete" asp-route-id="@item.SponsorID"> Delete</a>
+                        }
+                        <div class="collapse" id="@collapse">
+                            <div class="accordion-content pt-4 row d-flex">
+                                <div class="col-sm-12 col-md-6 col-lg-6 fill" style="background-image:url(@Html.DisplayFor(modelItem => item.ImagePath)); height:200px"></div>
+                                <div class="col-sm-12 col-md-6 col-lg-6 text-center">@Html.Raw(item.Omschrijving)</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </article>
+            </article>
 
         }
     </section>

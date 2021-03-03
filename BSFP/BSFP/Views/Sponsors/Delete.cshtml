@@ -4,36 +4,45 @@
     ViewData["Title"] = "Delete";
 }
 
-<h1>Delete</h1>
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>Sponsors</h1>
+        </div>
+    </div>
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>Sponsor</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Titel)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Titel)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Omschrijving)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Omschrijving)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.WebsiteLink)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.WebsiteLink)
-        </dd>
-    </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="SponsorID" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
-</div>
+</header>
+
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+        <h4>Wilt u deze sponsor verwijderen?</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Titel)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Titel)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Omschrijving)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Omschrijving)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.WebsiteLink)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.WebsiteLink)
+            </dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="SponsorID" />
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            <a asp-action="Index">Back to List</a>
+        </form>
+    </section>
+</main>

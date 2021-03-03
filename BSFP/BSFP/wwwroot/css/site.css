@@ -258,8 +258,8 @@ body.safari .bg-image {
 //--//-->  Sponsors
 ======================================*/
 .accordion button {
-    background-color: white;
-    color: #555;
+    background-color: #1C3153;
+    color: white;
     box-shadow: 0px 8px 15px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
     font-size: 16px;
@@ -267,10 +267,17 @@ body.safari .bg-image {
     width: 100%;
     text-align: left;
     position: relative;
-    height: 220px;
+    height: 70px;
     padding-left: 1.3em;
     padding-right: 1.3em;
 }
+
+    .accordion button:hover {
+        color: #caa500;
+        background-color: #1C3153;
+    }
+
+
 
     .accordion button:focus {
         outline: 0;
@@ -309,7 +316,7 @@ body.safari .bg-image {
 
         .accordion .accordion-content a:hover,
         .accordion .accordion-content a:focus {
-            color: #4d699d;
+            color: #caa500;
             background-color: white;
         }
 
@@ -337,6 +344,7 @@ body.safari .bg-image {
 .accordion .accordion-content {
     width: 100%;
     border: none;
+    margin-left:1px;
 }
 
 .accordion ul {

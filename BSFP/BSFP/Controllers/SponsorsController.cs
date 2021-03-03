@@ -52,16 +52,106 @@ namespace BSFP.Controllers
         {
             if (ModelState.IsValid)
             {
-                Nieuws nieuws = await BlobCRUD.CreateBlobFile("sponsors", viewModel.Sponsor.File, _configuration);
+                BlobCRUD blob = await BlobCRUD.CreateBlobFile("sponsors", viewModel.Sponsor.File, _configuration);
 
-                viewModel.Sponsor.ImageName = nieuws.ImageName;
-                viewModel.Sponsor.ImagePath = nieuws.ImagePath;
+                viewModel.Sponsor.ImageName = blob.ImageName;
+                viewModel.Sponsor.ImagePath = blob.ImagePath;
                 _uow.SponsorRepository.Create(viewModel.Sponsor);
                 await _uow.Save();
                 return RedirectToAction(nameof(Index));
             }
 
             return View(viewModel);
+        }
+
+        // GET: Sponsor/Delete/5
+        public async Task<IActionResult> Delete(int id)
+        {
+            var sponsor = await _uow.SponsorRepository.GetById(id);
+            if (sponsor == null)
+            {
+                return NotFound();
+            }
+
+            return View(sponsor);
+        }
+
+        // GET: Sponsor/Edit/5
+        public async Task<IActionResult> Edit(int id)
+        {
+            var sponsor = await _uow.SponsorRepository.GetById(id);
+            EditSponsorViewModel viewModel = new EditSponsorViewModel();
+            viewModel.Sponsor = sponsor;
+            if (viewModel.Sponsor == null)
+            {
+                return NotFound();
+            }
+            return View(viewModel);
+        }
+
+        // POST: Sponsor/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, EditSponsorViewModel viewModel)
+        {
+            if (id != viewModel.Sponsor.SponsorID)
+            {
+                return NotFound();
+            }
+
+            Sponsor sponsor = await _uow.SponsorRepository.GetById(id);
+            if (ModelState.IsValid)
+            {
+
+                try
+                {
+                    sponsor.Titel = viewModel.Sponsor.Titel;
+                    sponsor.WebsiteLink = viewModel.Sponsor.WebsiteLink;
+                    sponsor.Omschrijving = viewModel.Sponsor.Omschrijving;
+
+                    if (viewModel.Sponsor.File != null)
+                    {
+                        BlobCRUD blob = await BlobCRUD.EditBlobFile(sponsor.ImageName, viewModel.Sponsor.File, "sponsors", _configuration);
+                        sponsor.ImageName = blob.ImageName;
+                        sponsor.ImagePath = blob.ImagePath;
+                    }
+
+                    _uow.SponsorRepository.Update(sponsor);
+                    await _uow.Save();
+
+
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    return NotFound();
+
+                }
+
+                return RedirectToAction(nameof(Index));
+
+
+
+            }
+            return View(sponsor);
+
+        }
+
+        // POST: Sponsor/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var sponsor = await _uow.SponsorRepository.GetById(id);
+            if (sponsor.ImageName != null)
+            {
+                await BlobCRUD.DeleteBlobFile("sponsors", sponsor.ImageName, _configuration);
+            }
+
+            _uow.SponsorRepository.Delete(sponsor);
+            await _uow.Save();
+            return RedirectToAction(nameof(Index));
         }
 
 
