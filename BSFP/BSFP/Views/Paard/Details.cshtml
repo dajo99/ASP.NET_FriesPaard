@@ -8,7 +8,7 @@
     <div class="overlay"></div>
     <div class="intro-content">
         <div class="container">
-            <h1>Marktplaats</h1>
+            <h1>@Model.Paardnaam</h1>
         </div>
     </div>
 
@@ -17,9 +17,9 @@
     .MP_IMGBOX {
         position: relative;
         margin: 0px 0px 0px 15px;
-        width: 490px;
+        width: 90%;
         /* width: 625px; */
-        height: 360px;
+        height: 500px;
         overflow: hidden;
         float: left;
         margin-right: 12px;
@@ -35,7 +35,7 @@
         left: 50%;
         top: 50%;
         height: 100%;
-        width: auto;
+        width: 100%;
         -webkit-transform: translate(-50%,-50%);
         -ms-transform: translate(-50%,-50%);
         transform: translate(-50%,-50%);
@@ -62,113 +62,149 @@
         letter-spacing: 1px;
         font-weight: bold;
     }
+
+    .membergegevens{
+        color: white;
+        margin-bottom:10px;
+    }
 </style>
 <main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
     <section class="container py-4">
-        <h4>@Model.Paardnaam</h4>
-        <hr />
-        <div class="col-lg-8 col-md-12 col-sm-12">
-            <div class="row">
-                <div class="col-12" style="padding: 1px">
-                    <div class="MP_IMGBOX">
-                        <img class="MP_IMG" src="@Model.ImagePath1" />
+        <div class="row">
+            <div class="col-lg-8 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-12" style="padding: 1px">
+                        <div class="MP_IMGBOX">
+                            <img class="MP_IMG" src="@Model.ImagePath1" />
+                        </div>
                     </div>
-                </div>
-                <div class="col-12" style="padding: 11px">
-                    <div class="_ADV_Photo-sideitem row">
-                        <img class="MP_IMG" src="@Model.ImagePath1" />
+                    <div class="col-12" style="padding: 11px">
+                        <div class="_ADV_Photo-sideitem row">
+                            <img class="MP_IMG" src="@Model.ImagePath1" />
+                        </div>
+                        <div class="_ADV_Photo-sideitem row">
+                            <img class="MP_IMG" src="@Model.ImagePath1" />
+                        </div>
+                        <div class="_ADV_Photo-sideitem row">
+                            <img class="MP_IMG" src="@Model.ImagePath1" />
+                        </div>
+                        <div class="_ADV_Photo-sideitem row">
+                            <img class="MP_IMG" src="@Model.ImagePath1" />
+                        </div>
                     </div>
-                    <div class="_ADV_Photo-sideitem row">
-                        <img class="MP_IMG" src="@Model.ImagePath1" />
-                    </div>
-                    <div class="_ADV_Photo-sideitem row">
-                        <img class="MP_IMG" src="@Model.ImagePath1" />
-                    </div>
-                    <div class="_ADV_Photo-sideitem row">
-                        <img class="MP_IMG" src="@Model.ImagePath1" />
-                    </div>
-                </div>
 
+                </div>
+                <div class="row">
+                    <div class="col-12" style="margin-bottom:20px">
+                        <h3 style="margin-top:25px">
+                            Paardgegevens
+                        </h3>
+                        <hr />
+                        <div class="row">
+                            <div class="col-6">
+                                @Html.DisplayNameFor(model => model.Paardnaam)
+                            </div>
+                            <div class="col-6">
+                                @Html.DisplayFor(model => model.Paardnaam)
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                @Html.DisplayNameFor(model => model.Levensnummer)
+                            </div>
+                            <div class="col-6">
+                                @Html.DisplayFor(model => model.Levensnummer)
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                @Html.DisplayNameFor(model => model.Leeftijd)
+                            </div>
+                            <div class="col-6">
+                                @Html.DisplayFor(model => model.Leeftijd) jaar
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                @Html.DisplayNameFor(model => model.Gebruiksdiscipline)
+                            </div>
+                            <div class="col-6">
+                                @Html.DisplayFor(model => model.Gebruiksdiscipline)
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                @Html.DisplayNameFor(model => model.Stokmaat)
+                            </div>
+                            <div class="col-6">
+                                @Html.DisplayFor(model => model.Stokmaat) cm
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                @Html.DisplayNameFor(model => model.Prijs)
+                            </div>
+                            <div class="col-6">
+                                @Html.DisplayFor(model => model.Prijs) €
+                            </div>
+                        </div>
+                        <h3 style="margin-top:25px">
+                            Informatie
+                        </h3>
+                        <hr />
+                        <div class="row">
+                            <div class="col-12">
+                                @Html.Raw(Model.Informatie)
+                            </div>
+                        </div>
+                        <hr />
+                        <h3 style="margin-top:25px">
+                            Locatie paard: @Html.DisplayFor(model => model.LocatiePaard)
+                        </h3>
+                        <hr />
+                    </div>
+                </div>
             </div>
-            <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 ml-auto">
+                <div class="col-12" style="background-color: #1C3153; border: 3px solid #147e9e;">
+                    <h4 class="titelsZoekAgenda">Verkoper</h4>
+                    <div class="col-12 membergegevens">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-5">
+                                Naam:
+                            </div>
+                            <div class="col-lg-9 col-md-5">
+                                @Html.DisplayFor(model => model.CustomUser.VolledigeNaam)
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-5">
+                                Telefoon:
+                            </div>
+                            <div class="col-lg-9 col-md-5">
+                                @Html.DisplayFor(model => model.CustomUser.PhoneNumber)
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-5">
+                                @Html.DisplayNameFor(model => model.CustomUser.Email):
+                            </div>
+                            <div class="col-lg-9 col-md-5">
+                                @Html.DisplayFor(model => model.CustomUser.Email)
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-12">
-                    <hr />
-                    <h3>
-                        PAARDGEGEVENS
-                    </h3>
-                    <hr />
-                    <div class="row">
-                        <div class="col-6">
-                            @Html.DisplayNameFor(model => model.Paardnaam)
-                        </div>
-                        <div class="col-6">
-                            @Html.DisplayFor(model => model.Paardnaam)
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            @Html.DisplayNameFor(model => model.Levensnummer)
-                        </div>
-                        <div class="col-6">
-                            @Html.DisplayFor(model => model.Levensnummer)
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            @Html.DisplayNameFor(model => model.Leeftijd)
-                        </div>
-                        <div class="col-6">
-                            @Html.DisplayFor(model => model.Leeftijd)
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            @Html.DisplayNameFor(model => model.Gebruiksdiscipline)
-                        </div>
-                        <div class="col-6">
-                            @Html.DisplayFor(model => model.Gebruiksdiscipline)
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            @Html.DisplayNameFor(model => model.Stokmaat)
-                        </div>
-                        <div class="col-6">
-                            @Html.DisplayFor(model => model.Stokmaat)
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            @Html.DisplayNameFor(model => model.Prijs)
-                        </div>
-                        <div class="col-6">
-                            @Html.DisplayFor(model => model.Prijs)
-                        </div>
+                    <h4 class="titelsZoekAgenda" style="color: #1C3153">Volg ons op</h4>
+                    <div class="col-12 mb-3">
+                        <i class="fab fa-facebook-square fa-3x" style="color:#3b5998;"></i>
+                        <i class="fab fa-instagram-square fa-3x" style=" color: #E1306C"></i>
+                        <i class="fab fa-youtube-square fa-3x" style="color: #FF0000;"></i>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 ml-auto">
-            <div class="col-12" style="background-color: #1C3153; border: 3px solid #147e9e;">
-                <h4 class="titelsZoekAgenda">Verkoper</h4>
-                <form asp-controller="Agenda" asp-action="Search" method="get">
-                    <p></p>
 
-                    <div class="input-group col-12 mb-4">
-                        <input type="submit" value="Zoeken" class="form-control" style="background-color: #caa500; border: 1px solid #caa500; color:#1C3153;" />
-                    </div>
-
-                </form>
             </div>
-            <div class="col-12">
-                <h4 class="titelsZoekAgenda" style="color: #1C3153">Volg ons op</h4>
-                <div class="col-12 mb-3">
-                    <i class="fab fa-facebook-square fa-3x" style="color:#3b5998;"></i>
-                    <i class="fab fa-instagram-square fa-3x" style=" color: #E1306C"></i>
-                    <i class="fab fa-youtube-square fa-3x" style="color: #FF0000;"></i>
-                </div>
-            </div>
-
         </div>
 
 

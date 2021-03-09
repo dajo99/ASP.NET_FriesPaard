@@ -1,6 +1,8 @@
-﻿using BSFP.Data.UnitOfWork;
+﻿using BSFP.Areas.Identity.Data;
+using BSFP.Data.UnitOfWork;
 using BSFP.Models;
 using BSFP.ViewModels;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -18,11 +20,13 @@ namespace BSFP.Controllers
     {
         private readonly IUnitOfWork _uow;
         private readonly IConfiguration _configuration;
+        private readonly UserManager<CustomUser> _userManager;
 
-        public PaardController(IUnitOfWork uow, IConfiguration configuration)
+        public PaardController(IUnitOfWork uow, IConfiguration configuration, UserManager<CustomUser> userManager)
         {
             _uow = uow;
             _configuration = configuration;
+            _userManager = userManager;
         }
 
         // GET: Paard
@@ -38,6 +42,7 @@ namespace BSFP.Controllers
         public async Task<IActionResult> Details(int id)
         {
             var paard = await _uow.PaardRepository.GetById(id);
+            paard.CustomUser = await _userManager.FindByIdAsync(paard.CustomUserID);
             if (paard == null)
             {
                 return NotFound();
