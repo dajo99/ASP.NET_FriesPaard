@@ -5,24 +5,18 @@
     int getal = 0;
 }
 <style>
-    .MP_IMG {
-        float: left;
-        max-width: none !important;
-        position: absolute;
-        left: 25%;
-        top: 50%;
-        height: 65%;
-        width: auto;
-        -webkit-transform: translate(-50%,-50%);
-        -ms-transform: translate(-50%,-50%);
-        transform: translate(-50%,-50%);
+    
+    .fill {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden
     }
 
-    .fill {
-        overflow: hidden;
-        background-size: cover;
-        background-position: center;
-    }
+        .fill img {
+            flex-shrink: 0;
+            width:85%;
+        }
 </style>
 <header class="intro bg-image">
     <div class="overlay"></div>
@@ -65,9 +59,14 @@
                             <a asp-action="Delete" asp-route-id="@item.SponsorID"> Delete</a>
                         }
                         <div class="collapse" id="@collapse">
-                            <div class="accordion-content pt-4 row d-flex">
-                                <div class="col-sm-12 col-md-6 col-lg-6 fill" style="background-image:url(@Html.DisplayFor(modelItem => item.ImagePath)); height:200px"></div>
-                                <div class="col-sm-12 col-md-6 col-lg-6 text-center">@Html.Raw(item.Omschrijving)</div>
+                            <div class="accordion-content pt-4 row d-flex" style="background-color: #caa500; color: black">
+                                <div class="col-sm-12 col-md-6 col-lg-6 fill">
+                                    <img src="@item.ImagePath" />
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6 text-center">
+                                    @Html.Raw(item.Omschrijving)
+                                    <a style="background-color:transparent" href="@item.WebsiteLink">@item.WebsiteLink</a>
+                                </div>
                             </div>
                         </div>
                     </div>

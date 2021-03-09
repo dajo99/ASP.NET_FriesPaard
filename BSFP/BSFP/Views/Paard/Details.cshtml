@@ -1,0 +1,178 @@
+﻿@model BSFP.Models.Paard
+
+@{
+    ViewData["Title"] = "Marktplaats";
+}
+
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>Marktplaats</h1>
+        </div>
+    </div>
+
+</header>
+<style>
+    .MP_IMGBOX {
+        position: relative;
+        margin: 0px 0px 0px 15px;
+        width: 490px;
+        /* width: 625px; */
+        height: 360px;
+        overflow: hidden;
+        float: left;
+        margin-right: 12px;
+        /* border: 1px solid #dfe8ea; */
+        background-color: #1C3153;
+    }
+
+
+    .MP_IMG {
+        float: left;
+        max-width: none !important;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 100%;
+        width: auto;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }
+
+    ._ADV_Photo-sideitem {
+        position: relative;
+        margin: 4px 4px 10px 4px;
+        width: 117px;
+        height: 84px;
+        overflow: hidden;
+        float: left;
+        margin-bottom: 4px;
+        /* border: 1px solid #dfe8ea; */
+        background-color: #1C3153;
+    }
+
+    .titelsZoekAgenda {
+        padding: 0.6em;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.4em;
+        font-family: 'TrajanProBold';
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+</style>
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+        <h4>@Model.Paardnaam</h4>
+        <hr />
+        <div class="col-lg-8 col-md-12 col-sm-12">
+            <div class="row">
+                <div class="col-12" style="padding: 1px">
+                    <div class="MP_IMGBOX">
+                        <img class="MP_IMG" src="@Model.ImagePath1" />
+                    </div>
+                </div>
+                <div class="col-12" style="padding: 11px">
+                    <div class="_ADV_Photo-sideitem row">
+                        <img class="MP_IMG" src="@Model.ImagePath1" />
+                    </div>
+                    <div class="_ADV_Photo-sideitem row">
+                        <img class="MP_IMG" src="@Model.ImagePath1" />
+                    </div>
+                    <div class="_ADV_Photo-sideitem row">
+                        <img class="MP_IMG" src="@Model.ImagePath1" />
+                    </div>
+                    <div class="_ADV_Photo-sideitem row">
+                        <img class="MP_IMG" src="@Model.ImagePath1" />
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <hr />
+                    <h3>
+                        PAARDGEGEVENS
+                    </h3>
+                    <hr />
+                    <div class="row">
+                        <div class="col-6">
+                            @Html.DisplayNameFor(model => model.Paardnaam)
+                        </div>
+                        <div class="col-6">
+                            @Html.DisplayFor(model => model.Paardnaam)
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            @Html.DisplayNameFor(model => model.Levensnummer)
+                        </div>
+                        <div class="col-6">
+                            @Html.DisplayFor(model => model.Levensnummer)
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            @Html.DisplayNameFor(model => model.Leeftijd)
+                        </div>
+                        <div class="col-6">
+                            @Html.DisplayFor(model => model.Leeftijd)
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            @Html.DisplayNameFor(model => model.Gebruiksdiscipline)
+                        </div>
+                        <div class="col-6">
+                            @Html.DisplayFor(model => model.Gebruiksdiscipline)
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            @Html.DisplayNameFor(model => model.Stokmaat)
+                        </div>
+                        <div class="col-6">
+                            @Html.DisplayFor(model => model.Stokmaat)
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            @Html.DisplayNameFor(model => model.Prijs)
+                        </div>
+                        <div class="col-6">
+                            @Html.DisplayFor(model => model.Prijs)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 ml-auto">
+            <div class="col-12" style="background-color: #1C3153; border: 3px solid #147e9e;">
+                <h4 class="titelsZoekAgenda">Verkoper</h4>
+                <form asp-controller="Agenda" asp-action="Search" method="get">
+                    <p></p>
+
+                    <div class="input-group col-12 mb-4">
+                        <input type="submit" value="Zoeken" class="form-control" style="background-color: #caa500; border: 1px solid #caa500; color:#1C3153;" />
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-12">
+                <h4 class="titelsZoekAgenda" style="color: #1C3153">Volg ons op</h4>
+                <div class="col-12 mb-3">
+                    <i class="fab fa-facebook-square fa-3x" style="color:#3b5998;"></i>
+                    <i class="fab fa-instagram-square fa-3x" style=" color: #E1306C"></i>
+                    <i class="fab fa-youtube-square fa-3x" style="color: #FF0000;"></i>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+</main>

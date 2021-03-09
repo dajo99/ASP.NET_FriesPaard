@@ -28,6 +28,11 @@ namespace BSFP.Controllers
             return View();
         }
 
+        public IActionResult JongBSFP()
+        {
+            return View();
+        }
+
         public IActionResult Contact()
         {
             return View();

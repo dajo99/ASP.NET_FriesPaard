@@ -18,7 +18,7 @@
         <h4>Advertentie Aanmaken</h4>
         <hr />
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-12">
                 <form asp-action="Create" enctype="multipart/form-data">
                     <div class="row" style="margin:1px">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -30,9 +30,10 @@
                         <div class="form-group col-lg-6">
                             <label asp-for="Paard.Geslacht" class="control-label"></label>
                             <select asp-for="Paard.Geslacht" class="form-control">
-                                <option value="1">HENGST</option>
-                                <option value="2">MERRIE</option>
-                                <option value="3">RUIN</option>
+                                <option selected>Kies...</option>
+                                <option value="HENGST">HENGST</option>
+                                <option value="MERRIE">MERRIE</option>
+                                <option value="RUIN">RUIN</option>
                             </select>
                             <span asp-validation-for="Paard.Geslacht" class="text-danger"></span>
                         </div>
@@ -49,10 +50,11 @@
                         <div class="form-group col-lg-6">
                             <label asp-for="Paard.Gebruiksdiscipline" class="control-label"></label>
                             <select asp-for="Paard.Gebruiksdiscipline" class="form-control">
-                                <option value="1">DRESSUURPAARD</option>
-                                <option value="2">MENPAARD</option>
-                                <option value="3">TUIGPAARD</option>
-                                <option value="4">Niet van Toepassing</option>
+                                <option selected>Kies...</option>
+                                <option value="DRESSUURPAARD">DRESSUURPAARD</option>
+                                <option value="MENPAARD">MENPAARD</option>
+                                <option value="TUIGPAARD">TUIGPAARD</option>
+                                <option value="Niet van Toepassing">Niet van Toepassing</option>
                             </select>
                             <span asp-validation-for="Paard.Gebruiksdiscipline" class="text-danger"></span>
                         </div>
@@ -70,18 +72,19 @@
                         <div class="form-group col-lg-6">
                             <label asp-for="Paard.LocatiePaard" class="control-label">Locatie van het Paard</label>
                             <select asp-for="Paard.LocatiePaard" class="form-control">
-                                <option value="1">Antwerpen</option>
-                                <option value="2">Limburg</option>
-                                <option value="3">Oost-Vlaanderen</option>
-                                <option value="4">Vlaams-Brabant</option>
-                                <option value="5">West-Vlaanderen</option>
-                                <option value="6">Henegouwen</option>
-                                <option value="7">Luik</option>
-                                <option value="8">Luxemburg</option>
-                                <option value="9">Namen</option>
-                                <option value="10">Waals-Brabant</option>
-                                <option value="11">In het Buitenland</option>
-                                <option value="12">Niet van Toepassing</option>
+                                <option selected>Kies...</option>
+                                <option value="Antwerpen">Antwerpen</option>
+                                <option value="Limburg">Limburg</option>
+                                <option value="Oost-Vlaanderen">Oost-Vlaanderen</option>
+                                <option value="Vlaams-Brabant">Vlaams-Brabant</option>
+                                <option value="West-Vlaanderen">West-Vlaanderen</option>
+                                <option value="Henegouwen">Henegouwen</option>
+                                <option value="Luik">Luik</option>
+                                <option value="Luxemburg">Luxemburg</option>
+                                <option value="Namen">Namen</option>
+                                <option value="Waals-Brabant">Waals-Brabant</option>
+                                <option value="In het Buitenland">In het Buitenland</option>
+                                <option value="Niet van Toepassing">Niet van Toepassing</option>
                             </select>
                             <span asp-validation-for="Paard.LocatiePaard" class="text-danger"></span>
                         </div>
