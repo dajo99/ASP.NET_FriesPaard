@@ -56,7 +56,7 @@ namespace BSFP.Blobstorage
                 }
 
                 blob.ImageName = systemFileName;
-                blob.ImagePath = "https://bsfp.blob.core.windows.net/" + container + "/" + systemFileName;
+                blob.ImagePath = "https://bfsp.blob.core.windows.net/" + container + "/" + systemFileName;
                 blob.File = file;
                 await cloudBlobContainer.SetPermissionsAsync(permissions);
                 await using (var target = new MemoryStream())

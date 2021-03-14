@@ -1,7 +1,9 @@
 ﻿using BSFP.Areas.Identity.Data;
+using BSFP.Blobstorage;
 using BSFP.Data.UnitOfWork;
 using BSFP.Models;
 using BSFP.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -52,6 +54,7 @@ namespace BSFP.Controllers
         }
 
         // GET: Paard/Create
+        [Authorize]
         public IActionResult Create()
         {
             CreatePaardViewModel viewModel = new CreatePaardViewModel();
@@ -68,100 +71,29 @@ namespace BSFP.Controllers
         {
             if (ModelState.IsValid)
             {
-                string blobstorageconnection = _configuration.GetValue<string>("blobstorage");
+                var userid = _userManager.GetUserId(HttpContext.User);
+                viewModel.Paard.CustomUserID = userid;
 
-                byte[] dataFiles;
-                // Retrieve storage account from connection string.
-                CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(blobstorageconnection);
-                // Create the blob client.
-                CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
-                // Retrieve a reference to a container.
-                CloudBlobContainer cloudBlobContainer = cloudBlobClient.GetContainerReference("marktplaats");
+                BlobCRUD blob1 = await BlobCRUD.CreateBlobFile("marktplaats", viewModel.Paard.Image1, _configuration);
 
-                BlobContainerPermissions permissions = new BlobContainerPermissions
-                {
-                    PublicAccess = BlobContainerPublicAccessType.Blob
-                };
+                viewModel.Paard.ImageName1 = blob1.ImageName;
+                viewModel.Paard.ImagePath1 = blob1.ImagePath;
 
-                if (viewModel.Paard.Image1 != null)
-                {
-                    string systemFileName = viewModel.Paard.Image1.FileName;
-                    viewModel.Paard.ImageName1 = systemFileName;
-                    viewModel.Paard.ImagePath1 = "https://bsfp.blob.core.windows.net/marktplaats/" + systemFileName;
-                    await cloudBlobContainer.SetPermissionsAsync(permissions);
-                    await using (var target = new MemoryStream())
-                    {
-                        viewModel.Paard.Image1.CopyTo(target);
-                        dataFiles = target.ToArray();
-                    }
-                    // This also does not make a service call; it only creates a local object.
-                    CloudBlockBlob cloudBlockBlob = cloudBlobContainer.GetBlockBlobReference(systemFileName);
-                    await cloudBlockBlob.UploadFromByteArrayAsync(dataFiles, 0, dataFiles.Length);
-                }
-                else
-                {
-                    viewModel.Paard.ImagePath1 = "../Images/logo_footer.png";
-                }
+                BlobCRUD blob2 = await BlobCRUD.CreateBlobFile("marktplaats", viewModel.Paard.Image2, _configuration);
 
-                if (viewModel.Paard.Image2 != null)
-                {
-                    string systemFileName = viewModel.Paard.Image2.FileName;
-                    viewModel.Paard.ImageName2 = systemFileName;
-                    viewModel.Paard.ImagePath2 = "https://bsfp.blob.core.windows.net/marktplaats/" + systemFileName;
-                    await cloudBlobContainer.SetPermissionsAsync(permissions);
-                    await using (var target = new MemoryStream())
-                    {
-                        viewModel.Paard.Image2.CopyTo(target);
-                        dataFiles = target.ToArray();
-                    }
-                    // This also does not make a service call; it only creates a local object.
-                    CloudBlockBlob cloudBlockBlob = cloudBlobContainer.GetBlockBlobReference(systemFileName);
-                    await cloudBlockBlob.UploadFromByteArrayAsync(dataFiles, 0, dataFiles.Length);
-                }
-                else
-                {
-                    viewModel.Paard.ImagePath2 = "../Images/logo_footer.png";
-                }
+                viewModel.Paard.ImageName2 = blob2.ImageName;
+                viewModel.Paard.ImagePath2 = blob2.ImagePath;
 
-                if (viewModel.Paard.Image3 != null)
-                {
-                    string systemFileName = viewModel.Paard.Image3.FileName;
-                    viewModel.Paard.ImageName3 = systemFileName;
-                    viewModel.Paard.ImagePath3 = "https://bsfp.blob.core.windows.net/marktplaats/" + systemFileName;
-                    await cloudBlobContainer.SetPermissionsAsync(permissions);
-                    await using (var target = new MemoryStream())
-                    {
-                        viewModel.Paard.Image3.CopyTo(target);
-                        dataFiles = target.ToArray();
-                    }
-                    // This also does not make a service call; it only creates a local object.
-                    CloudBlockBlob cloudBlockBlob = cloudBlobContainer.GetBlockBlobReference(systemFileName);
-                    await cloudBlockBlob.UploadFromByteArrayAsync(dataFiles, 0, dataFiles.Length);
-                }
-                else
-                {
-                    viewModel.Paard.ImagePath4 = "../Images/logo_footer.png";
-                }
+                BlobCRUD blob3 = await BlobCRUD.CreateBlobFile("marktplaats", viewModel.Paard.Image3, _configuration);
 
-                if (viewModel.Paard.Image4 != null)
-                {
-                    string systemFileName = viewModel.Paard.Image4.FileName;
-                    viewModel.Paard.ImageName4 = systemFileName;
-                    viewModel.Paard.ImagePath4 = "https://bsfp.blob.core.windows.net/testcontainer/" + systemFileName;
-                    await cloudBlobContainer.SetPermissionsAsync(permissions);
-                    await using (var target = new MemoryStream())
-                    {
-                        viewModel.Paard.Image4.CopyTo(target);
-                        dataFiles = target.ToArray();
-                    }
-                    // This also does not make a service call; it only creates a local object.
-                    CloudBlockBlob cloudBlockBlob = cloudBlobContainer.GetBlockBlobReference(systemFileName);
-                    await cloudBlockBlob.UploadFromByteArrayAsync(dataFiles, 0, dataFiles.Length);
-                }
-                else
-                {
-                    viewModel.Paard.ImagePath4 = "../Images/logo_footer.png";
-                }
+                viewModel.Paard.ImageName3 = blob3.ImageName;
+                viewModel.Paard.ImagePath3 = blob3.ImagePath;
+
+                BlobCRUD blob4 = await BlobCRUD.CreateBlobFile("marktplaats", viewModel.Paard.Image4, _configuration);
+
+                viewModel.Paard.ImageName4 = blob4.ImageName;
+                viewModel.Paard.ImagePath4 = blob4.ImagePath;
+
                 _uow.PaardRepository.Create(viewModel.Paard);
                 await _uow.Save();
                 return RedirectToAction(nameof(Index));
@@ -171,6 +103,7 @@ namespace BSFP.Controllers
         }
 
         // GET: Paard/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int id)
         {
             var paard = await _uow.PaardRepository.GetById(id);
@@ -201,41 +134,48 @@ namespace BSFP.Controllers
 
                 try
                 {
-                    /*
-                    paard.Titel = viewModel.Nieuws.Titel;
-                    nieuws.Intro = viewModel.Nieuws.Intro;
-                    nieuws.Omschrijving = viewModel.Nieuws.Omschrijving;
 
-                    string blobstorageconnection = _configuration.GetValue<string>("blobstorage");
-                    CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(blobstorageconnection);
-                    CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
-                    string strContainerName = "testcontainer";
-                    CloudBlobContainer cloudBlobContainer = cloudBlobClient.GetContainerReference(strContainerName);
-                    var blob = cloudBlobContainer.GetBlobReference(nieuws.ImageName);
-                    await blob.DeleteIfExistsAsync();
+                    paard.Paardnaam = viewModel.Paard.Paardnaam;
+                    paard.Geslacht = viewModel.Paard.Geslacht;
+                    paard.Leeftijd = viewModel.Paard.Leeftijd;
+                    paard.Levensnummer = viewModel.Paard.Levensnummer;
+                    paard.Gebruiksdiscipline = viewModel.Paard.Gebruiksdiscipline;
+                    paard.Stokmaat = viewModel.Paard.Stokmaat;
+                    paard.Prijs = viewModel.Paard.Prijs;
+                    paard.LocatiePaard = viewModel.Paard.LocatiePaard;
+                    paard.Informatie = viewModel.Paard.Informatie;
 
-                    byte[] dataFiles;
-                    BlobContainerPermissions permissions = new BlobContainerPermissions
+                    if (viewModel.Paard.Image1 != null)
                     {
-                        PublicAccess = BlobContainerPublicAccessType.Blob
-                    };
-                    string systemFileName = viewModel.Nieuws.File.FileName;
-                    nieuws.ImageName = systemFileName;
-                    nieuws.ImagePath = "https://bsfp.blob.core.windows.net/testcontainer/" + systemFileName;
-                    await cloudBlobContainer.SetPermissionsAsync(permissions);
-                    await using (var target = new MemoryStream())
-                    {
-                        viewModel.Nieuws.File.CopyTo(target);
-                        dataFiles = target.ToArray();
+                        BlobCRUD blob1 = await BlobCRUD.EditBlobFile(paard.ImageName1, viewModel.Paard.Image1, "marktplaats", _configuration);
+                        paard.ImageName1 = blob1.ImageName;
+                        paard.ImageName2 = blob1.ImagePath;
                     }
-                    // This also does not make a service call; it only creates a local object.
-                    CloudBlockBlob cloudBlockBlob = cloudBlobContainer.GetBlockBlobReference(systemFileName);
-                    await cloudBlockBlob.UploadFromByteArrayAsync(dataFiles, 0, dataFiles.Length);
+
+                    if (viewModel.Paard.Image2 != null)
+                    {
+                        BlobCRUD blob2 = await BlobCRUD.EditBlobFile(paard.ImageName2, viewModel.Paard.Image2, "marktplaats", _configuration);
+                        paard.ImageName2 = blob2.ImageName;
+                        paard.ImageName2 = blob2.ImagePath;
+                    }
+
+                    if (viewModel.Paard.Image3 != null)
+                    {
+                        BlobCRUD blob3 = await BlobCRUD.EditBlobFile(paard.ImageName3, viewModel.Paard.Image3, "marktplaats", _configuration);
+                        paard.ImageName3 = blob3.ImageName;
+                        paard.ImageName3 = blob3.ImagePath;
+                    }
+
+                    if (viewModel.Paard.Image4 != null)
+                    {
+                        BlobCRUD blob4 = await BlobCRUD.EditBlobFile(paard.ImageName4, viewModel.Paard.Image4, "marktplaats", _configuration);
+                        paard.ImageName4 = blob4.ImageName;
+                        paard.ImageName4 = blob4.ImagePath;
+                    }
 
 
-                    _uow.NieuwsRepository.Update(nieuws);
+                    _uow.PaardRepository.Update(paard);
                     await _uow.Save();
-                    */
 
                 }
                 catch (DbUpdateConcurrencyException)
@@ -270,15 +210,25 @@ namespace BSFP.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var nieuws = await _uow.NieuwsRepository.GetById(id);
-            string blobstorageconnection = _configuration.GetValue<string>("blobstorage");
-            CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(blobstorageconnection);
-            CloudBlobClient cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
-            string strContainerName = "testcontainer";
-            CloudBlobContainer cloudBlobContainer = cloudBlobClient.GetContainerReference(strContainerName);
-            var blob = cloudBlobContainer.GetBlobReference(nieuws.ImageName);
-            await blob.DeleteIfExistsAsync();
-            _uow.NieuwsRepository.Delete(nieuws);
+            var paard = await _uow.PaardRepository.GetById(id);
+            if (paard.ImageName1 != null)
+            {
+                await BlobCRUD.DeleteBlobFile("marktplaats", paard.ImageName1, _configuration);
+            }
+
+            if (paard.ImageName2 != null)
+            {
+                await BlobCRUD.DeleteBlobFile("marktplaats", paard.ImageName2, _configuration);
+            }
+            if (paard.ImageName3 != null)
+            {
+                await BlobCRUD.DeleteBlobFile("marktplaats", paard.ImageName3, _configuration);
+            }
+            if (paard.ImageName4 != null)
+            {
+                await BlobCRUD.DeleteBlobFile("marktplaats", paard.ImageName4, _configuration);
+            }
+            _uow.PaardRepository.Delete(paard);
             await _uow.Save();
             return RedirectToAction(nameof(Index));
         }

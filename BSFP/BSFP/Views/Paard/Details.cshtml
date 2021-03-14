@@ -75,21 +75,21 @@
                 <div class="row">
                     <div class="col-12" style="padding: 1px">
                         <div class="MP_IMGBOX">
-                            <img class="MP_IMG" src="@Model.ImagePath1" />
+                            <img class="MP_IMG" id="Zoom" src="@Model.ImagePath1" />
                         </div>
                     </div>
                     <div class="col-12" style="padding: 11px">
-                        <div class="_ADV_Photo-sideitem row">
-                            <img class="MP_IMG" src="@Model.ImagePath1" />
+                        <div id="imageHorse" class="_ADV_Photo-sideitem row">
+                            <img class="MP_IMG" src="@Model.ImagePath1" onclick="getImgSrc(this)"/>
                         </div>
-                        <div class="_ADV_Photo-sideitem row">
-                            <img class="MP_IMG" src="@Model.ImagePath1" />
+                        <div id="imageHorse" class="_ADV_Photo-sideitem row">
+                            <img class="MP_IMG" src="@Model.ImagePath2" onclick="getImgSrc(this)"/>
                         </div>
-                        <div class="_ADV_Photo-sideitem row">
-                            <img class="MP_IMG" src="@Model.ImagePath1" />
+                        <div id="imageHorse" class="_ADV_Photo-sideitem row">
+                            <img class="MP_IMG" src="@Model.ImagePath3" onclick="getImgSrc(this)"/>
                         </div>
-                        <div class="_ADV_Photo-sideitem row">
-                            <img class="MP_IMG" src="@Model.ImagePath1" />
+                        <div id="imageHorse" class="_ADV_Photo-sideitem row">
+                            <img class="MP_IMG" src="@Model.ImagePath4" onclick="getImgSrc(this)"/>
                         </div>
                     </div>
 
@@ -207,8 +207,12 @@
             </div>
         </div>
 
-
-
-
     </section>
 </main>
+
+<script>
+    function getImgSrc(param) {
+        var imgSrc = $(param).attr("src");
+        document.getElementById('Zoom').src = imgSrc;
+    };
+</script>

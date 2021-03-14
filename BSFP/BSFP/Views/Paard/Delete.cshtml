@@ -1,0 +1,31 @@
+﻿@model BSFP.Models.Paard
+
+@{
+    ViewData["Title"] = "Advertentie Verwijderen";
+}
+
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>Marktplaats</h1>
+        </div>
+    </div>
+
+</header>
+
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+        <h4>Advertentie Verwijderen</h4>
+        <hr />
+        <p>
+            Wil je de advertentie van @Html.DisplayFor(model => model.Paardnaam) verwijderen?
+        </p>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="PaardID" />
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            <a asp-action="Index">Back to List</a>
+        </form>
+    </section>
+</main>

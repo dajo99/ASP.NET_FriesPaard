@@ -82,7 +82,7 @@ namespace BSFP.Controllers
         {
             if (ModelState.IsValid)
             {
-                BlobCRUD blob = await BlobCRUD.CreateBlobFile("testcontainer",viewModel.Nieuws.File, _configuration);
+                BlobCRUD blob = await BlobCRUD.CreateBlobFile("nieuws",viewModel.Nieuws.File, _configuration);
 
                 viewModel.Nieuws.ImageName = blob.ImageName;
                 viewModel.Nieuws.ImagePath = blob.ImagePath;
@@ -132,7 +132,7 @@ namespace BSFP.Controllers
 
                     if (viewModel.Nieuws.File != null)
                     {
-                        BlobCRUD blob = await BlobCRUD.EditBlobFile(nieuws.ImageName, viewModel.Nieuws.File, "testcontainer",_configuration);
+                        BlobCRUD blob = await BlobCRUD.EditBlobFile(nieuws.ImageName, viewModel.Nieuws.File, "nieuws",_configuration);
                         nieuws.ImageName = blob.ImageName;
                         nieuws.ImagePath = blob.ImagePath;
                     }
@@ -181,7 +181,7 @@ namespace BSFP.Controllers
             var nieuws = await _uow.NieuwsRepository.GetById(id);
             if (nieuws.ImageName != null)
             {
-                await BlobCRUD.DeleteBlobFile("testcontainer", nieuws.ImageName, _configuration);
+                await BlobCRUD.DeleteBlobFile("nieuws", nieuws.ImageName, _configuration);
             }
             
             _uow.NieuwsRepository.Delete(nieuws);
