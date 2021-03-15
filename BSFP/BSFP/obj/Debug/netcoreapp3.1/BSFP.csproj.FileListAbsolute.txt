@@ -696,3 +696,4 @@ D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Home\JongBSFP.c
 D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Paard\Details.cshtml.g.cs
 D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Paard\Delete.cshtml.g.cs
 D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Paard\Edit.cshtml.g.cs
+D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Home\Logout.cshtml.g.cs

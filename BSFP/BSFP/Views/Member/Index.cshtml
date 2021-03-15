@@ -1,13 +1,13 @@
 ﻿@model BSFP.ViewModels.ListMemberViewModel
 @using BSFP.Areas.Identity.Data
 
-@{ ViewData["Title"] = "Index"; }
+@{ ViewData["Title"] = "Leden"; }
 
 <header class="intro bg-image">
     <div class="overlay"></div>
     <div class="intro-content">
         <div class="container">
-            <h1>Members</h1>
+            <h1>Leden</h1>
         </div>
     </div>
 
@@ -19,7 +19,7 @@
             {
                 <div style="border: 1px solid black">
                     <div style="background-color: #1C3153">
-                        <p style="color: white; margin: 0px 10px">Memberlijst</p>
+                        <p style="color: white; margin: 0px 10px">Ledenlijst</p>
                     </div>
 
                     <form asp-controller="Member" asp-action="Search" method="get">

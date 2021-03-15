@@ -20,25 +20,15 @@ namespace BSFP.Areas.Identity.Pages.Account
         public LogoutModel(SignInManager<CustomUser> signInManager, ILogger<LogoutModel> logger)
         {
             _signInManager = signInManager;
-            _logger = logger;
+            _logger = logger;            Uitloggen();
         }
 
-        public void OnGet()
+        public IActionResult Uitloggen()
         {
-        }
-
-        public async Task<IActionResult> OnPost(string returnUrl = null)
-        {
-            await _signInManager.SignOutAsync();
+            _signInManager.SignOutAsync();
             _logger.LogInformation("User logged out.");
-            if (returnUrl != null)
-            {
-                return LocalRedirect(returnUrl);
-            }
-            else
-            {
-                return RedirectToPage();
-            }
+            return RedirectToPage("/Page", new { Area = "Logout" });
         }
+
     }
 }

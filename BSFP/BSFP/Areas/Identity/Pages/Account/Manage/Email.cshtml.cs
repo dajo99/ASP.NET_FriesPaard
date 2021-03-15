@@ -32,6 +32,7 @@ namespace BSFP.Areas.Identity.Pages.Account.Manage
 
         public string Username { get; set; }
 
+        [Display(Name = "Mail")]
         public string Email { get; set; }
 
         public bool IsEmailConfirmed { get; set; }
@@ -46,7 +47,7 @@ namespace BSFP.Areas.Identity.Pages.Account.Manage
         {
             [Required]
             [EmailAddress]
-            [Display(Name = "New email")]
+            [Display(Name = "Nieuwe mail")]
             public string NewEmail { get; set; }
         }
 

@@ -1,4 +1,6 @@
-﻿using BSFP.Models;
+﻿using BSFP.Areas.Identity.Data;
+using BSFP.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -12,10 +14,11 @@ namespace BSFP.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly SignInManager<CustomUser> _signInManager;
+        public HomeController(ILogger<HomeController> logger, SignInManager<CustomUser> signInManager)
         {
             _logger = logger;
+            _signInManager = signInManager;
         }
 
         public IActionResult Index()
@@ -40,6 +43,13 @@ namespace BSFP.Controllers
 
         public IActionResult Privacy()
         {
+            return View();
+        }
+
+        public IActionResult Logout()
+        {
+            _signInManager.SignOutAsync();
+            _logger.LogInformation("User logged out.");
             return View();
         }
 

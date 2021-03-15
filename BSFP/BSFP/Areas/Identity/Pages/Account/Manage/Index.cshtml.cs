@@ -22,7 +22,7 @@ namespace BSFP.Areas.Identity.Pages.Account.Manage
             _userManager = userManager;
             _signInManager = signInManager;
         }
-
+        [Display(Name = "Gebruikersnaam")]
         public string Username { get; set; }
 
         [TempData]
@@ -34,8 +34,14 @@ namespace BSFP.Areas.Identity.Pages.Account.Manage
         public class InputModel
         {
             [Phone]
-            [Display(Name = "Phone number")]
+            [Display(Name = "Telefoonnummer")]
             public string PhoneNumber { get; set; }
+            [Display(Name = "Voornaam")]
+            public string Voornaam { get; set; }
+            [Display(Name = "Achternaam")]
+            public string Achternaam { get; set; }
+            [Display(Name = "Lidnummer")]
+            public string Lidnummer { get; set; }
         }
 
         private async Task LoadAsync(CustomUser user)
@@ -47,7 +53,11 @@ namespace BSFP.Areas.Identity.Pages.Account.Manage
 
             Input = new InputModel
             {
-                PhoneNumber = phoneNumber
+                PhoneNumber = phoneNumber,
+                Voornaam = user.Voornaam,
+                Achternaam = user.Achternaam,
+                Lidnummer = user.Lidnummer
+
             };
         }
 
