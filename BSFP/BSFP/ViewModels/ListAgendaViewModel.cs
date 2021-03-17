@@ -10,7 +10,7 @@ namespace BSFP.ViewModels
     {
         public string SearchName { get; set; }
         public string SearchPlace { get; set; }
-        public DateTime SearchDate { get; set; }
+        public DateTime? SearchDate { get; set; }
         public List<Agenda> AgendaLijst { get; set; }
     }
 }

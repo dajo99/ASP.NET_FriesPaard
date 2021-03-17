@@ -46,13 +46,6 @@ namespace BSFP.Controllers
             return View();
         }
 
-        public IActionResult Logout()
-        {
-            _signInManager.SignOutAsync();
-            _logger.LogInformation("User logged out.");
-            return View();
-        }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

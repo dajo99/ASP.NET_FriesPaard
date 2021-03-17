@@ -1,0 +1,140 @@
+﻿@model BSFP.ViewModels.ListPaardViewModel
+
+@{
+    ViewData["Title"] = "Marktplaats";
+    int totaal = Model.PaardenLijst.Count;
+}
+
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>Mijn Advertenties</h1>
+        </div>
+    </div>
+
+</header>
+
+<style>
+    .MP_IMGBOX {
+        position: relative;
+        width: 200px;
+        height: 190px;
+        overflow: hidden;
+        margin-right: 12px;
+        border: 1px solid #dfe8ea;
+    }
+
+    .MP_IMG {
+        float: left;
+        max-width: none !important;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 100%;
+        width: auto;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }
+
+    h4 {
+        padding: 0;
+        margin: 0;
+        font: 18px/24px Helvetica, Calibri, sans-serif;
+        font-weight: 400;
+        color: #064158;
+        text-transform: uppercase;
+    }
+
+
+    .padding-0 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .advertentie-content {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #c5d5d9;
+        display: inline-block;
+        padding-bottom: 20px;
+    }
+
+        .advertentie-content h2 {
+            padding-bottom: 15px;
+            padding-top: 20px;
+        }
+
+    h2 {
+        padding: 0;
+        margin-bottom: 10px;
+        color: #1C3153;
+        text-transform: uppercase;
+        font-size: 1.4em;
+        font-family: 'TrajanProBold';
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+</style>
+
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4 ml-auto">
+                <a class="btn btn-primary col-12" style="background-color: #caa500; border: 1px solid #1C3153; color:#1C3153; margin-bottom:5px" asp-action="Create">Paard Verkopen</a>
+                <a class="btn btn-primary col-12" style="background-color: #D3D3D3; border: 1px solid #1C3153;color: #1C3153;margin-bottom: 5px" asp-action="Index">Ga Terug</a>
+
+            </div>
+            <div class="col-lg-8 col-md-12 col-sm-10 col-xs-10 order-lg-first">
+
+                <table class="table table-condensed">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th style="vertical-align:bottom ; text-align:right;">
+                                Totaal @totaal Advertenties
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.PaardenLijst)
+                        {
+                            totaal += 1;
+
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="MP_IMGBOX">
+                                        <img class="MP_IMG" src="@item.ImagePath1" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <h4>@Html.DisplayFor(modelItem => item.Paardnaam)</h4>
+                                    <div>
+                                        <p>@Html.DisplayFor(modelItem => item.Leeftijd) jaar</p>
+                                        <p>@Html.DisplayFor(modelItem => item.Geslacht)</p>
+                                        <p>@Html.DisplayFor(modelItem => item.Prijs)€</p>
+                                        <a asp-action="Details" asp-route-id="@item.PaardID">Bekijk |</a>
+                                        <a asp-action="Edit" asp-route-id="@item.PaardID"> Bewerken |</a>
+                                        <a asp-action="Delete" asp-route-id="@item.PaardID"> Verijderen</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+</main>

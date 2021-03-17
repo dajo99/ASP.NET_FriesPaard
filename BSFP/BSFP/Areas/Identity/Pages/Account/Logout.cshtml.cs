@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BSFP.Areas.Identity.Data;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -20,14 +21,25 @@ namespace BSFP.Areas.Identity.Pages.Account
         public LogoutModel(SignInManager<CustomUser> signInManager, ILogger<LogoutModel> logger)
         {
             _signInManager = signInManager;
-            _logger = logger;            Uitloggen();
+            _logger = logger;
         }
 
-        public IActionResult Uitloggen()
+        public void OnGet()
         {
-            _signInManager.SignOutAsync();
+        }
+
+        public async Task<IActionResult> OnPost(string returnUrl = null)
+        {
+            await _signInManager.SignOutAsync();
             _logger.LogInformation("User logged out.");
-            return RedirectToPage("/Page", new { Area = "Logout" });
+            if (returnUrl != null)
+            {
+                return LocalRedirect(returnUrl);
+            }
+            else
+            {
+                return RedirectToPage();
+            }
         }
 
     }

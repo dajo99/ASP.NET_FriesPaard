@@ -29,6 +29,31 @@ namespace BSFP.Controllers
             
             return View(viewModel);
         }
+        public async Task<IActionResult> Search(ListAgendaViewModel viewModel)
+        {
+            IQueryable<Agenda> queryableAgenda = _uow.AgendaRepository.GetAll().OrderBy(x => x.Datum).AsQueryable();
+
+            if (!string.IsNullOrEmpty(viewModel.SearchName))
+            {
+                queryableAgenda = queryableAgenda.Where(k => k.Omschrijving.Contains(viewModel.SearchName));
+            }
+
+            if (!string.IsNullOrEmpty(viewModel.SearchPlace))
+            {
+                queryableAgenda = queryableAgenda.Where(k => k.Locatie.Contains(viewModel.SearchPlace));
+            }
+
+            if (!string.IsNullOrEmpty(viewModel.SearchDate.ToString()))
+            {
+                queryableAgenda = queryableAgenda.Where(k => k.Datum == viewModel.SearchDate);
+            }
+
+
+
+            viewModel.AgendaLijst = await queryableAgenda.ToListAsync();
+
+            return View("Index", viewModel);
+        }
 
         // GET: Agenda/Details/5
         public async Task<IActionResult> Details(int id)

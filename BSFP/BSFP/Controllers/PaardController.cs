@@ -40,6 +40,16 @@ namespace BSFP.Controllers
             return View(viewModel);
         }
 
+        [Authorize]
+        public async Task<IActionResult> EigenAdvertenties()
+        {
+            var userid = _userManager.GetUserId(HttpContext.User);
+            ListPaardViewModel viewModel = new ListPaardViewModel();
+            viewModel.PaardenLijst = await _uow.PaardRepository.GetAll().Where(x => x.CustomUserID == userid).ToListAsync();
+
+            return View(viewModel);
+        }
+
         // GET: Paard/Details/5
         public async Task<IActionResult> Details(int id)
         {

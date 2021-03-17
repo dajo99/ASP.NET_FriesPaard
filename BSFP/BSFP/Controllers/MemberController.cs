@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace BSFP.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public class MemberController : Controller
     {
         private readonly RoleManager<IdentityRole> _roleManager;
@@ -33,17 +33,8 @@ namespace BSFP.Controllers
         {
             ListMemberViewModel viewModel = new ListMemberViewModel();
             viewModel.Members = new List<CustomUser>();
-            if (User.IsInRole("Admin"))
-            {
-                viewModel.Members = await _uow.UserRepository.GetAll().ToListAsync();
-            }
-            else
-            {
-                var userid = _userManager.GetUserId(HttpContext.User);
-                CustomUser user = await _userManager.FindByIdAsync(userid);
-                viewModel.Members.Add(user);
-            }
-
+            viewModel.Members = await _uow.UserRepository.GetAll().ToListAsync();
+           
             return View(viewModel);
         }
 
