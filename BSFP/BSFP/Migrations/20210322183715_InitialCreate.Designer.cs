@@ -10,14 +10,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BSFP.Migrations
 {
     [DbContext(typeof(BSFPContext))]
-    [Migration("20210129204726_InitialCreate")]
+    [Migration("20210322183715_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.10")
+                .HasAnnotation("ProductVersion", "3.1.12")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -30,6 +30,7 @@ namespace BSFP.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Achternaam")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ConcurrencyStamp")
@@ -42,6 +43,10 @@ namespace BSFP.Migrations
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
+
+                    b.Property<string>("Lidnummer")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
@@ -77,6 +82,7 @@ namespace BSFP.Migrations
                         .HasMaxLength(256);
 
                     b.Property<string>("Voornaam")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -120,6 +126,140 @@ namespace BSFP.Migrations
                     b.HasKey("AgendaID");
 
                     b.ToTable("Agenda");
+                });
+
+            modelBuilder.Entity("BSFP.Models.Nieuws", b =>
+                {
+                    b.Property<int>("NieuwsID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Datum")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ImageName")
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("ImagePath")
+                        .HasColumnType("varchar(250)");
+
+                    b.Property<string>("Intro")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Omschrijving")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Titel")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("NieuwsID");
+
+                    b.ToTable("Nieuws");
+                });
+
+            modelBuilder.Entity("BSFP.Models.Paard", b =>
+                {
+                    b.Property<int>("PaardID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Aanmaakdatum")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CustomUserID")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Gebruiksdiscipline")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Geslacht")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageName1")
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("ImageName2")
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("ImageName3")
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("ImageName4")
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("ImagePath1")
+                        .HasColumnType("varchar(250)");
+
+                    b.Property<string>("ImagePath2")
+                        .HasColumnType("varchar(250)");
+
+                    b.Property<string>("ImagePath3")
+                        .HasColumnType("varchar(250)");
+
+                    b.Property<string>("ImagePath4")
+                        .HasColumnType("varchar(250)");
+
+                    b.Property<string>("Informatie")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Leeftijd")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Levensnummer")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LocatiePaard")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Niveau")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Paardnaam")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Prijs")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Stokmaat")
+                        .HasColumnType("int");
+
+                    b.HasKey("PaardID");
+
+                    b.HasIndex("CustomUserID");
+
+                    b.ToTable("Paarden");
+                });
+
+            modelBuilder.Entity("BSFP.Models.Sponsor", b =>
+                {
+                    b.Property<int>("SponsorID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ImageName")
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("ImagePath")
+                        .HasColumnType("varchar(250)");
+
+                    b.Property<string>("Omschrijving")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Titel")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("WebsiteLink")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("SponsorID");
+
+                    b.ToTable("Sponsors");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -255,6 +395,13 @@ namespace BSFP.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("BSFP.Models.Paard", b =>
+                {
+                    b.HasOne("BSFP.Areas.Identity.Data.CustomUser", "CustomUser")
+                        .WithMany("Paarden")
+                        .HasForeignKey("CustomUserID");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

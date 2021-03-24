@@ -58,12 +58,48 @@ namespace BSFP.Migrations
                     LockoutEnd = table.Column<DateTimeOffset>(nullable: true),
                     LockoutEnabled = table.Column<bool>(nullable: false),
                     AccessFailedCount = table.Column<int>(nullable: false),
-                    Voornaam = table.Column<string>(nullable: true),
-                    Achternaam = table.Column<string>(nullable: true)
+                    Voornaam = table.Column<string>(nullable: false),
+                    Achternaam = table.Column<string>(nullable: false),
+                    Lidnummer = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Nieuws",
+                columns: table => new
+                {
+                    NieuwsID = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ImageName = table.Column<string>(type: "varchar(50)", nullable: true),
+                    ImagePath = table.Column<string>(type: "varchar(250)", nullable: true),
+                    Titel = table.Column<string>(nullable: false),
+                    Intro = table.Column<string>(nullable: false),
+                    Omschrijving = table.Column<string>(nullable: false),
+                    Datum = table.Column<DateTime>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Nieuws", x => x.NieuwsID);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Sponsors",
+                columns: table => new
+                {
+                    SponsorID = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Titel = table.Column<string>(nullable: true),
+                    Omschrijving = table.Column<string>(nullable: true),
+                    WebsiteLink = table.Column<string>(nullable: true),
+                    ImageName = table.Column<string>(type: "varchar(50)", nullable: true),
+                    ImagePath = table.Column<string>(type: "varchar(250)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Sponsors", x => x.SponsorID);
                 });
 
             migrationBuilder.CreateTable(
@@ -172,6 +208,44 @@ namespace BSFP.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Paarden",
+                columns: table => new
+                {
+                    PaardID = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LocatiePaard = table.Column<string>(nullable: true),
+                    Paardnaam = table.Column<string>(nullable: true),
+                    Geslacht = table.Column<string>(nullable: true),
+                    Leeftijd = table.Column<int>(nullable: false),
+                    Levensnummer = table.Column<string>(nullable: true),
+                    Gebruiksdiscipline = table.Column<string>(nullable: true),
+                    Niveau = table.Column<string>(nullable: true),
+                    Stokmaat = table.Column<int>(nullable: false),
+                    Prijs = table.Column<int>(nullable: false),
+                    Informatie = table.Column<string>(nullable: true),
+                    Aanmaakdatum = table.Column<DateTime>(nullable: false),
+                    ImageName1 = table.Column<string>(type: "varchar(50)", nullable: true),
+                    ImagePath1 = table.Column<string>(type: "varchar(250)", nullable: true),
+                    ImageName2 = table.Column<string>(type: "varchar(50)", nullable: true),
+                    ImagePath2 = table.Column<string>(type: "varchar(250)", nullable: true),
+                    ImageName3 = table.Column<string>(type: "varchar(50)", nullable: true),
+                    ImagePath3 = table.Column<string>(type: "varchar(250)", nullable: true),
+                    ImageName4 = table.Column<string>(type: "varchar(50)", nullable: true),
+                    ImagePath4 = table.Column<string>(type: "varchar(250)", nullable: true),
+                    CustomUserID = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Paarden", x => x.PaardID);
+                    table.ForeignKey(
+                        name: "FK_Paarden_AspNetUsers_CustomUserID",
+                        column: x => x.CustomUserID,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -210,6 +284,11 @@ namespace BSFP.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Paarden_CustomUserID",
+                table: "Paarden",
+                column: "CustomUserID");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -231,6 +310,15 @@ namespace BSFP.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "Nieuws");
+
+            migrationBuilder.DropTable(
+                name: "Paarden");
+
+            migrationBuilder.DropTable(
+                name: "Sponsors");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
