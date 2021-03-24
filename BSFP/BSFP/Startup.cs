@@ -136,15 +136,15 @@ namespace BSFP
             }
 
             //Main user aanmaken
-            CustomUser exist = await _userManager.FindByEmailAsync("bsfpAdmin@gmail.com");
+            CustomUser exist = await _userManager.FindByEmailAsync("bsfptest@gmail.com");
             if (exist == null)
             {
-                var admin = new CustomUser { UserName = "Admin", Email = "bsfpAdmin@gmail.com", Voornaam = "Admin", Achternaam = "BSFP",Lidnummer="BSFP123456789", EmailConfirmed = true};
+                var admin = new CustomUser { UserName = "Admintest", Email = "bsfptest@gmail.com", Voornaam = "Admintest", Achternaam = "BSFP",Lidnummer="BSFP123456789", PhoneNumber="0473576120", EmailConfirmed = true};
                 var result = await _userManager.CreateAsync(admin, "Campus99");
                 if (result.Succeeded)
                 {
                     // Assign Admin role to the main user.
-                    IdentityUser user = Context.Users.FirstOrDefault(u => u.Email == "bsfpAdmin@gmail.com");
+                    IdentityUser user = Context.Users.FirstOrDefault(u => u.Email == "bsfptest@gmail.com");
                     if (user != null)
                     {
                         DbSet<IdentityUserRole<string>> roles = Context.UserRoles;

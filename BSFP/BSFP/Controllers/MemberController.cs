@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace BSFP.Controllers
 {
-    [Authorize(Roles = "Member")]
+    [Authorize(Roles = "Admin")]
     public class MemberController : Controller
     {
         private readonly RoleManager<IdentityRole> _roleManager;
