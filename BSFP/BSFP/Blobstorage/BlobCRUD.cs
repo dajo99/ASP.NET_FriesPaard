@@ -70,7 +70,7 @@ namespace BSFP.Blobstorage
             }
             else
             {
-                blob.ImagePath = "../Images/logo_footer.png";
+                blob.ImagePath = "/Images/logo_footer.png";
             }
             return blob;
         }

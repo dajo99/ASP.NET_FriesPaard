@@ -22,6 +22,7 @@
                 <form asp-action="Edit" enctype="multipart/form-data">
                     <div class="row" style="margin:1px">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="Paard.PaardID" />
                         <div class="form-group col-lg-6">
                             <label asp-for="Paard.Paardnaam" class="control-label">Naam van het Paard</label>
                             <input asp-for="Paard.Paardnaam" class="form-control" />
@@ -98,30 +99,30 @@
 
                     <div class="row" style="margin:1px">
                         <div id="divImage1" class="form-group col-6">
-                            <label asp-for="Paard.Image1" class="control-label">Voeg foto 1 toe</label>
+                            <label asp-for="Paard.Image1" class="control-label">Foto 1</label>
                             <input id="inputImage1" asp-for="Paard.Image1" class="form-control" accept="image/*" />
-                            <img id="Image1" src="~/Images/demo.png" class="text-center" alt="" width="200" height="200" style="border:1px ;margin-top:20px; margin-left:120px;" />
+                            <img id="Image1" src="@Model.Paard.ImagePath1" class="text-center" alt="" width="200" height="200" style="border:1px ;margin-top:20px; margin-left:120px;" />
 
                             <span asp-validation-for="Paard.Image1" class="text-danger"></span>
                         </div>
-                        <div id="divImage2" class="form-group col-6" style="visibility:hidden">
-                            <label asp-for="Paard.Image2" class="control-label">Nog een 2de foto?</label>
+                        <div id="divImage2" class="form-group col-6" >
+                            <label asp-for="Paard.Image2" class="control-label">Foto 2</label>
                             <input id="inputImage2" asp-for="Paard.Image2" class="form-control" accept="image/* " />
-                            <img id="Image2" src="~/Images/demo.png" class="text-center" alt="" width="200" height="200" style="border:1px ;margin-top:20px; margin-left:120px;" />
+                            <img id="Image2" src="@Model.Paard.ImagePath2" class="text-center" alt="" width="200" height="200" style="border:1px ;margin-top:20px; margin-left:120px;" />
 
                             <span asp-validation-for="Paard.Image2" class="text-danger"></span>
                         </div>
-                        <div id="divImage3" class="form-group col-6" style="visibility:hidden">
-                            <label asp-for="Paard.Image3" class="control-label">Nog een 3de foto?</label>
+                        <div id="divImage3" class="form-group col-6">
+                            <label asp-for="Paard.Image3" class="control-label">Foto 3</label>
                             <input id="inputImage3" asp-for="Paard.Image3" class="form-control" accept="image/*" />
-                            <img id="Image3" src="~/Images/demo.png" class="text-center" alt="" width="200" height="200" style="border:1px ;margin-top:20px; margin-left:120px;" />
+                            <img id="Image3" src="@Model.Paard.ImagePath3" class="text-center" alt="" width="200" height="200" style="border:1px ;margin-top:20px; margin-left:120px;" />
 
                             <span asp-validation-for="Paard.Image3" class="text-danger"></span>
                         </div>
-                        <div id="divImage4" class="form-group col-6" style="visibility:hidden">
-                            <label asp-for="Paard.Image4" class="control-label">Nog een 4de foto?</label>
+                        <div id="divImage4" class="form-group col-6">
+                            <label asp-for="Paard.Image4" class="control-label">Foto 4</label>
                             <input id="inputImage4" asp-for="Paard.Image4" class="form-control" accept="image/*" onchange="document.getElementById('Image4').src = window.URL.createObjectURL(this.files[0])" />
-                            <img id="Image4" src="~/Images/demo.png" class="text-center" alt="" width="200" height="200" style="border:1px ;margin-top:20px; margin-left:120px;" />
+                            <img id="Image4" src="@Model.Paard.ImagePath4" class="text-center" alt="" width="200" height="200" style="border:1px ;margin-top:20px; margin-left:120px;" />
 
                             <span asp-validation-for="Paard.Image4" class="text-danger"></span>
                         </div>
@@ -129,7 +130,7 @@
 
 
                     <div class="form-group">
-                        <input type="submit" value="Create" class="btn btn-primary" />
+                        <input type="submit" value="Opslaan" class="btn btn-primary" />
                     </div>
 
                 </form>
@@ -141,27 +142,6 @@
         </div>
     </section>
 </main>
-
-<script>
-    document.getElementById('inputImage1').addEventListener('change', function(event){
-        document.getElementById('Image1').src = window.URL.createObjectURL(this.files[0])
-        var x = document.getElementById("divImage2");
-        x.style.visibility = "visible";
-    });
-
-    document.getElementById('inputImage2').addEventListener('change', function (event) {
-        document.getElementById('Image2').src = window.URL.createObjectURL(this.files[0])
-        var x = document.getElementById("divImage3");
-        x.style.visibility = "visible";
-    });
-
-    document.getElementById('inputImage3').addEventListener('change', function (event) {
-        document.getElementById('Image3').src = window.URL.createObjectURL(this.files[0])
-        var x = document.getElementById("divImage4");
-        x.style.visibility = "visible";
-    });
-
-</script>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

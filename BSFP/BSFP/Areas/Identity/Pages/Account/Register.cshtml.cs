@@ -103,7 +103,7 @@ namespace BSFP.Areas.Identity.Pages.Account
                     var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     var confirmationLink = Url.Action("ConfirmEmail", "Email", new { token, email = user.Email }, Request.Scheme);
                     EmailHelper emailHelper = new EmailHelper();
-                    bool emailResponse = emailHelper.SendEmail(user.Email, confirmationLink);
+                    bool emailResponse = emailHelper.SendConfirmationEmail(user.Email, confirmationLink);
 
                     if (emailResponse)
                     {

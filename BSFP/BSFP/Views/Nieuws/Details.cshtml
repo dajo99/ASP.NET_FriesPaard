@@ -55,18 +55,17 @@
     <section class="container py-4">
         <article>
             <section>
-                <h2 class="entry-title mt-2" style="margin-left:10px">@Html.DisplayFor(model => model.Titel)</h2>
-                <div class="td-module-meta-info" style="margin-left:10px">
-                    <span class="td-post-date td-post-date-no-dot">@Convert.ToDateTime(datum).ToString("MMMM dd, yyyy")</span>
-                </div>
-                <br />
-                @if (Model.ImageName != null)
-                {
-                    <img src="@Model.ImagePath" class="img-fluid col-12" />
-                    <br />
-                }
                 <div class="col-12 mt-2" style="margin-left:10px">
-
+                    <h2 class="entry-title mt-2" style="margin-left:10px">@Html.DisplayFor(model => model.Titel)</h2>
+                    <div class="td-module-meta-info" style="margin-left:10px">
+                        <span class="td-post-date td-post-date-no-dot">@Convert.ToDateTime(datum).ToString("MMMM dd, yyyy")</span>
+                    </div>
+                    <br />
+                    @if (Model.ImageName != null)
+                    {
+                        <img src="@Model.ImagePath" class="img-fluid col-12 mb-4" />
+                        <br />
+                    }
                     @Html.Raw(Model.Omschrijving);
                 </div>
                 <div class="text-center">

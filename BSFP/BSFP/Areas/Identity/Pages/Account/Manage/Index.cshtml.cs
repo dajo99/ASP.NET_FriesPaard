@@ -98,9 +98,19 @@ namespace BSFP.Areas.Identity.Pages.Account.Manage
                 }
             }
 
+            var userRest = await _userManager.GetUserAsync(HttpContext.User);
+            userRest.Voornaam = Input.Voornaam;
+            userRest.Achternaam = Input.Achternaam;
+            userRest.UserName = Input.Voornaam;
+            userRest.Lidnummer = Input.Lidnummer;
+
+            var result = await _userManager.UpdateAsync(userRest);
+
             await _signInManager.RefreshSignInAsync(user);
             StatusMessage = "Your profile has been updated";
             return RedirectToPage();
+
+
         }
     }
 }

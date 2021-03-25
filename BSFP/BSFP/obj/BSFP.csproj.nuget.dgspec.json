@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leenf\\Documents\\Dajo\\BSFP\\BSFP\\BSFP\\BSFP.csproj": {}
+    "D:\\Bureaublad\\BSFP\\BSFP\\BSFP\\BSFP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leenf\\Documents\\Dajo\\BSFP\\BSFP\\BSFP\\BSFP.csproj": {
+    "D:\\Bureaublad\\BSFP\\BSFP\\BSFP\\BSFP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leenf\\Documents\\Dajo\\BSFP\\BSFP\\BSFP\\BSFP.csproj",
+        "projectUniqueName": "D:\\Bureaublad\\BSFP\\BSFP\\BSFP\\BSFP.csproj",
         "projectName": "BSFP",
-        "projectPath": "C:\\Users\\leenf\\Documents\\Dajo\\BSFP\\BSFP\\BSFP\\BSFP.csproj",
-        "packagesPath": "C:\\Users\\leenf\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leenf\\Documents\\Dajo\\BSFP\\BSFP\\BSFP\\obj\\",
+        "projectPath": "D:\\Bureaublad\\BSFP\\BSFP\\BSFP\\BSFP.csproj",
+        "packagesPath": "C:\\Users\\alain\\.nuget\\packages\\",
+        "outputPath": "D:\\Bureaublad\\BSFP\\BSFP\\BSFP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\leenf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alain\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -187,7 +187,11 @@
                                         <p>@Html.DisplayFor(modelItem => item.Leeftijd) jaar</p>
                                         <p>@Html.DisplayFor(modelItem => item.Geslacht)</p>
                                         <p>@Html.DisplayFor(modelItem => item.Prijs)€</p>
-                                        <a asp-action="Details" asp-route-id="@item.PaardID">Advertentie bekijken</a>
+                                        <a asp-action="Details" asp-route-id="@item.PaardID">Advertentie bekijken </a>
+                                        @if (User.IsInRole("Admin"))
+                                        {
+                                            <a asp-action="Delete" asp-route-id="@item.PaardID">| Verwijderen</a>
+                                        }
                                     </div>
                                 </td>
                             </tr>
