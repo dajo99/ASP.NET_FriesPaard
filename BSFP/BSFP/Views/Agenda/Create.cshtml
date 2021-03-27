@@ -51,15 +51,16 @@
                         <input asp-for="Agenda.Locatie" class="form-control" />
                         <span asp-validation-for="Agenda.Locatie" class="text-danger"></span>
                     </div>
-                    <div class="form-group">
-                        <input type="submit" value="Create" class="btn btn-primary" />
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <a class="btn btn-primary col-5" style="background-color: #caa500; border: 1px solid #1C3153; color:#1C3153; margin-bottom:5px" asp-action="Index">Terug</a>
+                        </div>
+                        <div class="form-group col-6 text-right">
+                            <input type="submit" value="Plaatsen" class="btn btn-primary col-5" />
+                        </div>
                     </div>
                 </form>
             </div>
-        </div>
-
-        <div>
-            <a asp-action="Index">Terug naar overzicht</a>
         </div>
     </section>
 </main>

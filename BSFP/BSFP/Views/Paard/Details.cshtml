@@ -13,83 +13,29 @@
     </div>
 
 </header>
-<style>
-    .MP_IMGBOX {
-        position: relative;
-        margin: 0px 0px 0px 15px;
-        width: 90%;
-        /* width: 625px; */
-        height: 500px;
-        overflow: hidden;
-        float: left;
-        margin-right: 12px;
-        /* border: 1px solid #dfe8ea; */
-        background-color: #1C3153;
-    }
 
-
-    .MP_IMG {
-        float: left;
-        max-width: none !important;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        height: 100%;
-        width: 100%;
-        -webkit-transform: translate(-50%,-50%);
-        -ms-transform: translate(-50%,-50%);
-        transform: translate(-50%,-50%);
-    }
-
-    ._ADV_Photo-sideitem {
-        position: relative;
-        margin: 4px 4px 10px 4px;
-        width: 117px;
-        height: 84px;
-        overflow: hidden;
-        float: left;
-        margin-bottom: 4px;
-        /* border: 1px solid #dfe8ea; */
-        background-color: #1C3153;
-    }
-
-    .titelsZoekAgenda {
-        padding: 0.6em;
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 1.4em;
-        font-family: 'TrajanProBold';
-        letter-spacing: 1px;
-        font-weight: bold;
-    }
-
-    .membergegevens{
-        color: white;
-        margin-bottom:10px;
-    }
-</style>
 <main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
     <section class="container py-4">
         <div class="row">
             <div class="col-lg-8 col-md-12 col-sm-12">
                 <div class="row">
                     <div class="col-12" style="padding: 1px">
-                        <div class="MP_IMGBOX">
-                            <img class="MP_IMG" id="Zoom" src="@Model.ImagePath1" />
+                        <div class="MP_IMGBOX_Markt">
+                            <img class="MP_IMG_MarktGroot" id="Zoom" src="@Model.ImagePath1" />
                         </div>
                     </div>
                     <div class="col-12" style="padding: 11px">
-                        <div id="imageHorse" class="_ADV_Photo-sideitem row">
-                            <img class="MP_IMG" src="@Model.ImagePath1" onclick="getImgSrc(this)"/>
+                        <div id="imageHorse" class="_ADV_Photo-sideitem_Markt row">
+                            <img class="MP_IMG_Markt" src="@Model.ImagePath1" onclick="getImgSrc(this)"/>
                         </div>
-                        <div id="imageHorse" class="_ADV_Photo-sideitem row">
-                            <img class="MP_IMG" src="@Model.ImagePath2" onclick="getImgSrc(this)"/>
+                        <div id="imageHorse" class="_ADV_Photo-sideitem_Markt row">
+                            <img class="MP_IMG_Markt" src="@Model.ImagePath2" onclick="getImgSrc(this)"/>
                         </div>
-                        <div id="imageHorse" class="_ADV_Photo-sideitem row">
-                            <img class="MP_IMG" src="@Model.ImagePath3" onclick="getImgSrc(this)"/>
+                        <div id="imageHorse" class="_ADV_Photo-sideitem_Markt row">
+                            <img class="MP_IMG_Markt" src="@Model.ImagePath3" onclick="getImgSrc(this)"/>
                         </div>
-                        <div id="imageHorse" class="_ADV_Photo-sideitem row">
-                            <img class="MP_IMG" src="@Model.ImagePath4" onclick="getImgSrc(this)"/>
+                        <div id="imageHorse" class="_ADV_Photo-sideitem_Markt row">
+                            <img class="MP_IMG_Markt" src="@Model.ImagePath4" onclick="getImgSrc(this)"/>
                         </div>
                     </div>
 
@@ -167,7 +113,7 @@
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12 ml-auto">
                 <div class="col-12" style="background-color: #1C3153; border: 3px solid #147e9e;">
-                    <h4 class="titelsZoekAgenda">Verkoper</h4>
+                    <h4 class="titelsZoek_Markt">Verkoper</h4>
                     <div class="col-12 membergegevens">
                         <div class="row">
                             <div class="col-lg-3 col-md-5">
@@ -196,7 +142,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <h4 class="titelsZoekAgenda" style="color: #1C3153">Volg ons op</h4>
+                    <h4 class="titelsZoek_Markt" style="color: #1C3153">Volg ons op</h4>
                     <div class="col-12 mb-3">
                         <i class="fab fa-facebook-square fa-3x" style="color:#3b5998;"></i>
                         <i class="fab fa-instagram-square fa-3x" style=" color: #E1306C"></i>

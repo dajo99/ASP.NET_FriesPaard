@@ -30,7 +30,7 @@
                     </div>
                     <div class="form-group">
                         <label asp-for="Sponsor.Omschrijving" class="control-label"></label>
-                        <textarea asp-for="Sponsor.Omschrijving" class="form-control" cols="100" rows="5" placeholder="Geef extra info"></textarea>
+                        <textarea asp-for="Sponsor.Omschrijving" class="form-control" cols="100" rows="14" placeholder="Geef extra info"></textarea>
                         <span asp-validation-for="Sponsor.Omschrijving" class="text-danger"></span>
                     </div>
                     <div class="form-group">
@@ -41,19 +41,20 @@
                     <div class="form-group col-5">
                         <label asp-for="Sponsor.File" class="control-label">Voeg een foto toe</label>
                         <input asp-for="Sponsor.File" class="form-control" accept="image/*" onchange="document.getElementById('DemoImage').src = window.URL.createObjectURL(this.files[0])" />
-                        <img id="DemoImage" src="~/Images/demo.png" class="text-center" alt="" width="200" height="200" style="border:1px ;margin-top:20px; margin-left:120px;" />
+                        <img id="DemoImage" src="@Model.Sponsor.ImagePath" class="text-center" alt="" width="200" height="200" style="border:1px ;margin-top:20px; margin-left:120px;" />
 
                         <span asp-validation-for="Sponsor.File" class="text-danger"></span>
                     </div>
-                    <div class="form-group">
-                        <input type="submit" value="Save" class="btn btn-primary" />
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <a class="btn btn-primary col-5" style="background-color: #caa500; border: 1px solid #1C3153; color:#1C3153; margin-bottom:5px" asp-action="Index">Terug</a>
+                        </div>
+                        <div class="form-group col-6 text-right">
+                            <input type="submit" value="Opslaan" class="btn btn-primary col-5" />
+                        </div>
                     </div>
                 </form>
             </div>
-        </div>
-
-        <div>
-            <a asp-action="Index">Back to List</a>
         </div>
     </section>
 </main>

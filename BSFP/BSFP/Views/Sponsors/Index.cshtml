@@ -5,7 +5,7 @@
     int getal = 0;
 }
 <style>
-    
+
     .fill {
         display: flex;
         justify-content: center;
@@ -13,10 +13,18 @@
         overflow: hidden
     }
 
-        .fill img {
-            flex-shrink: 0;
-            width:85%;
-        }
+    .fill img {
+        flex-shrink: 0;
+        width: 85%;
+    }
+
+    .accordion .accordion-content a {
+        color: #1C3153;
+    }
+
+    .accordion .accordion-content a:hover {
+        color: #fff
+    }
 </style>
 <header class="intro bg-image">
     <div class="overlay"></div>
@@ -33,7 +41,7 @@
         @if (this.User.IsInRole("Admin"))
         {
             <p>
-                <a asp-action="Create">Nieuwe sponsor aanmaken</a>
+                <a asp-action="Create">Sponsor aanmaken</a>
             </p>
         }
         <header class="text-center">

@@ -6,6 +6,27 @@
     CultureInfo dutch = new CultureInfo("nl-NL", false);
 }
 <style>
+
+    .titelsAgenda {
+        padding: 0.6em;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.4em;
+        font-family: 'TrajanProBold';
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+
+    .dataAgenda {
+        padding: 0.6em;
+        color: #1C3153;
+        text-transform: uppercase;
+        font-size: 1.0em;
+        font-family: 'TrajanProBold';
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+
     .agendadetail {
         float: left;
         width: 100%;
@@ -27,7 +48,6 @@
         display: block;
         list-style-type: disc;
     }
-
 </style>
 <header class="intro bg-image">
     <div class="overlay"></div>
@@ -47,27 +67,27 @@
                     <div class="col-lg-6" style="background-color: #1C3153">
                         <div class="row">
                             <div class="col-3">
-                                <p style="margin: 0px 0px 0px 10px">
+                                <p style="margin: 0px 0px 0px 10px" class="titelsAgenda">
                                     <span>@Convert.ToDateTime(Model.Datum).ToString("dd", dutch)<br> @Convert.ToDateTime(Model.Datum).ToString("MMM", dutch)</span>
                                 </p>
                             </div>
                             <div class="col-9">
-                                <p>@Html.DisplayFor(model => model.Titel)</p>
+                                <p class="titelsAgenda">@Html.DisplayFor(model => model.Titel)</p>
                                 <hr style="border-top: 1px solid #caa500 !important;" />
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6" style="background-color:#caa500">
-                        <ul>
-                            <li>Startdatum:  <span>@Convert.ToDateTime(Model.Datum).ToString("d", dutch)</span> </li>
-                            <li>Starttijd:  <span>@Convert.ToDateTime(Model.Starttijd).ToString("t", dutch)</span> </li>
-                            <li>Eindtijd:  <span>@Convert.ToDateTime(Model.Eindtijd).ToString("t", dutch)</span> </li>
-                            <li>Locatie:  <span>@Html.DisplayFor(model => model.Locatie)</span> </li>
-                        </ul>
+                    <div class="col-lg-6 dataAgenda" style="background-color:#caa500">
+                        <div class="row ml-3">
+                            <p class="col-6">Startdatum:  <span>@Convert.ToDateTime(Model.Datum).ToString("d", dutch)</span> </p>
+                            <p class="col-6">Starttijd:  <span>@Convert.ToDateTime(Model.Starttijd).ToString("t", dutch)</span> </p>
+                            <p class="col-6">Locatie:  <span>@Html.DisplayFor(model => model.Locatie)</span> </p>
+                            <p class="col-6">Eindtijd:  <span>@Convert.ToDateTime(Model.Eindtijd).ToString("t", dutch)</span> </p>
+                        </div>
                     </div>
                 </div>
-                </div>
-                
+            </div>
+
             <div class="row py-4">
                 <div class="col-12 mt-2">
                     <h5 style="font-weight:bold;">@Html.DisplayNameFor(model => model.Omschrijving)</h5>
@@ -82,7 +102,7 @@
             }
             else
             {
-                <a class="btn btn-primary" asp-action="Index">Ga terug</a>
+                <a class="btn btn-primary" style="background-color: #1C3153; border: 1px solid #147e9e; color: #fff;" asp-action="Index">Terug naar Overzicht</a>
             }
 
 

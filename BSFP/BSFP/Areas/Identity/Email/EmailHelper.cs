@@ -12,6 +12,7 @@ namespace BSFP.Areas.Identity.Email
     {
         private readonly ILogger _logger;
 
+
         public bool SendConfirmationEmail(string userEmail, string confirmationLink)
         {
             MailMessage msg = new MailMessage();

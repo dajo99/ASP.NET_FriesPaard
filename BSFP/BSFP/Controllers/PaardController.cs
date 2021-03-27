@@ -157,28 +157,28 @@ namespace BSFP.Controllers
                     {
                         BlobCRUD blob1 = await BlobCRUD.EditBlobFile(paard.ImageName1, viewModel.Paard.Image1, "marktplaats", _configuration);
                         paard.ImageName1 = blob1.ImageName;
-                        paard.ImageName2 = blob1.ImagePath;
+                        paard.ImagePath1 = blob1.ImagePath;
                     }
 
                     if (viewModel.Paard.Image2 != null)
                     {
                         BlobCRUD blob2 = await BlobCRUD.EditBlobFile(paard.ImageName2, viewModel.Paard.Image2, "marktplaats", _configuration);
                         paard.ImageName2 = blob2.ImageName;
-                        paard.ImageName2 = blob2.ImagePath;
+                        paard.ImagePath2 = blob2.ImagePath;
                     }
 
                     if (viewModel.Paard.Image3 != null)
                     {
                         BlobCRUD blob3 = await BlobCRUD.EditBlobFile(paard.ImageName3, viewModel.Paard.Image3, "marktplaats", _configuration);
                         paard.ImageName3 = blob3.ImageName;
-                        paard.ImageName3 = blob3.ImagePath;
+                        paard.ImagePath3 = blob3.ImagePath;
                     }
 
                     if (viewModel.Paard.Image4 != null)
                     {
                         BlobCRUD blob4 = await BlobCRUD.EditBlobFile(paard.ImageName4, viewModel.Paard.Image4, "marktplaats", _configuration);
                         paard.ImageName4 = blob4.ImageName;
-                        paard.ImageName4 = blob4.ImagePath;
+                        paard.ImagePath4 = blob4.ImagePath;
                     }
 
 

@@ -373,6 +373,87 @@ main .fa-li {
     padding-left: 1rem;
 }
 
+/*======================================
+//--//-->   Marktplaats
+======================================*/
+
+.MP_IMGBOX_Markt {
+    position: relative;
+    margin: 0px 0px 0px 15px;
+    width: 90%;
+    /* width: 625px; */
+    height: 500px;
+    overflow: hidden;
+    float: left;
+    margin-right: 12px;
+    /* border: 1px solid #dfe8ea; */
+    background-color: #1C3153;
+}
+
+.MP_IMG_MarktGroot {
+    float: left;
+    max-width: none !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+@media only screen and (max-width: 700px) {
+    /* For mobile phones: */
+    .MP_IMGBOX_Markt{
+        height: 310px;
+    }
+
+    .MP_IMG_MarktGroot{
+        height: 100%;
+        width:100%;
+    }
+}
+
+
+.MP_IMG_Markt {
+    float: left;
+    max-width: none !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+._ADV_Photo-sideitem_Markt {
+    position: relative;
+    margin: 4px 4px 10px 4px;
+    width: 117px;
+    height: 84px;
+    overflow: hidden;
+    float: left;
+    margin-bottom: 4px;
+    /* border: 1px solid #dfe8ea; */
+    background-color: #1C3153;
+}
+
+.titelsZoek_Markt {
+    padding: 0.6em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-family: 'TrajanProBold';
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.membergegevens {
+    color: white;
+    margin-bottom: 10px;
+}
+
 
     /*======================================
 //--//-->   FOOTER

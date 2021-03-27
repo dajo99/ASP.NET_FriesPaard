@@ -666,10 +666,8 @@ D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.csproj.CopyComplete
 D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.dll
 D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.pdb
 D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.genruntimeconfig.cache
-D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.csprojAssemblyReference.cache
 D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Member\Delete.cshtml.g.cs
 D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Member\Details.cshtml.g.cs
-D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Member\Edit.cshtml.g.cs
 D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Member\Index.cshtml.g.cs
 D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Email\ConfirmEmail.cshtml.g.cs
 D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Email\Error.cshtml.g.cs
