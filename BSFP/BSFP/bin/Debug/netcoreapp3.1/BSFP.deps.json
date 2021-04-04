@@ -305,6 +305,17 @@
         "runtime": {
           "BSFP.dll": {}
         },
+        "resources": {
+          "en/BSFP.resources.dll": {
+            "locale": "en"
+          },
+          "fr/BSFP.resources.dll": {
+            "locale": "fr"
+          },
+          "nl/BSFP.resources.dll": {
+            "locale": "nl"
+          }
+        },
         "compile": {
           "BSFP.dll": {}
         }

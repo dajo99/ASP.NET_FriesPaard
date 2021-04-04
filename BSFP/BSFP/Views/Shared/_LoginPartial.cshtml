@@ -4,36 +4,42 @@
 @inject UserManager<CustomUser> UserManager
 
 
-    @if (SignInManager.IsSignedIn(User))
-    {
-        <div class="dropdown navbar-nav  my-lg-0">
-            <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdownActueel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Hallo @User.Identity.Name!
-                <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Account</a></li>
-                @if (User.IsInRole("Admin"))
-                {
-                    <li><a class="dropdown-item text-dark" asp-area="" asp-controller="Member" asp-action="Index">Ledenbeheer</a></li>
-                }
-                <li class="nav-item">
-                    <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-                        <button type="submit" class="nav-link btn btn-link text-dark" style="margin:0px 0px 0px 14px">Uitoggen</button>
-                    </form>
-                </li>
-            </ul>
-        </div>
-    }
-    else
-    { <ul class="navbar-nav  my-lg-0">
+@if (SignInManager.IsSignedIn(User))
+{
+    <div class="dropdown navbar-nav  my-lg-0">
+        <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdownActueel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Hallo @User.Identity.Name!
+            <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Account</a></li>
+            @if (User.IsInRole("Admin"))
+            {
+                <li><a class="dropdown-item text-dark" asp-area="" asp-controller="Member" asp-action="Index">Ledenbeheer</a></li>
+            }
             <li class="nav-item">
-                <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Registreren</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Inloggen</a>
+                <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                    <button type="submit" class="nav-link btn btn-link text-dark" style="margin:0px 0px 0px 14px">Uitoggen</button>
+                </form>
             </li>
         </ul>
+    </div>
+}
+else
+{
+    <ul class="navbar-nav  my-lg-0">
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Registreren</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Inloggen</a>
+        </li>
+    </ul>
 
-    }
+}
+<ul class="navbar-nav  my-lg-0">
+    <li class="nav-item">
+        @await Html.PartialAsync("_CulturePartial")
+    </li>
+</ul>
 

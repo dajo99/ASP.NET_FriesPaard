@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -45,6 +46,21 @@ namespace BSFP
             services.AddMvc()
                 .AddViewLocalization(Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat.Suffix)
                 .AddDataAnnotationsLocalization();
+
+            services.Configure<RequestLocalizationOptions>(options =>
+            {
+                var cultures = new List<CultureInfo> {
+                new CultureInfo("nl"),
+                new CultureInfo("fr"),
+                new CultureInfo("en")
+                };
+
+                options.DefaultRequestCulture = new RequestCulture("nl");
+                options.SupportedCultures = cultures;
+                options.SupportedUICultures = cultures;
+                options.RequestCultureProviders = new[] { new CookieRequestCultureProvider() };
+
+            });
 
             services.Configure<IdentityOptions>(options =>
             {
@@ -91,17 +107,21 @@ namespace BSFP
             app.UseRouting();
 
             var cultures = new List<CultureInfo> {
-                new CultureInfo("nl-NL"),
-                new CultureInfo("fr-FR"),
-                new CultureInfo("de-DE"),
-                new CultureInfo("en-US")
+                new CultureInfo("nl"),
+                new CultureInfo("fr"),
+                new CultureInfo("en")
             };
-            app.UseRequestLocalization(options => {
-                options.DefaultRequestCulture = new Microsoft.AspNetCore.Localization.RequestCulture("en-US");
-                options.SupportedCultures = cultures;
-                options.SupportedUICultures = cultures;
-            });
 
+            var localizationOptions = new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture("nl"),
+                SupportedCultures = cultures,
+                SupportedUICultures = cultures,
+                // you can change the list of providers, if you don't want the default behavior
+                // e.g. the following line enables to pick up culture ONLY from cookies
+                RequestCultureProviders = new[] { new CookieRequestCultureProvider() }
+            };
+            app.UseRequestLocalization(localizationOptions);
             app.UseAuthentication();
             app.UseAuthorization();
 
@@ -139,7 +159,7 @@ namespace BSFP
             CustomUser exist = await _userManager.FindByEmailAsync("bsfptest@gmail.com");
             if (exist == null)
             {
-                var admin = new CustomUser { UserName = "Admintest", Email = "bsfptest@gmail.com", Voornaam = "Admintest", Achternaam = "BSFP",Lidnummer="BSFP123456789", PhoneNumber="0473576120", EmailConfirmed = true};
+                var admin = new CustomUser { UserName = "Admintest", Email = "bsfptest@gmail.com", Voornaam = "Admintest", Achternaam = "BSFP", Lidnummer = "BSFP123456789", PhoneNumber = "0473576120", EmailConfirmed = true };
                 var result = await _userManager.CreateAsync(admin, "Campus99");
                 if (result.Succeeded)
                 {
