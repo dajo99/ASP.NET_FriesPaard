@@ -953,3 +953,9 @@ D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Culture
 D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Shared._CulturePartial.en.resources
 D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Shared._CulturePartial.fr.resources
 D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Shared._CulturePartial.nl.resources
+D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Shared._Layout.en.resources
+D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Shared._Layout.fr.resources
+D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Shared._Layout.nl.resources
+D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Shared._LoginPartial.en.resources
+D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Shared._LoginPartial.fr.resources
+D:\Bureaublad\BSFP\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Shared._LoginPartial.nl.resources

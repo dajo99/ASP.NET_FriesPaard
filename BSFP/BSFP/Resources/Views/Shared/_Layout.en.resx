@@ -117,42 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="BekijkAgenda" xml:space="preserve">
-    <value>View Calendar</value>
+  <data name="Actueel" xml:space="preserve">
+    <value>Topical</value>
   </data>
-  <data name="Intro" xml:space="preserve">
-    <value>Belgian Studbook Of The Friesian Horse</value>
+  <data name="Adres" xml:space="preserve">
+    <value>Address</value>
   </data>
-  <data name="Tekst1" xml:space="preserve">
-    <value>In Belgium, owners of Friesian horses have united themselves since 1985 in the non-profit organization Belgisch Stamboek van het Friesian Paard.
-                        (BSFP) On September 10, 1995, the Belgian studbook was officially recognized as a daughter studbook of the Dutch dam studbook
-                        of the Friesian horse. The Belgian studbook thus became the first foreign studbook to receive this recognition.
-                        On August 13, 2007 the studbook was also officially recognized by the Flemish Ministry.</value>
+  <data name="Agenda" xml:space="preserve">
+    <value>Calendar</value>
   </data>
-  <data name="Tekst2" xml:space="preserve">
-    <value>The studbook organizes annual breeding days where the Frisians are inspected and primed. Organizes during the winter months
-                        the BSFP info evenings where themes from breeding and sport are thoroughly discussed.</value>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
   </data>
-  <data name="Tekst3" xml:space="preserve">
-    <value>The studbook has been a member of the VLP since 2010 and now organizes official dressage competitions especially for Friesian horses.</value>
+  <data name="FooterIntro" xml:space="preserve">
+    <value>Belgian Studbook of the Friesian Horse vzw</value>
   </data>
-  <data name="Tekst4" xml:space="preserve">
-    <value>In Belgium, owners of Friesian horses have united themselves since 1985 in the non-profit organization Belgisch Stamboek van het Friesian Paard.
-                        (BSFP) On September 10, 1995, the Belgian studbook was officially recognized as a daughter studbook of the Dutch dam studbook
-                        of the Friesian horse. The Belgian studbook thus became the first foreign studbook to receive this recognition.
-                        On August 13, 2007 the studbook was also officially recognized by the Flemish Ministry.</value>
+  <data name="Gegevens" xml:space="preserve">
+    <value>Information</value>
   </data>
-  <data name="Tekst5" xml:space="preserve">
-    <value>The studbook organizes annual breeding days where the Frisians are inspected and primed. Organizes during the winter months
-                        the BSFP info evenings where themes from breeding and sport are thoroughly discussed.</value>
+  <data name="HetFriesePaard" xml:space="preserve">
+    <value>The Friesian Horse</value>
   </data>
-  <data name="Tekst6" xml:space="preserve">
-    <value>The studbook has been a member of the VLP since 2010 and now organizes official dressage competitions especially for Friesian horses.</value>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
   </data>
-  <data name="Titel" xml:space="preserve">
-    <value>BSFP</value>
+  <data name="JongBSFP" xml:space="preserve">
+    <value>YoungBSFP</value>
   </data>
-  <data name="Welkom" xml:space="preserve">
-    <value>Welcome</value>
+  <data name="Marktplaats" xml:space="preserve">
+    <value>Marketplace</value>
+  </data>
+  <data name="Nieuws" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Privacy</value>
+  </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Sponsors</value>
   </data>
 </root>

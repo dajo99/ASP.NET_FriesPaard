@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -9,7 +10,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-gold box-shadow" id="mainNav">
-        
+
         <div class="container">
             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                 <img id="navLogo" src="~/Images/logo-website.png" class="d-inline-block align-top" width="310" alt="">
@@ -21,27 +22,27 @@
             <div class="navbar-collapse collapse">
                 <ul class="navbar-nav  ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">@localizer["Home"]</a>
                     </li>
                     <li class="nav-item active dropdown">
                         <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdownActueel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Actueel
+                            @localizer["Actueel"]
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownActueel">
-                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Nieuws" asp-action="Index">Nieuws</a>
-                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Agenda" asp-action="Index">Agenda</a>
-                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Home" asp-action="FriesPaard">Het Friese Paard</a>
-                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Home" asp-action="JongBSFP">JongBSFP</a>
+                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Nieuws" asp-action="Index">@localizer["Nieuws"]</a>
+                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Agenda" asp-action="Index">@localizer["Agenda"]</a>
+                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Home" asp-action="FriesPaard">@localizer["HetFriesePaard"]</a>
+                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Home" asp-action="JongBSFP">@localizer["JongBSFP"]</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Paard" asp-action="Index">Marktplaats</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Paard" asp-action="Index">@localizer["Marktplaats"]</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Sponsors" asp-action="Index">Sponsors</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Sponsors" asp-action="Index">@localizer["Sponsors"]</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">@localizer["Contact"]</a>
                     </li>
                 </ul>
                 <partial name="_LoginPartial" />
@@ -57,7 +58,7 @@
                         <p><img src="~/Images/logo_footer.png" alt="" width="220"></p>
                     </div>
                     <div class="col-md-4 mb-md-0 pl-md-4 mt-2 ">
-                        <h2>Gegevens</h2>
+                        <h2>@localizer["Gegevens"]</h2>
                         <ul class="mb-sm-2 fa-ul">
                             <li>
                                 <span class="fa-li"><i class="fas fa-phone-alt"></i></span><a href="tel:+32472667299">+32.(0)472.66.72.99</a>
@@ -69,7 +70,7 @@
                         </ul>
                     </div>
                     <div class="col-md-3 mb-0 my-md-2 ">
-                        <h2>Adres</h2>
+                        <h2>@localizer["Adres"]</h2>
                         <p>
                             <strong>BSFP-SBCF</strong> <br>
                             <span class="text-nowrap">Maastrichtersteenweg 308</span><br>
@@ -82,7 +83,7 @@
                     <div class="col-md-5">
                         <div class="mb-0 text-muted">
                             <p>
-                                Belgisch Stamboek v/h Friese Paard vzw
+                                @localizer["FooterIntro"]
                             </p>
                         </div>
                     </div>
@@ -90,7 +91,7 @@
             </div>
             <div class="container">
                 <p class="foot-link copyright mb-0">
-                    &copy; 2021 BSFP-SBCF&nbsp;&nbsp;|&nbsp;&nbsp;<a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                    &copy; 2021 BSFP-SBCF&nbsp;&nbsp;|&nbsp;&nbsp;<a asp-area="" asp-controller="Home" asp-action="Privacy">@localizer["Privacy"]</a>
                 </p>
             </div>
         </div>

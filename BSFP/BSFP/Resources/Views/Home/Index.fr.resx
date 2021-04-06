@@ -117,10 +117,42 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BekijkAgenda" xml:space="preserve">
+    <value>Afficher le calendrier</value>
+  </data>
   <data name="Intro" xml:space="preserve">
     <value>Studbook Belge du Cheval Frison</value>
   </data>
+  <data name="Tekst1" xml:space="preserve">
+    <value>En Belgique, les propriétaires de chevaux frisons se sont unis depuis 1985 au sein de l'asbl Belgisch Stamboek van het Friesian Paard.
+                        (BSFP) Le 10 septembre 1995, le stud-book belge a été officiellement reconnu comme un stud-book fille du stud-book néerlandais des barrages
+                        du cheval frison. Le stud-book belge est ainsi devenu le premier stud-book étranger à recevoir cette reconnaissance.
+                        Le 13 août 2007, le stud-book a également été officiellement reconnu par le ministère flamand.</value>
+  </data>
+  <data name="Tekst2" xml:space="preserve">
+    <value>Le stud-book organise des journées d'élevage annuelles où les Frisons sont inspectés et apprêtés. S'organise pendant les mois d'hiver
+                        les soirées info BSFP où les thèmes de l'élevage et du sport sont discutés en profondeur.</value>
+  </data>
+  <data name="Tekst3" xml:space="preserve">
+    <value>Le stud-book est membre du VLP depuis 2010 et organise désormais des compétitions officielles de dressage spécialement pour les chevaux frisons.</value>
+  </data>
+  <data name="Tekst4" xml:space="preserve">
+    <value>En Belgique, les propriétaires de chevaux frisons se sont unis depuis 1985 au sein de l'asbl Belgisch Stamboek van het Friesian Paard.
+                        (BSFP) Le 10 septembre 1995, le stud-book belge a été officiellement reconnu comme un stud-book fille du stud-book néerlandais des barrages
+                        du cheval frison. Le stud-book belge est ainsi devenu le premier stud-book étranger à recevoir cette reconnaissance.
+                        Le 13 août 2007, le stud-book a également été officiellement reconnu par le ministère flamand.</value>
+  </data>
+  <data name="Tekst5" xml:space="preserve">
+    <value>Le stud-book organise des journées d'élevage annuelles où les Frisons sont inspectés et apprêtés. S'organise pendant les mois d'hiver
+                        les soirées info BSFP où les thèmes de l'élevage et du sport sont discutés en profondeur.</value>
+  </data>
+  <data name="Tekst6" xml:space="preserve">
+    <value>Le stud-book est membre du VLP depuis 2010 et organise désormais des compétitions officielles de dressage spécialement pour les chevaux frisons.</value>
+  </data>
   <data name="Titel" xml:space="preserve">
     <value>SBCF</value>
+  </data>
+  <data name="Welkom" xml:space="preserve">
+    <value>Bienvenue</value>
   </data>
 </root>
