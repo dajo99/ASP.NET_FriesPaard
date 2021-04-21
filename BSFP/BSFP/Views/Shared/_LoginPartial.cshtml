@@ -6,7 +6,7 @@
 
 @if (SignInManager.IsSignedIn(User))
 {
-    <div class="dropdown navbar-nav  my-lg-0">
+    <div class="dropdown navbar-nav  my-lg-0 ml-lg-5">
         <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdownActueel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             @localizer["Hallo"] @User.Identity.Name!
             <span class="caret"></span>
@@ -27,10 +27,7 @@
 }
 else
 {
-    <ul class="navbar-nav  my-lg-0">
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">@localizer["Registreren"]</a>
-        </li>
+    <ul class="navbar-nav  my-lg-0 ml-lg-5">
         <li class="nav-item">
             <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">@localizer["Inloggen"]</a>
         </li>

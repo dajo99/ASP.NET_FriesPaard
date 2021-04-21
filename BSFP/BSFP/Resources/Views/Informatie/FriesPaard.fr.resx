@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Tekst1" xml:space="preserve">
+    <value>Le cheval frison est la seule race de cheval indigène aux Pays-Bas, le type frison était déjà connu au 13ème siècle. Grâce à une politique d'élevage cohérente
+                    Le cheval frison tel que nous le connaissons aujourd'hui présente encore les caractéristiques spécifiques de la race et donc des similitudes avec ses lointains ancêtres.
+                    Les perles noires se caractérisent par la façade, le papier peint généreux, la couleur noire et les couloirs spacieux, puissants et élevés. La carrure harmonieuse et la tête noble,
+                    placé sur un cou légèrement incurvé, complète l'apparence luxueuse et fière. Le caractère amical est la clé d'un grand cheval utilitaire.</value>
+  </data>
+  <data name="Tekst2" xml:space="preserve">
+    <value>Au milieu du siècle dernier, le cheval frison était principalement utilisé comme cheval de trait dans les fermes. Aujourd'hui, ils sont conservés pour les loisirs,
+                    l'élevage et le sport, souvent en combinaison les uns avec les autres. Le dressage est particulièrement populaire, mais il est certainement aussi frison dans les sports de conduite et de harnais
+                    cheval. Il existe une relation étroite entre le but et l'extérieur.</value>
+  </data>
+  <data name="Tekst3" xml:space="preserve">
+    <value>Le cheval utilisé pour l'élevage avait des pattes plus courtes et plus compact, avec une patte antérieure inférieure et une poitrine large. Avec cette large poitrine
+                    le cheval était mieux à même de se jeter «dans le harnais» et de développer ainsi plus de force de traction. Ces caractéristiques extérieures sont moins fonctionnelles pour aujourd'hui
+                    l'équitation, le harnais ou le cheval de conduite. Le type le plus lourd et à pattes courtes existe toujours car ce type est élevé depuis des années et il faut plusieurs générations
+                    avant que cela ne disparaisse de la race. Une construction fonctionnelle est très importante pour rouler sous la selle et pour les sports attelés. Le cheval
+                    doit avoir une direction ascendante du tronc. En raison de cette construction ascendante, la répartition du poids se déplace davantage sur l'arrière-train, affectant ainsi le cheval
+                    mieux en mesure de porter avec son arrière-train. Une jambe avant longue est importante pour une construction ascendante, mais aussi la position de la jambe avant. le
+                    La position de la patte antérieure est liée à l'épaule, une épaule oblique et longue donnant au cheval l'espace nécessaire pour éloigner la patte avant.</value>
+  </data>
+  <data name="Tekst4" xml:space="preserve">
+    <value>Le cheval de harnais a souvent un décolleté légèrement plus vertical que le cheval d'équitation et de conduite. Pour tous les types, le cheval est souple sur tout le corps
+                    doit bouger, avec un mouvement qui est transmis vers l'avant par un arrière-train puissant pour que le cheval puisse se lever de l'avant, ce qui est important
+                    est pour rouler sous la selle ainsi que pour rouler devant la voiture. Une grande action du genou est souhaitable pour un cheval harnais (mais pas seulement, il doit être combiné
+                    avec beaucoup d'espace et un arrière-train porteur), tandis que pour un cheval d'équitation et aussi un cheval de conduite, une grande action du genou n'est pas toujours appréciée.
+                    À toutes fins utiles, des positions correctes des jambes sont indispensables.</value>
+  </data>
+  <data name="Tekst5" xml:space="preserve">
+    <value>Le cheval frison s'est de plus en plus développé en tant que cheval de sport au cours des dernières décennies, revenant essentiellement au type d'avant le
+                    période agricole où le frison était un cheval de calèche luxueux et élégant. En raison des caractéristiques fonctionnelles de la race, elle peut aujourd'hui être
+                    mesurer au plus haut niveau avec d'autres races. Et bien sûr, le frison, en raison de ses caractéristiques de race caractéristiques, a juste ce petit plus de charisme!</value>
+  </data>
+  <data name="Titel1" xml:space="preserve">
+    <value>Le cheval frison</value>
+  </data>
+  <data name="Titel2" xml:space="preserve">
+    <value>Utilisation polyvalente du cheval</value>
+  </data>
+  <data name="Titel3" xml:space="preserve">
+    <value>Construction fonctionnelle</value>
+  </data>
+  <data name="Titel4" xml:space="preserve">
+    <value>Le cheval de sport frison</value>
+  </data>
+</root>

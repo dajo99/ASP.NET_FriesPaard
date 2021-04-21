@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
+   
     <nav class="navbar navbar-expand-lg navbar-dark bg-gold box-shadow" id="mainNav">
 
         <div class="container">
@@ -20,19 +21,68 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse">
-                <ul class="navbar-nav  ml-auto">
+                <ul class="navbar-nav  ml-auto mr-lg-4">
                     <li class="nav-item active">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">@localizer["Home"]</a>
                     </li>
                     <li class="nav-item active dropdown">
                         <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdownActueel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            @localizer["Actueel"]
+                            @localizer["HetBSFP"]
+                        </a>
+                        <div class="dropdown-menu" style="width:750px" aria-labelledby="navbarDropdownActueel">
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-12">
+                                    <p class="dropdown-item-text" style="font-weight:bold">@localizer["Actueel"]</p>
+                                    <a class="dropdown-item text-dark" asp-area="" asp-controller="Nieuws" asp-action="Index">@localizer["Nieuws"]</a>
+                                    <a class="dropdown-item text-dark" asp-area="" asp-controller="Agenda" asp-action="Index">@localizer["Agenda"]</a>
+                                    <a class="dropdown-item text-dark" asp-area="" asp-controller="Informatie" asp-action="FriesPaard">@localizer["HetFriesePaard"]</a>
+                                </div>
+                                <div class="col-lg-4 col-sm-12">
+                                    <p class="dropdown-item-text" style="font-weight:bold">@localizer["Informatie"]</p>
+                                    <a class="dropdown-item text-dark" asp-area="" asp-controller="Nieuws" asp-action="Index">@localizer["AlgemeneInformatie"]</a>
+                                    <a class="dropdown-item text-dark" asp-area="" asp-controller="Informatie" asp-action="PaardenpuntVlaanderen">@localizer["PaardenpuntVlaanderen"]</a>
+                                    <a class="dropdown-item text-dark" asp-area="" asp-controller="Informatie" asp-action="LidWorden">@localizer["LidWorden"]</a>
+                                    <a class="dropdown-item text-dark" asp-area="" asp-controller="Informatie" asp-action="FriesPaard">@localizer["IndentificatiePaard"]</a>
+                                    <a class="dropdown-item text-dark" asp-area="" asp-controller="Informatie" asp-action="JongBSFP">@localizer["Bestuur"]</a>
+                                    <a class="dropdown-item text-dark" asp-area="" asp-controller="Informatie" asp-action="JongBSFP">@localizer["JongBSFP"]</a>
+                                    <a class="dropdown-item text-dark" asp-area="" asp-controller="Informatie" asp-action="JongBSFP">@localizer["Mennen"]</a>
+                                    <a class="dropdown-item text-dark" asp-area="" asp-controller="Informatie" asp-action="JongBSFP">@localizer["Infodagen"]</a>
+                                    <a class="dropdown-item text-dark" asp-area="" asp-controller="Informatie" asp-action="JongBSFP">@localizer["Verzekeringen"]</a>
+                                </div>
+                                <div class="col-lg-4 col-sm-12">
+                                    <p class="dropdown-item-text" style="font-weight:bold">@localizer["Reglementen"]</p>
+                                    <a class="dropdown-item text-dark" asp-area="" asp-controller="Agenda" asp-action="Index">@localizer["Registratiereglement"]</a>
+                                    <a class="dropdown-item text-dark" asp-area="" asp-controller="Agenda" asp-action="Index">@localizer["InterneReglementen"]</a>
+                                    <a class="dropdown-item text-dark" asp-area="" asp-controller="Nieuws" asp-action="Index">@localizer["Geschillenregeling"]</a>
+                                    <a class="dropdown-item text-dark" asp-area="" asp-controller="Agenda" asp-action="Index">@localizer["ProtocolAankoopPaard"]</a>
+                                    <a class="dropdown-item text-dark" asp-area="" asp-controller="Informatie" asp-action="FriesPaard">@localizer["VaststellenRegistrerenValideren"]</a>
+                                    <a class="dropdown-item text-dark" asp-area="" asp-controller="Informatie" asp-action="JongBSFP">@localizer["Tarieven"]</a>
+                                    <a class="dropdown-item text-dark" asp-area="" asp-controller="Agenda" asp-action="Index">@localizer["Statuten"]</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdownActueel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @localizer["Dressuur"]
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownActueel">
-                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Nieuws" asp-action="Index">@localizer["Nieuws"]</a>
-                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Agenda" asp-action="Index">@localizer["Agenda"]</a>
-                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Home" asp-action="FriesPaard">@localizer["HetFriesePaard"]</a>
-                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Home" asp-action="JongBSFP">@localizer["JongBSFP"]</a>
+                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Nieuws" asp-action="Index">@localizer["Trofee"]</a>
+                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Agenda" asp-action="Index">@localizer["PavoPhrysoBokaal"]</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdownActueel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @localizer["Fokkerij"]
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownActueel">
+                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Nieuws" asp-action="Index">@localizer["Fokdoel"]</a>
+                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Agenda" asp-action="Index">@localizer["Fokprogramma"]</a>
+                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Informatie" asp-action="FriesPaard">@localizer["ActieveHengsten"]</a>
+                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Informatie" asp-action="JongBSFP">@localizer["DNA-Test"]</a>
+                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Informatie" asp-action="JongBSFP">@localizer["Hengstenkeuze"]</a>
+                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Informatie" asp-action="JongBSFP">@localizer["InteeltVerwantschap"]</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -48,6 +98,7 @@
                 <partial name="_LoginPartial" />
             </div>
         </div>
+
     </nav>
     @RenderBody()
     <footer class="py-4 flex-shrink-0" style="border-top: 6px solid #147e9e; box-shadow: 10px 18px 10px 18px #888888">
@@ -100,10 +151,7 @@
     <script src="https://kit.fontawesome.com/ecadc53a85.js" crossorigin="anonymous"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- include summernote css/js-->
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.7.0/summernote.css" rel="stylesheet">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.7.0/summernote.js"></script>
-    <script src="https://cdn.tiny.cloud/1/am35mr6dakc9b1tkibv7ikg5ynkhv31p4yn7yd9fjeikfytb/tinymce/5/tinymce.min.js"></script>
+
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 </body>

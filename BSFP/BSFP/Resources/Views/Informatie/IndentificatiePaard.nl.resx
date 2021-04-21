@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>Identificatie van je paard</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>Dossiers kunnen nu volledig digitaal – lees -  eenvoudiger en sneller - afgewerkt worden. U vermijdt dus een pak papierwerk.</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>Om gebruik te maken van het digitale identificatiesysteem surft u naar www.horseID.be. Via deze website kan u informatie in de gegevensbank opzoeken en een persoonlijk profiel aanmaken. Wanneer u over een profiel beschikt, kan u inloggen op de website en zal u een overzicht krijgen van alle paarden waarvan u de houder bent. U kan er bovendien</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>de gegevens van deze paarden nakijken en wijzigen (mutatie).</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>Wenst u een nieuw paard te identificeren, dan kan u via www.HorseID.be een aanvraag indienen.</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>Tarieven</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>Uiteraard is het nog steeds mogelijk om alles via briefwisseling te regelen. Maar u doet er goed aan om uw registratie online af te handelen. Sinds 1 oktober 2016 gelden er immers nieuwe tarieven. De digitale procedure werd slechts een halve euro duurder, terwijl de kosten voor de klassieke "papieren" werkwijze wel aanzienlijk de hoogte in gingen. Mutaties (aanpassingen) blijven trouwens gratis.</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>Digitale procedure: via Horse ID</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>exclusief btw |</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>inclusief btw.</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Procedure op papier:</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Paarden worden in de eerste plaats geïdentificeerd om de voedselveiligheid te garanderen. Slachthuizen moeten bijvoorbeeld weten of ze in de voedselketen mogen belanden. Dankzij de identificatie kunnen dieren ook getraceerd worden, bijvoorbeeld bij diefstal of om een epidemie te beheersen. De centrale databank herbergt daarnaast een schat aan informatie over alle paardachtigen in België.</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>inclusief btw</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>Meer info :</value>
+  </data>
+  <data name="String22" xml:space="preserve">
+    <value>op de website van PaardenPunt Vlaanderen vindt u een schat aan informatie, niet alleen over identificatie, maar ook over alle andere aspecten van paardenhouderij: www.paarden.vlaanderen</value>
+  </data>
+  <data name="String23" xml:space="preserve">
+    <value>Om uw paarden online te identificeren en beheren surft u naar</value>
+  </data>
+  <data name="String24" xml:space="preserve">
+    <value>Bij twijfel of vragen mag u altijd contact opnemen met</value>
+  </data>
+  <data name="String25" xml:space="preserve">
+    <value>Wat te doen als het veulen geboren wordt?</value>
+  </data>
+  <data name="String26" xml:space="preserve">
+    <value>Veulenregistratie van een Fries paard, rechtstreeks via deze link</value>
+  </data>
+  <data name="String27" xml:space="preserve">
+    <value>Aanmelden binnen de 14 dagen na geboorte op website KFPS. Indien later verplicht DNA onderzoek op kosten eigenaar.
+U logt in met uw lidnummer en wachtwoord op de site van KFPS</value>
+  </data>
+  <data name="String28" xml:space="preserve">
+    <value>In de bovenbalk ziet u "Mijn KFPS" en dan ziet u "Mijn administratie" en in deze kolom "Veulen  registreren" hier klikt u op. Dan ziet u de naam of namen van de merries die u heeft laten dekken.
+Klik op de betreffende merrie.  Nu ziet u een aanmeldingsformulier dat u volledig kan invullen.</value>
+  </data>
+  <data name="String29" xml:space="preserve">
+    <value>Beneden staat "opslaan" hier klikt u op.</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>Sinds 2008 moeten alle paardachtigen in België correct geïdentificeerd zijn. Geldt ook voor Nederland , Duitsland en Frankrijk .Dit betekent dat u een aantal zaken in orde moet brengen:</value>
+  </data>
+  <data name="String30" xml:space="preserve">
+    <value>Na aanmelding wordt het veulen geregistreerd in het voorlopig veulenregister.
+Eigenaar kan geboortebevestiging downloaden via “mijn KFPS” “mijn administratie” en geboortebevestiging downloaden.</value>
+  </data>
+  <data name="String31" xml:space="preserve">
+    <value>Print de geboortebevestiging af. Breng dit formulier mee naar de keuring met de chipnummer erop gekleefd en datum en handtekening dierenarts.Als het veulen gekeurd is zal u nadien het veulenboekpapier ontvangen met de premie erop vermeld. Veulens worden niet gekeurd zonder chipnummer!</value>
+  </data>
+  <data name="String32" xml:space="preserve">
+    <value>Indien u niet naar de keuring gaat met uw veulen, stuur dan de geboortebevestiging naar het BSFP stamboeksecretariaat ook met chipnummer erop en datum en handtekening dierenarts.
+Ook stuurt u een staal mee met veulenhaar uit manen/staart.</value>
+  </data>
+  <data name="String33" xml:space="preserve">
+    <value>Opgepast: de wortel moet erbij zijn dus het haar trekken en niet afknippen.</value>
+  </data>
+  <data name="String34" xml:space="preserve">
+    <value>U zal dan het veulenboekpapier ontvangen.</value>
+  </data>
+  <data name="String35" xml:space="preserve">
+    <value>Het veulen dient gechipt te zijn binnen 6 maand na geboorte. Indien niet gedaan DNA onderzoek op  kosten van de eigenaar.</value>
+  </data>
+  <data name="String36" xml:space="preserve">
+    <value>Om het paspoort van het veulen te verkrijgen dient u</value>
+  </data>
+  <data name="String37" xml:space="preserve">
+    <value>Het veulen digitaal aanmelden via</value>
+  </data>
+  <data name="String38" xml:space="preserve">
+    <value>Volg de stappen die het scherm aangeeft.</value>
+  </data>
+  <data name="String39" xml:space="preserve">
+    <value>U zal nadien schetsen ontvangen van PaardenPunt Vlaanderen. Deze laat u invullen door een erkende dierenarts. Doe dit samen met het chippen. Daarna stuurt u de schetsen naar het BSFP stamboeksecretariaat.</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>uw paarden moeten beschikken over een EU-conform paspoort.</value>
+  </data>
+  <data name="String40" xml:space="preserve">
+    <value>Het secretariaat zal alles afwerken en het paspoort afleveren aan de eigenaar.</value>
+  </data>
+  <data name="String41" xml:space="preserve">
+    <value>Belgische identificatie moet binnen het jaar na geboorte. Indien later zijn de gevolgen dubbel:</value>
+  </data>
+  <data name="String42" xml:space="preserve">
+    <value>paard wordt definitief uitgesloten voor de slacht.</value>
+  </data>
+  <data name="String43" xml:space="preserve">
+    <value>u riskeert een proces verbaal.</value>
+  </data>
+  <data name="String44" xml:space="preserve">
+    <value>Door de online identificatie via het stamboek blijft het voordeel van het goedkope tarief behouden, waarvan voorheen genoten kon worden via de pre-encodering. Het moet duidelijk zijn dat daarmee samenhangt dat de betaling ‘ONLINE / DIGITAAL’ moet gebeuren.</value>
+  </data>
+  <data name="String45" xml:space="preserve">
+    <value>Na het doorsturen van de aanvraag door het stamboek, krijgt de fokker/houder een e-mail van HorseID met de link om in te loggen  (of om eerst een paswoord aan te vragen)  en de betaling te doen. Na de betaling krijgt de fokker/houder (of het stamboek indien het met stamboekconsulenten werkt) het identificatiedossier. Dan ook krijgt de fokker de voor voldane factuur.</value>
+  </data>
+  <data name="String46" xml:space="preserve">
+    <value>Hier</value>
+  </data>
+  <data name="String47" xml:space="preserve">
+    <value>krijgt u stap voor stap uitgelegd hoe de fokker/houder de online betaling kan doen.</value>
+  </data>
+  <data name="String48" xml:space="preserve">
+    <value>Mocht u vragen hebben kan u altijd contact opnemen met </value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>Een dierenarts moet ze voorzien van een microchip.</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>Hun gegevens dienen ingegeven te zijn de centrale databank (beheerd door de Belgische Confederatie van het Paard).</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>Indien één van deze zaken ontbreekt, is uw paard niet correct geïdentificeerd, kan het niet meer geslacht worden voor menselijke consumptie . Wanneer het paard bv. sterft, verhuist of verkocht wordt, moet dit trouwens ook aangepast worden in de gegevensbank, ook in deze van het stamboek.</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>Digitaal</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>Begin 2016 lanceerde de Belgische Confederatie van het Paard HorseID, een volledig nieuw identificatiesysteem.</value>
+  </data>
+</root>

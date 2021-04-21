@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ActieveHengsten" xml:space="preserve">
+    <value>Actieve hengsten</value>
+  </data>
   <data name="Actueel" xml:space="preserve">
     <value>Actueel</value>
   </data>
@@ -126,8 +129,29 @@
   <data name="Agenda" xml:space="preserve">
     <value>Agenda</value>
   </data>
+  <data name="AlgemeneInformatie" xml:space="preserve">
+    <value> BSFP</value>
+  </data>
+  <data name="Bestuur" xml:space="preserve">
+    <value>Bestuur</value>
+  </data>
   <data name="Contact" xml:space="preserve">
     <value>Contact</value>
+  </data>
+  <data name="DNA-Test" xml:space="preserve">
+    <value>DNA-test hengstenselectie</value>
+  </data>
+  <data name="Dressuur" xml:space="preserve">
+    <value>Dressuur</value>
+  </data>
+  <data name="Fokdoel" xml:space="preserve">
+    <value>Fokdoel</value>
+  </data>
+  <data name="Fokkerij" xml:space="preserve">
+    <value>Fokkerij</value>
+  </data>
+  <data name="Fokprogramma" xml:space="preserve">
+    <value>Fokprogramma</value>
   </data>
   <data name="FooterIntro" xml:space="preserve">
     <value>Belgisch Stamboek v/h Friese Paard vzw</value>
@@ -135,25 +159,85 @@
   <data name="Gegevens" xml:space="preserve">
     <value>Gegevens</value>
   </data>
+  <data name="Geschillenregeling" xml:space="preserve">
+    <value>Geschillenregeling</value>
+  </data>
+  <data name="Hengstenkeuze" xml:space="preserve">
+    <value>Hengstenkeuze</value>
+  </data>
+  <data name="HetBSFP" xml:space="preserve">
+    <value>Het BSFP</value>
+  </data>
   <data name="HetFriesePaard" xml:space="preserve">
     <value>Het Friese Paard</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
   </data>
+  <data name="IndentificatiePaard" xml:space="preserve">
+    <value>Identificatie paard</value>
+  </data>
+  <data name="Infodagen" xml:space="preserve">
+    <value>Infodagen en -avonden</value>
+  </data>
+  <data name="Informatie" xml:space="preserve">
+    <value>Informatie</value>
+  </data>
+  <data name="InteeltVerwantschap" xml:space="preserve">
+    <value>Inteelt en Verwantschap</value>
+  </data>
+  <data name="InterneReglementen" xml:space="preserve">
+    <value>Interne reglementen</value>
+  </data>
   <data name="JongBSFP" xml:space="preserve">
     <value>JongBSFP</value>
+  </data>
+  <data name="LidWorden" xml:space="preserve">
+    <value>Lid worden</value>
   </data>
   <data name="Marktplaats" xml:space="preserve">
     <value>Marktplaats</value>
   </data>
+  <data name="Mennen" xml:space="preserve">
+    <value>Mennen</value>
+  </data>
   <data name="Nieuws" xml:space="preserve">
     <value>Nieuws</value>
+  </data>
+  <data name="PaardenpuntVlaanderen" xml:space="preserve">
+    <value>Paardenpunt Vlaanderen</value>
+  </data>
+  <data name="PavoPhrysoBokaal" xml:space="preserve">
+    <value>PAVO PHRYSO Bokaal</value>
   </data>
   <data name="Privacy" xml:space="preserve">
     <value>Privacy</value>
   </data>
+  <data name="ProtocolAankoopPaard" xml:space="preserve">
+    <value>Protocol bij aankoop paard</value>
+  </data>
+  <data name="Registratiereglement" xml:space="preserve">
+    <value>Registratiereglement</value>
+  </data>
+  <data name="Reglementen" xml:space="preserve">
+    <value>Reglementen</value>
+  </data>
   <data name="Sponsors" xml:space="preserve">
     <value>Sponsors</value>
+  </data>
+  <data name="Statuten" xml:space="preserve">
+    <value>Statuten</value>
+  </data>
+  <data name="Tarieven" xml:space="preserve">
+    <value>Tarieven</value>
+  </data>
+  <data name="Trofee" xml:space="preserve">
+    <value>BSFP Trofee</value>
+  </data>
+  <data name="VaststellenRegistrerenValideren" xml:space="preserve">
+    <value>Onderzoek afstamming</value>
+  </data>
+  <data name="Verzekeringen" xml:space="preserve">
+    <value>Verzekeringen</value>
   </data>
 </root>

@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Tekst1" xml:space="preserve">
+    <value>The Frisian horse is the only native horse breed in the Netherlands, the Frisian type was already known in the 13th century. Through a consistent breeding policy
+                    The Friesian horse as we know it today still displays the specific breed characteristics and therefore similarities with its distant ancestors.
+                    Characteristic of the black pearls are the front, generous wallpaper, black color and spacious, powerful, lofty corridors. The harmonious build and the noble head,
+                    placed on a slightly curved neck, complete the luxurious and proud appearance. The friendly character is the key to a great utility horse.</value>
+  </data>
+  <data name="Tekst2" xml:space="preserve">
+    <value>In the mid-last century, the Frisian horse was mainly used as a draft horse on the farms. Today they are kept for recreation,
+                    breeding and sport, often in combination with each other. Dressage is particularly popular, but it is certainly also Frisian in driving and harness sports
+                    horse. There is a close relationship between purpose and exterior.</value>
+  </data>
+  <data name="Tekst3" xml:space="preserve">
+    <value>The horse used for farming was shorter-legged and more compact, with a lower foreleg and a broad chest. With this broad chest
+                    the horse was better able to throw itself 'into the harness' and thus develop more pulling power. These exterior features are less functional for today
+                    the riding, harness or driving horse. The heavier and short-legged type still occurs because this type has been bred for years and it takes several generations
+                    before this disappears from the breed. A functional build is very important for riding under the saddle and for harnessed sports. The horse
+                    must have an upward trunk direction. Due to this upward build, the weight distribution is moving more on the hindquarters, thus affecting the horse
+                    better able to carry with his hindquarters. A long front leg is important for an upward build, but also the position of the front leg. The
+                    The position of the foreleg is linked to the shoulder, whereby an oblique and long shoulder gives the horse the space to put the foreleg far away.</value>
+  </data>
+  <data name="Tekst4" xml:space="preserve">
+    <value>The harness horse often has a slightly more vertical neckline than the riding and driving horse. For all types, the horse is supple throughout the body
+                    must move, with a movement that is transmitted forward by a powerful hindquarters so that the horse can rise from the front, which is important
+                    is for riding under the saddle as well as riding in front of the car. A lot of knee action is desirable for a harness horse (but not only, it must be combined
+                    with a lot of space and a load-bearing hindquarters), while for a riding horse and also a driving horse, a lot of knee action is not always appreciated.
+                    For all intents and purposes, correct leg positions are a must.</value>
+  </data>
+  <data name="Tekst5" xml:space="preserve">
+    <value>The Friesian horse has developed more and more as a sport horse in recent decades, essentially returning to the type of before the
+                    agricultural period when the Frisian was a luxurious and stylish carriage horse. Due to the breed's own functional characteristics, it can nowadays be
+                    measure at the highest level with other breeds. And of course, the Frisian, due to its characteristic breed characteristics, has just a little more charisma!</value>
+  </data>
+  <data name="Titel1" xml:space="preserve">
+    <value>The Friesian horse</value>
+  </data>
+  <data name="Titel2" xml:space="preserve">
+    <value>Versatile utility horse</value>
+  </data>
+  <data name="Titel3" xml:space="preserve">
+    <value>Functional construction</value>
+  </data>
+  <data name="Titel4" xml:space="preserve">
+    <value>The Frisian sport horse</value>
+  </data>
+</root>
