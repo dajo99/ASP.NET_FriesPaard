@@ -118,21 +118,116 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="String1" xml:space="preserve">
-    <value>Pavo Phryso bokaal</value>
+    <value>BSFP Trofee</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>Deze info vind je terug in onze</value>
+  </data>
+  <data name="String10.1" xml:space="preserve">
+    <value>Agenda</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>Proeven:</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>Je kan je inschrijven voor 2 proeven per niveau. Een inloopproef en een tellende proef. 
+Wil je maar 1 proef rijden dan rij je die van het niveau zelf. De inloopproef dient dan eerder als opwarming.</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>Proef zonder galop:</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>en</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>Niveau initiatie:</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>Niveau 1:</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>Niveau 2:</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>Niveau 3:</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Niveau 4:</value>
   </data>
   <data name="String2" xml:space="preserve">
-    <value>Dit zijn de nieuwe proeven voor de 4-, 5- en 6-jarige paarden.</value>
+    <value>De BSFP Trofee bestaat uit een reeks dressuurwedstrijden voor Friese paarden, die gedurende de winterperiode georganiseerd wordt. Combinaties van alle niveaus kunnen deelnemen: van een proef zonder galop tot zelfs Grand Prix niveau. Er is ook de kans om een kür op muziek te rijden.
+
+​</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>Prix St Georges</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>Intermediaire</value>
+  </data>
+  <data name="String21.1" xml:space="preserve">
+    <value>Grand Prix</value>
+  </data>
+  <data name="String22" xml:space="preserve">
+    <value>Kür op muziek kan op elk niveau</value>
+  </data>
+  <data name="String23" xml:space="preserve">
+    <value>De proeven kan je vinden op:</value>
+  </data>
+  <data name="String24" xml:space="preserve">
+    <value>Inschrijven</value>
+  </data>
+  <data name="String25" xml:space="preserve">
+    <value>Inschrijven kan je via jongbsfp@bsfp-sbcf.be 
+! Vanaf 2019-2020 betaal je je proef op voorhand.</value>
+  </data>
+  <data name="String26" xml:space="preserve">
+    <value>Je voert de betaling ten laatste de maandag voor de wedstrijd uit, zodat wij die tijdig ontvangen.
+Per proef betaal je 10€, je mag dit overschrijven op onze rekening:</value>
+  </data>
+  <data name="String27" xml:space="preserve">
+    <value>JongBSFP</value>
+  </data>
+  <data name="String28" xml:space="preserve">
+    <value>Indien je je wil inschrijven voor kür op muziek, vermeld dan ook je niveau. Rij je een kür volgens een ander protocol dan binnen VLP?  Zend ons dan ook even een kopie van dit protocol mee via mail.</value>
+  </data>
+  <data name="String29" xml:space="preserve">
+    <value>Enkele belangrijke opmerkingen:</value>
   </data>
   <data name="String3" xml:space="preserve">
-    <value>Proef 4-jarigen</value>
+    <value>Voor wie?</value>
+  </data>
+  <data name="String30" xml:space="preserve">
+    <value>Je moet geen startkaart/competitieve licentie hebben.</value>
+  </data>
+  <data name="String31" xml:space="preserve">
+    <value>Je niveau mag je zelf bepalen, je mag echter niet op een lager niveau starten dan dat je op officiële wedstrijden doet. Je rijdt dus hetzelfde niveau of hoger.
+Was je vorig jaar kampioen dan wordt je verwacht om over te gaan naar het volgende niveau. Vanaf niveau 2 is dit vrijblijvend.</value>
+  </data>
+  <data name="String32" xml:space="preserve">
+    <value>Qua veiligheid en toegelaten materiaal hanteren we dezelfde regels als VLP.  
+JongBSFP en BSFP zijn niet verantwoordelijk voor gebeurlijke ongevallen.</value>
   </data>
   <data name="String4" xml:space="preserve">
-    <value>Proef 5-jarigen</value>
+    <value>Ruiters en amazones met een fries paard.</value>
   </data>
   <data name="String5" xml:space="preserve">
-    <value>Proef 6-jarigen</value>
+    <value>Heb je een fries paard en ken je de afstamming niet, dan mag je deelnemen maar vragen we je om een afstammingsonderzoek op te starten via KFPS. (Stamboek van Nederland)
+Arabofriezen of paarden met deels fries bloed mogen deelnemen aan de wedstrijden, maar kunnen niet opgenomen worden in het klassement voor de finale.</value>
   </data>
   <data name="String6" xml:space="preserve">
-    <value>Lees ook hier de nieuwe uitvoeringsbepalingen.</value>
+    <value>Waar?</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>Sinds jaar en dag kunnen we terecht in de prachtige locatie van manege De Rietbeemden in Geel, Antwerpen. Sedert enkele jaren mogen we gebruik maken van Manege Sint Hubert in Lennik, Vlaams Brabant. We hebben dit jaar heel uitgebreid gezocht naar nog extra geschikte locaties. Uiteindelijk hebben we die gevonden in Malle en Peer. Heb je in jouw buurt een fijne manege waar we terecht kunnen voor 2020-2021, dan mag je ons dat zeker en vast al laten weten!</value>
+  </data>
+  <data name="String7.1" xml:space="preserve">
+    <value>​Hoe werkt het?</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>Tussen september en april worden 5 wedstrijden georganiseerd. Op deze 5e wedstrijddag kan je in de voormiddag nog selectiepunten verdienen, als afsluiter van die dag wordt de finale verreden. Om geselecteerd te kunnen worden voor deze finale dien je aan minimum 3 wedstrijden deel te nemen. Je 3 beste prestaties gedurende deze wedstrijden bepalen of je mag meerijden in de finale. Doe zeker alle 5 de wedstrijden mee en maak kans op een fijne prijs op de finaledag! Deze wordt tijdens het seizoen bekend gemaakt.</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>Wanneer?</value>
   </data>
 </root>

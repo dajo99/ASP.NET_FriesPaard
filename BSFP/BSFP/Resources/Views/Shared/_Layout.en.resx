@@ -135,6 +135,9 @@
   <data name="Bestuur" xml:space="preserve">
     <value>Board</value>
   </data>
+  <data name="BSFPTrofee" xml:space="preserve">
+    <value>BSFP Trophy</value>
+  </data>
   <data name="Contact" xml:space="preserve">
     <value>Contact</value>
   </data>
@@ -230,9 +233,6 @@
   </data>
   <data name="Tarieven" xml:space="preserve">
     <value>Prices</value>
-  </data>
-  <data name="Trofee" xml:space="preserve">
-    <value>BSFP Trophy</value>
   </data>
   <data name="VaststellenRegistrerenValideren" xml:space="preserve">
     <value>Research parentage</value>

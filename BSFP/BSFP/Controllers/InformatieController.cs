@@ -37,6 +37,18 @@ namespace BSFP.Controllers
         {
             return View();
         }
+        public IActionResult IndentificatiePaard()
+        {
+            return View();
+        }
+        public IActionResult Mennen()
+        {
+            return View();
+        }
+        public IActionResult Infodagen()
+        {
+            return View();
+        }
 
 
 

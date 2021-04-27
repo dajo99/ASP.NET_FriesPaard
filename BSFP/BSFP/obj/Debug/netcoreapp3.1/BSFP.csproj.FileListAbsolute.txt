@@ -1576,13 +1576,9 @@ C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Informatie.PaardenpuntVlaanderen.en.resources
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Informatie.PaardenpuntVlaanderen.fr.resources
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Informatie.PaardenpuntVlaanderen.nl.resources
-C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Dressuur\Trofee.cshtml.g.cs
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Dressuur.PavoPhrysoBokaal.en.resources
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Dressuur.PavoPhrysoBokaal.fr.resources
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Dressuur.PavoPhrysoBokaal.nl.resources
-C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Dressuur.Trofee.en.resources
-C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Dressuur.Trofee.fr.resources
-C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Dressuur.Trofee.nl.resources
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Informatie.Infodagen.en.resources
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Informatie.Infodagen.fr.resources
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Informatie.Infodagen.nl.resources
@@ -1592,3 +1588,10 @@ C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Informatie.Verzekeringen.en.resources
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Informatie.Verzekeringen.fr.resources
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Informatie.Verzekeringen.nl.resources
+C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Informatie.IndentificatiePaard.en.resources
+C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Informatie.IndentificatiePaard.fr.resources
+C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Informatie.IndentificatiePaard.nl.resources
+C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Dressuur.BSFPTrofee.en.resources
+C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Dressuur.BSFPTrofee.fr.resources
+C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Dressuur.BSFPTrofee.nl.resources
+C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Dressuur\BSFPTrofee.cshtml.g.cs

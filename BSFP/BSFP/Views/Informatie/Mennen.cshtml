@@ -1,5 +1,31 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>@localizer["Titel"]</h1>
+        </div>
+    </div>
+
+</header>
+
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+        <div class="row mt-sm-3">
+            <div class="col-12">
+                <h2>@localizer["Titel1"]</h2>
+                <p>
+                    @localizer["Tekst1"]
+                </p>
+                <p>
+                    @localizer["Tekst2"]<br /><a href="">Verheven gangen</a>(PDF)
+                </p>
+                <p>
+                    @localizer["Tekst3"]
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+</main>

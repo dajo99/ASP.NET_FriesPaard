@@ -135,6 +135,9 @@
   <data name="Bestuur" xml:space="preserve">
     <value>Conseil</value>
   </data>
+  <data name="BSFPTrofee" xml:space="preserve">
+    <value>Trophée SBCF</value>
+  </data>
   <data name="Contact" xml:space="preserve">
     <value>Contacter</value>
   </data>
@@ -230,9 +233,6 @@
   </data>
   <data name="Tarieven" xml:space="preserve">
     <value>Tarifs</value>
-  </data>
-  <data name="Trofee" xml:space="preserve">
-    <value>Trophée SBCF</value>
   </data>
   <data name="VaststellenRegistrerenValideren" xml:space="preserve">
     <value>Recherche sur la filiation</value>
