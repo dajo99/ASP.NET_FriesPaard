@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>PROTOCOL BIJ AANKOOP VAN EEN PAARD</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>Paspoort veulen</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>Een veulen moet binnen het jaar vanaf de geboorte in het bezit zijn van een paspoort.
+U vult het identificatieformulier in dat u vindt bij</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>en dit formulier stuurt u naar ons secretariaat.
+Het veulen wordt in de databank ingebracht en U gaat van VCP een rekening ontvangen van 42,99 euro.
+Nadat U dit betaald heeft gaat U schetsen ontvangen. Deze schets laat U invullen door uw dierenarts en hiervan stuurt U 1 exemplaar naar ons secretariaat.
+Het paspoort kan dan aangemaakt worden.</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>Aankoop paard in Nederland</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>Bij aankoop van het paard altijd het paspoort meevragen.
+Het paard mag niet vervoerd worden zonder paspoort!
+Daarna stuurt U het originele stamboekpapier en originele paspoort naar ons secretariaat.
+Het paard zal dan op uw naam geregistreerd worden en in de Belgische databank ingebracht worden.
+U dient hiervoor lid te zijn van ons stamboek.</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>Aankoop paard in België</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>Indien de verkoper het stamboekpapier instuurt naar ons secretariaat en hij is op dat moment lid van ons stamboek zal de verkoper de waarborgsom van</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>terug ontvangen.</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>Indien de verkoper het stamboekpapier meegeeft aan de koper ontvangt de verkoper de waarborgsom  niet terug.
+De verkoper dient het paspoort mee te geven aan de nieuwe eigenaar, als hij het paard komt ophalen.
+De verkoper zal samen met de koper het mutatiedocument invullen en dit ingevuld opsturen naar VCP.
+De nieuwe eigenaar stuurt nadien het origineel stamboekpapier (als hij dit meegekregen heeft) naar ons BSFP secretariaat zodat wij dit op de nieuwe eigenaar kunnen registreren.
+Ook het originele paspoort stuurt hij naar ons secretariaat zodat wij het paard kunnen registreren op naam van de nieuwe eigenaar en het paspoort kunnen voorzien van een stempel.
+Indien de nieuwe eigenaar het stamboekpapier niet heeft meegekregen, contact opnemen met het secretariaat zodat wij kunnen melden of dit stamboekpapier zich op het stamboekkantoor bevindt.
+De nieuwe eigenaar dient lid te zijn van ons stamboek.</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Bij twijfel : Neem</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Geboorte veulen</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>op.</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>De geboortemelding van een veulen wordt digitaal verricht via Mijn KFPS.
+Nadat een dekking van een merrie is geregistreerd, wordt in Mijn KFPS onder de betreffende merrie een digitaal geboortemeldingsformulier aangemaakt, welke na de geboorte ingevuld en (digitaal) verstuurd moet worden.
+Na aanmelding, krijgt U via de mail een bevestiging en wordt de geboortebevestiging aangemaakt in “Mijn KFPS”.
+Deze geboortebevestiging kan via Mijn KFPS gedownload worden en is het document dat bij de keuring afgegeven wordt aan het secretariaat met chipnummer erop gekleefd en datum en handtekening van de dierenarts.</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>Een veulen dient</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>binnen 14 dagen</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>na geboorte gemeld te zijn bij het KFPS.</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>Indien men niet naar de keuring gaat met het veulen dient de geboortebevestiging met chipnummer erop gekleefd en datum en handtekening van de dierenarts naar het BSFP secretariaat gestuurd te worden om het veulenboekpapier te ontvangen.</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>Het veulen moet binnen de 6 maanden gechipt worden.</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>Uiteraard dient de moeder van het veulen reeds op voorhand op naam van de fokker te staan.
+In sommige gevallen is een afstammingsverificatie (via DNA-onderzoek) noodzakelijk alvorens een veulen geregistreerd kan worden. Bijvoorbeeld als de dekking niet of te laat is gemeld bij het KFPS, de dekdatum en geboortedatum niet met elkaar corresponderen, de geboorte te laat wordt gemeld bij het KFPS (ouder dan 14 dagen), het veulen te laat (ouder dan 7 maanden) voor identificatie wordt aangeboden, etc
+Indien er problemen zijn, of U geen internet heeft, kan U altijd contact opnemen met ons BSFP secretariaat.</value>
+  </data>
+</root>

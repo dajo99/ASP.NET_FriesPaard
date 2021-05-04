@@ -49,6 +49,10 @@ namespace BSFP.Controllers
         {
             return View();
         }
+        public IActionResult Keuringen()
+        {
+            return View();
+        }
 
 
 

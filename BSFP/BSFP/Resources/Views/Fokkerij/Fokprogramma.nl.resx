@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>Fokprogramma</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>De kenmerken zijn de fokdoelkenmerken zelf of dienen hier sterk mee te zijn gecorreleerd</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>De kenmerken moeten nauwkeurig gemeten of beoordeeld kunnen worden</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>De kenmerken moeten in een voldoende mate van erfelijk bepaald zijn (h2)</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>In sommige gevallen zijn indirecte bronnen van informatie zinvoller dan directe informatie. Zo wordt beweging aan de hand beoordeeld als indirecte informatiebron voor sportaanleg. De kenmerken zijn redelijk gecorreleerd en er komt veel meer en veel eerder informatie beschikbaar voor bewegen aan de hand in vergelijking met gegevens uit de competitiesport. Om dezelfde reden zijn aanlegtesten voor de gebruikskenmerken als indirecte informatie van groot belang.</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>Exterieur</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>De beoordeling van het exterieur speelt bij de fokkerij van Friese paarden een grote rol. Het exterieur wordt beoordeeld in alle leeftijdscategorieën, van veulens tot oudere paarden. Exterieurbeoordeling is de basis van de stamboekopname van merries, is bepalend voor de primering en toekenning van registers en predikaten en is een belangrijk onderdeel van de hengstenselectie. Het beoordelen van – en het selecteren voor exterieur staat ten dienste van de volgende componenten in het fokdoel:</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>Raskenmerken</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>De beoordeling van de raskenmerken van een paard vindt plaats bij de exterieurkeuring.</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>Sportaanleg</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Exterieurkenmerken geven informatie over de sportaanleg van een paard. De basisgangen, beoordeeld bij de exterieurkeuring, zijn van belang voor een sportpaard. Daarnaast wordt een paard beoordeeld voor (ten aanzien van de sport) functionele kenmerken, met name de bouw.</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Het fokprogramma beschrijft de strategie om het geformuleerde fokdoel te realiseren. Een fokprogramma bestaat uit de volgende componenten:</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>Duurzaamheid</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>Verschillende exterieurkenmerken (bouw en beenwerk) geven informatie over de duurzaamheid van een paard. De exterieurbeoordeling bestaat uit het beschrijven van 22 lineaire kenmerken en het waarderen van 5 hoofdkenmerkenkenmerken. De waarderingen van de 5 hoofdkenmerken (rastype, bouw, beenwerk, stap en draf) is bepalend voor de primering van een paard en de daaraan gerelateerde register. Een nauwkeurige beschrijving van de wijze van exterieurbeoordelen is weergegeven in richtlijnen voor de lineaire beoordeling exterieur. De regelgeving aangaande exterieurkeuringen zijn weergegeven in het keuringsreglement.</value>
+  </data>
+  <data name="String22" xml:space="preserve">
+    <value>Sportaanleg</value>
+  </data>
+  <data name="String23" xml:space="preserve">
+    <value>De directe informatie m.b.t. aanleg voor gebruik in de sport, bestaat uit resultaten uit de competitiesport. Deze gegevens worden door het KFPS benut voor ondermeer het selecteren van oudere hengsten voor de fokkerij (reglement verkort onderzoek), evaluatie van nakomelingen van stamboekhengsten (reglement hengstenselectie), beoordelen van stambomen bij de selectie van jonge hengsten, verlenen van het prestatiepredikaat voor merries, etc. De gegevens vanuit de competitiesport kennen een aantal beperkingen. De gegevens kennen een relatief lage h2 (grote invloed ruiter/menner) en komen op een relatief hoge leeftijd beschikbaar. Voor de fokkerij van Friese paarden geldt bovendien dat het aantal paarden dat wordt uitgebracht in de competitiesport (nog) relatief klein is. Om deze reden spelen de verschillende aanlegtesten een grote rol in de fokkerij van Friese paarden. Deze informatie heeft een relatief hoge h2 (ABFP) en komt vroeg beschikbaar. Het KFPS kent de volgende aanlegtesten:</value>
+  </data>
+  <data name="String24" xml:space="preserve">
+    <value>Het Centraal Onderzoek</value>
+  </data>
+  <data name="String24.1" xml:space="preserve">
+    <value>Een verrichtingsonderzoek van 70 dagen voor hengsten als onderdeel van het selectietraject van hengsten. De paarden worden beoordeeld op de basisgangen (stap, draf, galop) en geschiktheid als rij-, men- en tuigpaard.</value>
+  </data>
+  <data name="String25" xml:space="preserve">
+    <value>De ABFP (aanleg- en bruikbaarheidstest voor Friese paarden)</value>
+  </data>
+  <data name="String25.1" xml:space="preserve">
+    <value>Een 5 weken durend onderzoek van paarden vanaf 3 jaar, waar de paarden getraind en beoordeeld worden. De paarden worden beoordeeld op de basisgangen (stap, draf, galop) en geschiktheid als rij-, men- en tuigpaard.</value>
+  </data>
+  <data name="String26" xml:space="preserve">
+    <value>De IBOP-test</value>
+  </data>
+  <data name="String26.1" xml:space="preserve">
+    <value>Paarden worden in een proef beoordeeld, waarin gekozen kan worden tussen rijproef, menproef of tuigproef. De paarden worden beoordeeld op de basisgangen (stap, draf, galop) en geschiktheid als rij-, men- of tuigpaard.</value>
+  </data>
+  <data name="String27" xml:space="preserve">
+    <value>Karakter</value>
+  </data>
+  <data name="String28" xml:space="preserve">
+    <value>Het karakter kan globaal in twee aspecten verdeeld worden:</value>
+  </data>
+  <data name="String29" xml:space="preserve">
+    <value>Werklust</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>Beschrijving van de informatie waarop de selectie is gebaseerd</value>
+  </data>
+  <data name="String30" xml:space="preserve">
+    <value>Dit houdt verband met inzet, doorzettingsvermogen en bereidheid tot het uitvoeren van het gevraagde.</value>
+  </data>
+  <data name="String31" xml:space="preserve">
+    <value>Gebruiksgemak</value>
+  </data>
+  <data name="String32" xml:space="preserve">
+    <value>Dit houdt verband met eerlijkheid, betrouwbaarheid, etc. van het paard. Beide kenmerken worden beoordeeld tijdens het Centraal Onderzoek en de ABFP-test. Op deze wijze wordt een inzicht verkregen in het karakter van een hengst en later zijn nakomelingen. Deze beide aspecten worden verondersteld negatief gecorreleerd te zijn. Het gevaar bestaat dat bij intensievere selectie voor sportaanleg, dit ten koste zou kunnen gaan van het gebruiksgemak van het Friese paard.</value>
+  </data>
+  <data name="String33" xml:space="preserve">
+    <value>Gezondheidskenmerken</value>
+  </data>
+  <data name="String34" xml:space="preserve">
+    <value>Het verzamelen van en selecteren voor gezondheidskenmerken is volop in ontwikkeling. In de komende jaren zullen gezondheidskenmerken een grotere rol gaan spelen in het fokkerijbeleid. Globaal zijn de gezondheidskenmerken te verdelen in:</value>
+  </data>
+  <data name="String35" xml:space="preserve">
+    <value>vitaliteit ( duurzaamheid en laatrijpheid)</value>
+  </data>
+  <data name="String36" xml:space="preserve">
+    <value>vruchtbaarheid (hengsten en merries)</value>
+  </data>
+  <data name="String37" xml:space="preserve">
+    <value>ziekteresistentie</value>
+  </data>
+  <data name="String38" xml:space="preserve">
+    <value>erfelijke afwijkingen</value>
+  </data>
+  <data name="String39" xml:space="preserve">
+    <value>Gezondheidskenmerken zijn deels gerelateerd aan inteelt. T.a.v. de gezondheidskenmerken wordt een tweesporenbeleid gevoerd. Enerzijds wordt geselecteerd voor deze kenmerken en anderzijds is het fokkerijbeleid gericht op terugdringing van inteelt.</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>Methodiek van schatten van genetische aanleg voor de fokdoelkenmerken voor individuele paarden in de populatie</value>
+  </data>
+  <data name="String40" xml:space="preserve">
+    <value>Fokwaardeschatting</value>
+  </data>
+  <data name="String41" xml:space="preserve">
+    <value>Verschillen die we waarnemen tussen groepen nakomelingen van hengsten (of merries) zijn slechts voor een deel van genetische aard en slechts voor de helft afkomstig van de vader. Het is bekend dat de ene hengst meer en betere kansen krijgt dan de andere hengst. Om een goed inzicht te krijgen in de genetische aanleg van een paard (meestal hengsten) moeten de ruwe gegevens gecorrigeerd worden voor niet genetische factoren. Dit is de essentie van de fokwaardeschatting. Het schattingsmodel dat door het KFPS wordt toegepast voor de fokwaardeschatting is het zogenaamde BLUP-model (Best Lineair Unbiased Prediction). Bij het schatten van fokwaarden van hengsten wordt gecorrigeerd voor de kwaliteit van de moeders van de nakomelingen. Andere effecten die in het schattingsmodel zijn opgenomen, zijn:</value>
+  </data>
+  <data name="String42" xml:space="preserve">
+    <value>leeftijd</value>
+  </data>
+  <data name="String43" xml:space="preserve">
+    <value>keurmeester</value>
+  </data>
+  <data name="String44" xml:space="preserve">
+    <value>geslacht</value>
+  </data>
+  <data name="String45" xml:space="preserve">
+    <value>keuring</value>
+  </data>
+  <data name="String46" xml:space="preserve">
+    <value>Elk paard in de populatie heeft een fokwaarde. Bij een veulen is de fokwaarde het gemiddelde tussen de fokwaarde van beide ouders. Later wordt de eigen prestatie van het paard in de fokwaardeschatting meegenomen en daarna de informatie van de nakomelingen. Hoe meer beoordeelde nakomelingen een hengst heeft hoe minder de informatie van het dier zelf en diens ouders meetellen.</value>
+  </data>
+  <data name="String47" xml:space="preserve">
+    <value>BLUP-fokwaarden worden geschat voor de lineaire- en waarderende exterieurkenmerken (gebaseerd op de informatie uit het lineaire scoren) en voor sportaanleg (gebaseerd op de informatie uit de ABFP-testen).</value>
+  </data>
+  <data name="String48" xml:space="preserve">
+    <value>Selectie</value>
+  </data>
+  <data name="String49" xml:space="preserve">
+    <value>De essentie van selectie is om die ouderdieren aan te wijzen die de volgende generatie veulens moeten voortbrengen. Er moet hierbij onderscheid gemaakt worden tussen hengsten en merries. Feitelijk vindt alleen bij de hengsten selectie plaats. Alleen van goedgekeurde hengsten kunnen de nakomelingen in het hoofdregister geregistreerd worden. Bij de merries vindt indirecte selectie plaats via een premie en predikatenstelsel, waarbij de betere merries frequenter voor de fokkerij worden ingezet.</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>Systemen voor selectie</value>
+  </data>
+  <data name="String50" xml:space="preserve">
+    <value>Hengstenselectie</value>
+  </data>
+  <data name="String51" xml:space="preserve">
+    <value>De hengstenselectie bestaat uit twee fases. In de eerste fase worden hengsten goedgekeurd op basis van de eigen prestatie, tijdens de Hengstenkeuring en het Centraal oOderzoek of middels het verkorte onderzoek. In de tweede fase worden de goedgekeurde stamboekhengsten beoordeeld op hun
+nakomelingen.</value>
+  </data>
+  <data name="String52" xml:space="preserve">
+    <value>Hengstenkeuring/Centraal Onderzoek</value>
+  </data>
+  <data name="String53" xml:space="preserve">
+    <value>De Hengstenkeuring kent een drietal bezichtigingen. Na de derde bezichtiging worden de hengsten
+aangewezen voor het Centraal Onderzoek. Gedurende het gehele traject worden de hengsten getoetst
+aan ondergrenzen van selectie. Na het laatste onderdeel, het Centraal Onderzoek, wordt op basis van
+het totaalbeeld van alle, tijdens het gehele traject beoordeelde criteria een oordeel geveld over het wel
+of niet inschrijven van een hengst in het stamboekregister. De regelgeving aangaande de
+hengstenselectie is weergegeven in het reglement hengstenselectie.</value>
+  </data>
+  <data name="String54" xml:space="preserve">
+    <value>Verkort onderzoek</value>
+  </data>
+  <data name="String55" xml:space="preserve">
+    <value>Met als doel de sportaanleg in de populatie te verbeteren voorziet het beleid voor een apart selectietraject voor inschrijving in het stamboekregister, van (minimaal 8-jarige) hengsten met zeer hoge prestaties in de sport. De regelgeving hiervoor is weergegeven in het reglement verkort onderzoek.</value>
+  </data>
+  <data name="String56" xml:space="preserve">
+    <value>Nakomelingenonderzoek</value>
+  </data>
+  <data name="String57" xml:space="preserve">
+    <value>Hoewel het goedkeuren van (jonge) hengsten geschied op basis van de op dat moment beste informatie (pedigree en eigen prestatie), biedt dit geen garantie dat deze hengsten ook daadwerkelijk positief vererven. Om een goed beeld te krijgen over de werkelijke genetische aanleg van een hengst, moet een voldoende aantal nakomelingen beoordeeld worden. Het nakomelingenonderzoek bestaat uit het beoordelen van nakomelingen (zowel veulens als volwassen paarden) op exterieur, sportaanleg (20 nakomelingen worden beoordeeld in een ABFP-test), eventuele erfelijk afwijkingen, etc. Op basis van het nakomelingenonderzoek kunnen hengsten worden afgekeurd. De gegevens die voortkomt uit het nakomelingenonderzoek biedt waardevolle informatie bij de hengstenkeuze.</value>
+  </data>
+  <data name="String58" xml:space="preserve">
+    <value>Merrieselectie</value>
+  </data>
+  <data name="String59" xml:space="preserve">
+    <value>Feitelijk vindt er in directe zin geen selectie van merries plaats. Van alle merries in het hoofdregister ingeschreven merries worden de nakomelingen eveneens in het hoofdregister ingeschreven, ongeacht de kwaliteit van de merrie (mits het veulen afstamt van een door het KFPS goedgekeurde hengst). Indirect wordt er wel geselecteerd in het merriemateriaal. Door een stelsel van predikaten en premies worden merries naar kwaliteit onderscheiden. De predikaten zijn gebaseerd op de kwaliteit van de merrie (exterieur/sportaanleg) of de kwaliteit van de nakomelingen (exterieur/sportaanleg). De kwalitatief betere merries zullen meer nakomelingen voortbrengen. De beschrijving van predikaten is beschreven in het reglement stamboekregistratie.</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>Evaluatie van de selectierespons</value>
+  </data>
+  <data name="String60" xml:space="preserve">
+    <value>Evaluatie</value>
+  </data>
+  <data name="String61" xml:space="preserve">
+    <value>Om te beoordelen of het gevoerde beleid tot het beoogde resultaat heeft geleid, moet het fokkerijbeleid geëvalueerd worden. In het geval dat de doelstellingen niet worden gehaald dient het fokkerij/selectiebeleid te worden gewijzigd. Hiermee is het fokkerijbeleid een cyclisch proces. Een hulpmiddel dat door het KFPS wordt gebruikt bij de evaluatie is de genetische trend voor de fokdoelkenmerken. Op basis van de gemiddelde fokwaarde voor een kenmerk per geboortejaar, kan gekeken worden of vooruitgang wordt geboekt. Een ander hulpmiddel is bijvoorbeeld de trend voor inteelt.</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>De doelstelling van een fokprogramma is om niet alleen voor de korte-, maar ook voor de lange termijn  vooruitgang te boeken. Het is daarom van belang dat met het te voeren fokbeleid voldoende genetische variatie in de populatie behouden blijft. Zeker in de gesloten fokkerij van het Friese paard is het van belang de inteelttoename te beperken. Te meer ook omdat inteelt de oorzaak is van het ontstaan van erfelijke gebreken en verminderde fitness (vruchtbaarheid, ziekteresistentie, levensduur, etc.).</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>Informatie</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>Om te kunnen selecteren voor de in het fokdoel aangegeven kenmerken moet vastgesteld worden op basis van welke gegevens de selectie plaatsvindt. Eisen die gesteld worden aan selectiecriteria zijn de volgende:</value>
+  </data>
+</root>

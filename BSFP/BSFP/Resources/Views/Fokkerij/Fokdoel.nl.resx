@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>Fokdoel</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>Hoofd</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>Een klein sprekend, edel hoofd, waarbij de ogen ver uit elkaar staan. Het neusbeen is bij voorkeur iets hol. Ruime neusgaten. De kaken zijn licht en de mondspleet is lang. De ogen groot en helder. De kleine attente oortjes neigen licht naar elkaar.</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>Hals</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>De lange hals en nek vormen gezamenlijk een licht naar boven gebogen lijn. De hals vertoont veel oprichting.</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>Behang</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>Het Friese paard heeft een royale beharing in de vorm van manen, staart en onderbenen (sokken).</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>Kleur</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>De haarkleur is gitzwart. Witte aftekeningen aan het hoofd zijn toegestaan, mits niet groter dan 3,2 cm en niet gelokaliseerd beneden de ooglijn. Witte aftekeningen elders op het lichaam van het paard zijn niet toegestaan.</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>Bouw</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Algemeen</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Een functioneel en harmonisch gebouwd gebruikspaard in het bezit van de Friese raskenmerken, dat gezond en vitaal is en aanleg heeft om in de sport te presteren. Het fokdoel bestaat uit diverse componenten die onderverdeeld kunnen worden in:</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>Een harmonieus, functioneel, evenredig, en opwaarts gebouwd paard met een lang voorbeen en niet te zwaar qua massa. Het paard staat in een rechthoeksmodel, waar bij de verhouding van voor-, midden- en achterhand, 1:1:1 is.</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>Hoofd-halsverbinding</value>
+  </data>
+  <data name="String22" xml:space="preserve">
+    <value>Nek</value>
+  </data>
+  <data name="String23" xml:space="preserve">
+    <value>De nek is lang (handbreedte) met een vloeiende overgang naar de hals.</value>
+  </data>
+  <data name="String24" xml:space="preserve">
+    <value>De keeluitsnijding</value>
+  </data>
+  <data name="String25" xml:space="preserve">
+    <value>De keeluitsnijding heeft een open onderlijn met ruimte bij de keelgang.</value>
+  </data>
+  <data name="String26" xml:space="preserve">
+    <value>Hals</value>
+  </data>
+  <data name="String27" xml:space="preserve">
+    <value>De hals is lang, met een goede bovenbespiering, waardoor er een lichte welving ontstaat. De hals komt hoog uit de borst en heeft een vloeiende aansluiting met de schoft.</value>
+  </data>
+  <data name="String28" xml:space="preserve">
+    <value>Schouder</value>
+  </data>
+  <data name="String29" xml:space="preserve">
+    <value>De schouder is lang en schuin geplaatst. (In een hoek met de horizontale lijn tussen de 45 en 50 graden). De hoek in het boeggewricht is minimaal 90 graden.</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>Exterieur &amp; Beweging</value>
+  </data>
+  <data name="String30" xml:space="preserve">
+    <value>Ribben</value>
+  </data>
+  <data name="String31" xml:space="preserve">
+    <value>De ribben zijn lang en gewelfd.</value>
+  </data>
+  <data name="String32" xml:space="preserve">
+    <value>Schoft</value>
+  </data>
+  <data name="String33" xml:space="preserve">
+    <value>De hoge schoft loopt vloeiend door in de rug.</value>
+  </data>
+  <data name="String34" xml:space="preserve">
+    <value>Rug</value>
+  </data>
+  <data name="String35" xml:space="preserve">
+    <value>De rug is sterk en bespierd (niet strak en niet week). De rug heeft een vloeiende aansluiting naar schoft en lendenen. De lengte van de rug is in verhouding met de lengte van voor- en achterhand.</value>
+  </data>
+  <data name="String36" xml:space="preserve">
+    <value>Lendenen</value>
+  </data>
+  <data name="String37" xml:space="preserve">
+    <value>De lendenen zijn sterk (niet gedreven of gezonken), breed en bespierd, met een vloeiende overgang naar het kruis.</value>
+  </data>
+  <data name="String38" xml:space="preserve">
+    <value>Kruis</value>
+  </data>
+  <data name="String39" xml:space="preserve">
+    <value>Het kruis is lang (gemeten tussen de verticale lijnen van heup- en zitbeenknobbel), licht hellend en bespierd.</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>Gebruik</value>
+  </data>
+  <data name="String40" xml:space="preserve">
+    <value>Broekspier</value>
+  </data>
+  <data name="String41" xml:space="preserve">
+    <value>De broekspier is lang en ontwikkeld.</value>
+  </data>
+  <data name="String42" xml:space="preserve">
+    <value>Beenwerk</value>
+  </data>
+  <data name="String43" xml:space="preserve">
+    <value>De voorbenen zijn van de voorkant gezien loodrecht geplaatst met een hoefbreedte tussenruimte. Van opzij gezien, tot en met de kogels is het voorbeen loodrecht gesteld. De onderarm en de pijp zijn lang. De kogels zijn van opzij gezien ovaal en droog. Het achterbeen is van achteren gezien recht gesteld (parallel). Van opzij gezien is de hoek in het spronggewricht tussen de 145 en 150 graden. De schenkel is goed bespierd. Het spronggewricht is droog, hard en goed ontwikkeld (breed en diep). De kogels zijn van opzij gezien ovaal en droog. De koten zijn lang en verend. De voorkoot heeft een hoek met de bodem van 45 tot 50 graden. De achterkoot maakt een hoek met de bodem van 50 tot 55 graden. De hoeven zijn royaal en goed gevormd, gaaf en passend bij het paard. De hoeven zijn voor breder dan achter.</value>
+  </data>
+  <data name="String44" xml:space="preserve">
+    <value>Beweging</value>
+  </data>
+  <data name="String45" xml:space="preserve">
+    <value>Stap</value>
+  </data>
+  <data name="String46" xml:space="preserve">
+    <value>De stap is ruim en in een zuivere 4-tact. De benen zijn in stap van voor en achter gezien recht gesteld. Het achterbeen vertoont buiging in het spronggewricht en wordt krachtig en ruim onder lichaam geplaatst. Het achterbeen verdrijft het voorbeen, wat ruim wordt weggezet met veel schoudervrijheid.</value>
+  </data>
+  <data name="String47" xml:space="preserve">
+    <value>Draf</value>
+  </data>
+  <data name="String48" xml:space="preserve">
+    <value>De draf is een zuivere 2-tact. Het achterbeen wordt krachtig en ruim onder het lichaam geplaatst en toont daarbij veel buiging in het spronggewricht. Het voorbeen vertoont knieactie en wordt ruim naar voren geplaatst. De draf wordt gekenmerkt door souplesse en een lang zweefmoment. Het paard vertoont daarbij veel balans en rijst in de voorhand, waarbij de hals verheven is. Van voor en achter gezien moeten de benen recht gesteld zijn.</value>
+  </data>
+  <data name="String49" xml:space="preserve">
+    <value>Galop</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>Vitaliteit en Gezondheid</value>
+  </data>
+  <data name="String50" xml:space="preserve">
+    <value>De galop is een zuivere 3-tact. De galop is ruim met een vooruitgrijpend voorbeen en een dragend binnenbeen. De galop is opwaarts en vertoont een lang zweefmoment, veel souplesse en balans.</value>
+  </data>
+  <data name="String51" xml:space="preserve">
+    <value>Gebruik</value>
+  </data>
+  <data name="String52" xml:space="preserve">
+    <value>Het gebruiksdoel van het Friese paard varieert van recreatief gebruik tot deelname tot in de hoogste klassen in de competitiesport. De disciplines waarin het Friese paard wordt uitgebracht zijn:</value>
+  </data>
+  <data name="String53" xml:space="preserve">
+    <value>Tuigpaardensport</value>
+  </data>
+  <data name="String54" xml:space="preserve">
+    <value>Dressuur onder het zadel</value>
+  </data>
+  <data name="String55" xml:space="preserve">
+    <value>Mensport</value>
+  </data>
+  <data name="String56" xml:space="preserve">
+    <value>Samengestelde wedstrijdsport</value>
+  </data>
+  <data name="String57" xml:space="preserve">
+    <value>Endurance</value>
+  </data>
+  <data name="String58" xml:space="preserve">
+    <value>De doelstelling is om de aanleg voor sport in al z’n aspecten te verbeteren. Voorwaarde hierbij is dat het gemakkelijke karakter van het Friese paard behouden blijft, waardoor het Friese paard bij uitstek een geschikt paard blijft voor recreatief gebruik. Het Friese paard is qua gebruik een veelzijdig paard. Dit betekent niet dat aanleg voor alle disciplines in dezelfde mate bij alle paarden aanwezig dient te zijn. Binnen het fokdoel is ruimte voor specialisatie, zonder dat dit leidt tot een typenfokkerij. De fokdoelbeschrijving ten aanzien van exterieur en beweging zijn universeel voor alle gebruiksdisciplines. De (meer)waarde van het Friese paard in de sport bestaat uit de combinatie van de volgende eigenschappen:</value>
+  </data>
+  <data name="String59" xml:space="preserve">
+    <value>Gemakkelijk te gebruiken en te bewerken</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>De onderdelen van deze componenten worden in het fokprogramma vertaald in selectiecriteria. Het hier beschreven fokdoel moet gezien worden als de omschrijving van de kenmerken van het ras, als bedoeld in beschikking 92/353/EEG, pint 3, onderdeel b), tweede gedachtenstreepje van de bijlage.</value>
+  </data>
+  <data name="String60" xml:space="preserve">
+    <value>Leergierig en intelligent</value>
+  </data>
+  <data name="String61" xml:space="preserve">
+    <value>Imposant en elegant</value>
+  </data>
+  <data name="String62" xml:space="preserve">
+    <value>Veelzijdig</value>
+  </data>
+  <data name="String63" xml:space="preserve">
+    <value>Om de positie van het Friese paard in de sport te verbeteren worden hoge eisen gesteld aan de volgende kenmerken, die gezamenlijk de sportaanleg bepalen:</value>
+  </data>
+  <data name="String64" xml:space="preserve">
+    <value>Beweging</value>
+  </data>
+  <data name="String65" xml:space="preserve">
+    <value>Exterieur (bouw)</value>
+  </data>
+  <data name="String66" xml:space="preserve">
+    <value>Uithoudingsvermogen</value>
+  </data>
+  <data name="String67" xml:space="preserve">
+    <value>Karakter (werkwillig en sociaal)</value>
+  </data>
+  <data name="String68" xml:space="preserve">
+    <value>Duurzaamheid</value>
+  </data>
+  <data name="String69" xml:space="preserve">
+    <value>Gezondheid</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>Exterieur &amp; beweging</value>
+  </data>
+  <data name="String7.1" xml:space="preserve">
+    <value>Raseigenschappen</value>
+  </data>
+  <data name="String70" xml:space="preserve">
+    <value>Zie ook</value>
+  </data>
+  <data name="String71" xml:space="preserve">
+    <value>sportdoel</value>
+  </data>
+  <data name="String72" xml:space="preserve">
+    <value>Vitaliteit en gezondheid</value>
+  </data>
+  <data name="String73" xml:space="preserve">
+    <value>In de fokkerij van Friese paarden worden hoge eisen gesteld aan de volgende kenmerken die gezamenlijk bepalend zijn voor de vitaliteit en gezondheid:</value>
+  </data>
+  <data name="String74" xml:space="preserve">
+    <value>Geen erfelijke afwijkingen</value>
+  </data>
+  <data name="String75" xml:space="preserve">
+    <value>Vruchtbaarheid (hengsten en merries) en Vitaliteit (duurzaam en gezond)</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>Algemeen</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>Een paard dat door zijn karakteristieke front, royaal behang, de zwarte kleur en ruime verheven gangen (knie-actie) een luxe en fiere verschijning is.</value>
+  </data>
+</root>

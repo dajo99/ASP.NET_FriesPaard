@@ -1,5 +1,46 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>@localizer["String1"]</h1>
+        </div>
+    </div>
+
+</header>
+
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+        <div class="row mt-sm-3">
+            <div class="col-12">
+                <p>
+                    @localizer["String2"]
+                </p>
+                <br />
+                <ul>
+                    <li>
+                        <a href="~/Files/Proef 4-jarigen Pavo Fryso bokaal.pdf">
+                            @localizer["String3"]
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Files/Proef 5-jarigen Pavo Fryso bokaal.pdf">
+                            @localizer["String4"]
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Files/Proef 6-jarigen Pavo Fryso bokaal.pdf">
+                            @localizer["String5"]
+                        </a>
+                    </li>
+                </ul>
+                <br />
+                <a href="~/Files/Uitvoeringsbepalingen Pavo Frysobokaal dressuur.pdf">
+                    @localizer["String6"]
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+</main>

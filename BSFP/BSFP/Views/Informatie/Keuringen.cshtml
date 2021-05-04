@@ -1,0 +1,74 @@
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>@localizer["String1"]</h1>
+        </div>
+    </div>
+
+</header>
+
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+        <div class="row mt-sm-3">
+            <div class="col-12">
+                <div class="row" style="margin: 0px 0px 0px 0px">
+                    <div class="col-lg-6 col-sm-12">
+                        <img src="~/Images/keuring.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-6 col-sm-12 order-lg-first">
+                        <p>
+                            @localizer["String2"]
+                        </p>
+                        <p>
+                            @localizer["String3"] <a href="~/Files/Aandachtspunten keuringsseizoen.pdf">@localizer["String3.1"]</a>.
+                        </p>
+                        <p>
+                            @localizer["String4"]
+                        </p>
+                        <p>
+                            @localizer["String5"]
+                        </p>
+                        <p>
+                            @localizer["String6"]
+                        </p>
+                        <p>
+                            @localizer["String7"]
+                        </p>
+                    </div>
+                </div>
+                <div class="row" style="margin: 30px 0px 0px 0px">
+                    <div class="col-lg-6 col-sm-12">
+                        <h2>
+                            @localizer["String8"]
+                        </h2>
+                        <p>
+                            @localizer["String9"]
+                        </p>
+                        <p>
+                            @localizer["String10"]
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <h2>
+                            @localizer["String11"]
+                        </h2>
+                        <p>
+                            @localizer["String12"]
+                        </p>
+                        <p>
+                            @localizer["String13"] <a href="https://www.kfps.nl/Actueel/Agenda.aspx">@localizer["String14"]</a>.
+                        </p>
+                    </div>
+                </div>
+               
+               
+               
+
+            </div>
+
+        </div>
+
+    </section>
+</main>

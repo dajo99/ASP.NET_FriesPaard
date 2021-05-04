@@ -27,7 +27,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Resources\Views\Fokkerij\" />
     <Folder Include="wwwroot\Files\" />
   </ItemGroup>
 

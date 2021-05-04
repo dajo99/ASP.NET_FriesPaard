@@ -1,5 +1,91 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>@localizer["String1"]</h1>
+        </div>
+    </div>
+
+</header>
+
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+        <div class="row mt-sm-3">
+            <div class="col-12">
+                <p>
+                    @localizer["String2"]
+                </p>
+                <br />
+                <h2>
+                    @localizer["String3"]
+                </h2>
+                <p>
+                    @localizer["String4"]
+                </p>
+                <br />
+                <h2>
+                    @localizer["String5"]
+                </h2>
+                <p>
+                    @localizer["String6"]
+                </p>
+                <br />
+                <h2>
+                    @localizer["String7"]
+                </h2>
+                <p>
+                    @localizer["String8"]
+                </p>
+                <br />
+                <h2>
+                    @localizer["String9"]
+                </h2>
+                <p>
+                    @localizer["String10"]
+                </p>
+                <br />
+                <h2>
+                    @localizer["String11"]
+                </h2>
+                <p>
+                    @localizer["String12"]
+                </p>
+                <br />
+                <h2>
+                    @localizer["String13"]
+                </h2>
+                <p>
+                    @localizer["String14"]
+                </p>
+                <ul>
+                    <li>@localizer["String15"]</li>
+                    <li>@localizer["String16"]</li>
+                    <li>@localizer["String17"]</li>
+                    <li>@localizer["String18"]</li>
+                    <li>@localizer["String19"]</li>
+                </ul>
+                <br />
+                <h2>
+                    @localizer["String20"]
+                </h2>
+                <p>
+                    @localizer["String21"]
+                </p>
+                <br />
+                <h2>
+                    @localizer["String22"]
+                </h2>
+                <p>
+                    @localizer["String23"]
+                </p>
+                <br />
+                <p>
+                    @localizer["String24"] <a href="https://www.kfps.nl/">www.kfps.nl</a>
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+</main>

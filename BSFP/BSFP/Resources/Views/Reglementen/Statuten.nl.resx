@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>HOOFDSTUK I.  Benaming, zetel, doel en duur.</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>Artikel 5.</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>De vereniging is opgericht voor onbepaalde duur. Zij kan ten alle tijde ontbonden worden.</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>HOODSTUK II  - leden</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>Artikel 6.</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>Het aantal leden is onbeperkt, maar moet minimum 10 bedragen. Tussen de leden onderling mag er geen discriminatie zijn</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>Artikel 7.</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>Het stamboek erkend effectieve en toegetreden leden overeenkomstig artikel 8 van deze statuten. Alleen de eerstgenoemde bezitten de volheid van het lidmaatschap, met inbegrip van stemrecht op de algemene vergadering. De artikelen 13 tot 21 en artikel 23 , zijn alleen op hen van toepassing.</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>Artikel 8.</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>Als lid kan tot de vereniging toetreden ieder natuurlijk persoon of rechtspersoon. Om als effectieflid te kunnen worden aanvaard moet het kandidaat-lid eigenaar of mede-eigenaar zijn van minstens één fries paard dat als dusdanig werd ingeschreven in de registers van het Stamboek.
+Het verzoek om toelating van een kandidaat lid moet worden ingediend bij de voorzitter of de secretaris van  de raad van bestuur.</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>De raad van bestuur beslist binnen de maand over de  aanvaarding van het kandidaat lid.</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Artikel 1.</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>Met de term “lid” in deze statuten wordt uitdrukkelijk verwezen naar de effectieve leden.</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>Door hun aansluiting verbinden de leden zich ertoe zich te schikken naar de statuten, de reglementen en de beslissingen van de organen van het stamboek.</value>
+  </data>
+  <data name="String22" xml:space="preserve">
+    <value>Artikel 9.</value>
+  </data>
+  <data name="String23" xml:space="preserve">
+    <value>Elk lid mag op ieder ogenblik ontslag nemen uit het stamboek.
+Elk lid wordt verondersteld uittredend te zijn als hij nalaat of weigert zijn jaarlijks lidgeld te betalen voor 31 januari van het lopende jaar.
+De opzeg van het lidmaatschap moet gedaan worden bij aangetekend schrijven aan de secretaris ten laatste drie maanden voor het einde van het boekjaar.
+De uitsluiting van leden gebeurt op de wijze bepaald door de wet van 27 juni 1921, zoals gewijzigd door de wet van 02 mei 2002.</value>
+  </data>
+  <data name="String24" xml:space="preserve">
+    <value>Artikel 10.</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>De vereniging zonder winstgevend doel draagt de naam:” Belgisch Stamboek van het Friese Paard vzw ” verder “Stamboek” genoemd, afgekort:  BSFP</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>Artikel 2.</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>De zetel van het Stamboek is gevestigd te Maastrichtersteenweg 308 - B-3500 Hasselt België.</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>Artikel 3.</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>De vereniging heeft tot doel, met uitsluiting van enig winstoogmerk het bijhouden van de stamboeken en afleveren van oorsprongcertificaten.
+Het verzamelen en interpreteren van de gegevens over de identiteit, de productiviteit, de prestaties en de uiterlijke kenmerken van de fokdieren,
+van hun voorgeslacht, bloedverwanten en afstammelingen. De aanmoediging en verbetering van de fokkerij van raszuivere Friese paarden.
+Haar bijzondere opdrachten worden door het intern reglement bepaald.</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>Artikel 4.</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>Het stamboek kan provinciale of regionale fokkerijgroeperingen oprichten of erkennen en daarover alle gezag uitoefenen.
+Zij bepaalt de modaliteiten tot stichting en organisatie van de groeperingen in een reglement van inwendige orde.
+Het stamboek mag roerende en onroerende goederen verwerven en personeel aanwerven.</value>
+  </data>
+</root>

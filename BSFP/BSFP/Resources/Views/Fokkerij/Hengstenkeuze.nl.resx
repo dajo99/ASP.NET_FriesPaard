@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>HENGSTENKEUZE VOOR DRAGERMERRIES</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>Zolang alleen nog van de hengsten goedgekeurd vanaf 2014 bekend is of ze drager zijn of niet, kunnen risicoparingen voorkomen worden door de fokmerries te testen en de hengstenkeuze hier in overleg met de hengstenhouder op af te stemmen. In principe zouden alle fokmerries getest moeten worden, maar zeker als gebruik wordt gemaakt van een hengst die drager is. Immers deze kan alleen ingezet worden bij merries die negatief getest zijn.</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>Waarom worden niet alle hengsten getest?</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>Het KFPS-beleid is gericht op het uitsluiten van risicoparingen of wel het uitsluiten van geboortes van waterhoofd- en dwergveulens. Het risico bestaat, dat als van alle hengsten het dragerschap bekend zou zijn, deze in de fokkerij genegeerd zouden kunnen worden. Dit is ongewenst omdat deze hengsten hun dragerschap ten spijt een positieve bijdrage kunnen leveren aan de fokkerij. Daarnaast zal het uitsluiten van twee keer een op de zeven hengsten (is bijna een derde deel) leiden tot een onverantwoorde toename van inteelt, met het bijbehorende risico van het ontstaan van nieuwe erfelijke aandoeningen. Daarom is gekozen voor een overgangsperiode. Hengsten die vanaf vorig jaar zijn goedgekeurd wordt het dragerschap gepubliceerd. In deze overgangsfase kan door samenwerking tussen fokkers en hengstenhouders het geboren worden van waterhoofd- of dwergveulens voorkomen worden.</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>Is het zinvol om alleen met vrije dieren te fokken?</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>De kans dat een drager het afwijkende gen doorgeeft aan een nakomeling is 50%.
+Dus gemiddeld zal 50% van de veulens uit een combinatie van een drager en een vrij ouderdier, drager zijn. Is het aan te bevelen om te streven naar het fokken met alleen vrije ouderdieren? Het fokken met alleen vrije dieren ziet het KFPS als zeer ongewenst:</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>Het uitsluiten van alle dragerdieren zal leiden tot een toename van inteelt</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>Foktechnisch waardevolle dieren zullen worden uitgesloten waardoor de genetische vooruitgang vertraagd wordt</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>Nu er tests zijn, kunnen risicoparingen voorkomen worden. Het feit dat een fokdier drager is, vormt daardoor geen reden meer deze niet voor de fokkerij in te zetten</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>Door het voorkomen van risicoparingen zullen dragerhengsten minder gebruikt gaan worden (deze tendens was ook al voor het ontwikkelen van de DNA-tests duidelijk zichtbaar) waardoor het percentage dragers geleidelijk  zal afnemen, waardoor de aandoening naar verloop van tijd geen issue meer zal zijn</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Het KFPS werkt aan het ontwikkelen van tests voor meerdere aandoeningen. Het alleen fokken met vrije ouderdieren zal daarom op termijn onmogelijk zijn.</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Sinds mei vorig jaar zijn de DNA-tests voor waterhoofd en dwerg beschikbaar voor de leden.
+Iedere diersoort en ieder ras heeft z’n eigen erfelijke aandoeningen.
+De DNA-testen vormen een krachtig hulpmiddel om deze problemen fors te reduceren.
+Vorig jaar is zowel op de KFPS-site, in de Phryso en tijdens lezingen veel aandacht besteed aan de DNA-testen en hoe hier in de praktijk mee om moet worden gegaan.
+Nu er inmiddels een groot aantal merries getest is voor deze aangeboren aandoeningen, komen er vanuit de praktijk vragen over met name de hengstenkeuze bij merries die als drager uit de test zijn gekomen. Middels dit artikel geven we nogmaals de te volgen stappen aan.</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>Hoe de hengstenkeuze maken als een merrie drager is?</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>In het geval een merrie op basis van de DNA-test positief blijkt te zijn voor waterhoofd en/of dwerg is het zaak om met de hengstenhouder waar de voor de betreffende merrie beoogde hengst ter dekking staat, te overleggen of de betreffende paring veilig is. Op basis van terugrapportage bij afwijkingen naar de hengstenhouder, is deze op de hoogte van het feit dat een hengst drager is.
+Bij twijfel kan ook het KFPS voor een specifieke paring van een merrie die drager is geconsulteerd worden (mail@kfps.nl)</value>
+  </data>
+  <data name="String22" xml:space="preserve">
+    <value>Hoe kan een merrie getest worden?</value>
+  </data>
+  <data name="String23" xml:space="preserve">
+    <value>Vanuit het oogpunt van dierenwelzijn, acht het KFPS het immoreel om te fokken met merries die niet getest zijn. Dit is ook de reden dat het KFPS de test voor een laag tarief aanbiedt. Daarbij wordt een paard getest voor dragerschap van waterhoofd, dwerg en vosfactor. De test kan worden aangevraagd worden via Mijn KFPS. Van een groot aantal paarden zijn bij het KFPS reeds haarmonsters voor handen, welke voor de test kunnen worden gebruikt. Dit betekent dat met een paar muisclicks en zonder haar te hoeven trekken, de test aangevraagd kan worden. Leden kunnen uiteraard ook via de mail of telefoon contact opnemen met het KFPS om een test aan te vragen.</value>
+  </data>
+  <data name="String24" xml:space="preserve">
+    <value>Bron :</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>Dragers zijn waardevol voor de fokkerij!</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>Het feit dat een merrie drager is, betekent niet dat de merrie geen waarde heeft voor de fokkerij.
+Het KFPS onderstreept dit, doordat dragerschap bij de hengstenselectie geen reden is om een hengst niet goed te keuren. Zeker nu met behulp van de DNA-testen risicoparingen uitgesloten kunnen worden, is dragerschap geen groot probleem meer. Het uitsluiten van dragers (hengsten en merries) zou niet alleen kunnen leiden tot (opnieuw) een significante toename van inteelt, maar zal ook de kwaliteitsverbetering in de weg staan.</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>Welk deel van de paarden is drager?</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>Het deel van de paarden dat drager is van het waterhoofdgen en het dwerggen is ongeveer gelijk. Voor beide aandoeningen is ongeveer 1 op de 7 paarden drager. Dit was tevens de inschatting die vooraf was gemaakt en is nu bevestigd op basis van de tot nu toe geteste paarden. Het zoveel mogelijk voorkomen van risicoparingen, ook al voordat DNA-tests beschikbaar waren, heeft ertoe geleid dat het aantal veulens dat met deze aandoeningen geboren wordt, kleiner dan 1% is.</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>Wat is een risicoparing?</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>Een risicoparing is een paring van een hengst en een merrie, die beide drager zijn van dezelfde afwijking. Bij een risicoparing zal 1 op de 4 veulens (25%) de betreffende afwijking hebben.
+Het spreekt voor zich dat dergelijke risicoparingen niet gemaakt moeten worden. Is een merrie geen drager, dan is de kans op een waterhoofd- of  een dwergveulen nul, ongeacht of de hengst wel of niet drager is.</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>Hoe kan een risicoparing voorkomen worden?</value>
+  </data>
+</root>
