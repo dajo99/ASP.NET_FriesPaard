@@ -123,6 +123,30 @@
   <data name="String10" xml:space="preserve">
     <value>Artikel 5.</value>
   </data>
+  <data name="String100" xml:space="preserve">
+    <value>De geheime stemming is verplichtend wanneer het gaat om de verkiezing van personen voor taken of betrekkingen, of indien het gaat om beslissingen aangaande één of meerdere personen. Bij staking van stemmen bij geheime stemming, wordt het voorstel verworpen.</value>
+  </data>
+  <data name="String101" xml:space="preserve">
+    <value>Artikel 36.</value>
+  </data>
+  <data name="String102" xml:space="preserve">
+    <value>Voor 15 april van elk jaar legt het stamboek aan de minister van Landbouw en Visserij van de Vlaamse overheid de algemene rekeningen en inkomsten en uitgaven van het afgelopen jaar voor, alsook een  activiteitenrapport aangaande deze periode.</value>
+  </data>
+  <data name="String103" xml:space="preserve">
+    <value>Bij die gelegenheid maakt het stamboek ook een ontwerp van begroting over voor het lopende jaar.</value>
+  </data>
+  <data name="String104" xml:space="preserve">
+    <value>Artikel 37.</value>
+  </data>
+  <data name="String105" xml:space="preserve">
+    <value>Het stamboek mag enkel zijn fondsen aanwerven om de doelstellingen voorzien bij art. 3 van deze statuten, te verwezenlijken.</value>
+  </data>
+  <data name="String106" xml:space="preserve">
+    <value>Artikel 38.</value>
+  </data>
+  <data name="String107" xml:space="preserve">
+    <value>Aangelegenheden die door deze statuten niet zouden geregeld zijn, worden geregeld overeenkomstig de wet van 27 juni 1921, zoals gewijzigd door de wet van 02 mei 2002</value>
+  </data>
   <data name="String11" xml:space="preserve">
     <value>De vereniging is opgericht voor onbepaalde duur. Zij kan ten alle tijde ontbonden worden.</value>
   </data>
@@ -172,17 +196,157 @@ De uitsluiting van leden gebeurt op de wijze bepaald door de wet van 27 juni 192
   <data name="String24" xml:space="preserve">
     <value>Artikel 10.</value>
   </data>
+  <data name="String25" xml:space="preserve">
+    <value>De uitsluiting van het lid heeft plaats :</value>
+  </data>
+  <data name="String26" xml:space="preserve">
+    <value>In geval van misbruik of tekortkoming ten aanzien van de statuten of bijzondere reglementen.</value>
+  </data>
+  <data name="String27" xml:space="preserve">
+    <value>In geval van veroordeling voor een inbreuk op de wettelijke bepalingen betreffende de verbetering van het paardenras.</value>
+  </data>
+  <data name="String28" xml:space="preserve">
+    <value>Indien zijn houding van die aard is dat zij schade kan berokkenen aan de belangen van het stamboek.</value>
+  </data>
+  <data name="String29" xml:space="preserve">
+    <value>De uitsluiting wordt uitgesproken door de algemene ledenvergadering bij tweederde meerderheid van de geldig vertegenwoordigde stemmen.</value>
+  </data>
   <data name="String3" xml:space="preserve">
     <value>De vereniging zonder winstgevend doel draagt de naam:” Belgisch Stamboek van het Friese Paard vzw ” verder “Stamboek” genoemd, afgekort:  BSFP</value>
+  </data>
+  <data name="String30" xml:space="preserve">
+    <value>Artikel 11.</value>
+  </data>
+  <data name="String31" xml:space="preserve">
+    <value>Uitgetreden en uitgesloten leden en hun rechtsopvolgers hebben geen deel in het vermogen van de vereniging. Evenmin hebben zij het recht om de door henzelf of hun rechtsvoorgangers gedane inbrengsten of gestorte lidgelden terug te vorderen.</value>
+  </data>
+  <data name="String32" xml:space="preserve">
+    <value>Artikel 12.</value>
+  </data>
+  <data name="String33" xml:space="preserve">
+    <value>Het lidgeld wordt jaarlijks vastgesteld door de ledenraad en bedraagt ten hoogste 100 euro.
+Bovendien mag de raad van bestuur een toetredingsbijdrage heffen van ten hoogste 50 euro. In geen geval zijn de leden persoonlijk aansprakelijk voor de verbintenissen van de vereniging.</value>
+  </data>
+  <data name="String34" xml:space="preserve">
+    <value>HOOFDSTUK III – Algemene vergadering</value>
+  </data>
+  <data name="String35" xml:space="preserve">
+    <value>Artikel 13.</value>
+  </data>
+  <data name="String36" xml:space="preserve">
+    <value>De algemene ledenvergadering is het hoogste gezag van het Stamboek.
+De algemene ledenvergadering is samengesteld uit al de effectieve leden.
+Elk effectief lid beschikt over één stem; hij kan zich laten vertegenwoordigen door een ander effectief lid, mits een schriftelijke volmacht, met uitzondering vervat in artikel 18§1.
+Elk lid kan slechts één enkel ander lid geldig vertegenwoordigen.</value>
+  </data>
+  <data name="String37" xml:space="preserve">
+    <value>Artikel 14.</value>
+  </data>
+  <data name="String38" xml:space="preserve">
+    <value>Zijn verplichtend voorbehouden aan de bevoegdheid van de algemene vergadering</value>
+  </data>
+  <data name="String39" xml:space="preserve">
+    <value>De statuutwijziging</value>
   </data>
   <data name="String4" xml:space="preserve">
     <value>Artikel 2.</value>
   </data>
+  <data name="String40" xml:space="preserve">
+    <value>Goedkeuring van het algemeen reglement</value>
+  </data>
+  <data name="String41" xml:space="preserve">
+    <value>De benoeming en de afzetting van bestuurders</value>
+  </data>
+  <data name="String42" xml:space="preserve">
+    <value>De benoeming en afzetting van de controleurs van de rekeningen.</value>
+  </data>
+  <data name="String43" xml:space="preserve">
+    <value>De benoeming en de afzetting van de commissarissen</value>
+  </data>
+  <data name="String44" xml:space="preserve">
+    <value>De kwijting aan de bestuurders en commissarissen</value>
+  </data>
+  <data name="String45" xml:space="preserve">
+    <value>De goedkeuring van de begroting en van de rekeningen.</value>
+  </data>
+  <data name="String46" xml:space="preserve">
+    <value>De uitsluiting van een lid</value>
+  </data>
+  <data name="String47" xml:space="preserve">
+    <value>De omzetting van de vereniging in een vennootschap met een sociaal  oogmerk.</value>
+  </data>
+  <data name="String48" xml:space="preserve">
+    <value>De ontbinding van het stamboek.</value>
+  </data>
+  <data name="String49" xml:space="preserve">
+    <value>Alle gevallen waarin de statuten dat vereisen.</value>
+  </data>
   <data name="String5" xml:space="preserve">
     <value>De zetel van het Stamboek is gevestigd te Maastrichtersteenweg 308 - B-3500 Hasselt België.</value>
   </data>
+  <data name="String50" xml:space="preserve">
+    <value>Artikel 15.</value>
+  </data>
+  <data name="String51" xml:space="preserve">
+    <value>De raad van bestuur roept ieder jaar de algemene vergadering samen voor 31 maart ten zetel van de vereniging of op een andere plaats, op een datum en uur door de raad van bestuur vast te stellen. Op deze vergadering brengt de voorzitter verslag uit over de activiteiten van de vereniging gedurende het afgelopen jaar. De schatbewaarder brengt verslag uit over de financiële toestand. De controleurs van de rekeningen brengen rapport uit over het beheer van het afgelopen jaar.</value>
+  </data>
+  <data name="String52" xml:space="preserve">
+    <value>Artikel 16.</value>
+  </data>
+  <data name="String53" xml:space="preserve">
+    <value>De oproepingen tot de algemene vergadering moeten om geldig te zijn, ondertekend worden door de voorzitter, of twee bestuurders. Alle effectieve leden moeten worden opgeroepen bij gewone brief, per e-mail of bij aangetekende brief, tenminste acht werkdagen voor de vergadering. De oproeping vermeldt de dagorde, de plaats, de datum en het uur van de vergadering.</value>
+  </data>
+  <data name="String54" xml:space="preserve">
+    <value>Artikel 17.</value>
+  </data>
+  <data name="String55" xml:space="preserve">
+    <value>De raad van bestuur bepaalt de dagorde. Voorstellen voor de dagorde, ondertekend door tenminste één twintigste van de effectieve leden, moeten op de dagorde worden geplaatst. Dit onderwerp moet door 1/20 van de leden ondertekend zijn en tenminste vier werkdagen voor de vergadering aan de voorzitter van de raad van bestuur overhandigd zijn.</value>
+  </data>
+  <data name="String56" xml:space="preserve">
+    <value>Artikel 18.</value>
+  </data>
+  <data name="String57" xml:space="preserve">
+    <value>De algemene vergadering mag slechts over zaken beraadslagen die op de dagorde staan. Over de zaken die niet op  de dagorde staan, mag er slechts beraadslaagd worden indien de algemene vergadering hiertoe beslist met een meerderheid van 3/4 van de stemmen der aanwezige effectieve leden. Over de toevoeging van een punt aan de dagorde kunnen enkel de aanwezige effectieve leden stemmen, er kan niet gestemd worden met volmacht</value>
+  </data>
+  <data name="String58" xml:space="preserve">
+    <value>De beslissingen van de algemene vergadering worden gepubliceerd in het ledenblad en zij worden bijgehouden in een register op het secretariaat van het Stamboek. Op eenvoudige vraag en na afspraak kunnen de leden en de belanghebbende derden de beslissingen van de algemene ledenvergadering inzien.</value>
+  </data>
+  <data name="String59" xml:space="preserve">
+    <value>Artikel 19.</value>
+  </data>
   <data name="String6" xml:space="preserve">
     <value>Artikel 3.</value>
+  </data>
+  <data name="String60" xml:space="preserve">
+    <value>Op aanvraag per aangetekende brief van tenminste de helft van de bestuurders aan de voorzitter gericht, of van één vijfde van de effectieve leden aan de raad van bestuur gericht, moet deze een bijzondere algemene vergadering samenroepen. Deze bijzondere algemene vergadering moet binnen de dertig dagen na ontvangst van de aanvraag plaatsvinden.</value>
+  </data>
+  <data name="String61" xml:space="preserve">
+    <value>Artikel 20.</value>
+  </data>
+  <data name="String62" xml:space="preserve">
+    <value>In gewone gevallen worden de besluiten genomen bij eenvoudige meerderheid van de aanwezigen en vertegenwoordigde stemmen. Bij staking van stemmen beslist de stem van de voorzitter of diegene die op die dag de vergadering voorzit.</value>
+  </data>
+  <data name="String63" xml:space="preserve">
+    <value>Tot wijziging van de statuten of de wijziging van het doel waarvoor de vereniging is opgericht, kan slechts worden besloten indien de wijziging gedetailleerd op de agenda is vermeld en indien 2/3 van de stemgerechtigde leden aanwezig of vertegenwoordigd is. Wordt dit getal niet bereikt dan kan een tweede algemene vergadering worden samengeroepen, minstens 15 dagen na de eerste algemene vergadering. Deze tweede algemene vergadering zal geldige besluiten kunnen nemen, ongeacht het aantal aanwezigen.Voor elke statuutwijziging  is bovendien een meerderheid van 2/3 der aanwezige leden of vertegenwoordigde stemmen vereist. Tot wijziging van het doel of de doeleinden waarvoor de vereniging is opgericht kan slechts worden besloten met een meerderheid van 4/5 van de stemmen van de aanwezige of vertegenwoordigde leden. Elke wijziging van de statuten moet binnen de maand nadat hiertoe is besloten neergelegd worden bij de Griffie van de rechtbank van Koophandel, teneinde publicatie in het Belgisch Staatsblad.</value>
+  </data>
+  <data name="String64" xml:space="preserve">
+    <value>Artikel 21.</value>
+  </data>
+  <data name="String65" xml:space="preserve">
+    <value>De algemene vergadering benoemt onder haar effectieve leden en buiten de leden van de raad van bestuur twee controleurs belast met het nazicht van de rekeningen. Hun mandaat duurt twee jaren en kan slechts éénmaal verlengd worden. Zij ontvangen geen vergoeding voor dit mandaat.</value>
+  </data>
+  <data name="String66" xml:space="preserve">
+    <value>HOOFSTUK  IV: Bestuurders, raad van bestuur.</value>
+  </data>
+  <data name="String67" xml:space="preserve">
+    <value>Artikel 22.</value>
+  </data>
+  <data name="String68" xml:space="preserve">
+    <value>Het stamboek wordt bestuurd door de een raad van bestuur bestaande uit minimum vijf leden. De bestuurders oefenen hun mandaat kosteloos uit.
+De bevoegdheden van de raad van bestuur worden uitgeoefend als college. Om geldig te beslissen moet minstens de helft van haar leden aanwezig zijn en de besluiten worden genomen met een gewone meerderheid.</value>
+  </data>
+  <data name="String69" xml:space="preserve">
+    <value>Artikel 23.</value>
   </data>
   <data name="String7" xml:space="preserve">
     <value>De vereniging heeft tot doel, met uitsluiting van enig winstoogmerk het bijhouden van de stamboeken en afleveren van oorsprongcertificaten.
@@ -190,12 +354,112 @@ Het verzamelen en interpreteren van de gegevens over de identiteit, de productiv
 van hun voorgeslacht, bloedverwanten en afstammelingen. De aanmoediging en verbetering van de fokkerij van raszuivere Friese paarden.
 Haar bijzondere opdrachten worden door het intern reglement bepaald.</value>
   </data>
+  <data name="String70" xml:space="preserve">
+    <value>De leden van de raad van bestuur worden verkozen door de algemene vergadering.  Hun mandaat loopt over een periode van vier jaar.</value>
+  </data>
+  <data name="String71" xml:space="preserve">
+    <value>De ledenvergadering kan te allen tijde de bestuurders afzetten.</value>
+  </data>
+  <data name="String72" xml:space="preserve">
+    <value>De akte van benoeming, ontslag, aftreden en afzetting van een lid van de raad van bestuur  wordt binnen de maand nadat hiertoe is besloten, neergelegd bij de Griffie van de rechtbank van Koophandel ter publicatie in het Belgisch Staatsblad.</value>
+  </data>
+  <data name="String73" xml:space="preserve">
+    <value>Artikel 24.</value>
+  </data>
+  <data name="String74" xml:space="preserve">
+    <value>Een bestuurder kan op elk ogenblik vrijwillig ontslag nemen. Ofwel richt hij daartoe een aangetekend schrijven aan de voorzitter of aan de secretaris van de raad van bestuur. Ofwel geeft hij mondeling ontslag op een vergadering van de raad van bestuur.Bij deze laatste mogelijkheid notuleert de secretaris het ontslag in het verslag van de vergadering, en wordt dit verslag mede ondertekend door al de andere aanwezige leden van de raad van bestuur.</value>
+  </data>
+  <data name="String75" xml:space="preserve">
+    <value>Artikel 25.</value>
+  </data>
+  <data name="String76" xml:space="preserve">
+    <value>De raad van bestuur kiest onder de bestuurders bij absolute meerderheid en bij geheime stemming, een voorzitter en een ondervoorzitter. De raad van bestuur duidt aan of erkent onder of buiten zijn leden een secretaris, een penningmeester en elke functie die voor de goede werking van de vereniging noodzakelijk is.</value>
+  </data>
+  <data name="String77" xml:space="preserve">
+    <value>Artikel 26.</value>
+  </data>
+  <data name="String78" xml:space="preserve">
+    <value>De raad van bestuur heeft alle bevoegdheden inzake de werking van het stamboek, met uitzondering van deze die aan de algemene vergadering zijn voorbehouden.</value>
+  </data>
+  <data name="String79" xml:space="preserve">
+    <value>Artikel 27.</value>
+  </data>
   <data name="String8" xml:space="preserve">
     <value>Artikel 4.</value>
+  </data>
+  <data name="String80" xml:space="preserve">
+    <value>De raad van bestuur vergadert telkenmale als de voorzitter het nodig acht. De oproepingsbrief behelst de agenda, vastgesteld door de voorzitter eventueel na raadpleging van andere bestuurders. Op schriftelijk verzoek van ten minste twee leden van de raad van bestuur moet de voorzitter binnen de twee weken de raad samenroepen. De vergaderingen van de raad van bestuur worden voorgezeten door de voorzitter. Indien deze belet of afwezig is wordt de vergadering voorgezeten door de ondervoorzitter. De raad van bestuur vergadert slechts geldig als ten minste de helft van de bestuurders aanwezig is. Alle besluiten worden genomen bij handopsteking met gewone meerderheid, bij staking van stemmen beslist de stem van de voorzitter. Van elke vergadering wordt door de secretaris een verslag opgemaakt dat door ondertekening door de voorzitter wordt goedgekeurd. Uittreksels daarvan worden geldig ondertekend door de voorzitter of twee bestuurders.De besluiten van de raad van bestuur worden in een register bijgehouden op het secretariaat van het Stamboek.</value>
+  </data>
+  <data name="String81" xml:space="preserve">
+    <value>Artikel 28.</value>
+  </data>
+  <data name="String82" xml:space="preserve">
+    <value>De raad van bestuur leidt de zaken van de vereniging en vertegenwoordigt deze in alle handelingen. Hij treedt op als eiser of verweerder in alle rechtsgedingen en beslist over het al dan niet aanwenden van rechtsmiddelen. Hij is bevoegd voor alle handelingen zonder uitzondering van beheer en beschikking, met inbegrip van het vervreemden, zelfs om niet van roerende en onroerende goederen en van het hypothekeren, van het lenen en uitlenen, voor om het even welke termijn, van alle handels- en bankverrichtingen, van het opheffen van hypotheken.
+De raad van bestuur benoemt en ontslaat de leden van het personeel en bepaalt hun statuut.
+De raad van bestuur kan allerhande commissies en werkgroepen oprichten of erkennen die kunnen bijdragen aan de doeleinden van de vereniging. De erkenning kan te allen tijde weer worden ingetrokken.
+De raad van bestuur vaardigt alle huishoudelijke reglementen uit die hij nodig oordeelt. 
+De raad van bestuur kan zijn bevoegdheden gedeeltelijk overdragen aan één of meer van zijn leden. Deze delegatie van bevoegdheden is op ieder ogenblik herroepbaar.
+De raad van bestuur kan één of meer afgevaardigde bestuurders aanstellen, belast met het dagelijks bestuur, onder meer met geldige handtekeningen tegenover het bestuur der postchecks, banken, spaarkassen en andere financiële instellingen. Worden er twee of meer afgevaardigde aangesteld, dan oefenen zij behoudens bijzondere volmacht aan één onder hen gezamenlijk  het dagelijks bestuur uit.
+De delegatie van bevoegdheden wordt bij gewone meerderheid van stemmen verleend en kan te allen tijde op dezelfde wijze weer worden introkken.
+De gedelegeerde bevoegdheden nemen altijd een einde bij het beëindigen van het bestuursmandaat.
+De afgevaardigde bestuurder kan op ieder ogenblik van de hem verleende bevoegdheden afzien, ofwel door middel van een aangetekend schrijven gericht aan de voorzitter of de secretaris van de raad van bestuur, ofwel door mondelinge verklaring op de raad van bestuur. De secretaris notuleert de verklaring van de vrijwillige beëindiging van de afvaardiging in het verslag van de vergadering en dit verslag wordt mede ondertekend door al de andere aanwezige bestuurders.</value>
+  </data>
+  <data name="String83" xml:space="preserve">
+    <value>Artikel 29.</value>
+  </data>
+  <data name="String84" xml:space="preserve">
+    <value>De raad van bestuur benoemt de afgevaardigden bij andere verenigingen. Deze afgevaardigden en hun plaatsvervangers worden bij gewone meerderheid van stemmen gekozen. Het mandaat van afgevaardigde kan door een beslissing van de raad van bestuur te allen tijde weer worden ingetrokken.</value>
+  </data>
+  <data name="String85" xml:space="preserve">
+    <value>Artikel 30.</value>
+  </data>
+  <data name="String86" xml:space="preserve">
+    <value>Bij buitengerechtelijke handelingen wordt de vereniging ook tegenover derden geldig vertegenwoordigd door de gezamenlijke handtekeningen van twee bestuurders. Tegenover derden zijn dezen er niet toe gehouden enig bewijs voor te leggen. Tegenover de vereniging blijven zij evenwel aansprakelijk, ook op hun persoonlijk vermogen, zelf voor lichte schuld.</value>
+  </data>
+  <data name="String87" xml:space="preserve">
+    <value>HOOFDSTUK V:  Financieel beleid</value>
+  </data>
+  <data name="String88" xml:space="preserve">
+    <value>Artikel 31.</value>
+  </data>
+  <data name="String89" xml:space="preserve">
+    <value>Het boekjaar loopt van 1 januari  tot 31 december. De rekeningen en begrotingen worden door bemiddeling van de penningmeester door de raad van bestuur voorbereid en ter goedkeuring voorgelegd aan de algemene vergadering.</value>
   </data>
   <data name="String9" xml:space="preserve">
     <value>Het stamboek kan provinciale of regionale fokkerijgroeperingen oprichten of erkennen en daarover alle gezag uitoefenen.
 Zij bepaalt de modaliteiten tot stichting en organisatie van de groeperingen in een reglement van inwendige orde.
 Het stamboek mag roerende en onroerende goederen verwerven en personeel aanwerven.</value>
+  </data>
+  <data name="String90" xml:space="preserve">
+    <value>HOOFDSTUK VI: Ontbinding, vereffening</value>
+  </data>
+  <data name="String91" xml:space="preserve">
+    <value>Artikel 32.</value>
+  </data>
+  <data name="String92" xml:space="preserve">
+    <value>Behoudens de gevallen van rechtelijke ontbinding en van ontbinding van rechtswege, kan tot vrijwillige ontbinding slechts worden besloten door de buitengewone algemene ledenvergadering en zoals bepaalt in artikel 20 van de wet van 02.05.2002. Het punt vrijwillige ontbinding moet dan op de agenda staan. Voor het besluit tot vrijwillige ontbinding is een 2/3 aanwezigheid van de leden vereist. Wordt dit getal niet bereikt dan kan een tweede algemene vergadering worden samengeroepen, minstens 15 dagen na de eerste algemene vergadering. Deze tweede algemene vergadering zal geldige besluiten kunnen nemen, ongeacht het aantal aanwezigen.
+Het besluit tot het ontbinden van de vereniging kan slechts genomen worden met minimum 4/5 meerderheid van de aanwezige of vertegenwoordigde leden.
+Het besluit tot ontbinding benoemt tevens één of meer vereffenaars, bij gebreke daarvan, kan de rechtbank tot zulke benoeming overgaan op verzoek van de meest gerede belanghebbende.</value>
+  </data>
+  <data name="String93" xml:space="preserve">
+    <value>Artikel 33.</value>
+  </data>
+  <data name="String94" xml:space="preserve">
+    <value>Welke ook de oorzaak van de ontbinding is, het voorstel van de bestemming van al de gegevens uit het stamboek, de zoötechnische kenmerken, de prestaties en van de fokwaardeschattingen en fokwaardebeoordelingen, wordt vooraf ter goedkeuring voorgelegd aan het Departement Landbouw en Visserij van de Vlaamse overheid.</value>
+  </data>
+  <data name="String95" xml:space="preserve">
+    <value>De bestemming van de netto activa wordt bepaald door de algemene vergadering waarbij de vereffenaars voorstellen kunnen doen. Bij het bepalen van de bestemming moeten de vereffenaars én de algemene vergadering rekening houden met het doel van de onderhavige vereniging en die voorwaarden ook aan de begiftigde opleggen.</value>
+  </data>
+  <data name="String96" xml:space="preserve">
+    <value>HOOFDSTUK VII:  Algemene maatregelen</value>
+  </data>
+  <data name="String97" xml:space="preserve">
+    <value>Artikel 34.</value>
+  </data>
+  <data name="String98" xml:space="preserve">
+    <value>De afgevaardigde van de Afdeling Duurzame Landbouwontwikkeling mag van rechtswege alle vergaderingen van de algemene vergadering en van de raad van bestuur bijwonen tot dewelke hij moet uitgenodigd worden.</value>
+  </data>
+  <data name="String99" xml:space="preserve">
+    <value>Artikel 35.</value>
   </data>
 </root>
