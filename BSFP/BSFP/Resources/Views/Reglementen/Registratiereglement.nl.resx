@@ -123,26 +123,256 @@
   <data name="String10" xml:space="preserve">
     <value>Artikel 8 Het Bijboek I in de hoofdsectie</value>
   </data>
+  <data name="String100" xml:space="preserve">
+    <value>Merries voorlopig model verklaard t/m CK 2013: voor definitieve modelverklaring moet de merrie minimaal een IBOP- of ABFP-test hebben afgerond met een minimaal aantal punten van 77.0, met gemiddeld een 7 voor de stap en de draf. Het behalen van het Sportpredicaat is tevens is tevens toereikend als verrichtingseis voor definitieve modelverklaring.</value>
+  </data>
+  <data name="String101" xml:space="preserve">
+    <value>Merries voorlopig model verklaard vanaf CK 2014: voor definitieve modelverklaring moet de merrie een IBOP- of ABFP-test hebben afgerond met een minimaal aantal punten van 77,0 met gemiddeld een 7 voor de basisgangen. Met een score voor een van de basisgangen lager dan een 6 kan geen modelpredicaat verkregen worden. Het behalen van het Sportpredicaat is tevens is tevens toereikend als verrichtingseis voor definitieve modelverklaring.</value>
+  </data>
+  <data name="String102" xml:space="preserve">
+    <value>minimum stokmaat 1.60 meter</value>
+  </data>
+  <data name="String103" xml:space="preserve">
+    <value>Sportpredicaat. Het sportpredicaat kan wordt vergeven aan merries, ruinen en hengsten, met goede resultaten in de competitiesport. Het sportpredicaat kan alleen verkregen worden op basis van resultaten behaald tijdens wedstrijden geregistreerd bij de “Koninklijke Nederlandse Hippische Sportfederatie” (KNHS). De bij het KNHS geregistreerde standen zijn bepalend voor het in aanmerking komen voor het sportpredicaat. De minimumeisen voor het behalen van het sportpredicaat zijn:</value>
+  </data>
+  <data name="String104" xml:space="preserve">
+    <value>dressuur: Z1 +5</value>
+  </data>
+  <data name="String105" xml:space="preserve">
+    <value>tuigen: cat. I&amp;II ereklasse en cat. III open klasse in één seizoen 6 keer geplaatst als prijswinnaar in het ‘groene seizoen’ (15</value>
+  </data>
+  <data name="String106" xml:space="preserve">
+    <value>mennen (dressuur): Z +10</value>
+  </data>
+  <data name="String107" xml:space="preserve">
+    <value>mennen (samengesteld): klasse 3 +10. Men dient zowel bij het KFPS als het KNHS vooraf aan te geven met welke Fries(e) paard(en) men wil gaan deelnemen. Het paard dient ten minste 10 winstpunten in de klasse 3 te hebben behaald vanaf het moment waarop het paard daartoe bij het KFPS en de KNHS is aangemeld.
+De bovengenoemde eisen zijn van toepassing voor in Nederland behaalde sportprestaties. Voor in het buitenland behaalde sportresultaten zullen vergelijkbare eisen gesteld worden, ter beoordeling van de KFPS-inspectie.</value>
+  </data>
+  <data name="String108" xml:space="preserve">
+    <value>Preferentschap voor merries. Merries ingeschreven in het Veulenboek en het Stamboek kunnen preferent verklaard worden op afstamme¬lingen. Het Preferentschap wordt automatisch toegekend.  Een preferentschap kan ook postuum worden toegekend. Het preferentschap voor merries wordt verleend, wanneer de betreffende merrie minimaal vier kwaliteits¬paarden heeft voortgebracht. Hieronder worden verstaan:</value>
+  </data>
+  <data name="String109" xml:space="preserve">
+    <value>Ster-, kroon- of modelmerries</value>
+  </data>
   <data name="String11" xml:space="preserve">
     <value>Artikel 9 Het Bijboek II in de hoofdsectie</value>
+  </data>
+  <data name="String110" xml:space="preserve">
+    <value>Stamboekpreferent merries</value>
+  </data>
+  <data name="String111" xml:space="preserve">
+    <value>Veulenboekpreferent merries</value>
+  </data>
+  <data name="String112" xml:space="preserve">
+    <value>Sterruinen</value>
+  </data>
+  <data name="String113" xml:space="preserve">
+    <value>Veulenboeksterhengsten</value>
+  </data>
+  <data name="String114" xml:space="preserve">
+    <value>Stamboekhengsten</value>
+  </data>
+  <data name="String115" xml:space="preserve">
+    <value>Hengsten die de tweede bezichtiging van de hengstenkeuring hebben behaald</value>
+  </data>
+  <data name="String116" xml:space="preserve">
+    <value>Preferentschap voor hengsten. Het preferentschap kan aan stamboekhengsten verleend worden die een blijvende, bijzonder positieve invloed op de fokkerij hebben. In het preferentschapsonderzoek wordt de kwaliteit van de nakomelingen voor de fokdoelkenmerken getoetst. Deze toetsing vindt plaats op basis van door nakomelingen behaalde predicaten vermenigvuldigd met een per predicaat vastgestelde wegingsfactor. Het resulterende puntentotaal wordt per hengst vergeleken met een norm op basis van het aantal geboren nakomelingen. Hengsten die de norm halen worden door de inspectie in vergadering besproken. In de uitzonderlijke gevallen dat de inspectie reden heeft om af te zien van toekenning, wordt eerst de eigenaar en later in de Phryso de leden hiervan met een uitgebreide onderbouwing en volledige openheid in kennis gesteld. Voor de overige gevallen krijgt het bestuur van de inspectie het advies het preferentschap toe te kennen.  
+De wegingsfactoren zijn als volgt: Ster 1, Kroon 5, Model 10, Sport 15, Preferent 15, Prestatie 20,
+Stamboekhengst 25, Stamboekhengst goedgekeurd op basis van nakomelingen 50, Moeder van een
+goedgekeurde hengst 20.
+De norm is een minimumgrens die begint bij 700 punten en daarboven afhankelijk is van het aantal
+geboren nakomelingen dat de hengst 5 jaar terug in de tijd achter zijn naam had staan. De norm
+waaraan een hengst moet voldoen is een puntenaantal dat minimaal 150 punten groter is dan op
+ basis van zijn aantal nakomelingen gemiddeld verwacht mag worden.</value>
+  </data>
+  <data name="String117" xml:space="preserve">
+    <value>Prestatiemoederpredicaat. Het predicaat Prestatiemoeder wordt toegekend aan merries die drie directe nakomelingen hebben voortgebracht die het Sportpredicaat hebben behaald of een aanlegtest hebben afgelegd met minimaal 75 punten.</value>
+  </data>
+  <data name="String118" xml:space="preserve">
+    <value>Artikel 14 Veulenregistratie</value>
+  </data>
+  <data name="String119" xml:space="preserve">
+    <value>Aanmelding van een veulen. Ten behoeve van de stamboekregistratie, moet een veulen binnen 14 dagen na geboorte zijn aangemeld bij het KFPS. De aanmelding kan uitsluitend plaatsvinden middels een door het KFPS uitgegeven geboortebericht. Het geboortebericht wordt aan de fokker vertrekt op basis van dekgegevens, welke door de eigenaar van de hengst aan het KFPS zijn verstrekt. Na ontvangst van de geboorte-aanmelding wordt het veulen geregistreerd in Voorlopig Veulenregister en verstrekt het KFPS aan de eigenaar een geboortebevestiging.</value>
   </data>
   <data name="String12" xml:space="preserve">
     <value>Artikel 10 Het Stamboekcertificaat</value>
   </data>
+  <data name="String120" xml:space="preserve">
+    <value>Identificatie van veulens. De definitieve registratie van het veulen, in het Veulenboek, vindt plaats nadat het veulen is geïdentificeerd (gechipt). Het chippen kan worden uitgevoerd door de gecertificeerde paspoortconsulenten van het KFPS, tijdens stamboekkeuringen en fokdagen of andere door het PVE erkende paspoortconsulenten of door een in het register I&amp;R paarden van de Stichting Veterinair Kwaliteitsorgaan ingeschreven dierenarts. Wettelijk gezien dient een veulen geïdentificeerd (gechipt) te worden binnen 6 maanden na de geboorte. Verzuimt de eigenaar dit, dan kan voor een paard dat ouder is dan 6 maanden alleen nog een paspoort met beperking worden verstrekt (het paard wordt uitgesloten voor de slacht ten behoeve van menselijke consumptie). Het aanvraagformulier moet uiterlijk binnen 7 dagen nadat het paard is gechipt worden ingediend bij een paspoortuitgevende instantie. Als het formulier door de paardenpaspoort-consulent is meegenomen is aan deze verplichting voldaan. De microtransponder dient als identificatiemiddel voor zowel de stamboekregistratie als de registratie in het kader van I&amp;R.</value>
+  </data>
+  <data name="String121" xml:space="preserve">
+    <value>Registratie van veulens. Het KFPS voert alleen t.b.v. leden van de vereniging stamboekregistratie uit van Friese paarden. Onder stamboekregistratie wordt onder andere verstaan het registreren van de afstamming van een paard. Om tot een correcte registratie van de afstamming te komen, dienen de volgende regels nageleefd te worden.
+Een veulen dient ten tijde van de identificatie (chippen) aan de voet van de moeder te lopen. Is dit niet het geval, dan kan registratie van de afstamming alleen gebeuren na DNA-verificatie. Dit DNA-onderzoek vindt plaats op kosten van de eigenaar. Is de afstamming niet middels DNA-verificatie te achterhalen, dan kan alleen een identificatiedocument (paspoort) worden afgegeven zonder gegevens van de afstamming. In het geval de moeder van het veulen tijdens de zoogperiode overlijdt, dient het veulen binnen een week te worden gechipt door de dierenarts. De aanvraag dient in een dergelijk geval vergezeld te gaan met een dierenartsverklaring waarin het overlijden van de moeder wordt bevestigd. Indien de termijn van een week wordt overschreden, dient de afstamming eerst geverifieerd te worden met een DNA-onderzoek, op kosten van de eigenaar.</value>
+  </data>
+  <data name="String122" xml:space="preserve">
+    <value>Een veulen dient binnen 6 maanden na geboorte gechipt te worden. Indien het veulen gechipt wordt na 6 maand na geboorte, dient voor registratie eerst de afstamming geverifieerd te worden middens DNA-onderzoek. Dit DNA-onderzoek vindt plaats op kosten van de eigenaar.</value>
+  </data>
+  <data name="String123" xml:space="preserve">
+    <value>Artikel 15 Registratienummer en naamgeving</value>
+  </data>
+  <data name="String124" xml:space="preserve">
+    <value>Aan ieder bij het KFPS ter registratie aangeboden veulen wordt voorzien van een uniek registratienummer. Het registratienummer is een 15 cijferig nummer. Het registratienummer is opgebouwd uit een zogenaamde UELN van 6 cijfers (bestaande uit 3 cijferige landcode voor het geboorteland en een 3 cijferige stamboekcode), gevolgd door het geboortejaar en door het stamboek toegewezen nummers.</value>
+  </data>
+  <data name="String125" xml:space="preserve">
+    <value>Een registratienummer kan niet worden gewijzigd.</value>
+  </data>
+  <data name="String126" xml:space="preserve">
+    <value>De namen van de in een bepaald jaar geboren veulens dienen met een vaste letter beginnen. Deze letter(s) worden jaarlijks vastgesteld door het KFPS. De naam van een merrieveulen mag per jaargang maar één keer voorkomen. Een naam mag, inclusief stalnaam, maximaal 30 posities bevatten.</value>
+  </data>
+  <data name="String127" xml:space="preserve">
+    <value>Een naam kan niet worden gewijzigd.</value>
+  </data>
+  <data name="String128" xml:space="preserve">
+    <value>In de documenten van het KFPS worden altijd de stamboeknamen weergegeven.</value>
+  </data>
+  <data name="String129" xml:space="preserve">
+    <value>Artikel 16 Afstammingsverificatie</value>
+  </data>
   <data name="String13" xml:space="preserve">
     <value>Artikel 11 Registers</value>
+  </data>
+  <data name="String130" xml:space="preserve">
+    <value>Het KFPS voert steekproefsgewijs DNA-onderzoek uit om de afstamming te verifiëren.  Afstammingsverificatie is altijd vereist in de volgende situaties:</value>
+  </data>
+  <data name="String131" xml:space="preserve">
+    <value>Bij merries die ster verklaard worden.</value>
+  </data>
+  <data name="String132" xml:space="preserve">
+    <value>Bij alle merries waarvan een veulen ter registratie wordt aangeboden.</value>
+  </data>
+  <data name="String133" xml:space="preserve">
+    <value>Indien de dekdatum niet binnen 14 dagen na dekken gemeld is bij het KFPS. De kosten voor het onderzoek zijn voor de hengstenhouder.</value>
+  </data>
+  <data name="String134" xml:space="preserve">
+    <value>Veulens geboren uit inseminaties met diepvriessperma, waarvan de dekking niet is doorgegeven. De kosten voor het onderzoek zijn voor de geregistreerde.</value>
+  </data>
+  <data name="String135" xml:space="preserve">
+    <value>Veulens of paarden die gechipt worden op een leeftijd ouder dan 6 maanden. De kosten voor het onderzoek zijn voor de geregistreerde.</value>
+  </data>
+  <data name="String136" xml:space="preserve">
+    <value>Indien het veulen niet aan de voet van de moeder wordt aangeboden voor identificatie. De kosten voor het onderzoek is voor de geregistreerde. Een dierenartsverklaring, waarin de moeder wordt verklaard, met een dagtekening maximaal een week na geboortedatum, geldt als ontheffing.</value>
+  </data>
+  <data name="String137" xml:space="preserve">
+    <value>Indien een merrie gedekt/geïnsemineerd is met twee verschillende hengsten binnen de duur van één cyclus of in twee aansluitende cycli. De kosten voor het onderzoek zijn voor de geregistreerde.</value>
+  </data>
+  <data name="String138" xml:space="preserve">
+    <value>Indien aan de juistheid van de dekgegevens van de dekking, waaruit het veulen verondersteld wordt geboren te zijn, getwijfeld wordt. De kosten voor het onderzoek zijn voor de geregistreerde.</value>
+  </data>
+  <data name="String139" xml:space="preserve">
+    <value>Indien de bij het KFPS geregistreerde dekdatum niet correspondeert met de geboortedatum van een veulen. De kosten voor het onderzoek zijn voor de geregistreerde.</value>
   </data>
   <data name="String14" xml:space="preserve">
     <value>Artikel 12 Aftekeningen</value>
   </data>
+  <data name="String140" xml:space="preserve">
+    <value>In het geval een veulen is geïdentificeerd (gechipt) door een niet gecertificeerde persoon. De kosten voor het onderzoek zijn voor de geregistreerde.</value>
+  </data>
+  <data name="String141" xml:space="preserve">
+    <value>Indiende aanvraag voor inschrijving in het veulenregister langer dan 4 weken na het chippen wordt gedaan. De kosten voor het onderzoek zijn voor de geregistreerde.</value>
+  </data>
+  <data name="String142" xml:space="preserve">
+    <value>Indien de microtransponder onvindbaar blijkt of defect is geraakt. In het geval de transponder is aangebracht door het KFPS, zijn de kosten voor het DNA-onderzoek voor het KFPS. Is dit niet het geval dan zijn de kosten voor de geregistreerde.
+m. Indien het chipnummer niet overeenkomt met het verwachte chipnummer. De kosten van het onderzoek zijn voor de geregistreerde.</value>
+  </data>
+  <data name="String143" xml:space="preserve">
+    <value>Registratie van veulens geboren middels embryo-transplantatie. De kosten voor het onderzoek zijn voor de geregistreerde.</value>
+  </data>
+  <data name="String144" xml:space="preserve">
+    <value>Registratie van veulens in Bijboek II. De kosten voor het onderzoek zijn voor de geregistreerde.</value>
+  </data>
+  <data name="String145" xml:space="preserve">
+    <value>Hengsten voordat ze aan het centraal onderzoek deelnemen. De kosten voor het onderzoek zijn voor de geregistreerde.
+Tevens voert het KFPS steekproeven uit. De redenen, werkwijze en uitvoering geschieden volgens het ‘protocol DNA’.</value>
+  </data>
+  <data name="String146" xml:space="preserve">
+    <value>Haarmonster ten behoeve van afstammingsverificatie dienen te worden genomen door een erkende paspoortconsulent, een KFPS-official of een dierenarts, tenzij door het KFPS anders is aangegeven. Haarmonsters worden opgestuurd naar het KFPS en dienen te zijn vergezeld door een verklaring van degene die het haarmonster heeft genomen (naam, datum en handtekening).</value>
+  </data>
+  <data name="String147" xml:space="preserve">
+    <value>Artikel 17 Fokker en geregistreerde</value>
+  </data>
+  <data name="String148" xml:space="preserve">
+    <value>Bij een geboortemelding wordt diegene als fokker van een veulen aangemerkt, die op het moment van geboorte van het veulen als geregistreerde van de moeder van het veulen bij het KFPS is weergegeven.</value>
+  </data>
+  <data name="String149" xml:space="preserve">
+    <value>Wanneer uit de geboortemelding blijkt dat er een ander lid eigenaar is van de merrie, dan de geregistreerde bij het KFPS, wordt dit beschouwd als een verkoop en worden de daarbij horende verkoop- en overschrijvingskosten in rekening gebracht.</value>
+  </data>
   <data name="String15" xml:space="preserve">
     <value>Artikel 13 Predicaten</value>
+  </data>
+  <data name="String150" xml:space="preserve">
+    <value>Per paard wordt in ieder geval één geregistreerde geregistreerd. Voor een paard kunnen meerdere leden als geregistreerde worden geregistreerd als deze leden een zogenaamde associatie aangaan. Hiervoor moet een aanvraag bij het KFPS worden ingediend. De geregistreerde is verantwoordelijk voor de aan de registratie van een paard verbonden rechten en verplichtingen.</value>
+  </data>
+  <data name="String151" xml:space="preserve">
+    <value>De registratie van de geregistreerde geschied louter voor de interne registratie van het KFPS, in verband met de aan de registratie verbonden rechten en verplichtingen. Hieraan kunnen tegenover het KFPS geen rechten worden ontleend.</value>
+  </data>
+  <data name="String152" xml:space="preserve">
+    <value>Door het indienen van een verzoek tot registratie in één van de registers van het KFPS, verklaart de geregistreerde zich bekend en akkoord met de van toepassing zijnde bepalingen, zoals bedoeld in dit reglement.</value>
+  </data>
+  <data name="String153" xml:space="preserve">
+    <value>Voor registraties, afgifte van registratiebewijzen en paspoorten en keuringen, worden tarieven in rekening gebracht aan geregistreerde overeenkomstig de door het KFPS vastgestelde tarieven.</value>
+  </data>
+  <data name="String154" xml:space="preserve">
+    <value>De registratie van de geregistreerde geschied louter voor de interne registratie van het KFPS, in verband met de aan de registratie verbonden rechten en verplichtingen. Hieraan kunnen tegenover het KFPS geen rechten worden ontleend.</value>
+  </data>
+  <data name="String155" xml:space="preserve">
+    <value>Artikel 18 Overschrijving van paarden</value>
+  </data>
+  <data name="String156" xml:space="preserve">
+    <value>Bij een verkoop van een paard, dient de verkoper zowel het stamboekcertificaat als het paspoort ter overschrijving opsturen naar het KFPS. Het KFPS draagt zorg voor de wijziging van de geregistreerde van beide documenten. Voor het op naam stellen van het stamboekcertificaat, moet de koper lid zijn van het KFPS. Voor het op naam stellen van het paspoort hoeft de koper geen lid te zijn van het KFPS. Voor het overschrijven van een paard worden aan de verkoper, verkoopkosten in rekening gebracht en aan de koper, overschrijvingskosten.</value>
+  </data>
+  <data name="String157" xml:space="preserve">
+    <value>Artikel 19 Stalnamen</value>
+  </data>
+  <data name="String158" xml:space="preserve">
+    <value>Leden kunnen een beschermde stalnaam aanvragen, die, na toekenning, toege¬voegd wordt achter de aangemelde naam van het veulen. Derden mogen deze naam dan niet meer gebruiken.</value>
+  </data>
+  <data name="String159" xml:space="preserve">
+    <value>De naam mag niet discriminerend, laste¬rend of commercieel zijn en kan, samen met de reguliere naam, uit maximaal 30 posi¬ties bestaan. De stalnaam zelf mag uit maximaal 25 posities bestaan. Het gebruik van de merknamen “Het Friesch Paarden-Stamboek” en “Phryso” is niet toegestaan.</value>
   </data>
   <data name="String16" xml:space="preserve">
     <value>Artikel 14 Veulenregistratie</value>
   </data>
+  <data name="String160" xml:space="preserve">
+    <value>Een verzoek tot bescherming dient schrif¬telijk te worden aange¬vraagd. Bij toekenning is de stalnaam een jaar geldig. In "Phryso" vindt hiervan publicatie plaats. Zonder tegenbericht wordt de naam jaarlijks verlengd. Voor de bescherming van een stalnaam worden éénmalige toekenningskosten en jaarlijkse verlengingskosten berekend.</value>
+  </data>
+  <data name="String161" xml:space="preserve">
+    <value>Een geregistreerde stalnaam is alleen beschermd binnen het KFPS.</value>
+  </data>
+  <data name="String162" xml:space="preserve">
+    <value>Artikel 20 Embryotransplantatie</value>
+  </data>
+  <data name="String163" xml:space="preserve">
+    <value>De melding van een embryotransplantatie geschiedt schriftelijk bij het KFPS met het meldingsformulier Embryotransplantatie. Dit formulier dient bij het KFPS te worden aangevraagd. Iedere gedekte merrie krijgt een eigen DIO-nummer en een eigen formulier. De registratie van de getransplanteerde embryo’s vindt niet plaats via PMS. De dracht van de donormerrie dient wel door de hengstenhouder in PMS gedaan te worden.</value>
+  </data>
+  <data name="String164" xml:space="preserve">
+    <value>De draagmoeder dient bij voorkeur van het Friese ras te zijn, omdat het karakter van een veulen mede door exter¬ne factoren wordt ontwikkeld.</value>
+  </data>
+  <data name="String165" xml:space="preserve">
+    <value>Via een DNA-onderzoek zal de afstamming van het uit het embryo geboren veulen vastgesteld moeten worden, voordat het veulen in het veulenboek van het KFPS geregistreerd kan worden.</value>
+  </data>
+  <data name="String166" xml:space="preserve">
+    <value>De status van de embryo's wijzigt zich zodra de dekvergunning van de vader wordt ingetrokken. Ze worden dan beschouwd als afkomstig van een veulenboekhengst. Wordt een embryo na deze wijziging geïmplanteerd, dan zal het betreffende fokproduct mits aan de daartoe gestelde voorwaarden is voldaan, worden geregistreerd in het Bijboek II.</value>
+  </data>
+  <data name="String167" xml:space="preserve">
+    <value>Op basis van een aangemelde embryotransplantatie, via het embryotransplantatieformulier, wordt door het KFPS een geboortebericht verstrekt.</value>
+  </data>
+  <data name="String168" xml:space="preserve">
+    <value>Artikel 21 Veulenboekhengsten met dekvergunning</value>
+  </data>
+  <data name="String169" xml:space="preserve">
+    <value>Voor landen waar het gebruik van stamboekhengsten (met een dekvergunning) niet of nauwelijks mogelijk is, kan het KFPS dekvergunningen voor Veulenboekhengsten afgeven. De nakomelingen van deze hengsten kunnen in Bijboek I geregistreerd worden. De KFPS-inspectie bepaalt in welke landen veulenboekhengsten een dekvergunning krijgen en welke hengsten voor een dekvergunning in aanmerking komen, overeenkomst de voorschriften Veulenboekhengsten met een dekvergunning.</value>
+  </data>
   <data name="String17" xml:space="preserve">
     <value>Artikel 15 Registratienummer en naamgeving</value>
+  </data>
+  <data name="String170" xml:space="preserve">
+    <value>Artikel 22 Beslissing algemeen bestuur</value>
+  </data>
+  <data name="String171" xml:space="preserve">
+    <value>In alle gevallen waarin dit reglement niet voorziet, beslist het algemeen bestuur van het KFPS. Het bestuur is bevoegd de in dit reglement genoemde termijnen te verlengen.</value>
+  </data>
+  <data name="String172" xml:space="preserve">
+    <value />
   </data>
   <data name="String18" xml:space="preserve">
     <value>Artikel 16 Afstammingsverificatie</value>
@@ -168,25 +398,251 @@
   <data name="String24" xml:space="preserve">
     <value>Artikel 22 Beslissing algemeen bestuur</value>
   </data>
+  <data name="String25" xml:space="preserve">
+    <value>Artikel 1 Algemene bepalingen</value>
+  </data>
+  <data name="String26" xml:space="preserve">
+    <value>Dit reglement is vastgesteld krachtens het bepaalde in de statuten en het huishoudelijk reglement van de Koninklijke Vereniging “Het Friesch Paarden Stamboek”. De bepalingen in dit reglement worden uitgevoerd overeenkomstig de Richtlijn van de Raad van de Europese Gemeenschappen van 26 juli 1990 (90/427/EG) en het fokkerijbesluit 1994 (Staatsblad 1994/696)</value>
+  </data>
+  <data name="String27" xml:space="preserve">
+    <value>De doelstelling van het KFPS is het behouden en verbeteren van het Friese paard. Onder een Fries paard wordt verstaan een paard dat aan de rasbeschrijving voldoet zoals dat is beschreven in het fokdoel en waarvan beide ouders in één van de klassen (van de hoofdsectie) van het KFPS zijn geregistreerd. Het fokdoel en programma’s voor registratie en fokkerij staan ten dienste de doelstelling te realiseren.</value>
+  </data>
+  <data name="String28" xml:space="preserve">
+    <value>Artikel 2 Oorsprong stamboek en filiaalstamboeken</value>
+  </data>
+  <data name="String29" xml:space="preserve">
+    <value>Het KFPS is het stamboek van oorsprong voor paarden van het Friese ras, overeenkomstig richtlijn 90-427</value>
+  </data>
   <data name="String3" xml:space="preserve">
     <value>Artikel 1 Algemene bepalingen</value>
+  </data>
+  <data name="String30" xml:space="preserve">
+    <value>Filiaal stamboeken zijn stamboeken in EU-lidstaten, die Friese paarden registreren en daarvoor een erkenning hebben verkregen van de lidstaat waar ze gevestigd zijn.</value>
+  </data>
+  <data name="String31" xml:space="preserve">
+    <value>Filiaal stamboeken zijn bevoegd paarden te registreren en een eigen fokprogramma te voeren bestaande uit ondermeer het selecteren en keuren van paarden, overeenkomstig het door het stamboek van oorsprong vastgestelde beginselen, zoals bedoeld in EU-beschikking 92/353/EEG</value>
+  </data>
+  <data name="String32" xml:space="preserve">
+    <value>Nakomelingen van paarden geregistreerd bij een filiaalstamboek met een eigen registratiesysteem en fokprogramma, kunnen door het KFPS geregistreerd worden, als de aanvrager lid is van het KFPS. Voor deze registratie zijn aparte registers ingericht (artikel 7). Registratie van paarden vindt plaats conform EU-bschikking 96/78/EG</value>
+  </data>
+  <data name="String33" xml:space="preserve">
+    <value>Paarden geregistreerd door een filiaalstamboek met een stamboekcertificaat uitgegeven door dit filiaalstamboek kunnen worden overgeschreven in het KFPS, in het geval de aanvrager lid is van het KFPS. Deze paarden behouden het register van het filiaalstamboek, evenals het stamboekcertificaat van het filiaalstamboek. Voor een dergelijk paard wordt geen KFPS-stamboekcertificaat uitgegeven.</value>
+  </data>
+  <data name="String34" xml:space="preserve">
+    <value>Filiaalstamboeken wordt de mogelijkheid geboden de stamboekregistratie en het fokprogramma (selectie, keuringen, etc.) te laten uitvoeren door het KFPS. Dit is uitsluitend mogelijk op verzoek van het filiaalstamboek. Hiervoor wordt een overeenkomst gesloten tussen het KFPS en het filiaalstamboek. Paarden van leden van filiaalstamboeken worden in dezelfde registers geregistreerd als paarden van leden van het KFPS. De stamboekcertificaten zijn eveneens identiek.</value>
+  </data>
+  <data name="String35" xml:space="preserve">
+    <value>In landen waar (nog) geen filiaalstamboek aanwezig is, verzorgt het KFPS de registratie en de uitvoering van het fokprogramma. Al dan niet in samenwerking met een fokvereniging in een dergelijk land. Met een fokvereniging in het buitenland kan een samenwerkingsovereenkomst worden gesloten.</value>
+  </data>
+  <data name="String36" xml:space="preserve">
+    <value>Artikel 3 Identificatie en Registratie</value>
+  </data>
+  <data name="String37" xml:space="preserve">
+    <value>De voorzitter van het Algemeen bestuur van het KFPS is door het PVE gemandateerd om paardenpaspoorten uit te geven.</value>
+  </data>
+  <data name="String38" xml:space="preserve">
+    <value>Op de afgifte van een paardenpaspoort zijn niet de statuten van het KFPS van toepassing, maar de Verordening Identificatie en Registratie van het PVE.</value>
+  </data>
+  <data name="String39" xml:space="preserve">
+    <value>Een verzoek tot afgifte van een paardenpaspoort of een duplicaat van een paardenpaspoort wordt behandeld met in achtneming van lid 2 van de vernoemde verordening.</value>
   </data>
   <data name="String4" xml:space="preserve">
     <value>Artikel 2 Oorsprong stamboek en filiaalstamboeken</value>
   </data>
+  <data name="String40" xml:space="preserve">
+    <value>Op het verzoek tot afgifte van een paardenpaspoort of een duplicaat van een paardenpaspoort beslist de voorzitter van het Algemeen bestuur, in diens hoedanigheid van gemandateerde van de PVE. De beslissing op het verzoek, door de voorzitter van het Algemeen bestuur is een bestuursrechtelijk besluit in de zin van de Algemene Wet Bestuursrecht, tegen welk besluit kan worden opgekomen met inachtneming van deze wet.</value>
+  </data>
+  <data name="String41" xml:space="preserve">
+    <value>Het verzoek voor een duplicaatpaspoort dient vergezeld te zijn van een verklaring van een dierenarts of paspoort consulent die het transpondernummer van het betreffende paard heeft uitgelezen. Tevens dient een kopie van aangifte van verlies of diefstal te worden overlegd.</value>
+  </data>
+  <data name="String42" xml:space="preserve">
+    <value>Het KFPS is niet verantwoordelijk noch aansprakelijk te houden voor afgifte van een paardenpaspoort of een duplicaat van een paardenpaspoort, voor zover de protocollen en werkinstructies van de PVE worden nagevolgd.</value>
+  </data>
+  <data name="String43" xml:space="preserve">
+    <value>De voorzitter van het Algemeen bestuur is voor zijn beleid tot het al dan niet verstrekken van paardenpaspoorten verantwoording verschuldigd aan de PVE en niet aan de ledenraad.</value>
+  </data>
+  <data name="String44" xml:space="preserve">
+    <value>Artikel 4 Stamboekregistratie</value>
+  </data>
+  <data name="String45" xml:space="preserve">
+    <value>Het KFPS voert alleen t.b.v. leden van de vereniging stamboekregistratie uit van Friese paarden. Onder stamboekregistratie wordt verstaan het registreren van de afstamming van een paard alsmede de registers, predicaten en behaalde premies van een paard.</value>
+  </data>
+  <data name="String46" xml:space="preserve">
+    <value>Artikel 5 Secties, klassen en registers</value>
+  </data>
+  <data name="String47" xml:space="preserve">
+    <value>Het stamboek is ingedeeld in secties, klassen en registers overeenkomstig beschikking EU 96/78.</value>
+  </data>
+  <data name="String48" xml:space="preserve">
+    <value>Het KFPS kent een gesloten fokkerij. Dit betekent dat t.b.v. de stamboekregistratie, paarden alleen in de hoofdsectie geregistreerd kunnen worden, als de beide ouders in de hoofdsectie geregistreerd zijn. De hoofdsectie is opgedeeld in klassen, te weten: KFPS-boek (hoofdklasse), KFPS-D-boek, Bijboek I en Bijboek II. De wijze van indelen is schematisch weergegeven in figuur 1. Paarden in de verschillende klassen worden ingedeeld in verschillende registers, afhankelijk van de kwaliteit gerelateerd aan het fokdoel.</value>
+  </data>
+  <data name="String49" xml:space="preserve">
+    <value>Naast de hoofdsectie kent het KFPS een nevensectie. In de nevensectie kunnen paarden worden geregistreerd, die in toereikende mate voldoen aan de rasbeschrijving, welke is weergegeven in het fokdoel, maar waarvan een van de beide ouders niet is geregistreerd in de hoofdsectie. Paarden in de nevensectie kunnen niet gekeurd worden en de nevensectie kent geen onderverdeling in klassen en registers. De nakomelingen kunnen niet instromen in een van de boeken van de hoofdsectie.</value>
+  </data>
   <data name="String5" xml:space="preserve">
     <value>Artikel 3 Identificatie en Registratie</value>
+  </data>
+  <data name="String50" xml:space="preserve">
+    <value>Artikel 6 Het KFPS-boek in de hoofdsectie</value>
+  </data>
+  <data name="String51" xml:space="preserve">
+    <value>Paarden waarvan de moeder in het KFPS-boek is geregistreerd en de vader ten tijde van verwekking een goedgekeurde hengst is in het KFPS-stamboekregister, worden in het KFPS-boek geregistreerd.</value>
+  </data>
+  <data name="String52" xml:space="preserve">
+    <value>Artikel 7 Het KFPS-D boek in de hoofdsectie</value>
+  </data>
+  <data name="String53" xml:space="preserve">
+    <value>Nakomelingen van hengsten die zijn goedgekeurd door een door een in een EU-lidstaat erkend stamboek voor Friese paarden, worden geregistreerd in het KFPS-D boek. Dit is alleen het geval als de moeders van deze veulens in het KFPS boek of in het KFPS-D boek geregistreerd zijn. Nakomelingen van dergelijke hengsten uit bijboek II merries komen in bijboek I. Nakomelingen van merries uit het KFPS-D boek worden in het KFPS hoofdboek geregistreerd, mits de vader een door het KFPS goedgekeurde hengst is (hengst in het stamboekregister).</value>
+  </data>
+  <data name="String54" xml:space="preserve">
+    <value>Artikel 8 Het Bijboek I in de hoofdsectie</value>
+  </data>
+  <data name="String55" xml:space="preserve">
+    <value>Paarden waarvan de moeder in de hoofdsectie (hoofdboek, D-boek, bijboek I en bijboek II) is geregistreerd en de vader een hengst is die is geregistreerd in het register Veulenboek en ten tijde van verwekking van het paard een dekvergunning had, worden ingeschreven in Bijboek I. Nageslacht van een Bijboek I merrie, kan na twee generaties worden ingeschreven in het KFPS-boek als ze in twee opeenvolgende generaties afstammen van een door het KFPS goedgekeurde stamboekhengst. Registratie in het KFPS-boek kan in één generatie plaatsvinden als inclusief de vader van de betreffende nakomelingen, drie van de vier eerstvolgende geslachten afstammen van door het KFPS goedgekeurde stamboekhengsten.</value>
+  </data>
+  <data name="String56" xml:space="preserve">
+    <value>Artikel 9 Het Bijboek II in de hoofdsectie</value>
+  </data>
+  <data name="String57" xml:space="preserve">
+    <value>Paarden waarvan de moeder in de hoofdsectie (hoofdboek, D-boek, bijboek I en bijboek II) is geregistreerd en de vader een hengst is die is ingeschreven in het register Veulenboek en ten tijde van verwekking geen dekvergunning had, worden ingeschreven in Bijboek II. Paarden die afstammen van een op het moment van verwekking, afgekeurde hengst uit het stamboekregister, worden eveneens geregistreerd in Bijboek II. Nakomelingen van in Bijboek II geregistreerde merries worden in Bijboek I geregistreerd als zij afstammen van een goedgekeurde stamboekhengst. Nakomelingen van Bijboek II merries worden na twee generaties in het KFPS-boek, als zowel de vader als de moedersvader van de betreffende nakomeling (kleinkind) een Veulenboekhengst is, die ten tijde van verwekking een dekvergunning had.</value>
+  </data>
+  <data name="String58" xml:space="preserve">
+    <value>Artikel 10 Het Stamboekcertificaat</value>
+  </data>
+  <data name="String59" xml:space="preserve">
+    <value>Voor alle paarden die zijn ingeschreven in één van de klassen van het KFPS wordt door het KFPS een stamboekcertificaat uitgegeven. De kleur van het certificaat is afhankelijk van de klasse waarin het betreffende paard is ingeschreven:</value>
   </data>
   <data name="String6" xml:space="preserve">
     <value>Artikel 4 Stamboekregistratie</value>
   </data>
+  <data name="String60" xml:space="preserve">
+    <value>KFPS (hoofdklasse): geel/groen, vanaf 1-1-2015 donkerblauw</value>
+  </data>
+  <data name="String61" xml:space="preserve">
+    <value>KFPS-D boek: grijs, vanaf 1-1-2015 zwart</value>
+  </data>
+  <data name="String62" xml:space="preserve">
+    <value>Bijboek I: bruin, vanaf 1-1-2015 zwart</value>
+  </data>
+  <data name="String63" xml:space="preserve">
+    <value>Bijboek II: blauw, vanaf 1-1-2015 zwart</value>
+  </data>
+  <data name="String64" xml:space="preserve">
+    <value>Op het stamboekcertificaat is weergegeven, de stamboom, de sectie, de klasse, het register, behaalde premies en predicaten, de stokmaat, registratiehistorie alsmede het registratie- en het I&amp;R-transponder nummer.</value>
+  </data>
+  <data name="String65" xml:space="preserve">
+    <value>Het stamboekcertificaat is slechts een bewijs van inschrijving in de KFPS-registers en geen bewijs van eigendom. Het stamboekcertificaat wordt aan de leden ter beschikking gesteld, echter het KFPS is eigenaar van het certificaat en kan hier te allen tijde aanspraak op maken.</value>
+  </data>
+  <data name="String66" xml:space="preserve">
+    <value>De fokker/geregistreerde van een paard betaalt voor het verkrijgen van het stamboekcertificaat een statiegeldbedrag. Dit bedrag wordt aan de geregistreerde terugbetaald op het moment dat het certificaat bij het KFPS geretourneerd wordt, bij verkoop of overlijden van het paard. Het statiegeldbedrag wordt alleen geretourneerd aan leden en alleen als het certificaat binnen een maand na overlijden of verkoop bij het KFPS wordt ingeleverd.</value>
+  </data>
+  <data name="String67" xml:space="preserve">
+    <value>Artikel 11 Registers</value>
+  </data>
+  <data name="String68" xml:space="preserve">
+    <value>Binnen de klassen van de hoofdsectie worden de paarden onderverdeeld in registers, afhankelijk van het geslacht.</value>
+  </data>
+  <data name="String69" xml:space="preserve">
+    <value>Voorlopig veulenregister (VVR).Veulens en paarden die nog niet zijn voorzien van een identificatie (tongnummer microtransponder), worden tijdelijk geregistreerd in het Voorlopig Veulenregister. Dieren in het voorlopig veulenregister zijn (nog) niet in één van de klassen in de hoofdsectie geregistreerd. Dit betekent dat nakomelingen van deze paarden niet voor stamboekregistratie in aanmerking komen. Op het moment het veulen/paard gechipt wordt en de ouders te herleiden zijn (art. 5), wordt het veulen/paard geregistreerd in het Veulenboek. Van paarden in het Voorlopig Veulenregister wordt geen stamboekcertificaat uitgegeven.</value>
+  </data>
   <data name="String7" xml:space="preserve">
     <value>Artikel 5 Secties, klassen en registers</value>
+  </data>
+  <data name="String70" xml:space="preserve">
+    <value>Veulenboek voor hengsten en merries (VB). Op het moment het veulen/paard gechipt wordt en de ouders te herleiden zijn (art. 4), wordt het veulen/paard geregistreerd in het Veulenboek. Voor paarden in het veulenboek wordt een stamboekcertificaat uitgegeven. Hengsten die zijn geregistreerd in het Veulenboek kunnen in bepaalde situaties een dekvergunning krijgen (art.21). Nakomelingen van dergelijke hengsten worden geregistreerd in de klasse Bijboek I.</value>
+  </data>
+  <data name="String71" xml:space="preserve">
+    <value>Stamboek voor merries (F).Vanaf het jaar dat een merrie drie jaar oud wordt, kan een merrie worden opgenomen in Stamboekregister. Hiervoor moet het paard gekeurd worden en aan de minimumeisen voldoen t.a.v. exterieur, beweging, stokmaat (minimaal 1.54m) en aftekeningen (paarden met niet-toegestane aftekeningen worden niet in het stamboek opgenomen).</value>
+  </data>
+  <data name="String72" xml:space="preserve">
+    <value>Stamboek voor hengsten (F). Alleen van hengsten in het stamboekregister kunnen nakomelingen in de hoofdsectie geregistreerd worden. Hengsten kunnen in het stamboekregister ingeschreven worden zoals is aangegeven in het reglement hengstenselectie.</value>
+  </data>
+  <data name="String73" xml:space="preserve">
+    <value>Ruinenboek (RB). Vanaf het jaar dat een ruin drie jaar oud wordt, kan een ruin worden opgenomen in het Ruinenboek. Hiervoor moet het paard gekeurd worden en aan de minimumeisen voldoen t.a.v. exterieur, beweging, stokmaat (minimaal 1.56m) en aftekeningen (paarden met niet-toegestane aftekeningen worden niet in het stamboek opgenomen). Veulenboekhengsten die geruint worden, worden na inlevering van een dierenartsverklaring m.b.t. castratie, ingeschreven in het Ruinenboek.</value>
+  </data>
+  <data name="String74" xml:space="preserve">
+    <value>Artikel 12 Aftekeningen</value>
+  </data>
+  <data name="String75" xml:space="preserve">
+    <value>Voor inschrijving in het stamboekregister voor hengsten en merries en het ruinenboek komen alleen paarden in aanmerking die volledig zwart zijn. Een aantal witte aftekeningen worden toegestaan bij de primering van veulens en de stamboekopname:</value>
+  </data>
+  <data name="String76" xml:space="preserve">
+    <value>aftekeningen aan het hoofd (kol) mits boven de ooglijn en met een maximale doorsnede van 3.2 cm. Enige witte haren boven de ooglijn zijn ook toegestaan</value>
+  </data>
+  <data name="String77" xml:space="preserve">
+    <value>bij merries: witte (plekken in de) zolen</value>
+  </data>
+  <data name="String78" xml:space="preserve">
+    <value>Niet toegestane aftekeningen zijn:</value>
+  </data>
+  <data name="String79" xml:space="preserve">
+    <value>aftekeningen aan het hoofd beneden de ooglijn</value>
   </data>
   <data name="String8" xml:space="preserve">
     <value>Artikel 6 Het KFPS-boek in de hoofdsectie</value>
   </data>
+  <data name="String80" xml:space="preserve">
+    <value>aftekeningen aan het hoofd met een doorsnede, groter dan 3.2 cm.</value>
+  </data>
+  <data name="String81" xml:space="preserve">
+    <value>aftekeningen aan het lichaam (stekelharigheid)</value>
+  </data>
+  <data name="String82" xml:space="preserve">
+    <value>aftekeningen aan de benen, inclusief hoefwand.</value>
+  </data>
+  <data name="String83" xml:space="preserve">
+    <value>Paarden en veulens met niet toegestane aftekeningen worden niet opgenomen in het stamboek en/of worden niet geprimeerd.</value>
+  </data>
+  <data name="String84" xml:space="preserve">
+    <value>Bij de hengstenselectie worden strengere criteria gehanteerd voor de toegestane aftekeningen. Deze zijn weergeven in het reglement  hengstenkeuring.</value>
+  </data>
+  <data name="String85" xml:space="preserve">
+    <value>Aftekeningen mogen tijdens de primering van veulens en tijdens de stamboekopname van paarden niet weggewerkt/gecamoufleerd worden.</value>
+  </data>
+  <data name="String86" xml:space="preserve">
+    <value>Aftekeningen worden weergegeven op het stamboekcertificaat.</value>
+  </data>
+  <data name="String87" xml:space="preserve">
+    <value>Het KFPS kan in gevallen waarbij niet toegestane aftekeningen worden geconstateerd, eerdere keuringsresultaten (primering, stamboekopname) ongeldig verklaren.</value>
+  </data>
+  <data name="String88" xml:space="preserve">
+    <value>In het geval niet toegestane aftekeningen het gevolg zijn van externe factoren en dit middels een (veterinaire) verklaring sluitend onderbouwd kan worden, zijn deze geen belemmering voor primering of stamboekopname. Dit is ter beoordeling van de KFPS-inspectie.</value>
+  </data>
+  <data name="String89" xml:space="preserve">
+    <value>Artikel 13 Predicaten</value>
+  </data>
   <data name="String9" xml:space="preserve">
     <value>Artikel 7 Het KFPS-D boek in de hoofdsectie</value>
+  </data>
+  <data name="String90" xml:space="preserve">
+    <value>Middels predicaten worden de paarden binnen de registers naar kwaliteit onderscheiden. De predicaten kunnen zijn gebaseerd op eigen prestatie of op basis van de kwaliteit van de nakomelingen. Verder kunnen predicaten gebaseerd zijn op exterieur, sportaanleg of sportprestaties of een combinatie tussen deze.</value>
+  </data>
+  <data name="String91" xml:space="preserve">
+    <value>Sterpredicaat. Het Sterpredicaat wordt vergeven tijdens keuringen voor paarden vanaf het jaar dat ze drie worden. Om voor het Sterpredicaat in aanmerking te komen, moet het paard aan minimumeisen voldoen voor exterieur, beweging (aan de hand) en stokmaat (minimaal 1.56m voor merries en 1.58m voor ruinen en hengsten). Het Sterpredicaat kan behaald worden door merries in het stamboekregister, ruinen in het ruinenboek en veulenboekhengsten. Sterverklaring kan bij merries en ruinen tegelijk met de stamboekopname plaatsvinden. Veulenboek hengsten met het sterpredicaat, die geruind worden, behouden het sterpredicaat. Veulenboekhengsten kunnen tijdens de eerste bezichtiging Ster worden in het jaar dat ze twee jaar oud zijn geworden. 
+Voor merries geldt vanaf 2016 dat afstammingsverificatie deel uitmaakt van het vergeven van het sterpredicaat.</value>
+  </data>
+  <data name="String92" xml:space="preserve">
+    <value>Kroonpredicaat. Het Kroonpredicaat is een predicaat waarbij eisen gesteld worden voor exterieur en sportaanleg. De aanwijzing voor het (voorlopig) Kroonpredicaat vindt plaats tijdens de Centrale keuring, uit merries die tijdens  fokdagen en stamboekkeuringen in hetzelfde jaar een eerste premie hebben behaald. De eisen voor het in aanmerking komen voor het (voorlopig) Kroonpredicaat zijn:</value>
+  </data>
+  <data name="String93" xml:space="preserve">
+    <value>minimum leeftijd is 3 jaar</value>
+  </data>
+  <data name="String94" xml:space="preserve">
+    <value>Merries voorlopig kroon verklaard t/m CK 2013: voor definitieve kroonverklaring moet de merrie een IBOP- of ABFP-test hebben afgerond met een minimaal aantal punten van 77.0, met gemiddeld een 7 voor de stap en de draf. Het behalen van het Sportpredicaat is tevens toereikend als verrichtingseis voor definitieve kroonverklaring.</value>
+  </data>
+  <data name="String95" xml:space="preserve">
+    <value>Merries voorlopig kroon verklaard vanaf CK 2014: voor definitieve kroonverklaring moet de merrie een IBOP- of ABFP-test hebben afgerond met een minimaal aantal punten van 77,0 met gemiddeld een 7 voor de basisgangen. Met een score voor een van de basisgangen lager dan een 6 kan geen kroonpredicaat verkregen worden Het behalen van het Sportpredicaat is tevens toereikend als verrichtingseis voor definitieve kroonverklaring.</value>
+  </data>
+  <data name="String96" xml:space="preserve">
+    <value>Minimum stokmaat: 1.58 m</value>
+  </data>
+  <data name="String97" xml:space="preserve">
+    <value>Modelpredicaat. Het Modelpredicaat is een predicaat waarbij eisen gesteld worden voor exterieur en sportaanleg. De beste merries in de populatie komen in aanmerking voor het Modelpredicaat. De aanwijzing voor het (voorlopig) Modelpredicaat vindt plaats op de Centrale keuring, uit ster en kroonmerries, die tijdens de fokdagen, in hetzelfde jaar, een eerste premie hebben behaald. Aanwijzingen voor het modelpredicaat kunnen buiten Nederland ook tijdens buitenlandse fokdagen plaatsvinden. De eisen voor het in aanmerking komen voor het (voorlopig) modelpredicaat zijn:</value>
+  </data>
+  <data name="String98" xml:space="preserve">
+    <value>minimum leeftijd is 7 jaar</value>
+  </data>
+  <data name="String99" xml:space="preserve">
+    <value>de merrie moet een veulen zogen of gezoogd hebben</value>
   </data>
 </root>
