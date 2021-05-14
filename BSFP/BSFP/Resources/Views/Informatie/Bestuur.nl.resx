@@ -175,7 +175,7 @@
     <value>Website en ledenblad</value>
   </data>
   <data name="String3" xml:space="preserve">
-    <value>Maastrichtersteenweg 308 - B-3500 Hasselt - België</value>
+    <value />
   </data>
   <data name="String4" xml:space="preserve">
     <value>KBC bank</value>
@@ -188,6 +188,9 @@
   </data>
   <data name="String7" xml:space="preserve">
     <value>voor het meerjarenbeleid van het BSFP</value>
+  </data>
+  <data name="String7.1" xml:space="preserve">
+    <value>Organigram van het BSFP bestuur</value>
   </data>
   <data name="String8" xml:space="preserve">
     <value>Voorzitter</value>

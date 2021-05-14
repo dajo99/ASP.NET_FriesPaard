@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\home\\Documents\\BSFP\\ASP.NET_FriesPaard\\BSFP\\BSFP\\BSFP.csproj": {}
+    "C:\\Users\\dajov\\Documents\\ASP.NET_FriesPaard\\BSFP\\BSFP\\BSFP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\home\\Documents\\BSFP\\ASP.NET_FriesPaard\\BSFP\\BSFP\\BSFP.csproj": {
+    "C:\\Users\\dajov\\Documents\\ASP.NET_FriesPaard\\BSFP\\BSFP\\BSFP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\home\\Documents\\BSFP\\ASP.NET_FriesPaard\\BSFP\\BSFP\\BSFP.csproj",
+        "projectUniqueName": "C:\\Users\\dajov\\Documents\\ASP.NET_FriesPaard\\BSFP\\BSFP\\BSFP.csproj",
         "projectName": "BSFP",
-        "projectPath": "C:\\Users\\home\\Documents\\BSFP\\ASP.NET_FriesPaard\\BSFP\\BSFP\\BSFP.csproj",
-        "packagesPath": "C:\\Users\\home\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\home\\Documents\\BSFP\\ASP.NET_FriesPaard\\BSFP\\BSFP\\obj\\",
+        "projectPath": "C:\\Users\\dajov\\Documents\\ASP.NET_FriesPaard\\BSFP\\BSFP\\BSFP.csproj",
+        "packagesPath": "C:\\Users\\dajov\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dajov\\Documents\\ASP.NET_FriesPaard\\BSFP\\BSFP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\home\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dajov\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -93,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

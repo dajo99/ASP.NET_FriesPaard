@@ -54,6 +54,11 @@ namespace BSFP.Controllers
             return View();
         }
 
+        public IActionResult Bestuur()
+        {
+            return View();
+        }
+
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

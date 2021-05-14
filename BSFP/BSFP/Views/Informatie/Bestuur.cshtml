@@ -1,5 +1,145 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>@localizer["String1"]</h1>
+        </div>
+    </div>
+
+</header>
+
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+        <div class="row mt-sm-3">
+            <div class="col-12">
+                <h2>
+                    @localizer["String2"]
+                </h2>
+                <p>
+                    Maastrichtersteenweg 308 - B-3500 Hasselt - België
+                </p>
+                <p>
+                    Tel: +32.(0)472.66.72.99
+                </p>
+                <p>
+                    @localizer["String4"] : BE40.7352.2302.0263
+                </p>
+                <p>
+                    @localizer["String5"]  : BE 0426.528.103
+                </p>
+                <br />
+                <p>
+                    <a>@localizer["String6"]</a> @localizer["String7"].
+                </p>
+                <br />
+                <h2 style="text-decoration:underline">
+                    @localizer["String8"]
+                </h2>
+                <br />
+                <div class="container">
+                    <div class="row">
+                        <h3 style="font-weight: bold; margin:auto">
+                            Marc De Laat
+                        </h3>
+                        <br />
+                    </div>
+                    <div class="row mt-3" style="background-color: #1C3153; color:white; padding: 20px 20px">
+                        <div class="col-4">
+                            <img class="img-fluid" src="~/Images/Rik_Meeus.jpg" alt="Rik Meeus" title="Rik Meeus" />
+                        </div>
+                        <div class="col-4">
+                            <h3 style="font-weight: bold; color: #caa500">Informatie</h3>
+                            <br />
+                            <p>
+                                Tel: +32 476 91 03 35
+                            </p>
+                            <p>
+                                E-mail: Marc.De.Laat@dvv.be
+                            </p>
+                            <p>
+                                Adres: Ninoofsesteenweg 278 - 1500 Halle
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <h3 style="font-weight: bold; color: #caa500">Beheer</h3>
+                            <br />
+                            <p>
+                                Dagelijks bestuur BSFP
+                            </p>
+                            <p>
+                                Organisatie fokdagen & evenementen
+                            </p>
+                            <p>
+                                PR en contact sponsors BSFP
+                            </p>
+                            <p>
+                                Contact- KFPS + afgevaardigde "De Twaalf" fokverenigingen
+                            </p>
+                            <p>
+                                Penningmeester
+                            </p>
+                            <p>
+                                Dressuur
+                            </p>
+                            <p>
+                                Verzekeringen BSFP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <h2 style="text-decoration:underline">
+                    Ondervoorzitter
+                </h2>
+                <br />
+                <div class="container">
+                    <div class="row">
+                        <h3 style="font-weight: bold; margin:auto">
+                            Rik Meeus
+                        </h3>
+                        <br />
+                    </div>
+                    <div class="row mt-3" style="background-color: #1C3153; color:white; padding: 20px 20px">
+                        <div class="col-4">
+                            <img class="img-fluid" src="~/Images/Rik_Meeus.jpg" alt="Rik Meeus" title="Rik Meeus" />
+                        </div>
+                        <div class="col-4">
+                            <h3 style="font-weight: bold; color: #caa500">Informatie</h3>
+                            <br />
+                            <p>
+                                Tel: +32 479 23 75 50
+                            </p>
+                            <p>
+                                E-mail: rik_meeus@msn.com
+                            </p>
+                            <p>
+                                Adres: Broekstraat 85 - 2370 Arendonk
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <h3 style="font-weight: bold; color: #caa500">Beheer</h3>
+                            <br />
+                            <p>
+                                Organisatie BSFP info-avonden & BSFP fokdagen
+                            </p>
+                            <p>
+                                Montage en versturen ledenblad BSFP
+                            </p>
+                            <p>
+                                Beheer van de promotiestand en het promotiemateriaal
+                            </p>
+                            <p>
+                                Contact- KFPS + afgevaardigde "De Twaalf" fokverenigingen
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+</main>
