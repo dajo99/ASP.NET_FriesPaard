@@ -18,6 +18,8 @@ namespace BSFP.Models
         [Column(TypeName = "varchar(250)")]
         public string ImagePath { get; set; }
 
+        public string SoortVereneging { get; set; }
+
         [Required]
         public string Titel { get; set; }
 

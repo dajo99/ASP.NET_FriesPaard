@@ -118,69 +118,75 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Lijst1" xml:space="preserve">
-    <value />
+    <value>Adhésion au SBCF.</value>
   </data>
   <data name="Lijst10" xml:space="preserve">
-    <value />
+    <value>Billets d'entrée à prix réduit KFPS.</value>
   </data>
   <data name="Lijst11" xml:space="preserve">
-    <value />
+    <value>De cette façon, vous appartenez au groupe de tous les passionnés de la frison belge. Et pour que tu puisses rencontrer des gens qui
+partagent la même passion.</value>
   </data>
   <data name="Lijst12" xml:space="preserve">
-    <value />
+    <value>Vous êtes également les bienvenus à nos soirées d'information que nous organisons 5 fois par an. A chaque fois un thème pédagogique ou informatif est proposé.</value>
   </data>
   <data name="Lijst13" xml:space="preserve">
-    <value />
+    <value>Nous faisons également des voyages avec l'association qui sont liés aux chevaux frisons.</value>
   </data>
   <data name="Lijst2" xml:space="preserve">
-    <value />
+    <value>Membre de la Belgian Breeding Association.</value>
   </data>
   <data name="Lijst3" xml:space="preserve">
-    <value />
+    <value>Adhésion KFPS (Pays-Bas).</value>
   </data>
   <data name="Lijst4" xml:space="preserve">
-    <value />
+    <value>Le 3 magazine mensuel membre SBCF.</value>
   </data>
   <data name="Lijst5" xml:space="preserve">
-    <value />
+    <value>Participation aux inspections belges.</value>
   </data>
   <data name="Lijst6" xml:space="preserve">
-    <value />
+    <value>Aide à l'enregistrement et à l'identification de votre cheval frison.</value>
   </data>
   <data name="Lijst7" xml:space="preserve">
-    <value />
+    <value>Participez aux compétitions de dressage de la SBCF.</value>
   </data>
   <data name="Lijst8" xml:space="preserve">
-    <value />
+    <value>Accès à MY KFPS avec, entre autres, des données sur les chevaux et des informations sur les étalons. (= via le site Web de KFPS www.kfps.nl)</value>
   </data>
   <data name="Lijst9" xml:space="preserve">
-    <value />
+    <value>10% de réduction sur les articles de la boutique en ligne KFPS.</value>
   </data>
   <data name="Tekst1" xml:space="preserve">
-    <value />
+    <value>Si vous avez un cheval frison et que vous souhaitez devenir membre de la SBCF, cela coûte 70 EUR de frais d'adhésion et 15 EUR de frais d'entrée.
+Le magazine mensuel Phryso coûte 65 EUR (= Uniquement pour les membres et via la SBCF)</value>
   </data>
   <data name="Tekst2" xml:space="preserve">
-    <value />
+    <value>Bienvenue !</value>
   </data>
   <data name="Tekst3" xml:space="preserve">
-    <value />
+    <value>Pour enregistrer correctement votre cheval, vous devez être membre de la SBCF.
+Tous les documents sont préparés par le secrétariat et vous recevrez toutes les informations dont vous avez besoin.</value>
   </data>
   <data name="Tekst4" xml:space="preserve">
-    <value />
+    <value>En tant que membre, vous bénéficiez bien entendu d'autres avantages.</value>
   </data>
   <data name="Tekst5" xml:space="preserve">
-    <value />
+    <value>Ce montant comprend:</value>
   </data>
   <data name="Tekst6" xml:space="preserve">
-    <value />
+    <value>Vous pouvez devenir membre en le signalant au secrétariat:</value>
   </data>
   <data name="Tekst7" xml:space="preserve">
-    <value />
+    <value>Aller à</value>
+  </data>
+  <data name="Tekst8" xml:space="preserve">
+    <value>Contacter</value>
   </data>
   <data name="Titel" xml:space="preserve">
-    <value />
+    <value>Devenez Membre</value>
   </data>
   <data name="Titel1" xml:space="preserve">
-    <value />
+    <value>Devenez membre de la SBCF</value>
   </data>
 </root>

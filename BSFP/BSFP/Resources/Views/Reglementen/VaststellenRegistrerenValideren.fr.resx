@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>DÉTERMINATION, ENREGISTREMENT ET VALIDATION DE LA Lignée PAR DÉTERMINATION ADN</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>Désignation des poulains</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>Lors de l'inspection de Zolder le 9 septembre 2011, des poils aléatoires de poulains et de mères seront collectés.
+devenir. La vérification de la filiation et, le cas échéant, la vérification de la paternité auront alors lieu sur ces échantillons.</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>Échantillonnage</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>Le SBCF organise l'échantillonnage et s'assure que les échantillons sont envoyés au laboratoire.</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>Détermination de l'ADN en laboratoire</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>La SBCF choisit le laboratoire, qui doit cependant remplir un certain nombre de conditions.
+Conditions que le laboratoire et la détermination de l'ADN doivent remplir:</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>Le laboratoire doit être affilié à l'ISAG, International Society for Animal Genetics</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>Le panel de microsatellites prescrit par l'ISAG doit être analysé</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>Le laboratoire doit communiquer le résultat de l'analyse et de l'interprétation de l '(in) justesse de la parentalité ou de la paternité par écrit à l'association</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Mesures lorsque la parentalité ou la paternité est incorrecte.</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Nombre minimum de poulains pour lesquels la parentalité doit être vérifiée</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>Si le test ADN prouve que la parentalité ou la paternité n'est pas correcte, il y aura, aux frais du propriétaire
+des examens complémentaires doivent être effectués.
+Si les parents ne peuvent être retrouvés, ces animaux seront retirés des registres du stud-book.</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>La SBCF intègre ces conditions, la procédure et les mesures dans ses règlements techniques d'élevage</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>L'association reconnue des éleveurs de chevaux procède au contrôle de la filiation d'au moins un poulain par race.
+De plus, le contrôle de filiation doit être effectué par race sur au moins un poulain de cinquante à cent poulains inscrits et sur au moins un poulain pour cent poulains inscrits supplémentaires.
+Le nombre de poulains à contrôler en 2015 est basé sur le nombre de poulains enregistrés à la naissance en 2014, comme indiqué dans le rapport d'activité 2014 remis par l'association à la Direction du Développement Agricole Durable. Remarque: tous les poulains nés dans l'UE sont éligibles à une subvention pour la vérification de la filiation. Les poulains nés hors de l'UE ne sont pas éligibles à une subvention.
+Le contrôle de la filiation signifie que l'association prélève un échantillon de cheveux (ou un échantillon de sang) du poulain et de la mère et fait effectuer l'analyse ADN. Le profil ADN de l'étalon étant connu, aucun échantillon ne doit être prélevé et aucune analyse ne doit être effectuée.</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>Cela signifie que le stud-book belge de l'asbl Friese Paard vérifiera la parentalité en 2015 à:
+2 poulains de race cheval frison et recueille donc un total de 4 échantillons de poils et fait effectuer 4 analyses ADN sur eux.</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>Nombre de poulains issus d'inséminations pour contrôle de paternité</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>Sur la base du reporting des activités des centres reconnus en Flandre pour l'extraction et / ou le stockage de sperme de cheval, la part des inséminations par race a été déterminée. La paternité est vérifiée chez 10% de ces poulains.
+Ici aussi, seuls les poulains nés dans l'UE sont éligibles à une subvention.
+Le contrôle de paternité signifie que l'association prélève un échantillon de poil (ou un échantillon de sang) du poulain et fait effectuer l'analyse ADN. Le profil ADN de l'étalon étant connu, aucun échantillon ne doit être prélevé et aucune analyse ne doit être effectuée.</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>Cela signifie qu'en 2015, le Studbook belge de l'asbl Friese Paard vérifiera la paternité de 6 poulains de la race de cheval frison et collectera donc un total de 6 échantillons de cheveux et fera effectuer 6 analyses ADN sur eux.</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>Durée d'exécution</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>L'échantillonnage et l'analyse ADN doivent avoir lieu en 2015, la facture doit être établie en 2015.</value>
+  </data>
+</root>

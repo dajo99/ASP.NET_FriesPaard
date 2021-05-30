@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Text.Encodings.Web;
@@ -99,20 +100,29 @@ namespace BSFP.Areas.Identity.Pages.Account
                     await _userManager.AddToRoleAsync(user, "Member");
 
                     _logger.LogInformation("Gebruiker heeft een nieuw account met wachtwoord aangemaakt.");
+                    string subject = "";
+                    string body = "";
+                    if (CultureInfo.CurrentCulture.Name == "nl")
+                    {
+                        subject = "Bevestig je mail";
+                        body = "Klik op de link om je mail te bevestigen.";
+                    }
+                    else if(CultureInfo.CurrentCulture.Name == "fr"){
+                        subject = "Confirmer votre email";
+                        body = "Cliquez sur le lien pour confirmer votre email.";
+                    }
+                    else
+                    {
+                        subject = "Confirm your email";
+                        body = "Click on the link to confirm your email.";
+                    }
 
                     var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     var confirmationLink = Url.Action("ConfirmEmail", "Email", new { token, email = user.Email }, Request.Scheme);
                     EmailHelper emailHelper = new EmailHelper();
-                    bool emailResponse = emailHelper.SendConfirmationEmail(user.Email, confirmationLink);
-
-                    if (emailResponse)
-                    {
-                        return RedirectToAction("Index");
-                    }
-                    else
-                    {
-                        return RedirectToAction("Index");
-                    }
+                    bool emailResponse = emailHelper.SendConfirmationEmail(user.Email, confirmationLink, subject, body);
+                    
+                    return RedirectToAction("MailVerstuurd");
                 }
                 foreach (var error in result.Errors)
                 {
@@ -121,7 +131,7 @@ namespace BSFP.Areas.Identity.Pages.Account
             }
 
             // If we got this far, something failed, redisplay form
-            return Page();
+            return RedirectToAction("ErrorMelding");
         }
     }
 }

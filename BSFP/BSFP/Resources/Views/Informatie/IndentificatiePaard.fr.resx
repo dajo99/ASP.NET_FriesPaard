@@ -1,101 +1,268 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
-		Microsoft ResX Schema
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
 
-		Version 1.3
-
-		The primary goals of this format is to allow a simple XML format 
-		that is mostly human readable. The generation and parsing of the 
-		various data types are done through the TypeConverter classes 
-		associated with the data types.
-
-		Example:
-
-		... ado.net/XML headers & schema ...
-		<resheader name="resmimetype">text/microsoft-resx</resheader>
-		<resheader name="version">1.3</resheader>
-		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-		<data name="Name1">this is my long string</data>
-		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-			[base64 mime encoded serialized .NET Framework object]
-		</data>
-		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-			[base64 mime encoded string representing a byte array form of the .NET Framework object]
-		</data>
-
-		There are any number of "resheader" rows that contain simple 
-		name/value pairs.
-
-		Each data row contains a name, and value. The row also contains a 
-		type or mimetype. Type corresponds to a .NET class that support 
-		text/value conversion through the TypeConverter architecture. 
-		Classes that don't support this are serialized and stored with the 
-		mimetype set.
-
-		The mimetype is used for serialized objects, and tells the 
-		ResXResourceReader how to depersist the object. This is currently not 
-		extensible. For a given mimetype the value must be set accordingly:
-
-		Note - application/x-microsoft.net.object.binary.base64 is the format 
-		that the ResXResourceWriter will generate, however the reader can 
-		read any of the formats listed below.
-
-		mimetype: application/x-microsoft.net.object.binary.base64
-		value   : The object must be serialized with 
-			: System.Serialization.Formatters.Binary.BinaryFormatter
-			: and then encoded with base64 encoding.
-
-		mimetype: application/x-microsoft.net.object.soap.base64
-		value   : The object must be serialized with 
-			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-			: and then encoded with base64 encoding.
-
-		mimetype: application/x-microsoft.net.object.bytearray.base64
-		value   : The object must be serialized into a byte array 
-			: using a System.ComponentModel.TypeConverter
-			: and then encoded with base64 encoding.
-	-->
-	
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>1.3</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>Identification de votre cheval</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>Les fichiers peuvent désormais être traités entièrement numériquement. Vous évitez donc beaucoup de paperasse.</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>Pour utiliser le système d'identification numérique, surfez sur www.horseID.be. Via ce site Web, vous pouvez rechercher des informations dans la base de données et créer un profil personnel. Lorsque vous avez un profil, vous pouvez vous connecter au site et vous aurez un aperçu de tous les chevaux dont vous êtes le titulaire. Vous pouvez également vérifier et modifier les données de ces chevaux (mutation).</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>Si vous souhaitez identifier un nouveau cheval, vous pouvez soumettre une demande via www.HorseID.be.</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>Tarifs</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>Bien sûr, il est toujours possible de tout organiser par correspondance. Mais vous feriez bien de compléter votre inscription en ligne. Après tout, de nouveaux tarifs sont appliqués depuis le 1er octobre 2016. La procédure numérique est devenue seulement un demi-euro plus chère, tandis que les coûts de la méthode classique «papier» ont considérablement augmenté. À propos, les mutations (ajustements) restent libres.</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>Procédure numérique: via Horse ID</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>hors TVA</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>y compris la TVA.</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Procédure sur papier:</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Les chevaux sont principalement identifiés pour assurer la sécurité alimentaire. Les abattoirs, par exemple, doivent savoir s'ils sont autorisés à entrer dans la chaîne alimentaire. Grâce à l'identification, les animaux peuvent également être tracés, par exemple en cas de vol ou pour contrôler une épidémie. La base de données centrale contient également une mine d'informations sur tous les équidés de Belgique.</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>Plus d'infos :</value>
+  </data>
+  <data name="String22" xml:space="preserve">
+    <value>Sur le site Web de PaardenPunt Vlaanderen, vous trouverez une mine d'informations, non seulement sur l'identification, mais aussi sur tous les autres aspects de l'élevage de chevaux:</value>
+  </data>
+  <data name="String23" xml:space="preserve">
+    <value>Pour identifier et gérer vos chevaux en ligne, rendez-vous sur</value>
+  </data>
+  <data name="String24" xml:space="preserve">
+    <value>En cas de doute ou si vous avez des questions, vous pouvez toujours contacter</value>
+  </data>
+  <data name="String25" xml:space="preserve">
+    <value>Que faire à la naissance du poulain?</value>
+  </data>
+  <data name="String26" xml:space="preserve">
+    <value>Enregistrement poulain d'un cheval frison, directement via ce lien</value>
+  </data>
+  <data name="String27" xml:space="preserve">
+    <value>Inscrivez-vous sur le site Web de KFPS dans les 14 jours suivant la naissance. Si nécessaire ultérieurement, test ADN aux frais du propriétaire.
+Vous vous connectez avec votre numéro de membre et votre mot de passe sur le site KFPS</value>
+  </data>
+  <data name="String28" xml:space="preserve">
+    <value>Dans la barre du haut, vous verrez "Mon KFPS", puis vous verrez "Mon administration" et dans cette colonne "Enregistrer poulain" cliquez dessus. Ensuite, vous verrez le ou les noms des juments que vous avez élevées.
+Cliquez sur la jument concernée. Vous verrez maintenant un formulaire d'inscription que vous pouvez remplir complètement.</value>
+  </data>
+  <data name="String29" xml:space="preserve">
+    <value>Ci-dessous est "enregistrer", cliquez ici.</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>Depuis 2008, tous les équidés de Belgique doivent être correctement identifiés. S'applique également aux Pays-Bas, en Allemagne et en France. Cela signifie que vous devez organiser un certain nombre de choses:</value>
+  </data>
+  <data name="String30" xml:space="preserve">
+    <value>Après enregistrement, le poulain est inscrit au registre provisoire des poulains.
+Le propriétaire peut télécharger la confirmation de naissance via «mon KFPS» «mes dossiers» et télécharger la confirmation de naissance.</value>
+  </data>
+  <data name="String31" xml:space="preserve">
+    <value>Imprimez la confirmation de naissance. Apportez ce formulaire avec vous à l'inspection avec le numéro de puce et la date et la signature du vétérinaire.Une fois que le poulain a été inspecté, vous recevrez le papier livre pour poulain avec la prime dessus. Les poulains ne sont pas jugés sans numéro de puce!</value>
+  </data>
+  <data name="String32" xml:space="preserve">
+    <value>Si vous ne vous présentez pas à l'inspection avec votre poulain, envoyez la confirmation de naissance au secrétariat du stud-book BSFP également avec le numéro de puce et la date et la signature du vétérinaire.
+Vous envoyez également un échantillon avec des poils de poulain de crinière / queue.</value>
+  </data>
+  <data name="String33" xml:space="preserve">
+    <value>Attention: la racine doit être là, alors tirez les cheveux et ne les coupez pas.</value>
+  </data>
+  <data name="String34" xml:space="preserve">
+    <value>Vous recevrez ensuite le livre papier poulain.</value>
+  </data>
+  <data name="String35" xml:space="preserve">
+    <value>Le poulain doit être micropuce dans les 6 mois suivant la naissance. Sinon, test ADN aux frais du propriétaire.</value>
+  </data>
+  <data name="String36" xml:space="preserve">
+    <value>Pour obtenir le passeport du poulain, vous devez</value>
+  </data>
+  <data name="String37" xml:space="preserve">
+    <value>Enregistrez le poulain numériquement via</value>
+  </data>
+  <data name="String38" xml:space="preserve">
+    <value>Suivez les étapes indiquées à l'écran.</value>
+  </data>
+  <data name="String39" xml:space="preserve">
+    <value>Vous recevrez ensuite des croquis de PaardenPunt Vlaanderen. Ceci doit être rempli par un vétérinaire reconnu. Faites-le avec l'écaillage. Envoyez ensuite les croquis au secrétariat du stud-book BSFP.</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>Vos chevaux doivent avoir un passeport conforme à l'UE.</value>
+  </data>
+  <data name="String40" xml:space="preserve">
+    <value>Le secrétariat terminera tout et remettra le passeport au propriétaire.</value>
+  </data>
+  <data name="String41" xml:space="preserve">
+    <value>L'identification belge doit être faite dans l'année suivant la naissance. Si plus tard, les conséquences sont doubles:</value>
+  </data>
+  <data name="String42" xml:space="preserve">
+    <value>Le cheval est définitivement exclu de l'abattage.</value>
+  </data>
+  <data name="String43" xml:space="preserve">
+    <value>Vous risquez un rapport de police.</value>
+  </data>
+  <data name="String44" xml:space="preserve">
+    <value>L'identification en ligne via le stud-book conserve l'avantage du tarif bon marché, qui pouvait auparavant être apprécié grâce au pré-encodage. Il doit être clair que dans ce cadre, le paiement doit être effectué "EN LIGNE / NUMÉRIQUE".</value>
+  </data>
+  <data name="String45" xml:space="preserve">
+    <value>Après avoir soumis la demande par le stud-book, l'éleveur / gardien recevra un email de HorseID avec le lien pour se connecter (ou pour demander un mot de passe au préalable) et effectuer le paiement. Après paiement, l'éleveur / gardien (ou le stud-book s'il travaille avec des consultants studbook) reçoit le dossier d'identification. Ensuite, l'éleveur reçoit également la facture payée.</value>
+  </data>
+  <data name="String46" xml:space="preserve">
+    <value>Ici</value>
+  </data>
+  <data name="String47" xml:space="preserve">
+    <value>vous serez expliqué étape par étape comment l'éleveur / gardien peut effectuer le paiement en ligne.</value>
+  </data>
+  <data name="String48" xml:space="preserve">
+    <value>Si vous avez des questions, vous êtes toujours les bienvenus</value>
+  </data>
+  <data name="String48.1" xml:space="preserve">
+    <value>Contacter</value>
+  </data>
+  <data name="String48.2" xml:space="preserve">
+    <value>enregistrer!</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>Un vétérinaire doit leur fournir une puce électronique.</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>Leurs données doivent être saisies dans la base de données centrale (gérée par la Confédération belge du cheval).</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>Si l'un de ces objets est manquant, votre cheval n'a pas été correctement identifié et ne peut plus être abattu pour la consommation humaine. Si le cheval meurt, bouge ou est vendu, par exemple, cela doit également être ajusté dans la base de données, également dans celle du stud-book.</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>Numérique</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>Début 2016, la Confédération belge du cheval a lancé HorseID, un tout nouveau système d'identification.</value>
+  </data>
 </root>

@@ -39,6 +39,15 @@ namespace BSFP.Controllers
         {
             return View();
         }
+        public IActionResult MailVerstuurd()
+        {
+            return View();
+        }
+
+        public IActionResult ErrorMelding()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

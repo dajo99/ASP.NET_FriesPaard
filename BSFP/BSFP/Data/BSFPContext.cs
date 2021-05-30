@@ -16,9 +16,6 @@ namespace BSFP.Data
         {
         }
 
-       
-
-
         public DbSet<Agenda> Agenda { get; set; }
         public DbSet<Nieuws> Nieuws { get; set; }
         public DbSet<Sponsor> Sponsors { get; set; }

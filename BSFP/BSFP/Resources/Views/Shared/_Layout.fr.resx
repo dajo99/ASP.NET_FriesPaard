@@ -195,6 +195,9 @@
   <data name="JongBSFP" xml:space="preserve">
     <value>JeuneBSFP</value>
   </data>
+  <data name="Keuringen" xml:space="preserve">
+    <value>Admissions</value>
+  </data>
   <data name="LidWorden" xml:space="preserve">
     <value>Devenez membre</value>
   </data>
@@ -202,7 +205,7 @@
     <value>Marché</value>
   </data>
   <data name="Mennen" xml:space="preserve">
-    <value>Mennen</value>
+    <value>Attelage</value>
   </data>
   <data name="Nieuws" xml:space="preserve">
     <value>Nouvelles</value>
@@ -226,7 +229,7 @@
     <value>Règlements</value>
   </data>
   <data name="Sponsors" xml:space="preserve">
-    <value>Les sponsors</value>
+    <value>Sponsors</value>
   </data>
   <data name="Statuten" xml:space="preserve">
     <value>Statuts</value>

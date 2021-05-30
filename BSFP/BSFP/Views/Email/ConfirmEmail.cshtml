@@ -1,5 +1,6 @@
-﻿@{
-    ViewData["Title"] = "Email Bevestigd!";
+﻿
+@{
+    ViewData["Title"] = "Email Bevestigd";
 }
 
 <header class="intro bg-image">
@@ -18,8 +19,9 @@
        
         <h2>Bedankt voor het bevestigen van uw e-mail!</h2>
         <br />
-        <a class="btn btn-primary" asp-area="Identity" asp-page="/Account/Login">Login</a>
-
+        <p>
+            U kan zich nu <a asp-area="Identity" asp-page="/Account/Login">inloggen</a>.
+        </p>
     </section>
 </main>
 

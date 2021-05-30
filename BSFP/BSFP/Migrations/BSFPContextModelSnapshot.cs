@@ -150,6 +150,9 @@ namespace BSFP.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("SoortVereneging")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Titel")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

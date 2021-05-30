@@ -1,101 +1,248 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
-		Microsoft ResX Schema
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
 
-		Version 1.3
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>Trophée SBCF</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>Vous pouvez trouver ces informations dans notre</value>
+  </data>
+  <data name="String10.1" xml:space="preserve">
+    <value>Calendrier</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>Goûter:</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>Vous pouvez vous inscrire à 2 tests par niveau. Un test sans rendez-vous et un test de comptage.
+Si vous voulez seulement conduire 1 test, vous conduisez celui du niveau lui-même. Le test de rodage sert alors plutôt d'échauffement.</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>Essai sans galop :</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>et</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>Niveau d'initiation :</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>Niveau 1:</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>Niveau 2:</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>Niveau 3:</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Niveau 4:</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Le Trophée SBCF consiste en une série de compétitions de dressage pour chevaux frison, qui sont organisées pendant la période hivernale. Des combinaisons de tous niveaux peuvent participer : d'une épreuve sans galop jusqu'au niveau Grand Prix. Il y a aussi la possibilité de rider un freestyle en musique.
 
-		The primary goals of this format is to allow a simple XML format 
-		that is mostly human readable. The generation and parsing of the 
-		various data types are done through the TypeConverter classes 
-		associated with the data types.
-
-		Example:
-
-		... ado.net/XML headers & schema ...
-		<resheader name="resmimetype">text/microsoft-resx</resheader>
-		<resheader name="version">1.3</resheader>
-		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-		<data name="Name1">this is my long string</data>
-		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-			[base64 mime encoded serialized .NET Framework object]
-		</data>
-		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-			[base64 mime encoded string representing a byte array form of the .NET Framework object]
-		</data>
-
-		There are any number of "resheader" rows that contain simple 
-		name/value pairs.
-
-		Each data row contains a name, and value. The row also contains a 
-		type or mimetype. Type corresponds to a .NET class that support 
-		text/value conversion through the TypeConverter architecture. 
-		Classes that don't support this are serialized and stored with the 
-		mimetype set.
-
-		The mimetype is used for serialized objects, and tells the 
-		ResXResourceReader how to depersist the object. This is currently not 
-		extensible. For a given mimetype the value must be set accordingly:
-
-		Note - application/x-microsoft.net.object.binary.base64 is the format 
-		that the ResXResourceWriter will generate, however the reader can 
-		read any of the formats listed below.
-
-		mimetype: application/x-microsoft.net.object.binary.base64
-		value   : The object must be serialized with 
-			: System.Serialization.Formatters.Binary.BinaryFormatter
-			: and then encoded with base64 encoding.
-
-		mimetype: application/x-microsoft.net.object.soap.base64
-		value   : The object must be serialized with 
-			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-			: and then encoded with base64 encoding.
-
-		mimetype: application/x-microsoft.net.object.bytearray.base64
-		value   : The object must be serialized into a byte array 
-			: using a System.ComponentModel.TypeConverter
-			: and then encoded with base64 encoding.
-	-->
-	
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>1.3</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
+​</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>Prix St Georges</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>Intermédiaire</value>
+  </data>
+  <data name="String21.1" xml:space="preserve">
+    <value>Grand Prix</value>
+  </data>
+  <data name="String22" xml:space="preserve">
+    <value>Kür en musique est possible à tous les niveaux</value>
+  </data>
+  <data name="String23" xml:space="preserve">
+    <value>Vous pouvez trouver les tests sur:</value>
+  </data>
+  <data name="String24" xml:space="preserve">
+    <value>s'inscrire</value>
+  </data>
+  <data name="String25" xml:space="preserve">
+    <value>Vous pouvez vous inscrire via jongbsfp@bsfp-sbcf.be
+! À partir de 2019-2020, vous payez votre essai à l'avance.</value>
+  </data>
+  <data name="String26" xml:space="preserve">
+    <value>Vous effectuez le paiement au plus tard le lundi avant le match, afin que nous le recevions à temps.
+Par test que vous payez 10 €, vous pouvez le virer sur notre compte :</value>
+  </data>
+  <data name="String27" xml:space="preserve">
+    <value>Jeune SBCF</value>
+  </data>
+  <data name="String28" xml:space="preserve">
+    <value>Si vous souhaitez vous inscrire au Kür en musique, merci d'indiquer également votre niveau. Pratiquez-vous un Kür selon un protocole différent de celui de VLP ? Veuillez nous envoyer une copie de ce protocole par e-mail.</value>
+  </data>
+  <data name="String29" xml:space="preserve">
+    <value>Quelques remarques importantes:</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>Pour qui?</value>
+  </data>
+  <data name="String30" xml:space="preserve">
+    <value>Vous n'avez pas besoin d'avoir une carte de départ/une licence de compétition.</value>
+  </data>
+  <data name="String31" xml:space="preserve">
+    <value>Vous pouvez déterminer vous-même votre niveau, mais vous n'êtes pas autorisé à commencer à un niveau inférieur à celui des compétitions officielles. Vous conduisez donc au même niveau ou plus haut.
+Si vous étiez champion l'année dernière, vous êtes censé passer au niveau suivant. A partir du niveau 2, c'est sans engagement.</value>
+  </data>
+  <data name="String32" xml:space="preserve">
+    <value>Nous utilisons les mêmes règles que VLP en termes de sécurité et de matériel autorisé.
+Jeune SBCF et SBCF ne sont pas responsables des accidents.</value>
+  </data>
+  <data name="String33" xml:space="preserve">
+    <value>Naviguer vers:</value>
+  </data>
+  <data name="String34" xml:space="preserve">
+    <value>Résultats</value>
+  </data>
+  <data name="String35" xml:space="preserve">
+    <value>Actualités</value>
+  </data>
+  <data name="String36" xml:space="preserve">
+    <value>Calendrier</value>
+  </data>
+  <data name="String37" xml:space="preserve">
+    <value>Suivez-nous sur</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>Cavaliers et amazones avec un cheval frison.</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>Si vous avez un cheval frison et que vous ne connaissez pas le pedigree, vous pouvez participer, mais nous vous demandons de commencer une recherche de pedigree via KFPS. (studbook des Pays-Bas)
+Les arabophries ou les chevaux de sang partiellement frison peuvent participer aux compétitions, mais ne peuvent pas être inclus dans le classement de la finale.</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>Vrai?</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>Pendant de nombreuses années, nous avons pu visiter le magnifique site de l'école d'équitation De Rietbeemden à Geel, Anvers. Depuis plusieurs années, nous sommes autorisés à utiliser Manege Sint Hubert à Lennik, Brabant flamand. Cette année, nous avons longuement recherché d'autres emplacements appropriés. Finalement nous l'avons trouvé à Malle en Peer. Si vous avez une belle école d'équitation dans votre région où nous pouvons aller, vous pouvez certainement nous le faire savoir !</value>
+  </data>
+  <data name="String7.1" xml:space="preserve">
+    <value>Comment ça marche ?</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>Entre septembre et avril, 5 compétitions sont organisées. En ce 5ème jour de compétition, vous pouvez encore gagner des points de sélection le matin, après quoi la finale aura lieu. Pour être sélectionné pour cette finale, vous devez participer à au moins 3 compétitions. Vos 3 meilleures performances lors de ces courses déterminent si vous pouvez participer à la finale. Assurez-vous de participer aux 5 compétitions et courez la chance de gagner un beau prix le dernier jour ! Cela sera annoncé au cours de la saison.</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>Quand?</value>
+  </data>
 </root>

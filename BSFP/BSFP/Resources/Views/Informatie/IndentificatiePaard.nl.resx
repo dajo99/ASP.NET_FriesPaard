@@ -242,7 +242,13 @@ Ook stuurt u een staal mee met veulenhaar uit manen/staart.</value>
     <value>krijgt u stap voor stap uitgelegd hoe de fokker/houder de online betaling kan doen.</value>
   </data>
   <data name="String48" xml:space="preserve">
-    <value>Mocht u vragen hebben kan u altijd contact opnemen met </value>
+    <value>Mocht u vragen hebben kan u altijd</value>
+  </data>
+  <data name="String48.1" xml:space="preserve">
+    <value>contact</value>
+  </data>
+  <data name="String48.2" xml:space="preserve">
+    <value>opnemen!</value>
   </data>
   <data name="String5" xml:space="preserve">
     <value>Een dierenarts moet ze voorzien van een microchip.</value>

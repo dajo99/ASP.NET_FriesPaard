@@ -38,7 +38,7 @@ namespace BSFP.Controllers
             return View();
         }
 
-        public IActionResult VastellenRegistrerenValideren()
+        public IActionResult VaststellenRegistrerenValideren()
         {
             return View();
         }

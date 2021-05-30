@@ -1,0 +1,62 @@
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>@localizer["String1"]</h1>
+        </div>
+    </div>
+
+</header>
+
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+        <div class="row mt-sm-3">
+            <div class="col-12">
+                <h3>
+                    @localizer["String2"]
+                </h3>
+                <p>@localizer["String3"]</p>
+                <p style="font-weight:bold">@localizer["String4"]</p>
+                <br />
+                <h3>
+                    @localizer["String5"]
+                </h3>
+                <p>@localizer["String6"]</p>
+                <p style="font-weight:bold">@localizer["String7"]</p>
+                <ol>
+                    <li>
+                        @localizer["String8"]
+                    <ol type="a">
+                        <li>@localizer["String9"]</li>
+                    </ol>
+                </li>
+                <li>
+                    @localizer["String10"]
+                <ol type="a">
+                    <li>@localizer["String11"]</li>
+                </ol>
+            </li>
+            <li>@localizer["String12"] 
+                <ol type="a">
+                    <li>@localizer["String13"]</li>
+                </ol></li>
+            <li>@localizer["String14"] 
+                <ol type="a">
+                    <li>@localizer["String15"]</li>
+                    <li>@localizer["String16"]</li>
+                    <li>@localizer["String17"]</li>
+                    <li>@localizer["String18"]</li>
+                </ol></li>
+            <li>@localizer["String19"] 
+                <ol type="a">
+                    <li>@localizer["String20"]</li>
+                </ol></li>
+            <li>@localizer["String21"]</li>
+        </ol>
+    </div>
+</div>
+
+
+</section>
+</main>

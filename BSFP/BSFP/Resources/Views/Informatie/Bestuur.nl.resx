@@ -150,14 +150,11 @@
   <data name="String19" xml:space="preserve">
     <value>Beheer van de promotiestand en het promotiemateriaal.</value>
   </data>
-  <data name="String2" xml:space="preserve">
-    <value>Belgisch Stamboek v/h Friese Paard - BSFP/SBCF vzw</value>
-  </data>
   <data name="String20" xml:space="preserve">
     <value>Contact - afgevaardigde "De Twaalf" fokverenigingen</value>
   </data>
   <data name="String21" xml:space="preserve">
-    <value>Secretaris</value>
+    <value>Secretaris en Bestuurslid</value>
   </data>
   <data name="String22" xml:space="preserve">
     <value>Seceretariaat - contact leden</value>
@@ -171,29 +168,35 @@
   <data name="String25" xml:space="preserve">
     <value>Afgevaardigde BSFP bij Forum fokkerij BCP / PPV</value>
   </data>
+  <data name="String25.0.1" xml:space="preserve">
+    <value>Penningmeester</value>
+  </data>
+  <data name="String25.1" xml:space="preserve">
+    <value>Andere Bestuursleden</value>
+  </data>
   <data name="String26" xml:space="preserve">
     <value>Website en ledenblad</value>
   </data>
-  <data name="String3" xml:space="preserve">
-    <value />
-  </data>
-  <data name="String4" xml:space="preserve">
-    <value>KBC bank</value>
-  </data>
-  <data name="String5" xml:space="preserve">
-    <value>BTW nummer</value>
-  </data>
-  <data name="String6" xml:space="preserve">
-    <value>Klik hier</value>
-  </data>
-  <data name="String7" xml:space="preserve">
-    <value>voor het meerjarenbeleid van het BSFP</value>
-  </data>
-  <data name="String7.1" xml:space="preserve">
-    <value>Organigram van het BSFP bestuur</value>
+  <data name="String27" xml:space="preserve">
+    <value>Voorzitter JBSFP</value>
   </data>
   <data name="String8" xml:space="preserve">
     <value>Voorzitter</value>
+  </data>
+  <data name="String8.2" xml:space="preserve">
+    <value>Informatie</value>
+  </data>
+  <data name="String8.3" xml:space="preserve">
+    <value>Tel</value>
+  </data>
+  <data name="String8.4" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="String8.5" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="String8.6" xml:space="preserve">
+    <value>Beheer</value>
   </data>
   <data name="String9" xml:space="preserve">
     <value>Dagelijks bestuur BSFP</value>

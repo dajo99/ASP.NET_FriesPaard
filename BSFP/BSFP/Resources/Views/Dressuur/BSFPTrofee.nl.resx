@@ -208,6 +208,21 @@ Was je vorig jaar kampioen dan wordt je verwacht om over te gaan naar het volgen
     <value>Qua veiligheid en toegelaten materiaal hanteren we dezelfde regels als VLP.  
 JongBSFP en BSFP zijn niet verantwoordelijk voor gebeurlijke ongevallen.</value>
   </data>
+  <data name="String33" xml:space="preserve">
+    <value>Navigeer naar:</value>
+  </data>
+  <data name="String34" xml:space="preserve">
+    <value>Uitslagen</value>
+  </data>
+  <data name="String35" xml:space="preserve">
+    <value>Nieuws</value>
+  </data>
+  <data name="String36" xml:space="preserve">
+    <value>Agenda</value>
+  </data>
+  <data name="String37" xml:space="preserve">
+    <value>Volg ons op</value>
+  </data>
   <data name="String4" xml:space="preserve">
     <value>Ruiters en amazones met een fries paard.</value>
   </data>
@@ -219,7 +234,7 @@ Arabofriezen of paarden met deels fries bloed mogen deelnemen aan de wedstrijden
     <value>Waar?</value>
   </data>
   <data name="String7" xml:space="preserve">
-    <value>Sinds jaar en dag kunnen we terecht in de prachtige locatie van manege De Rietbeemden in Geel, Antwerpen. Sedert enkele jaren mogen we gebruik maken van Manege Sint Hubert in Lennik, Vlaams Brabant. We hebben dit jaar heel uitgebreid gezocht naar nog extra geschikte locaties. Uiteindelijk hebben we die gevonden in Malle en Peer. Heb je in jouw buurt een fijne manege waar we terecht kunnen voor 2020-2021, dan mag je ons dat zeker en vast al laten weten!</value>
+    <value>Sinds jaar en dag kunnen we terecht in de prachtige locatie van manege De Rietbeemden in Geel, Antwerpen. Sedert enkele jaren mogen we gebruik maken van Manege Sint Hubert in Lennik, Vlaams Brabant. We hebben dit jaar heel uitgebreid gezocht naar nog extra geschikte locaties. Uiteindelijk hebben we die gevonden in Malle en Peer. Heb je in jouw buurt een fijne manege waar we terecht kunnen, dan mag je ons dat zeker en vast al laten weten!</value>
   </data>
   <data name="String7.1" xml:space="preserve">
     <value>​Hoe werkt het?</value>

@@ -274,6 +274,9 @@ Een veulen dient ten tijde van de identificatie (chippen) aan de voet van de moe
     <value>Indien de microtransponder onvindbaar blijkt of defect is geraakt. In het geval de transponder is aangebracht door het KFPS, zijn de kosten voor het DNA-onderzoek voor het KFPS. Is dit niet het geval dan zijn de kosten voor de geregistreerde.
 m. Indien het chipnummer niet overeenkomt met het verwachte chipnummer. De kosten van het onderzoek zijn voor de geregistreerde.</value>
   </data>
+  <data name="String142.1" xml:space="preserve">
+    <value>Indien het chipnummer niet overeenkomt met het verwachte chipnummer. De kosten van het onderzoek zijn voor de geregistreerde.</value>
+  </data>
   <data name="String143" xml:space="preserve">
     <value>Registratie van veulens geboren middels embryo-transplantatie. De kosten voor het onderzoek zijn voor de geregistreerde.</value>
   </data>

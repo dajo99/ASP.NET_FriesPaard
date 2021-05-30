@@ -1,101 +1,200 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
-		Microsoft ResX Schema
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
 
-		Version 1.3
-
-		The primary goals of this format is to allow a simple XML format 
-		that is mostly human readable. The generation and parsing of the 
-		various data types are done through the TypeConverter classes 
-		associated with the data types.
-
-		Example:
-
-		... ado.net/XML headers & schema ...
-		<resheader name="resmimetype">text/microsoft-resx</resheader>
-		<resheader name="version">1.3</resheader>
-		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-		<data name="Name1">this is my long string</data>
-		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-			[base64 mime encoded serialized .NET Framework object]
-		</data>
-		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-			[base64 mime encoded string representing a byte array form of the .NET Framework object]
-		</data>
-
-		There are any number of "resheader" rows that contain simple 
-		name/value pairs.
-
-		Each data row contains a name, and value. The row also contains a 
-		type or mimetype. Type corresponds to a .NET class that support 
-		text/value conversion through the TypeConverter architecture. 
-		Classes that don't support this are serialized and stored with the 
-		mimetype set.
-
-		The mimetype is used for serialized objects, and tells the 
-		ResXResourceReader how to depersist the object. This is currently not 
-		extensible. For a given mimetype the value must be set accordingly:
-
-		Note - application/x-microsoft.net.object.binary.base64 is the format 
-		that the ResXResourceWriter will generate, however the reader can 
-		read any of the formats listed below.
-
-		mimetype: application/x-microsoft.net.object.binary.base64
-		value   : The object must be serialized with 
-			: System.Serialization.Formatters.Binary.BinaryFormatter
-			: and then encoded with base64 encoding.
-
-		mimetype: application/x-microsoft.net.object.soap.base64
-		value   : The object must be serialized with 
-			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-			: and then encoded with base64 encoding.
-
-		mimetype: application/x-microsoft.net.object.bytearray.base64
-		value   : The object must be serialized into a byte array 
-			: using a System.ComponentModel.TypeConverter
-			: and then encoded with base64 encoding.
-	-->
-	
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>1.3</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>choix de l'étalon</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>Tant que seuls les étalons approuvés à partir de 2014 sont connus, qu'ils soient porteurs ou non, les accouplements à risque peuvent être évités en testant les poulinières et en ajustant le choix de l'étalon en concertation avec le propriétaire de l'étalon. En principe, toutes les juments poulinières doivent être testées, mais certainement si un étalon est utilisé qui est porteur. Après tout, cela ne peut être utilisé que chez les juments qui ont été testées négatives.</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>Pourquoi tous les étalons ne sont-ils pas testés ?</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>La politique KFPS vise à exclure les accouplements à haut risque ou les naissances d'hydrocéphalie et de poulains nains. Il existe un risque que si le statut de porteur de tous les étalons était connu, ils pourraient être ignorés dans l'élevage. Ceci n'est pas souhaitable car ces étalons peuvent apporter une contribution positive à la reproduction malgré leur statut de porteur. De plus, exclure deux fois un étalon sur sept (soit près d'un tiers) conduira à une augmentation irresponsable de la consanguinité, avec le risque associé de développement de nouvelles maladies héréditaires. C'est pourquoi une période transitoire a été choisie. Le statut de porteur sera publié sur les étalons qui ont été approuvés depuis l'année dernière. Dans cette phase de transition, la coopération entre éleveurs et propriétaires d'étalons peut empêcher la naissance d'hydrocéphalie ou de poulains nains.</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>Est-il judicieux de se reproduire uniquement avec des animaux libres?</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>La probabilité qu'un porteur transmette le gène anormal à une progéniture est de 50%.
+Ainsi, en moyenne 50% des poulains issus d'une combinaison d'un porteur et d'un parent libre seront porteurs. Est-il conseillé de viser l'élevage avec uniquement des géniteurs libres ? L'élevage avec uniquement des animaux libres est considéré comme hautement indésirable par le KFPS :</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>L'exclusion de tous les animaux porteurs entraînera une augmentation de la consanguinité</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>Les animaux de grande valeur seront exclus, ce qui ralentira le progrès génétique</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>Maintenant que les tests sont disponibles, les appariements de risques peuvent être évités. Le fait qu'un animal reproducteur soit porteur n'est donc plus une raison pour ne pas l'utiliser pour la reproduction</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>En raison de la prévention des accouplements à risque, les étalons porteurs seront moins utilisés (cette tendance était déjà clairement visible avant le développement des tests ADN), de sorte que le pourcentage de porteurs diminuera progressivement, de sorte que la condition ne sera plus un problème. heures supplémentaires.</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Le KFPS développe des tests pour plusieurs conditions. La reproduction uniquement avec des parents libres sera donc impossible à long terme.</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Depuis mai de l'année dernière, les tests ADN pour l'hydrocéphalie et le nanisme sont disponibles pour les membres.
+Chaque espèce animale et chaque race a ses propres troubles héréditaires.
+Les tests ADN sont un outil puissant pour réduire considérablement ces problèmes.
+L'année dernière, une grande attention a été portée aux tests ADN et à la manière de les gérer en pratique sur le site KFPS, dans le Phryso et lors des conférences.
+Maintenant qu'un grand nombre de juments ont été testées pour ces troubles congénitaux, des questions pratiques se posent notamment sur le choix de l'étalon pour les juments ayant réussi le test comme porteuses. Dans cet article, nous indiquons à nouveau les étapes à suivre.</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>Comment faire le choix de l'étalon si une jument est porteuse ?</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>Si une jument sur la base du test ADN s'avère positive pour l'hydrocéphalie et/ou le nain, il est important de discuter avec le propriétaire de l'étalon où l'étalon destiné à la jument en question est au haras si l'accouplement concerné est sûr. Sur la base d'un retour d'expérience en cas d'écarts au propriétaire de l'étalon, il sait qu'un étalon est porteur.
+En cas de doute, le KFPS peut également être consulté pour un accouplement spécifique d'une jument porteuse (mail@kfps.nl)</value>
+  </data>
+  <data name="String22" xml:space="preserve">
+    <value>Comment tester une jument ?</value>
+  </data>
+  <data name="String23" xml:space="preserve">
+    <value>Du point de vue du bien-être animal, le KFPS considère qu'il est immoral de se reproduire avec des juments non testées. C'est aussi la raison pour laquelle le KFPS propose le test pour un taux bas. Un cheval est testé pour l'hydrocéphalie, les porteurs du facteur nain et marron. Le test peut être demandé via My KFPS. Des échantillons de poils d'un grand nombre de chevaux sont déjà disponibles au KFPS, qui peuvent être utilisés pour le test. Cela signifie qu'en quelques clics de souris et sans avoir à s'arracher les cheveux, le test peut être demandé. Les membres peuvent bien entendu également contacter le KFPS par e-mail ou par téléphone pour demander un test.</value>
+  </data>
+  <data name="String24" xml:space="preserve">
+    <value>La source :</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>Les porteurs sont précieux pour la reproduction !</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>Le fait qu'une jument soit porteuse ne signifie pas que la jument n'a aucune valeur d'élevage.
+Le KFPS le souligne, car le statut de transporteur dans la sélection des étalons n'est pas une raison de ne pas approuver un étalon. Surtout maintenant que les paires de risques peuvent être exclues à l'aide de tests ADN, le statut de porteur n'est plus un problème majeur. L'exclusion des porteurs (étalons et juments) pourrait non seulement entraîner (à nouveau) une augmentation significative de la consanguinité, mais aussi entraver l'amélioration de la qualité.</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>Quelle partie des chevaux sont porteurs ?</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>La proportion de chevaux porteurs du gène de l'hydrocéphalie et du gène nain est approximativement égale. Environ 1 cheval sur 7 est porteur des deux affections. C'était aussi l'estimation qui avait été faite à l'avance et qui est maintenant confirmée sur la base des chevaux testés jusqu'à présent. Prévenir autant que possible les accouplements à risque, avant même que les tests ADN ne soient disponibles, a fait en sorte que le nombre de poulains nés avec ces troubles est inférieur à 1%.</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>Qu'est-ce qu'un accouplement à risque ?</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>Un couple à risque est un couple d'un étalon et d'une jument, tous deux porteurs de la même anomalie. Dans un accouplement à risque, 1 poulain sur 4 (25 %) présentera l'anomalie pertinente.
+Il va sans dire que de tels appariements de risques ne devraient pas être faits. Si une jument n'est pas porteuse, la chance d'avoir une hydrocéphalie ou un poulain nain est nulle, que l'étalon soit porteur ou non.</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>Comment prévenir un appariement des risques ?</value>
+  </data>
 </root>

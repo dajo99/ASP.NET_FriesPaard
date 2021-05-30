@@ -59,6 +59,11 @@ namespace BSFP.Controllers
             return View();
         }
 
+        public IActionResult Verzekeringen()
+        {
+            return View();
+        }
+
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

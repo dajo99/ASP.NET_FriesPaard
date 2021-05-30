@@ -1,5 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @using BSFP.Areas.Identity.Data
+@using System.Globalization;
 @inject SignInManager<CustomUser> SignInManager
 @inject UserManager<CustomUser> UserManager
 @inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
@@ -27,11 +28,23 @@
 }
 else
 {
-    <ul class="navbar-nav  my-lg-0 ml-lg-5">
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">@localizer["Inloggen"]</a>
-        </li>
-    </ul>
+    if (CultureInfo.CurrentCulture.Name == "fr")
+    {
+        <ul class="navbar-nav  my-lg-0 ml-lg-5">
+            <li class="nav-item">
+                <a class="nav-link text-dark" style="width: 135px" asp-area="Identity" asp-page="/Account/Login">@localizer["Inloggen"]</a>
+            </li>
+        </ul>
+    }
+    else
+    {
+        <ul class="navbar-nav  my-lg-0 ml-lg-5">
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">@localizer["Inloggen"]</a>
+            </li>
+        </ul>
+    }
+
 
 }
 <ul class="navbar-nav  my-lg-0">
