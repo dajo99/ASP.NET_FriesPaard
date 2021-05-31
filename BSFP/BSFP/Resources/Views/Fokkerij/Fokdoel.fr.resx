@@ -1,101 +1,348 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
-		Microsoft ResX Schema
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
 
-		Version 1.3
-
-		The primary goals of this format is to allow a simple XML format 
-		that is mostly human readable. The generation and parsing of the 
-		various data types are done through the TypeConverter classes 
-		associated with the data types.
-
-		Example:
-
-		... ado.net/XML headers & schema ...
-		<resheader name="resmimetype">text/microsoft-resx</resheader>
-		<resheader name="version">1.3</resheader>
-		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-		<data name="Name1">this is my long string</data>
-		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-			[base64 mime encoded serialized .NET Framework object]
-		</data>
-		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-			[base64 mime encoded string representing a byte array form of the .NET Framework object]
-		</data>
-
-		There are any number of "resheader" rows that contain simple 
-		name/value pairs.
-
-		Each data row contains a name, and value. The row also contains a 
-		type or mimetype. Type corresponds to a .NET class that support 
-		text/value conversion through the TypeConverter architecture. 
-		Classes that don't support this are serialized and stored with the 
-		mimetype set.
-
-		The mimetype is used for serialized objects, and tells the 
-		ResXResourceReader how to depersist the object. This is currently not 
-		extensible. For a given mimetype the value must be set accordingly:
-
-		Note - application/x-microsoft.net.object.binary.base64 is the format 
-		that the ResXResourceWriter will generate, however the reader can 
-		read any of the formats listed below.
-
-		mimetype: application/x-microsoft.net.object.binary.base64
-		value   : The object must be serialized with 
-			: System.Serialization.Formatters.Binary.BinaryFormatter
-			: and then encoded with base64 encoding.
-
-		mimetype: application/x-microsoft.net.object.soap.base64
-		value   : The object must be serialized with 
-			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-			: and then encoded with base64 encoding.
-
-		mimetype: application/x-microsoft.net.object.bytearray.base64
-		value   : The object must be serialized into a byte array 
-			: using a System.ComponentModel.TypeConverter
-			: and then encoded with base64 encoding.
-	-->
-	
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>1.3</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>Objectif d'élevage</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>Tête</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>Une petite tête expressive et noble, aux yeux éloignés l'un de l'autre. L'os nasal est de préférence légèrement concave. Narines spacieuses. Les mâchoires sont légères et la fente buccale est longue. Les yeux sont grands et clairs. Les petites oreilles attentives se penchent légèrement l'une vers l'autre.</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>Cou</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>Le long cou et le cou forment ensemble une ligne incurvée légèrement vers le haut. Le cou montre beaucoup d'élévation.</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>Behang</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>Le cheval frison a un pelage généreux en forme de crinière, de queue et de bas des jambes (chaussettes).</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>Couleur</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>La couleur des cheveux est noir de jais. Les marques blanches sur la tête sont autorisées, à condition qu'elles ne dépassent pas 3,2 cm et ne soient pas situées en dessous de la ligne des yeux. Les marques blanches ailleurs sur le corps du cheval ne sont pas autorisées.</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>Construction</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Général</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Un cheval de service fonctionnel et harmonieusement construit en possession des caractéristiques de la race frisonne, qui est sain et vital et a le talent pour performer dans le sport. L'objectif d'élevage se compose de divers éléments qui peuvent être subdivisés en :</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>Un cheval harmonieux, fonctionnel, proportionné et construit vers le haut avec une longue patte avant et pas trop lourd en masse. Le cheval se tient dans un modèle rectangulaire, où le rapport entre l'avant, le milieu et l'arrière-train est de 1::1:1.</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>Connexion tête-cou</value>
+  </data>
+  <data name="String22" xml:space="preserve">
+    <value>Cou</value>
+  </data>
+  <data name="String23" xml:space="preserve">
+    <value>Le cou est long (largeur de la main) avec une transition en douceur vers le cou.</value>
+  </data>
+  <data name="String24" xml:space="preserve">
+    <value>La coupe de gorge</value>
+  </data>
+  <data name="String25" xml:space="preserve">
+    <value>La coupe de la gorge a un soulignement ouvert avec un espace au niveau du passage de la gorge.</value>
+  </data>
+  <data name="String26" xml:space="preserve">
+    <value>Cou</value>
+  </data>
+  <data name="String27" xml:space="preserve">
+    <value>Le cou est long, avec une bonne musculature supérieure, créant une légère courbe. Le cou vient haut de la poitrine et a une connexion fluide avec le garrot.</value>
+  </data>
+  <data name="String28" xml:space="preserve">
+    <value>Épaule</value>
+  </data>
+  <data name="String29" xml:space="preserve">
+    <value>L'épaule est longue et inclinée. (Sous un angle par rapport à l'horizontale entre 45 et 50 degrés). L'angle dans l'articulation de l'arc est d'au moins 90 degrés.</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>Extérieur &amp; Mouvement</value>
+  </data>
+  <data name="String30" xml:space="preserve">
+    <value>Côtes</value>
+  </data>
+  <data name="String31" xml:space="preserve">
+    <value>Les côtes sont longues et arquées.</value>
+  </data>
+  <data name="String32" xml:space="preserve">
+    <value>Garrot</value>
+  </data>
+  <data name="String33" xml:space="preserve">
+    <value>Le garrot haut coule doucement dans le dos.</value>
+  </data>
+  <data name="String34" xml:space="preserve">
+    <value>Dos</value>
+  </data>
+  <data name="String35" xml:space="preserve">
+    <value>Le dos est fort et musclé (pas serré et pas faible). Le dos a une connexion fluide avec le garrot et le rein. La longueur du dos est proportionnelle à la longueur des membres antérieurs et postérieurs.</value>
+  </data>
+  <data name="String36" xml:space="preserve">
+    <value>Lombes</value>
+  </data>
+  <data name="String37" xml:space="preserve">
+    <value>Les reins sont forts (ni enfoncés ni enfoncés), larges et musclés, avec une transition douce vers la croupe.</value>
+  </data>
+  <data name="String38" xml:space="preserve">
+    <value>Traverser</value>
+  </data>
+  <data name="String39" xml:space="preserve">
+    <value>La croupe est longue (mesurée entre les lignes verticales de la hanche et de l'ischion), légèrement inclinée et musclée.</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>Utiliser</value>
+  </data>
+  <data name="String40" xml:space="preserve">
+    <value>Le muscle du pantalon est long et développé.</value>
+  </data>
+  <data name="String41" xml:space="preserve">
+    <value>De broekspier is lang en ontwikkeld.</value>
+  </data>
+  <data name="String42" xml:space="preserve">
+    <value>Travail de jambes</value>
+  </data>
+  <data name="String43" xml:space="preserve">
+    <value>Les membres antérieurs sont perpendiculaires vus de face avec un espacement de la largeur des sabots. Vu de côté, jusqu'aux balles incluses, le membre antérieur est perpendiculaire. L'avant-bras et le tuyau sont longs. Vu de côté, les boules sont ovales et sèches. La patte arrière est droite (parallèle) vue de derrière. Vu de côté, l'angle dans l'articulation du jarret est compris entre 145 et 150 degrés. Le jarret est bien musclé. L'articulation du jarret est sèche, dure et bien développée (large et profonde). Les balles sont ovales et sèches lorsqu'elles sont vues de côté. Les paturons sont longs et élastiques. Le quartier avant a un angle avec le bas de 45 à 50 degrés. Le paturon arrière fait un angle avec le bas de 50 à 55 degrés. Les sabots sont généreux et bien formés, sains et adaptés au cheval. Les sabots sont plus larges à l'avant qu'à l'arrière.</value>
+  </data>
+  <data name="String44" xml:space="preserve">
+    <value>Mouvement</value>
+  </data>
+  <data name="String45" xml:space="preserve">
+    <value>Marcher</value>
+  </data>
+  <data name="String46" xml:space="preserve">
+    <value>La marche est grande et dans un pur 4 temps. Les jambes sont redressées lorsqu'elles sont vues de devant et de derrière. La patte arrière montre une flexion dans l'articulation du jarret et est placée puissamment et bien sous le corps. La patte arrière expulse la patte avant, qui est rangée avec une grande liberté d'épaule.</value>
+  </data>
+  <data name="String47" xml:space="preserve">
+    <value>trot</value>
+  </data>
+  <data name="String48" xml:space="preserve">
+    <value>Le trot est un pur 2 temps. La patte arrière est placée puissamment et bien sous le corps, montrant beaucoup de courbure dans l'articulation du jarret. La patte antérieure montre l'action du genou et est placée bien en avant. Le trot est caractérisé par de la souplesse et un long moment de suspension. Le cheval montre beaucoup d'équilibre et se lève en coup droit, l'encolure relevée. Vus de devant et de derrière, les jambes doivent être droites.</value>
+  </data>
+  <data name="String49" xml:space="preserve">
+    <value>Galop</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>Vitalité et santé</value>
+  </data>
+  <data name="String50" xml:space="preserve">
+    <value>Le galop est un pur 3 temps. Le galop est spacieux avec une jambe avant qui s'étend vers l'avant et une jambe intérieure porteuse. Le galop est ascendant et montre un long moment de suspension, beaucoup de souplesse et d'équilibre.</value>
+  </data>
+  <data name="String51" xml:space="preserve">
+    <value>Utiliser</value>
+  </data>
+  <data name="String52" xml:space="preserve">
+    <value>Le but du cheval frison varie de l'utilisation récréative à la participation aux classes les plus élevées du sport de compétition. Les disciplines dans lesquelles le cheval frison est libéré sont :</value>
+  </data>
+  <data name="String53" xml:space="preserve">
+    <value>harnais sport équestre</value>
+  </data>
+  <data name="String54" xml:space="preserve">
+    <value>Dressage sous selle</value>
+  </data>
+  <data name="String55" xml:space="preserve">
+    <value>Atelage</value>
+  </data>
+  <data name="String56" xml:space="preserve">
+    <value>Sport de compétition composite</value>
+  </data>
+  <data name="String57" xml:space="preserve">
+    <value>Endurance</value>
+  </data>
+  <data name="String58" xml:space="preserve">
+    <value>L'objectif est d'améliorer l'aptitude au sport sous tous ses aspects. Ceci est soumis à la condition que le caractère facile du cheval frison soit préservé, afin que le cheval frison reste un cheval éminemment adapté à un usage récréatif. Le cheval frison est un cheval polyvalent en terme d'utilisation. Cela ne signifie pas que le talent pour toutes les disciplines doit être présent dans la même mesure chez tous les chevaux. Dans l'objectif de sélection, il y a place à la spécialisation, sans que cela conduise à la sélection de type. Les descriptions des objectifs d'élevage concernant la conformation et le mouvement sont universelles pour toutes les disciplines d'utilisation. La valeur (ajoutée) du cheval frison dans le sport consiste en la combinaison des propriétés suivantes:eigenschappen:</value>
+  </data>
+  <data name="String59" xml:space="preserve">
+    <value>Facile à utiliser et à modifier</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>Les parties de ces composants sont traduites en critères de sélection dans le programme de sélection. L'objectif d'élevage décrit ici doit être considéré comme la description des caractéristiques de la race, tel que visé dans la décision 92/353/CEE, pint 3, partie b), deuxième tiret de l'annexe.</value>
+  </data>
+  <data name="String60" xml:space="preserve">
+    <value>Curieux et intelligent</value>
+  </data>
+  <data name="String61" xml:space="preserve">
+    <value>Impressionnant et élégant</value>
+  </data>
+  <data name="String62" xml:space="preserve">
+    <value>Versatile</value>
+  </data>
+  <data name="String63" xml:space="preserve">
+    <value>Afin d'améliorer la position du cheval frison dans le sport, des exigences élevées sont imposées aux caractéristiques suivantes, qui ensemble déterminent l'aptitude sportive :</value>
+  </data>
+  <data name="String64" xml:space="preserve">
+    <value>Mouvement</value>
+  </data>
+  <data name="String65" xml:space="preserve">
+    <value>Extérieur (construction)</value>
+  </data>
+  <data name="String66" xml:space="preserve">
+    <value>Endurance</value>
+  </data>
+  <data name="String67" xml:space="preserve">
+    <value>Caractère (disposé au travail et social)</value>
+  </data>
+  <data name="String68" xml:space="preserve">
+    <value>Santé</value>
+  </data>
+  <data name="String69" xml:space="preserve">
+    <value>Gezondheid</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>Extérieur &amp; Mouvement</value>
+  </data>
+  <data name="String7.1" xml:space="preserve">
+    <value>Caractéristiques de la variété</value>
+  </data>
+  <data name="String70" xml:space="preserve">
+    <value>Regarde aussi</value>
+  </data>
+  <data name="String71" xml:space="preserve">
+    <value>objectif sportif</value>
+  </data>
+  <data name="String72" xml:space="preserve">
+    <value>Vitalité et santé</value>
+  </data>
+  <data name="String73" xml:space="preserve">
+    <value>Dans l'élevage de chevaux frison, des exigences élevées sont imposées aux caractéristiques suivantes, qui ensemble déterminent leur vitalité et leur santé :</value>
+  </data>
+  <data name="String74" xml:space="preserve">
+    <value>Pas d'anomalies héréditaires</value>
+  </data>
+  <data name="String75" xml:space="preserve">
+    <value>Fertilité (étalons et juments) et Vitalité (durable et saine)</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>Général</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>Un cheval qui a une apparence luxueuse et fière en raison de son front caractéristique, de son papier peint généreux, de sa couleur noire et de ses allures spacieuses surélevées (action du genou).</value>
+  </data>
 </root>

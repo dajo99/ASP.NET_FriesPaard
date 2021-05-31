@@ -1,101 +1,318 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
-		Microsoft ResX Schema
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
 
-		Version 1.3
-
-		The primary goals of this format is to allow a simple XML format 
-		that is mostly human readable. The generation and parsing of the 
-		various data types are done through the TypeConverter classes 
-		associated with the data types.
-
-		Example:
-
-		... ado.net/XML headers & schema ...
-		<resheader name="resmimetype">text/microsoft-resx</resheader>
-		<resheader name="version">1.3</resheader>
-		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-		<data name="Name1">this is my long string</data>
-		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-			[base64 mime encoded serialized .NET Framework object]
-		</data>
-		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-			[base64 mime encoded string representing a byte array form of the .NET Framework object]
-		</data>
-
-		There are any number of "resheader" rows that contain simple 
-		name/value pairs.
-
-		Each data row contains a name, and value. The row also contains a 
-		type or mimetype. Type corresponds to a .NET class that support 
-		text/value conversion through the TypeConverter architecture. 
-		Classes that don't support this are serialized and stored with the 
-		mimetype set.
-
-		The mimetype is used for serialized objects, and tells the 
-		ResXResourceReader how to depersist the object. This is currently not 
-		extensible. For a given mimetype the value must be set accordingly:
-
-		Note - application/x-microsoft.net.object.binary.base64 is the format 
-		that the ResXResourceWriter will generate, however the reader can 
-		read any of the formats listed below.
-
-		mimetype: application/x-microsoft.net.object.binary.base64
-		value   : The object must be serialized with 
-			: System.Serialization.Formatters.Binary.BinaryFormatter
-			: and then encoded with base64 encoding.
-
-		mimetype: application/x-microsoft.net.object.soap.base64
-		value   : The object must be serialized with 
-			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-			: and then encoded with base64 encoding.
-
-		mimetype: application/x-microsoft.net.object.bytearray.base64
-		value   : The object must be serialized into a byte array 
-			: using a System.ComponentModel.TypeConverter
-			: and then encoded with base64 encoding.
-	-->
-	
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>1.3</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>Programme d'élevage</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>Les caractéristiques sont les caractéristiques de la cible de reproduction elles-mêmes ou devraient y être fortement corrélées</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>Les caractéristiques doivent pouvoir être mesurées ou évaluées avec précision</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>Les caractères doivent être suffisamment héréditaires (h2)</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>Dans certains cas, les sources d'informations indirectes sont plus significatives que les informations directes. Par exemple, l'exercice physique est évalué comme une source indirecte d'information sur l'aptitude sportive. Les caractéristiques sont assez corrélées et de plus en plus d'informations sont disponibles pour l'exercice par rapport aux données des sports de compétition. Pour la même raison, les tests d'aptitude pour les caractéristiques d'utilisation en tant qu'informations indirectes sont d'une grande importance.</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>Extérieur</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>L'évaluation de l'extérieur joue un rôle majeur dans l'élevage des chevaux frison. L'extérieur est jugé dans toutes les catégories d'âge, des poulains aux chevaux plus âgés. L'évaluation extérieure est la base de l'enregistrement des juments au stud-book, elle détermine l'amorçage et l'attribution des registres et des prédicats et constitue une partie importante de la sélection des étalons. L'évaluation et la sélection pour la conformation servent les éléments suivants dans l'objectif de sélection :</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>Caractéristiques de la variété</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>L'évaluation des caractéristiques de race d'un cheval a lieu lors de l'inspection extérieure.</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>Aptitude sportive</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Les éléments extérieurs fournissent des informations sur l'aptitude sportive d'un cheval. Les allures de base, évaluées à l'inspection extérieure, sont importantes pour un cheval de sport. De plus, un cheval est évalué pour ses caractéristiques fonctionnelles (en ce qui concerne le sport), en particulier la constitution.</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Le programme de sélection décrit la stratégie pour atteindre l'objectif de sélection formulé. Un programme d'élevage comprend les éléments suivants :</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>Durabilité</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>Diverses caractéristiques extérieures (corps et membres) renseignent sur la durabilité d'un cheval. L'évaluation extérieure consiste à décrire 22 traits linéaires et à noter 5 traits principaux. La valorisation des 5 caractéristiques principales (type de race, corpulence, jambes, pas et trot) détermine l'amorçage d'un cheval et le registre associé. Une description précise de la méthode d'évaluation extérieure est fournie dans les lignes directrices pour l'évaluation extérieure linéaire. Les règles relatives aux inspections extérieures sont énoncées dans le règlement d'inspection.</value>
+  </data>
+  <data name="String22" xml:space="preserve">
+    <value>Aptitude sportive</value>
+  </data>
+  <data name="String23" xml:space="preserve">
+    <value>Les informations directes concernant l'aptitude à l'emploi dans le sport sont les résultats du sport de compétition. Ces données sont utilisées par le KFPS pour, entre autres, la sélection des étalons plus âgés pour la reproduction (règlement des examens de courte durée), l'évaluation de la progéniture des étalons du studbook (règlement de sélection des étalons), l'évaluation des pedigrees lors de la sélection des jeunes étalons, l'octroi de la prédicat de performance pour les juments, etc. Les données du sport de compétition ont un certain nombre de limites. Les données ont un h2 relativement faible (grande influence du motard/conducteur) et deviennent disponibles à un âge relativement avancé. De plus, pour l'élevage de chevaux frison, le nombre de chevaux sortis en sport de compétition est (encore) relativement faible. Pour cette raison, les différents tests d'aptitude jouent un rôle majeur dans l'élevage des chevaux frison. Cette information a un h2 relativement élevé (ABFP) et devient disponible tôt. Le KFPS propose les tests d'aptitude suivants :</value>
+  </data>
+  <data name="String24" xml:space="preserve">
+    <value>L'enquête centrale</value>
+  </data>
+  <data name="String24.1" xml:space="preserve">
+    <value>Un test de performance de 70 jours pour les étalons dans le cadre du processus de sélection des étalons. Les chevaux sont jugés sur les allures de base (pas, trot, galop) et leur aptitude comme cheval d'équitation, d'attelage et d'attelage.</value>
+  </data>
+  <data name="String25" xml:space="preserve">
+    <value>L'ABFP (test d'aptitude et d'utilisabilité des chevaux frison)</value>
+  </data>
+  <data name="String25.1" xml:space="preserve">
+    <value>Une étude de 5 semaines sur des chevaux à partir de 3 ans, où les chevaux sont entraînés et évalués. Les chevaux sont jugés sur les allures de base (pas, trot, galop) et leur aptitude comme cheval d'équitation, d'attelage et d'attelage.</value>
+  </data>
+  <data name="String26" xml:space="preserve">
+    <value>Le test IBOP</value>
+  </data>
+  <data name="String26.1" xml:space="preserve">
+    <value>Les chevaux sont évalués lors d'un test, dans lequel vous pouvez choisir entre un test d'équitation, un test de conduite ou un test de harnais. Les chevaux sont jugés sur les allures de base (pas, trot, galop) et leur aptitude comme cheval d'équitation, d'attelage ou d'attelage.</value>
+  </data>
+  <data name="String27" xml:space="preserve">
+    <value>Personnage</value>
+  </data>
+  <data name="String28" xml:space="preserve">
+    <value>Le personnage peut être largement divisé en deux aspects:</value>
+  </data>
+  <data name="String29" xml:space="preserve">
+    <value>éthique de travail</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>Description des informations sur lesquelles se base la sélection</value>
+  </data>
+  <data name="String30" xml:space="preserve">
+    <value>Ceci est lié à l'engagement, la persévérance et la volonté de réaliser ce qui est demandé.</value>
+  </data>
+  <data name="String31" xml:space="preserve">
+    <value>Facilité d'utilisation</value>
+  </data>
+  <data name="String32" xml:space="preserve">
+    <value>Ceci est lié à l'honnêteté, la fiabilité, etc. du cheval. Les deux caractéristiques sont évaluées lors de l'examen central et du test ABFP. De cette façon, on obtient un aperçu du caractère d'un étalon et plus tard de sa progéniture. On pense que ces deux aspects sont corrélés négativement. Il y a un risque qu'avec une sélection plus intensive pour l'aptitude sportive, cela puisse se faire au détriment de la facilité d'utilisation du cheval frison.</value>
+  </data>
+  <data name="String33" xml:space="preserve">
+    <value>Caractéristiques de santé</value>
+  </data>
+  <data name="String34" xml:space="preserve">
+    <value>La collecte et la sélection des caractéristiques de santé sont en plein développement. Dans les années à venir, les caractéristiques sanitaires joueront un rôle plus important dans la politique de sélection. Globalement, les caractéristiques de santé peuvent être divisées en :</value>
+  </data>
+  <data name="String35" xml:space="preserve">
+    <value>vitalité (durabilité et maturité)</value>
+  </data>
+  <data name="String36" xml:space="preserve">
+    <value>fertilité (étalons et juments)</value>
+  </data>
+  <data name="String37" xml:space="preserve">
+    <value>résistance aux maladies</value>
+  </data>
+  <data name="String38" xml:space="preserve">
+    <value>erfelijke afwijkingen</value>
+  </data>
+  <data name="String39" xml:space="preserve">
+    <value>Les traits de santé sont en partie liés à la consanguinité. attn. caractéristiques sanitaires, une politique à deux volets est en cours. D'une part, la sélection est faite pour ces caractères et, d'autre part, la politique d'élevage vise à réduire la consanguinité.</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>Méthode d'estimation de la prédisposition génétique pour les traits cibles de sélection pour les chevaux individuels dans la population</value>
+  </data>
+  <data name="String40" xml:space="preserve">
+    <value>Estimation de la valeur d'élevage</value>
+  </data>
+  <data name="String41" xml:space="preserve">
+    <value>Les différences que nous observons entre les groupes de descendants d'étalons (ou juments) ne sont que partiellement génétiques et seulement la moitié proviennent du père. On sait qu'un étalon a plus de chances et de meilleures chances que l'autre étalon. Afin d'avoir une bonne idée de la prédisposition génétique d'un cheval (généralement des étalons), les données brutes doivent être corrigées des facteurs non génétiques. C'est l'essence de l'estimation de la valeur d'élevage. Le modèle d'estimation utilisé par le KFPS pour l'estimation de la valeur d'élevage est le modèle dit BLUP (Best Linear Unbiased Prediction). Lors de l'estimation des valeurs d'élevage des étalons, des corrections sont apportées à la qualité des mères de la progéniture. Les autres effets inclus dans le modèle d'estimation sont:</value>
+  </data>
+  <data name="String42" xml:space="preserve">
+    <value>âge</value>
+  </data>
+  <data name="String43" xml:space="preserve">
+    <value>juge</value>
+  </data>
+  <data name="String44" xml:space="preserve">
+    <value>sexe</value>
+  </data>
+  <data name="String45" xml:space="preserve">
+    <value>Contrôle</value>
+  </data>
+  <data name="String46" xml:space="preserve">
+    <value>Chaque cheval de la population a une valeur d'élevage. Chez un poulain, la valeur d'élevage est la moyenne entre la valeur d'élevage des deux parents. Plus tard, la propre performance du cheval est incluse dans l'estimation de la valeur d'élevage, suivie des informations sur la progéniture. Plus la progéniture d'un étalon est évaluée, moins les informations de l'animal lui-même et de ses parents comptent.</value>
+  </data>
+  <data name="String47" xml:space="preserve">
+    <value>Les valeurs d'élevage BLUP sont estimées pour les traits de conformation linéaire et de classement (sur la base des informations de la notation linéaire) et pour l'aptitude sportive (sur la base des informations des tests ABFP).</value>
+  </data>
+  <data name="String48" xml:space="preserve">
+    <value>Sélection</value>
+  </data>
+  <data name="String49" xml:space="preserve">
+    <value>L'essence de la sélection est d'identifier les souches parentales pour produire la prochaine génération de poulains. Une distinction doit être faite entre les étalons et les juments. En fait, la sélection n'a lieu qu'avec les étalons. Seuls les étalons agréés peuvent faire inscrire leur progéniture au registre principal. Chez les juments, la sélection indirecte s'effectue via un système de primes et de prédicats, selon lequel les meilleures juments sont utilisées plus fréquemment pour la reproduction.</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>Systèmes de sélection</value>
+  </data>
+  <data name="String50" xml:space="preserve">
+    <value>Sélection d'étalons</value>
+  </data>
+  <data name="String51" xml:space="preserve">
+    <value>La sélection des étalons se déroule en deux phases. Dans la première phase, les étalons sont approuvés sur la base de leurs propres performances, lors de l'inspection des étalons et de l'examen central ou par le biais de l'examen abrégé. Dans un second temps, les étalons agréés du stud-book sont évalués sur leur
+progéniture.</value>
+  </data>
+  <data name="String52" xml:space="preserve">
+    <value>Inspection des étalons / Examen central</value>
+  </data>
+  <data name="String53" xml:space="preserve">
+    <value>L'inspection des étalons a trois visionnements. Après la troisième visite, les étalons sont
+désigné pour l’enquête centrale. Les étalons sont testés tout au long du processus
+aux limites inférieures de sélection. Après la dernière partie, l'Enquête centrale, sur la base de
+la vue d'ensemble de tous les critères évalués tout au long du processus un jugement est porté sur le puits
+ou ne pas inscrire un étalon au registre du stud-book. Les règlements concernant le
+La sélection des étalons est indiquée dans le Règlement de sélection des étalons.</value>
+  </data>
+  <data name="String54" xml:space="preserve">
+    <value>Court sondage</value>
+  </data>
+  <data name="String55" xml:space="preserve">
+    <value>Dans le but d'améliorer les aptitudes sportives de la population, la politique prévoit un processus de sélection distinct pour l'inscription au registre des origines des étalons (âgés d'au moins 8 ans) ayant de très hautes performances sportives. Les règles à cet effet sont définies dans le règlement relatif à l'examen abrégé.</value>
+  </data>
+  <data name="String56" xml:space="preserve">
+    <value>Recherche de descendance</value>
+  </data>
+  <data name="String57" xml:space="preserve">
+    <value>Bien que les (jeunes) étalons soient approuvés sur la base des meilleures informations à ce moment-là (pedigree et propres performances), cela ne garantit pas que ces étalons hériteront réellement de manière positive. Afin d'obtenir une bonne image du potentiel génétique réel d'un étalon, un nombre suffisant de descendants doit être évalué. Le test de progéniture consiste à évaluer la progéniture (poulains et chevaux adultes) sur la conformation, l'aptitude sportive (20 progénitures sont évaluées dans un test ABFP), les anomalies héréditaires, etc. Les étalons peuvent être rejetés sur la base du test de progéniture. Les données résultant de la recherche sur la progéniture fournissent des informations précieuses lors du choix d'un étalon.</value>
+  </data>
+  <data name="String58" xml:space="preserve">
+    <value>Sélection jument</value>
+  </data>
+  <data name="String59" xml:space="preserve">
+    <value>En fait, il n'y a pas de sélection directe des juments. La progéniture de toutes les juments inscrites au registre principal est également inscrite au registre principal, quelle que soit la qualité de la jument (à condition que le poulain descende d'un étalon agréé par le KFPS). La sélection indirecte est faite dans le matériel de la jument. Les juments sont distinguées selon la qualité à travers un système de prédicats et de primes. Les prédicats sont basés sur la qualité de la jument (extérieur / aptitude sportive) ou la qualité de la progéniture (extérieur / aptitude sportive). Les juments qualitativement meilleures produiront plus de progéniture. La description des prédicats est décrite dans le règlement d'inscription au studbook.</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>Évaluation de la réponse de sélection</value>
+  </data>
+  <data name="String60" xml:space="preserve">
+    <value>Évaluation</value>
+  </data>
+  <data name="String61" xml:space="preserve">
+    <value>Afin d'évaluer si la politique poursuivie a conduit au résultat escompté, la politique d'élevage doit être évaluée. Dans le cas où les objectifs ne sont pas atteints, la politique d'élevage / sélection doit être modifiée. Cela fait de la politique d'élevage un processus cyclique. Un outil utilisé par le KFPS dans l'évaluation est la tendance génétique pour les traits de l'objectif de sélection. Sur la base de la valeur génétique moyenne d'un caractère par année de naissance, il est possible de vérifier si des progrès sont réalisés. Par exemple, un autre outil est la tendance à la consanguinité.</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>L'objectif d'un programme de sélection est de progresser non seulement à court terme, mais aussi à long terme. Il est donc important que la politique d'élevage à poursuivre maintienne une variation génétique suffisante dans la population. Il est particulièrement important dans l'élevage fermé du cheval frison de limiter l'augmentation de la consanguinité. D'autant plus que la consanguinité est à l'origine de défauts héréditaires et d'une remise en forme (fertilité, résistance aux maladies, longévité, etc.).</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>Informations</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>Afin de pouvoir sélectionner pour les caractéristiques indiquées dans l'objectif d'élevage, il faut déterminer sur la base de quelles données la sélection a lieu. Les exigences relatives aux critères de sélection sont les suivantes :</value>
+  </data>
 </root>
