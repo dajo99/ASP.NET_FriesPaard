@@ -1,4 +1,5 @@
 ﻿@model BSFP.ViewModels.ListAgendaViewModel
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
 @using System.Globalization;
 
 
@@ -12,7 +13,7 @@
     <div class="overlay"></div>
     <div class="intro-content">
         <div class="container">
-            <h1>Agenda</h1>
+            <h1>@localizer["String1"]</h1>
         </div>
     </div>
 
@@ -39,6 +40,7 @@
         padding-top: 16px;
         background-color: #1C3153;
     }
+
     .titelsZoekAgenda {
         padding: 0.6em;
         color: #fff;
@@ -65,104 +67,95 @@
             </p>
         }
 
-        <div class="row" style="display: none">
-            <div class="col-12">
-                <form asp-controller="Agenda" asp-action="Search" method="get">
-                    <div class="input-group col-sm-12 col-md-8 col-lg-5">
-                        <input type="text" class="form-control" aria-label="Agenda" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary" type="button">Zoek</button>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 ml-auto mt-lg-3 order-lg-last">
+                <div class="col-12" style="background-color: #1C3153; border: 3px solid #147e9e;">
+                    <h4 class="titelsZoekAgenda">@localizer["String6"]</h4>
+                    <form asp-controller="Agenda" asp-action="Search" method="get">
+                        <div class="input-group col-12 mb-4">
+                            <input asp-for="SearchName" type="text" class="form-control" aria-label="Agenda" aria-describedby="basic-addon2" placeholder="@localizer["String9"]">
                         </div>
-                    </div>
-                </form>
-           </div>
-        </div>
-                <div class="row">
-                    <div class="col-lg-8 col-md-12 col-sm-10 col-xs-10">
-                        <table class="table table-condensed">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        @Html.DisplayNameFor(model => model.AgendaLijst[0].Datum)
-                                    </th>
-                                    <th>
-                                        @Html.DisplayNameFor(model => model.AgendaLijst[0].Titel)
-                                    </th>
-                                    <th style="vertical-align:bottom ; text-align:right">
-                                        Totaal @totaal Evenementen
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach (var item in Model.AgendaLijst)
-                                {
-                                    totaal += 1;
-
-                                    <tr>
-                                        <td style="padding: 1rem; text-align:center">
-                                            <div class="eventdate">
-                                                @Convert.ToDateTime(item.Datum).ToString("dd MMMM", dutch)
-                                            </div>
-                                        </td>
-                                        <td>
-                                            @Html.DisplayFor(modelItem => item.Titel)
-                                        </td>
-                                        <td style=" float: right">
-                                            @if (this.User.IsInRole("Admin"))
-                                            {
-                                                <a asp-action="Details" asp-route-id="@item.AgendaID">Details |</a>
-                                                <a asp-action="Edit" asp-route-id="@item.AgendaID"> Edit |</a>
-                                                <a asp-action="Delete" asp-route-id="@item.AgendaID"> Delete</a>
-                                            }
-                                            else
-                                            {
-                                                <a asp-action="Details" asp-route-id="@item.AgendaID">Bekijk Details</a>
-                                            }
-
-                                        </td>
-                                    </tr>
-                                }
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-lg-4 ml-auto">
-                        <div class="col-12" style="background-color: #1C3153; border: 3px solid #147e9e;">
-                            <h4 class="titelsZoekAgenda">Zoek</h4>
-                            <form asp-controller="Agenda" asp-action="Search" method="get">
-                                <div class="input-group col-12 mb-4">
-                                    <input asp-for="SearchName" type="text" class="form-control" aria-label="Agenda" aria-describedby="basic-addon2">
-                                </div>
-                                <div class="input-group col-12 mb-4">
-                                    <input asp-for="SearchPlace" type="text" class="form-control" aria-label="Agenda" aria-describedby="basic-addon2">
-                                </div>
-                                <div class="input-group col-12 mb-4">
-                                    <input asp-for="SearchDate" type="date" value="" class="form-control" aria-label="Agenda" aria-describedby="basic-addon2">
-                                </div>
-
-                                <div class="input-group col-12 mb-4">
-                                    <input type="submit" value="Zoeken" class="form-control" style="background-color: #caa500; border: 1px solid #caa500; color:#1C3153;" />
-                                </div>
-
-                            </form>
+                        <div class="input-group col-12 mb-4">
+                            <input asp-for="SearchPlace" type="text" class="form-control" aria-label="Agenda" aria-describedby="basic-addon2" placeholder="@localizer["String10"]">
                         </div>
-                        <div class="col-12">
-                            <h4 class="titelsZoekAgenda" style="color: #1C3153">Volg ons op</h4>
-                            <div class="col-12 mb-3">
-                                <a href="https://www.facebook.com/BelgischStamboekVanHetFriesePaard/"><i class="fab fa-facebook-square fa-3x" style="color:#3b5998;"></i></a>
-                                <a href="#"><i class="fab fa-instagram-square fa-3x" style=" color: #E1306C"></i></a>
-                                <a href="#"><i class="fab fa-youtube-square fa-3x" style="color: #FF0000;"></i></a>
-                            </div>
+                        <div class="input-group col-12 mb-4">
+                            <input asp-for="SearchDate" type="date" value="" class="form-control" aria-label="Agenda" aria-describedby="basic-addon2">
                         </div>
 
-                    </div>
-                    
+                        <div class="input-group col-12 mb-4">
+                            <input type="submit" value="@localizer["String7"]" class="form-control" style="background-color: #caa500; border: 1px solid #caa500; color:#1C3153;" />
+                        </div>
 
-                        
-                        
-                        
-                        
-                    
+                    </form>
                 </div>
+                <div class="col-12 d-none d-lg-block">
+                    <h4 class="titelsZoekAgenda" style="color: #1C3153"> @localizer["String8"]</h4>
+                    <div class="col-12 mb-3">
+                        <a href="https://www.facebook.com/BelgischStamboekVanHetFriesePaard/"><i class="fab fa-facebook-square fa-3x" style="color:#3b5998;"></i></a>
+                        <a href="#"><i class="fab fa-instagram-square fa-3x" style=" color: #E1306C"></i></a>
+                        <a href="#"><i class="fab fa-youtube-square fa-3x" style="color: #FF0000;"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-10 mt-3">
+                <table class="table table-condensed">
+                    <thead>
+                        <tr>
+                            <th>
+                                @localizer["String2"]
+                            </th>
+                            <th>
+                                @localizer["String3"]
+                            </th>
+                            <th style="vertical-align:bottom ; text-align:right">
+                                @localizer["String4"] @totaal  @localizer["String5"]
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var item in Model.AgendaLijst)
+                        {
+                            totaal += 1;
+
+                            <tr>
+                                <td style="padding: 1rem; text-align:center">
+                                    <div class="eventdate">
+                                        @Convert.ToDateTime(item.Datum).ToString("dd MMMM", dutch)
+                                    </div>
+                                </td>
+                                <td>
+                                    @if (CultureInfo.CurrentCulture.Name == "nl")
+                                    {
+                                        @Html.DisplayFor(modelItem => item.Titel_nl)
+                                    }
+                                    @if (CultureInfo.CurrentCulture.Name == "fr")
+                                    {
+                                        @Html.DisplayFor(modelItem => item.Titel_fr)
+                                    }
+                                </td>
+                                <td style=" float: right">
+                                    @if (this.User.IsInRole("Admin"))
+                                    {
+                                        <a asp-action="Details" asp-route-id="@item.AgendaID">Details |</a>
+                                        <a asp-action="Edit" asp-route-id="@item.AgendaID"> Edit |</a>
+                                        <a asp-action="Delete" asp-route-id="@item.AgendaID"> Delete</a>
+                                    }
+                                    else
+                                    {
+                                        <a asp-action="Details" asp-route-id="@item.AgendaID">Bekijk Details</a>
+                                    }
+
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
 
     </section>
 </main>

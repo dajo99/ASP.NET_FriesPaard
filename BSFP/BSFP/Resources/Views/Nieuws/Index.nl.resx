@@ -117,10 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="fr" xml:space="preserve">
-    <value>FR</value>
+  <data name="String1" xml:space="preserve">
+    <value>Geplaats op</value>
   </data>
-  <data name="nl" xml:space="preserve">
-    <value>NL</value>
+  <data name="String2" xml:space="preserve">
+    <value>U kan het artikel</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>HIER</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>bekijken</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>Nieuws</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>Zoek</value>
   </data>
 </root>

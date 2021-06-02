@@ -4,14 +4,16 @@ using BSFP.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BSFP.Migrations
 {
     [DbContext(typeof(BSFPContext))]
-    partial class BSFPContextModelSnapshot : ModelSnapshot
+    [Migration("20210601161203_Update-Nieuws-multilanguage")]
+    partial class UpdateNieuwsmultilanguage
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -112,19 +114,13 @@ namespace BSFP.Migrations
                     b.Property<string>("Locatie")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Omschrijving_fr")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Omschrijving_nl")
+                    b.Property<string>("Omschrijving")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("Starttijd")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Titel_fr")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Titel_nl")
+                    b.Property<string>("Titel")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("AgendaID");

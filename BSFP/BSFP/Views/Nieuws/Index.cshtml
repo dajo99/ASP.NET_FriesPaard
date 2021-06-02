@@ -1,4 +1,6 @@
 ﻿@model BSFP.ViewModels.ListNieuwsViewModel
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@using System.Globalization;
 
 @{
     ViewData["Title"] = "Index";
@@ -7,7 +9,7 @@
     <div class="overlay"></div>
     <div class="intro-content">
         <div class="container">
-            <h1>Nieuws</h1>
+            <h1>@localizer["String5"]</h1>
         </div>
     </div>
 
@@ -47,22 +49,21 @@
             </p>
         }
 
-    <div class="row">
-        <div class="col-lg-12">
-            <form asp-controller="Nieuws" asp-action="Search" method="get">
-                <div class="input-group col-sm-12 col-md-8 col-lg-5" style="margin: auto">
-                    <input asp-for="Search" type="text" class="form-control" aria-label="Nieuws" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" type="submit">Zoek</button>
+        <div class="row">
+            <div class="col-lg-12">
+                <form asp-controller="Nieuws" asp-action="Search" method="get">
+                    <div class="input-group col-sm-12 col-md-8 col-lg-5" style="margin: auto">
+                        <input asp-for="Search" type="text" class="form-control" aria-label="Nieuws" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit">@localizer["String6"]</button>
+                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
+
         </div>
-        
-    </div>
 
         <br />
-
         @foreach (var item in Model.NieuwsLijst)
         {
             <div class="row" style="box-shadow: 5px 10px 18px #888888; margin-top: 40px">
@@ -71,11 +72,27 @@
                         <div class="col-md-5 fill" style="background-image: url(@item.ImagePath)">
                         </div>
                         <div class="col-md-7 content">
-                            <div class="type">BSFP-SBCF</div>
-                            <h3 style="text-transform:uppercase">@Html.DisplayFor(modelItem => item.Titel)</h3>
-                            <p style="font-weight: bold">Geplaatst op @Convert.ToDateTime(item.Datum).ToString("dd/MM/yyyy HH:mm")</p>
+                            <div class="type">@Html.DisplayFor(modelItem => item.Vereneging)</div>
+                            @if (CultureInfo.CurrentCulture.Name == "nl")
+                            {
+                                <h3 style="text-transform:uppercase">@Html.DisplayFor(modelItem => item.Titel_nl)</h3>
+                            }
+                            @if (CultureInfo.CurrentCulture.Name == "fr")
+                            {
+                                <h3 style="text-transform:uppercase">@Html.DisplayFor(modelItem => item.Titel_fr)</h3>
+                            }
+
+
+                            <p style="font-weight: bold">@localizer["String1"] @Convert.ToDateTime(item.Datum).ToString("dd/MM/yyyy HH:mm")</p>
                             <div class="post-text">
-                                <p>@Html.Raw(item.Intro)</p><br>
+                                @if (CultureInfo.CurrentCulture.Name == "nl")
+                                {
+                                    <p>@Html.Raw(item.Intro_nl)</p><br>
+                                }
+                                @if (CultureInfo.CurrentCulture.Name == "fr")
+                                {
+                                    <p>@Html.Raw(item.Intro_fr)</p><br>
+                                }
 
                                 @if (this.User.IsInRole("Admin"))
                                 {
@@ -85,9 +102,11 @@
                                 }
                                 else
                                 {
-                                    <p>U kan het artikel <a asp-action="Details" asp-route-id="@item.NieuwsID">HIER</a> bekijken.</p>
+                                    <p>
+                                        @localizer["String2"] <a asp-action="Details" asp-route-id="@item.NieuwsID">@localizer["String3"] </a>@if(CultureInfo.CurrentCulture.Name == "nl"){@localizer["String4"]}.
+                                    </p>
                                 }
-                                </div>
+                            </div>
                         </div>
 
                     </div>

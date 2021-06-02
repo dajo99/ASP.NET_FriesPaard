@@ -4,14 +4,16 @@ using BSFP.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BSFP.Migrations
 {
     [DbContext(typeof(BSFPContext))]
-    partial class BSFPContextModelSnapshot : ModelSnapshot
+    [Migration("20210602182324_Update-Agenda-multilanguage")]
+    partial class UpdateAgendamultilanguage
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

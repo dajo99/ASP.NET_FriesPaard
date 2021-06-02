@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Globalization;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -43,7 +44,14 @@ namespace BSFP.Controllers
 
             if (!string.IsNullOrEmpty(viewModel.Search))
             {
-                queryableNieuws = queryableNieuws.Where(k => k.Intro.Contains(viewModel.Search));
+                if(CultureInfo.CurrentCulture.Name == "nl")
+                {
+                    queryableNieuws = queryableNieuws.Where(k => k.Intro_nl.Contains(viewModel.Search));
+                }
+                if(CultureInfo.CurrentCulture.Name == "fr")
+                {
+                    queryableNieuws = queryableNieuws.Where(k => k.Intro_fr.Contains(viewModel.Search));
+                }
             }
 
             viewModel.NieuwsLijst = await queryableNieuws.ToListAsync();
@@ -124,9 +132,13 @@ namespace BSFP.Controllers
                 
                 try
                 {
-                    nieuws.Titel = viewModel.Nieuws.Titel;
-                    nieuws.Intro = viewModel.Nieuws.Intro;
-                    nieuws.Omschrijving = viewModel.Nieuws.Omschrijving;
+                    nieuws.Vereneging = viewModel.Nieuws.Vereneging;
+                    nieuws.Titel_nl = viewModel.Nieuws.Titel_nl;
+                    nieuws.Titel_fr = viewModel.Nieuws.Titel_fr;
+                    nieuws.Intro_nl = viewModel.Nieuws.Intro_nl;
+                    nieuws.Intro_fr = viewModel.Nieuws.Intro_fr;
+                    nieuws.Omschrijving_nl = viewModel.Nieuws.Omschrijving_nl;
+                    nieuws.Omschrijving_fr = viewModel.Nieuws.Omschrijving_fr;
 
                     if (viewModel.Nieuws.File != null)
                     {

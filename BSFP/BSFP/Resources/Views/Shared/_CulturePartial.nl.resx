@@ -117,13 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="en" xml:space="preserve">
-    <value>Engels</value>
-  </data>
   <data name="fr" xml:space="preserve">
-    <value>Frans</value>
+    <value>FR</value>
   </data>
   <data name="nl" xml:space="preserve">
-    <value>Nederlands</value>
+    <value>NL</value>
   </data>
 </root>

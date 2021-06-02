@@ -29,26 +29,49 @@
                 <form asp-action="Create" enctype="multipart/form-data">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div class="form-group">
-                        <label asp-for="Nieuws.Titel" class="control-label"></label>
-                        <input asp-for="Nieuws.Titel" class="form-control" />
-                        <span asp-validation-for="Nieuws.Titel" class="text-danger"></span>
+                        <label asp-for="Nieuws.Vereneging" class="control-label"></label>
+                        <select asp-for="Nieuws.Vereneging" class="form-control">
+                            <option selected value="BSFP-SBCF">BSFP-SBCF</option>
+                            <option value="JongBSFP">JongBSFP</option>
+                        </select>
+                        <span asp-validation-for="Nieuws.Vereneging" class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <label asp-for="Nieuws.Intro" class="control-label"></label>
-                        <textarea asp-for="Nieuws.Intro" class="form-control" cols="100" rows="5" placeholder="Maak hier je intro"></textarea>
-                        <span asp-validation-for="Nieuws.Intro" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
-                        <label asp-for="Nieuws.Omschrijving" class="control-label"></label>
-                        <textarea asp-for="Nieuws.Omschrijving" class="form-control summernote"></textarea>
-                        <span asp-validation-for="Nieuws.Omschrijving" class="text-danger"></span>
-                    </div>
-                    <div class="form-group col-5">
                         <label asp-for="Nieuws.File" class="control-label">Voeg een foto toe</label>
                         <input asp-for="Nieuws.File" class="form-control" accept="image/*" onchange="document.getElementById('DemoImage').src = window.URL.createObjectURL(this.files[0])" />
                         <img id="DemoImage" src="~/Images/demo.png" class="text-center" alt="" width="200" height="200" style="border:1px ;margin-top:20px; margin-left:120px;" />
 
                         <span asp-validation-for="Nieuws.File" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Nieuws.Titel_nl" class="control-label"></label>
+                        <input asp-for="Nieuws.Titel_nl" class="form-control" />
+                        <span asp-validation-for="Nieuws.Titel_nl" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Nieuws.Titel_fr" class="control-label"></label>
+                        <input asp-for="Nieuws.Titel_fr" class="form-control" />
+                        <span asp-validation-for="Nieuws.Titel_fr" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Nieuws.Intro_nl" class="control-label"></label>
+                        <textarea asp-for="Nieuws.Intro_nl" class="form-control" cols="100" rows="8"></textarea>
+                        <span asp-validation-for="Nieuws.Intro_nl" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Nieuws.Intro_fr" class="control-label"></label>
+                        <textarea asp-for="Nieuws.Intro_fr" class="form-control" cols="100" rows="8"></textarea>
+                        <span asp-validation-for="Nieuws.Intro_fr" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Nieuws.Omschrijving_nl" class="control-label"></label>
+                        <textarea asp-for="Nieuws.Omschrijving_nl" class="form-control summernote"></textarea>
+                        <span asp-validation-for="Nieuws.Omschrijving_nl" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Nieuws.Omschrijving_fr" class="control-label"></label>
+                        <textarea asp-for="Nieuws.Omschrijving_fr" class="form-control summernote"></textarea>
+                        <span asp-validation-for="Nieuws.Omschrijving_fr" class="text-danger"></span>
                     </div>
 
                     <div class="row">
@@ -68,7 +91,6 @@
 
 <script>
     $('.summernote').summernote({
-        placeholder: 'Maak hier je omschrijving',
         height: 500
     });
 </script>

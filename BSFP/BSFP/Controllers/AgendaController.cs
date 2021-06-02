@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Globalization;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -35,7 +36,15 @@ namespace BSFP.Controllers
 
             if (!string.IsNullOrEmpty(viewModel.SearchName))
             {
-                queryableAgenda = queryableAgenda.Where(k => k.Omschrijving.Contains(viewModel.SearchName));
+                if (CultureInfo.CurrentCulture.Name == "nl")
+                {
+                    queryableAgenda = queryableAgenda.Where(k => k.Titel_nl.Contains(viewModel.SearchName));
+                }
+                if (CultureInfo.CurrentCulture.Name == "fr")
+                {
+                    queryableAgenda = queryableAgenda.Where(k => k.Titel_fr.Contains(viewModel.SearchName));
+                }
+
             }
 
             if (!string.IsNullOrEmpty(viewModel.SearchPlace))

@@ -117,10 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="fr" xml:space="preserve">
-    <value>FR</value>
+  <data name="String1" xml:space="preserve">
+    <value>Posté le</value>
   </data>
-  <data name="nl" xml:space="preserve">
-    <value>NL</value>
+  <data name="String2" xml:space="preserve">
+    <value>Vous pouvez voir l'article</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>ICI</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>Actualité</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>Chercher</value>
   </data>
 </root>
