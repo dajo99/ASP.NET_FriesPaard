@@ -180,6 +180,15 @@
   <data name="String27" xml:space="preserve">
     <value>Voorzitter JBSFP</value>
   </data>
+  <data name="String28" xml:space="preserve">
+    <value>Medehulp studieclub</value>
+  </data>
+  <data name="String29" xml:space="preserve">
+    <value>Bestuur jongBSFP</value>
+  </data>
+  <data name="String30" xml:space="preserve">
+    <value>Dressuur</value>
+  </data>
   <data name="String8" xml:space="preserve">
     <value>Voorzitter</value>
   </data>

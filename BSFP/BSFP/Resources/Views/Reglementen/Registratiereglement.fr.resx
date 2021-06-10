@@ -220,123 +220,123 @@ Un poulain doit marcher au pied de la mère au moment de l'identification (puce)
     <value>Les noms des poulains nés au cours d'une année donnée doivent commencer par une lettre fixe. Ces lettres sont déterminées annuellement par le KFPS. Le nom d'une pouliche ne peut apparaître qu'une fois par an. Un nom, y compris un nom stable, peut contenir un maximum de 30 positions.</value>
   </data>
   <data name="String127" xml:space="preserve">
-    <value>Een naam kan niet worden gewijzigd.</value>
+    <value>Un nom ne peut pas être modifié.</value>
   </data>
   <data name="String128" xml:space="preserve">
-    <value>In de documenten van het KFPS worden altijd de stamboeknamen weergegeven.</value>
+    <value>Les noms du studbook sont toujours indiqués dans les documents KFPS.</value>
   </data>
   <data name="String129" xml:space="preserve">
-    <value>Artikel 16 Afstammingsverificatie</value>
+    <value>Article 16 Vérification de l'ascendance</value>
   </data>
   <data name="String13" xml:space="preserve">
-    <value>Artikel 11 Registers</value>
+    <value>Article 11 Registres</value>
   </data>
   <data name="String130" xml:space="preserve">
-    <value>Het KFPS voert steekproefsgewijs DNA-onderzoek uit om de afstamming te verifiëren.  Afstammingsverificatie is altijd vereist in de volgende situaties:</value>
+    <value>Le KFPS effectue des tests ADN aléatoires pour vérifier la filiation. La vérification de l'ascendance est toujours requise dans les situations suivantes :</value>
   </data>
   <data name="String131" xml:space="preserve">
-    <value>Bij merries die ster verklaard worden.</value>
+    <value>Chez les juments déclarées star.</value>
   </data>
   <data name="String132" xml:space="preserve">
-    <value>Bij alle merries waarvan een veulen ter registratie wordt aangeboden.</value>
+    <value>Pour toutes les juments dont un poulain est présenté à l'enregistrement.</value>
   </data>
   <data name="String133" xml:space="preserve">
-    <value>Indien de dekdatum niet binnen 14 dagen na dekken gemeld is bij het KFPS. De kosten voor het onderzoek zijn voor de hengstenhouder.</value>
+    <value>Si la date de reproduction n'est pas signalée au KFPS dans les 14 jours suivant la reproduction. Les frais de l'examen sont à la charge du propriétaire de l'étalon.</value>
   </data>
   <data name="String134" xml:space="preserve">
-    <value>Veulens geboren uit inseminaties met diepvriessperma, waarvan de dekking niet is doorgegeven. De kosten voor het onderzoek zijn voor de geregistreerde.</value>
+    <value>Poulains nés d'inséminations avec de la semence congelée, dont l'accouplement n'a pas été réussi. Les frais de l'examen sont pour la personne inscrite.</value>
   </data>
   <data name="String135" xml:space="preserve">
-    <value>Veulens of paarden die gechipt worden op een leeftijd ouder dan 6 maanden. De kosten voor het onderzoek zijn voor de geregistreerde.</value>
+    <value>Poulains ou chevaux micropucés à plus de 6 mois. Les frais de l'examen sont pour la personne inscrite.</value>
   </data>
   <data name="String136" xml:space="preserve">
-    <value>Indien het veulen niet aan de voet van de moeder wordt aangeboden voor identificatie. De kosten voor het onderzoek is voor de geregistreerde. Een dierenartsverklaring, waarin de moeder wordt verklaard, met een dagtekening maximaal een week na geboortedatum, geldt als ontheffing.</value>
+    <value>Si le poulain n'est pas présenté au pied de la mère pour identification. Le coût de l'examen est pour l'inscrit. Une déclaration du vétérinaire, indiquant la mère, avec une date pas plus d'une semaine après la date de naissance, compte comme une exemption.</value>
   </data>
   <data name="String137" xml:space="preserve">
-    <value>Indien een merrie gedekt/geïnsemineerd is met twee verschillende hengsten binnen de duur van één cyclus of in twee aansluitende cycli. De kosten voor het onderzoek zijn voor de geregistreerde.</value>
+    <value>Si une jument est saillie/inséminée avec deux étalons différents au cours d'un cycle ou de deux cycles consécutifs. Les frais de l'examen sont pour la personne inscrite.</value>
   </data>
   <data name="String138" xml:space="preserve">
-    <value>Indien aan de juistheid van de dekgegevens van de dekking, waaruit het veulen verondersteld wordt geboren te zijn, getwijfeld wordt. De kosten voor het onderzoek zijn voor de geregistreerde.</value>
+    <value>S'il y a des doutes sur l'exactitude des données d'élevage de l'élevage dont le poulain est censé être né. Les frais de l'examen sont pour la personne inscrite.</value>
   </data>
   <data name="String139" xml:space="preserve">
-    <value>Indien de bij het KFPS geregistreerde dekdatum niet correspondeert met de geboortedatum van een veulen. De kosten voor het onderzoek zijn voor de geregistreerde.</value>
+    <value>Si la date d'élevage enregistrée auprès du KFPS ne correspond pas à la date de naissance d'un poulain. Les frais de l'examen sont pour la personne inscrite.</value>
   </data>
   <data name="String14" xml:space="preserve">
-    <value>Artikel 12 Aftekeningen</value>
+    <value>Article 12 Signatures</value>
   </data>
   <data name="String140" xml:space="preserve">
-    <value>In het geval een veulen is geïdentificeerd (gechipt) door een niet gecertificeerde persoon. De kosten voor het onderzoek zijn voor de geregistreerde.</value>
+    <value>Dans le cas où un poulain est identifié (pucé) par une personne non certifiée. Les frais de l'examen sont pour la personne inscrite.</value>
   </data>
   <data name="String141" xml:space="preserve">
-    <value>Indiende aanvraag voor inschrijving in het veulenregister langer dan 4 weken na het chippen wordt gedaan. De kosten voor het onderzoek zijn voor de geregistreerde.</value>
+    <value>Si la demande d'inscription au registre des poulains est faite plus de 4 semaines après l'écaillage. Les frais de l'examen sont pour la personne inscrite.</value>
   </data>
   <data name="String142" xml:space="preserve">
-    <value>Indien de microtransponder onvindbaar blijkt of defect is geraakt. In het geval de transponder is aangebracht door het KFPS, zijn de kosten voor het DNA-onderzoek voor het KFPS. Is dit niet het geval dan zijn de kosten voor de geregistreerde.
-m. Indien het chipnummer niet overeenkomt met het verwachte chipnummer. De kosten van het onderzoek zijn voor de geregistreerde.</value>
+    <value>Si le micro transpondeur est introuvable ou est devenu défectueux. Dans le cas où le transpondeur est installé par le KFPS, les coûts du test ADN sont à la charge du KFPS. Si ce n'est pas le cas, les frais sont à la charge de la personne inscrite.
+m. Si le numéro de puce ne correspond pas au numéro de puce attendu. Les frais de l'enquête sont à la charge de la personne inscrite.</value>
   </data>
   <data name="String142.1" xml:space="preserve">
-    <value>Indien het chipnummer niet overeenkomt met het verwachte chipnummer. De kosten van het onderzoek zijn voor de geregistreerde.</value>
+    <value>Si le numéro de puce ne correspond pas au numéro de puce attendu. Les frais de l'enquête sont à la charge de la personne inscrite.</value>
   </data>
   <data name="String143" xml:space="preserve">
-    <value>Registratie van veulens geboren middels embryo-transplantatie. De kosten voor het onderzoek zijn voor de geregistreerde.</value>
+    <value>Enregistrement des poulains nés par transfert d'embryons. Les frais de l'examen sont pour la personne inscrite.</value>
   </data>
   <data name="String144" xml:space="preserve">
-    <value>Registratie van veulens in Bijboek II. De kosten voor het onderzoek zijn voor de geregistreerde.</value>
+    <value>Enregistrement des poulains à Bijboek II. Les frais de l'examen sont pour la personne inscrite.</value>
   </data>
   <data name="String145" xml:space="preserve">
-    <value>Hengsten voordat ze aan het centraal onderzoek deelnemen. De kosten voor het onderzoek zijn voor de geregistreerde.
-Tevens voert het KFPS steekproeven uit. De redenen, werkwijze en uitvoering geschieden volgens het ‘protocol DNA’.</value>
+    <value>Etalons avant de participer à l'étude centrale. Les frais de l'examen sont pour la personne inscrite.
+Le KFPS procède également à des contrôles aléatoires. Les raisons, la méthode et la mise en œuvre sont conformes au « protocole ADN ».</value>
   </data>
   <data name="String146" xml:space="preserve">
-    <value>Haarmonster ten behoeve van afstammingsverificatie dienen te worden genomen door een erkende paspoortconsulent, een KFPS-official of een dierenarts, tenzij door het KFPS anders is aangegeven. Haarmonsters worden opgestuurd naar het KFPS en dienen te zijn vergezeld door een verklaring van degene die het haarmonster heeft genomen (naam, datum en handtekening).</value>
+    <value>L'échantillon de cheveux à des fins de vérification de la filiation doit être prélevé par un consultant en passeport agréé, un agent du KFPS ou un vétérinaire, sauf indication contraire du KFPS. Les échantillons de cheveux sont envoyés au KFPS et doivent être accompagnés d'une déclaration de la personne qui a prélevé l'échantillon de cheveux (nom, date et signature).</value>
   </data>
   <data name="String147" xml:space="preserve">
-    <value>Artikel 17 Fokker en geregistreerde</value>
+    <value>Article 17 Éleveur et enregistré</value>
   </data>
   <data name="String148" xml:space="preserve">
-    <value>Bij een geboortemelding wordt diegene als fokker van een veulen aangemerkt, die op het moment van geboorte van het veulen als geregistreerde van de moeder van het veulen bij het KFPS is weergegeven.</value>
+    <value>Dans le cas d'une déclaration de naissance, la personne considérée comme l'éleveuse d'un poulain qui est enregistrée auprès du KFPS au moment de la naissance du poulain est enregistrée comme la mère du poulain.</value>
   </data>
   <data name="String149" xml:space="preserve">
-    <value>Wanneer uit de geboortemelding blijkt dat er een ander lid eigenaar is van de merrie, dan de geregistreerde bij het KFPS, wordt dit beschouwd als een verkoop en worden de daarbij horende verkoop- en overschrijvingskosten in rekening gebracht.</value>
+    <value>S'il ressort de l'acte de naissance qu'un autre membre possède la jument que celui enregistré auprès du KFPS, cela est considéré comme une vente et les frais de vente et de transfert associés seront facturés.</value>
   </data>
   <data name="String15" xml:space="preserve">
-    <value>Artikel 13 Predicaten</value>
+    <value>Article 13 Prédicats</value>
   </data>
   <data name="String150" xml:space="preserve">
-    <value>Per paard wordt in ieder geval één geregistreerde geregistreerd. Voor een paard kunnen meerdere leden als geregistreerde worden geregistreerd als deze leden een zogenaamde associatie aangaan. Hiervoor moet een aanvraag bij het KFPS worden ingediend. De geregistreerde is verantwoordelijk voor de aan de registratie van een paard verbonden rechten en verplichtingen.</value>
+    <value>Au moins une personne inscrite est inscrite par cheval. Plusieurs membres peuvent être inscrits pour un cheval si ces membres adhèrent à une association dite. Pour cela, une demande doit être déposée auprès du KFPS. La personne inscrite est responsable des droits et obligations liés à l'inscription d'un cheval.</value>
   </data>
   <data name="String151" xml:space="preserve">
-    <value>De registratie van de geregistreerde geschied louter voor de interne registratie van het KFPS, in verband met de aan de registratie verbonden rechten en verplichtingen. Hieraan kunnen tegenover het KFPS geen rechten worden ontleend.</value>
+    <value>L'enregistrement de la personne enregistrée a lieu uniquement pour l'enregistrement interne du KFPS, en relation avec les droits et obligations liés à l'enregistrement. Aucun droit ne peut en découler contre le KFPS.</value>
   </data>
   <data name="String152" xml:space="preserve">
-    <value>Door het indienen van een verzoek tot registratie in één van de registers van het KFPS, verklaart de geregistreerde zich bekend en akkoord met de van toepassing zijnde bepalingen, zoals bedoeld in dit reglement.</value>
+    <value>En soumettant une demande d'inscription dans l'un des registres du KFPS, la personne inscrite déclare avoir pris connaissance et accepter les dispositions applicables, telles que visées dans le présent règlement.</value>
   </data>
   <data name="String153" xml:space="preserve">
-    <value>Voor registraties, afgifte van registratiebewijzen en paspoorten en keuringen, worden tarieven in rekening gebracht aan geregistreerde overeenkomstig de door het KFPS vastgestelde tarieven.</value>
+    <value>Pour les enregistrements, la délivrance des certificats d'enregistrement et des passeports et les inspections, les tarifs sont facturés aux personnes enregistrées conformément aux tarifs fixés par le KFPS.</value>
   </data>
   <data name="String154" xml:space="preserve">
-    <value>De registratie van de geregistreerde geschied louter voor de interne registratie van het KFPS, in verband met de aan de registratie verbonden rechten en verplichtingen. Hieraan kunnen tegenover het KFPS geen rechten worden ontleend.</value>
+    <value>L'enregistrement de la personne enregistrée a lieu uniquement pour l'enregistrement interne du KFPS, en relation avec les droits et obligations liés à l'enregistrement. Aucun droit ne peut en découler contre le KFPS.</value>
   </data>
   <data name="String155" xml:space="preserve">
-    <value>Artikel 18 Overschrijving van paarden</value>
+    <value>Article 18 Transfert de chevaux</value>
   </data>
   <data name="String156" xml:space="preserve">
-    <value>Bij een verkoop van een paard, dient de verkoper zowel het stamboekcertificaat als het paspoort ter overschrijving opsturen naar het KFPS. Het KFPS draagt zorg voor de wijziging van de geregistreerde van beide documenten. Voor het op naam stellen van het stamboekcertificaat, moet de koper lid zijn van het KFPS. Voor het op naam stellen van het paspoort hoeft de koper geen lid te zijn van het KFPS. Voor het overschrijven van een paard worden aan de verkoper, verkoopkosten in rekening gebracht en aan de koper, overschrijvingskosten.</value>
+    <value>Lors de la vente d'un cheval, le vendeur doit envoyer à la fois le certificat du stud-book et le passeport au KFPS pour transfert. Le KFPS est responsable de la modification de l'enregistrement des deux documents. Pour enregistrer le certificat du stud-book, l'acheteur doit être membre du KFPS. L'acheteur n'a pas besoin d'être membre du KFPS pour enregistrer le passeport. Pour le transfert d'un cheval, le vendeur sera facturé des frais de vente et l'acheteur devra payer des frais de transfert.</value>
   </data>
   <data name="String157" xml:space="preserve">
-    <value>Artikel 19 Stalnamen</value>
+    <value>Article 19 Noms d'écurie</value>
   </data>
   <data name="String158" xml:space="preserve">
-    <value>Leden kunnen een beschermde stalnaam aanvragen, die, na toekenning, toege¬voegd wordt achter de aangemelde naam van het veulen. Derden mogen deze naam dan niet meer gebruiken.</value>
+    <value>Les membres peuvent demander un nom d'écurie protégé, qui, après attribution, est ajouté après le nom enregistré du poulain. Les tiers ne sont alors plus autorisés à utiliser ce nom.</value>
   </data>
   <data name="String159" xml:space="preserve">
-    <value>De naam mag niet discriminerend, laste¬rend of commercieel zijn en kan, samen met de reguliere naam, uit maximaal 30 posi¬ties bestaan. De stalnaam zelf mag uit maximaal 25 posities bestaan. Het gebruik van de merknamen “Het Friesch Paarden-Stamboek” en “Phryso” is niet toegestaan.</value>
+    <value>Le nom ne doit pas être discriminatoire, diffamatoire ou commercial et, avec le nom régulier, peut comprendre jusqu'à 30 positions. Le nom de l'écurie lui-même peut comprendre un maximum de 25 positions. L'utilisation des noms de marque « Het Friesch Paarden-Sstamboek » et « Phryso » n'est pas autorisée.</value>
   </data>
   <data name="String16" xml:space="preserve">
-    <value>Artikel 14 Veulenregistratie</value>
+    <value>Article 14 Enregistrement des poulains</value>
   </data>
   <data name="String160" xml:space="preserve">
-    <value>Een verzoek tot bescherming dient schrif¬telijk te worden aange¬vraagd. Bij toekenning is de stalnaam een jaar geldig. In "Phryso" vindt hiervan publicatie plaats. Zonder tegenbericht wordt de naam jaarlijks verlengd. Voor de bescherming van een stalnaam worden éénmalige toekenningskosten en jaarlijkse verlengingskosten berekend.</value>
+    <value>Une demande de protection doit être présentée par écrit. Lorsqu'il est accordé, le nom stable est valable un an. Celui-ci sera publié dans "Phryso". Sauf avis contraire, le nom sera renouvelé annuellement. Pour la protection d'un nom stable, des frais de subvention uniques et des frais de renouvellement annuels sont facturés.</value>
   </data>
   <data name="String161" xml:space="preserve">
     <value>Een geregistreerde stalnaam is alleen beschermd binnen het KFPS.</value>
@@ -564,88 +564,88 @@ Tevens voert het KFPS steekproeven uit. De redenen, werkwijze en uitvoering gesc
     <value>Ruinenboek (RB). Vanaf het jaar dat een ruin drie jaar oud wordt, kan een ruin worden opgenomen in het Ruinenboek. Hiervoor moet het paard gekeurd worden en aan de minimumeisen voldoen t.a.v. exterieur, beweging, stokmaat (minimaal 1.56m) en aftekeningen (paarden met niet-toegestane aftekeningen worden niet in het stamboek opgenomen). Veulenboekhengsten die geruint worden, worden na inlevering van een dierenartsverklaring m.b.t. castratie, ingeschreven in het Ruinenboek.</value>
   </data>
   <data name="String74" xml:space="preserve">
-    <value>Artikel 12 Aftekeningen</value>
+    <value>Article 12 Signatures</value>
   </data>
   <data name="String75" xml:space="preserve">
-    <value>Voor inschrijving in het stamboekregister voor hengsten en merries en het ruinenboek komen alleen paarden in aanmerking die volledig zwart zijn. Een aantal witte aftekeningen worden toegestaan bij de primering van veulens en de stamboekopname:</value>
+    <value>Seuls les chevaux entièrement noirs peuvent être inscrits au registre des étalons et juments et au livre des hongres. Un certain nombre de marques blanches sont autorisées dans l'amorçage des poulains et l'enregistrement du stud-book :</value>
   </data>
   <data name="String76" xml:space="preserve">
-    <value>aftekeningen aan het hoofd (kol) mits boven de ooglijn en met een maximale doorsnede van 3.2 cm. Enige witte haren boven de ooglijn zijn ook toegestaan</value>
+    <value>marquages ​​sur la tête (col) prévus au-dessus de la ligne des yeux et d'un diamètre maximum de 3,2 cm. Certains cheveux blancs au-dessus de la ligne des yeux sont également autorisés</value>
   </data>
   <data name="String77" xml:space="preserve">
-    <value>bij merries: witte (plekken in de) zolen</value>
+    <value>chez les juments : semelles blanches (taches dans les)</value>
   </data>
   <data name="String78" xml:space="preserve">
-    <value>Niet toegestane aftekeningen zijn:</value>
+    <value>Les marquages ​​non autorisés sont :</value>
   </data>
   <data name="String79" xml:space="preserve">
-    <value>aftekeningen aan het hoofd beneden de ooglijn</value>
+    <value>marques sur la tête sous le contour des yeux</value>
   </data>
   <data name="String8" xml:space="preserve">
-    <value>Artikel 6 Het KFPS-boek in de hoofdsectie</value>
+    <value>Article 6 Le livre KFPS dans la section principale</value>
   </data>
   <data name="String80" xml:space="preserve">
-    <value>aftekeningen aan het hoofd met een doorsnede, groter dan 3.2 cm.</value>
+    <value>des marques sur la tête d'un diamètre supérieur à 3,2 cm.</value>
   </data>
   <data name="String81" xml:space="preserve">
-    <value>aftekeningen aan het lichaam (stekelharigheid)</value>
+    <value>marques sur le corps (poils épineux)</value>
   </data>
   <data name="String82" xml:space="preserve">
-    <value>aftekeningen aan de benen, inclusief hoefwand.</value>
+    <value>marques sur les pattes, y compris la paroi du sabot.</value>
   </data>
   <data name="String83" xml:space="preserve">
-    <value>Paarden en veulens met niet toegestane aftekeningen worden niet opgenomen in het stamboek en/of worden niet geprimeerd.</value>
+    <value>Les chevaux et poulains avec des marquages ​​non autorisés ne sont pas inclus dans le stud-book et/ou ne sont pas prioritaires.</value>
   </data>
   <data name="String84" xml:space="preserve">
-    <value>Bij de hengstenselectie worden strengere criteria gehanteerd voor de toegestane aftekeningen. Deze zijn weergeven in het reglement  hengstenkeuring.</value>
+    <value>Dans la sélection des étalons, des critères plus stricts sont utilisés pour les marquages ​​autorisés. Ceux-ci sont indiqués dans le Règlement sur l'inspection des étalons.</value>
   </data>
   <data name="String85" xml:space="preserve">
-    <value>Aftekeningen mogen tijdens de primering van veulens en tijdens de stamboekopname van paarden niet weggewerkt/gecamoufleerd worden.</value>
+    <value>Les marquages ​​ne doivent pas être dissimulés/camouflés lors de l'amorçage des poulains et lors de l'inscription au stud-book des chevaux.</value>
   </data>
   <data name="String86" xml:space="preserve">
-    <value>Aftekeningen worden weergegeven op het stamboekcertificaat.</value>
+    <value>Les marquages ​​sont affichés sur le certificat du stud-book.</value>
   </data>
   <data name="String87" xml:space="preserve">
-    <value>Het KFPS kan in gevallen waarbij niet toegestane aftekeningen worden geconstateerd, eerdere keuringsresultaten (primering, stamboekopname) ongeldig verklaren.</value>
+    <value>Dans les cas où des marquages ​​non autorisés sont trouvés, le KFPS peut déclarer invalides les résultats des inspections précédentes (amorçage, inscription au stud-book).</value>
   </data>
   <data name="String88" xml:space="preserve">
-    <value>In het geval niet toegestane aftekeningen het gevolg zijn van externe factoren en dit middels een (veterinaire) verklaring sluitend onderbouwd kan worden, zijn deze geen belemmering voor primering of stamboekopname. Dit is ter beoordeling van de KFPS-inspectie.</value>
+    <value>Dans le cas où des marquages ​​non autorisés résultent de facteurs externes et peuvent être prouvés de manière concluante au moyen d'une déclaration (vétérinaire), ils ne constituent pas un obstacle à l'amorçage ou à l'enregistrement du livre généalogique. Ceci est à la discrétion de l'inspection KFPS.</value>
   </data>
   <data name="String89" xml:space="preserve">
-    <value>Artikel 13 Predicaten</value>
+    <value>Article 13 Prédicats</value>
   </data>
   <data name="String9" xml:space="preserve">
-    <value>Artikel 7 Het KFPS-D boek in de hoofdsectie</value>
+    <value>Article 7 Le livre KFPS-D dans la section principale</value>
   </data>
   <data name="String90" xml:space="preserve">
-    <value>Middels predicaten worden de paarden binnen de registers naar kwaliteit onderscheiden. De predicaten kunnen zijn gebaseerd op eigen prestatie of op basis van de kwaliteit van de nakomelingen. Verder kunnen predicaten gebaseerd zijn op exterieur, sportaanleg of sportprestaties of een combinatie tussen deze.</value>
+    <value>Les chevaux sont distingués selon la qualité au sein des registres au moyen de prédicats. Les prédicats peuvent être basés sur ses propres performances ou sur la qualité de la progéniture. De plus, les prédicats peuvent être basés sur la conformation, l'aptitude sportive ou la performance sportive ou une combinaison de ceux-ci.</value>
   </data>
   <data name="String91" xml:space="preserve">
-    <value>Sterpredicaat. Het Sterpredicaat wordt vergeven tijdens keuringen voor paarden vanaf het jaar dat ze drie worden. Om voor het Sterpredicaat in aanmerking te komen, moet het paard aan minimumeisen voldoen voor exterieur, beweging (aan de hand) en stokmaat (minimaal 1.56m voor merries en 1.58m voor ruinen en hengsten). Het Sterpredicaat kan behaald worden door merries in het stamboekregister, ruinen in het ruinenboek en veulenboekhengsten. Sterverklaring kan bij merries en ruinen tegelijk met de stamboekopname plaatsvinden. Veulenboek hengsten met het sterpredicaat, die geruind worden, behouden het sterpredicaat. Veulenboekhengsten kunnen tijdens de eerste bezichtiging Ster worden in het jaar dat ze twee jaar oud zijn geworden. 
-Voor merries geldt vanaf 2016 dat afstammingsverificatie deel uitmaakt van het vergeven van het sterpredicaat.</value>
+    <value>Prédicat étoile. Le prédicat Ster est attribué lors des inspections des chevaux à partir de l'année de leurs trois ans. Pour se qualifier pour le prédicat Ster, le cheval doit répondre aux exigences minimales d'extérieur, de mouvement (en main) et de taille (minimum 1,56 m pour les juments et 1,58 m pour les hongres et les étalons). Le prédicat Ster peut être obtenu par les juments inscrites au stud-book, les hongres inscrits au hongre book et les étalons foal book. La déclaration d'étoile peut avoir lieu en même temps que l'inscription au stud-book pour les juments et les hongres. Les étalons du livre des poulains avec le prédicat ster, qui sont castrés, gardent le prédicat ster. Les étalons poulains peuvent devenir Ster lors de la première visite de l'année où ils ont deux ans.
+Depuis 2016, la vérification de la filiation fait partie de l'attribution du prédicat étoile pour les juments.</value>
   </data>
   <data name="String92" xml:space="preserve">
-    <value>Kroonpredicaat. Het Kroonpredicaat is een predicaat waarbij eisen gesteld worden voor exterieur en sportaanleg. De aanwijzing voor het (voorlopig) Kroonpredicaat vindt plaats tijdens de Centrale keuring, uit merries die tijdens  fokdagen en stamboekkeuringen in hetzelfde jaar een eerste premie hebben behaald. De eisen voor het in aanmerking komen voor het (voorlopig) Kroonpredicaat zijn:</value>
+    <value>Prédicat de la couronne. Le prédicat de la Couronne est un prédicat qui définit les exigences d'aptitudes extérieures et sportives. La désignation pour le prédicat Couronne (provisoire) a lieu lors de l'Inspection Centrale, à partir de juments ayant obtenu une première prime lors des jours d'élevage et des inspections du stud-book la même année. Les conditions d'éligibilité au prédicat (provisoire) de la Couronne sont les suivantes :</value>
   </data>
   <data name="String93" xml:space="preserve">
-    <value>minimum leeftijd is 3 jaar</value>
+    <value>l'âge minimum est de 3 ans</value>
   </data>
   <data name="String94" xml:space="preserve">
-    <value>Merries voorlopig kroon verklaard t/m CK 2013: voor definitieve kroonverklaring moet de merrie een IBOP- of ABFP-test hebben afgerond met een minimaal aantal punten van 77.0, met gemiddeld een 7 voor de stap en de draf. Het behalen van het Sportpredicaat is tevens toereikend als verrichtingseis voor definitieve kroonverklaring.</value>
+    <value>Juments déclarées provisoirement couronnées jusqu'au CK 2013 inclus : pour une déclaration de couronne définitive, la jument doit avoir réussi un test IBOP ou ABFP avec un nombre de points minimum de 77,0, avec une moyenne de 7 au pas et au trot. L'obtention du prédicat Sport est également suffisante comme condition de performance pour une déclaration définitive de la couronne.</value>
   </data>
   <data name="String95" xml:space="preserve">
-    <value>Merries voorlopig kroon verklaard vanaf CK 2014: voor definitieve kroonverklaring moet de merrie een IBOP- of ABFP-test hebben afgerond met een minimaal aantal punten van 77,0 met gemiddeld een 7 voor de basisgangen. Met een score voor een van de basisgangen lager dan een 6 kan geen kroonpredicaat verkregen worden Het behalen van het Sportpredicaat is tevens toereikend als verrichtingseis voor definitieve kroonverklaring.</value>
+    <value>Juments couronnées provisoirement à partir du CK 2014 : pour la déclaration de couronne définitive, la jument doit avoir réussi un test IBOP ou ABFP avec un nombre de points minimum de 77,0 avec une moyenne de 7 pour les allures de base. Avec un score pour l'une des allures de base inférieur à 6, aucun prédicat de couronne ne peut être obtenu.L'obtention du prédicat Sport est également suffisante comme condition de performance pour une déclaration de couronne définitive.</value>
   </data>
   <data name="String96" xml:space="preserve">
-    <value>Minimum stokmaat: 1.58 m</value>
+    <value>Taille minimale du bâton : 1,58 m</value>
   </data>
   <data name="String97" xml:space="preserve">
-    <value>Modelpredicaat. Het Modelpredicaat is een predicaat waarbij eisen gesteld worden voor exterieur en sportaanleg. De beste merries in de populatie komen in aanmerking voor het Modelpredicaat. De aanwijzing voor het (voorlopig) Modelpredicaat vindt plaats op de Centrale keuring, uit ster en kroonmerries, die tijdens de fokdagen, in hetzelfde jaar, een eerste premie hebben behaald. Aanwijzingen voor het modelpredicaat kunnen buiten Nederland ook tijdens buitenlandse fokdagen plaatsvinden. De eisen voor het in aanmerking komen voor het (voorlopig) modelpredicaat zijn:</value>
+    <value>Prédicat modèle. Le prédicat Modèle est un prédicat qui définit les exigences d'aptitudes extérieures et sportives. Les meilleures juments de la population sont éligibles au prédicat Modèle. La désignation pour le prédicat modèle (provisoire) a lieu à l'Inspection centrale, à partir de juments étoile et couronne, qui ont obtenu une première prime lors des jours de reproduction de la même année. Les instructions pour le prédicat modèle peuvent également avoir lieu en dehors des Pays-Bas pendant les jours de reproduction à l'étranger. Les conditions d'éligibilité au prédicat modèle (provisoire) sont les suivantes :</value>
   </data>
   <data name="String98" xml:space="preserve">
-    <value>minimum leeftijd is 7 jaar</value>
+    <value>l'âge minimum est de 7 ans</value>
   </data>
   <data name="String99" xml:space="preserve">
-    <value>de merrie moet een veulen zogen of gezoogd hebben</value>
+    <value>la jument doit avoir allaité ou allaité un poulain</value>
   </data>
 </root>

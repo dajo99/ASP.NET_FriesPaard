@@ -15,6 +15,7 @@ namespace BSFP.Data.UnitOfWork
         IGenericRepository<CustomUser> UserRepository { get; }
         IGenericRepository<Sponsor> SponsorRepository { get; }
         IGenericRepository<Paard> PaardRepository { get; }
+        IGenericRepository<Tarief> TariefRepository { get; }
         Task Save();
     }
 }

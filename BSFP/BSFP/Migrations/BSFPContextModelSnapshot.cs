@@ -268,10 +268,16 @@ namespace BSFP.Migrations
                     b.Property<string>("ImagePath")
                         .HasColumnType("varchar(250)");
 
-                    b.Property<string>("Omschrijving")
+                    b.Property<string>("Omschrijving_fr")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Titel")
+                    b.Property<string>("Omschrijving_nl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Titel_fr")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Titel_nl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("WebsiteLink")
@@ -280,6 +286,32 @@ namespace BSFP.Migrations
                     b.HasKey("SponsorID");
 
                     b.ToTable("Sponsors");
+                });
+
+            modelBuilder.Entity("BSFP.Models.Tarief", b =>
+                {
+                    b.Property<int>("TariefID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<bool>("IsTeruggave")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Omschrijving_fr")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Omschrijving_nl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Prijs")
+                        .HasColumnType("decimal(8,2)");
+
+                    b.HasKey("TariefID");
+
+                    b.ToTable("Tarieven");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

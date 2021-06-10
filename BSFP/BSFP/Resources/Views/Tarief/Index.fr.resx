@@ -117,22 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Account" xml:space="preserve">
-    <value>Account</value>
+  <data name="String1" xml:space="preserve">
+    <value>Tarieven</value>
   </data>
-  <data name="Hallo" xml:space="preserve">
-    <value>Hello</value>
+  <data name="String2" xml:space="preserve">
+    <value>Omschrijving</value>
   </data>
-  <data name="Inloggen" xml:space="preserve">
-    <value>Login</value>
+  <data name="String3" xml:space="preserve">
+    <value>Prijs</value>
   </data>
-  <data name="Ledenbeheer" xml:space="preserve">
-    <value>Member management</value>
+  <data name="String4" xml:space="preserve">
+    <value>Kosten</value>
   </data>
-  <data name="Registreren" xml:space="preserve">
-    <value>Register</value>
-  </data>
-  <data name="Uitloggen" xml:space="preserve">
-    <value>Log out</value>
+  <data name="String5" xml:space="preserve">
+    <value>Teruggave</value>
   </data>
 </root>

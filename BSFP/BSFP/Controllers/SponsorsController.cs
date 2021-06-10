@@ -107,9 +107,11 @@ namespace BSFP.Controllers
 
                 try
                 {
-                    sponsor.Titel = viewModel.Sponsor.Titel;
+                    sponsor.Titel_nl = viewModel.Sponsor.Titel_nl;
+                    sponsor.Titel_fr = viewModel.Sponsor.Titel_fr;
                     sponsor.WebsiteLink = viewModel.Sponsor.WebsiteLink;
-                    sponsor.Omschrijving = viewModel.Sponsor.Omschrijving;
+                    sponsor.Omschrijving_nl = viewModel.Sponsor.Omschrijving_nl;
+                    sponsor.Omschrijving_fr = viewModel.Sponsor.Omschrijving_fr;
 
                     if (viewModel.Sponsor.File != null)
                     {

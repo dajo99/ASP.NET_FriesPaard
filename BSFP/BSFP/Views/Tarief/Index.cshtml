@@ -1,0 +1,126 @@
+﻿@model BSFP.ViewModels.ListTariefViewModel
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@using System.Globalization;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@{
+    ViewData["Title"] = localizer["String1"];
+}
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>@localizer["String1"]</h1>
+        </div>
+    </div>
+
+</header>
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+        @if (User.IsInRole("Admin"))
+        {
+            <p>
+                <a asp-action="Create">Nieuw Tarief toevoegen</a>
+            </p>
+        }
+    <div class="row">
+        <div class="col-lg-6">
+            <h2>@localizer["String4"]</h2>
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>
+                            @localizer["String2"]
+                        </th>
+                        <th>
+                            @localizer["String3"]
+                        </th>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <th></th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.TariefLijst)
+                    {
+                        <tr>
+                            <td>
+                                @if (CultureInfo.CurrentCulture.Name == "nl")
+                                {
+                                    @Html.DisplayFor(modelItem => item.Omschrijving_nl)
+                                }
+                                @if (CultureInfo.CurrentCulture.Name == "fr")
+                                {
+                                    @Html.DisplayFor(modelItem => item.Omschrijving_fr)
+                                }
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Prijs)
+                            </td>
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.TariefID">Edit</a> |
+                                    <a asp-action="Delete" asp-route-id="@item.TariefID">Delete</a>
+                                </td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-lg-6">
+            <h2>@localizer["String5"]</h2>
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>
+                            @localizer["String2"]
+                        </th>
+                        <th>
+                            @localizer["String3"]
+                        </th>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <th></th>
+                        }
+                        </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.TeruggaveLijst)
+                    {
+                        <tr>
+                            <td>
+                                @if (CultureInfo.CurrentCulture.Name == "nl")
+                                {
+                                    @Html.DisplayFor(modelItem => item.Omschrijving_nl)
+                                }
+                                @if (CultureInfo.CurrentCulture.Name == "fr")
+                                {
+                                    @Html.DisplayFor(modelItem => item.Omschrijving_fr)
+                                }
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Prijs)
+                            </td>
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.TariefID">Edit</a> |
+                                    <a asp-action="Delete" asp-route-id="@item.TariefID">Delete</a>
+                                </td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    </section>
+</main>

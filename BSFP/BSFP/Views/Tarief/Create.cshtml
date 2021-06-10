@@ -1,0 +1,62 @@
+﻿@model BSFP.ViewModels.CreateTariefViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<header class="intro bg-image">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <div class="container">
+            <h1>Tarief</h1>
+        </div>
+    </div>
+
+</header>
+
+<main role="main" class="flex-shrink-0" style="border-top: 6px solid #147e9e">
+    <section class="container py-4">
+        <h4>Nieuw Tarief</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-12">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Tarief.Omschrijving_nl" class="control-label"></label>
+                        <input asp-for="Tarief.Omschrijving_nl" class="form-control" />
+                        <span asp-validation-for="Tarief.Omschrijving_nl" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Tarief.Omschrijving_fr" class="control-label"></label>
+                        <input asp-for="Tarief.Omschrijving_fr" class="form-control" />
+                        <span asp-validation-for="Tarief.Omschrijving_fr" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Tarief.Prijs" class="control-label"></label>
+                        <input asp-for="Tarief.Prijs" class="form-control" />
+                        <span asp-validation-for="Tarief.Prijs" class="text-danger"></span>
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" asp-for="Tarief.IsTeruggave" /> Is het een teruggave?
+                        </label>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <a class="btn btn-primary col-5" style="background-color: #caa500; border: 1px solid #1C3153; color:#1C3153; margin-bottom:5px" asp-action="Index">Terug</a>
+                        </div>
+                        <div class="form-group col-6 text-right">
+                            <input type="submit" value="Plaatsen" class="btn btn-primary col-5" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="~/js/site.js"></script>
+}

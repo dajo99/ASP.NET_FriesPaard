@@ -120,7 +120,7 @@ namespace BSFP.Areas.Identity.Pages.Account
                     var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     var confirmationLink = Url.Action("ConfirmEmail", "Email", new { token, email = user.Email }, Request.Scheme);
                     EmailHelper emailHelper = new EmailHelper();
-                    bool emailResponse = emailHelper.SendConfirmationEmail(user.Email, confirmationLink, subject, body);
+                    bool emailResponse = emailHelper.SendEmail(user.Email, confirmationLink, subject, body);
                     
                     return RedirectToAction("MailVerstuurd");
                 }
@@ -135,3 +135,5 @@ namespace BSFP.Areas.Identity.Pages.Account
         }
     }
 }
+
+

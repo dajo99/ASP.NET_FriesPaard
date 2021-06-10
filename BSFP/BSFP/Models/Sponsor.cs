@@ -10,8 +10,10 @@ namespace BSFP.Models
     public class Sponsor
     {
         public int SponsorID { get; set; }
-        public string Titel { get; set; }
-        public string Omschrijving { get; set; }
+        public string Titel_nl { get; set; }
+        public string Titel_fr { get; set; }
+        public string Omschrijving_nl { get; set; }
+        public string Omschrijving_fr { get; set; }
         public string WebsiteLink { get; set; }
 
         [Column(TypeName = "varchar(50)")]

@@ -117,7 +117,7 @@ namespace BSFP.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("AgendaID,Titel,Omschrijving,Datum,Starttijd,Eindtijd,Locatie")] Agenda agenda)
+        public async Task<IActionResult> Edit(int id, [Bind("AgendaID,Titel_nl,Titel_fr,Omschrijving_nl,Omschrijving_fr,Datum,Starttijd,Eindtijd,Locatie")] Agenda agenda)
         {
             if (id != agenda.AgendaID)
             {

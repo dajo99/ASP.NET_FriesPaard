@@ -1,4 +1,6 @@
 ﻿@model BSFP.ViewModels.ListSponsorViewModel
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@using System.Globalization;
 
 @{
     ViewData["Title"] = "Index";
@@ -13,18 +15,18 @@
         overflow: hidden
     }
 
-    .fill img {
-        flex-shrink: 0;
-        width: 85%;
-    }
+        .fill img {
+            flex-shrink: 0;
+            width: 85%;
+        }
 
     .accordion .accordion-content a {
         color: #1C3153;
     }
 
-    .accordion .accordion-content a:hover {
-        color: #fff
-    }
+        .accordion .accordion-content a:hover {
+            color: #fff
+        }
 </style>
 <header class="intro bg-image">
     <div class="overlay"></div>
@@ -58,7 +60,14 @@
                         <button class="btn dropdown-toggle btn-style collapsed" data-toggle="collapse"
                                 data-target="#@collapse" aria-controls="@collapse" type="button"
                                 aria-haspopup="true" aria-expanded="false">
-                            @Html.DisplayFor(modelItem => item.Titel)
+                            @if (CultureInfo.CurrentCulture.Name == "nl")
+                            {
+                                @Html.DisplayFor(modelItem => item.Titel_nl)
+                            }
+                            @if (CultureInfo.CurrentCulture.Name == "fr")
+                            {
+                                @Html.DisplayFor(modelItem => item.Titel_fr)
+                            }
                             <i class="fas fa-chevron-down float-right"></i>
                         </button>
                         @if (this.User.IsInRole("Admin"))
@@ -72,7 +81,14 @@
                                     <img src="@item.ImagePath" />
                                 </div>
                                 <div class="col-sm-12 col-md-6 col-lg-6 text-center">
-                                    @Html.Raw(item.Omschrijving)
+                                    @if (CultureInfo.CurrentCulture.Name == "nl")
+                                    {
+                                        @Html.Raw(item.Omschrijving_nl)
+                                    }
+                                    @if (CultureInfo.CurrentCulture.Name == "fr")
+                                    {
+                                        @Html.Raw(item.Omschrijving_fr)
+                                    }
                                     <a style="background-color:transparent" href="@item.WebsiteLink">@item.WebsiteLink</a>
                                 </div>
                             </div>

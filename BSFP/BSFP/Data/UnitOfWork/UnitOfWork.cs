@@ -16,7 +16,7 @@ namespace BSFP.Data.UnitOfWork
         private IGenericRepository<CustomUser> userRepository;
         private IGenericRepository<Sponsor> sponsorRepository;
         private IGenericRepository<Paard> paardRepository;
-
+        private IGenericRepository<Tarief> tariefRepository;
 
         public UnitOfWork(BSFPContext context)
         {
@@ -80,6 +80,18 @@ namespace BSFP.Data.UnitOfWork
                     this.paardRepository = new GenericRepository<Paard>(_context);
                 }
                 return paardRepository;
+            }
+        }
+
+        public IGenericRepository<Tarief> TariefRepository
+        {
+            get
+            {
+                if (this.tariefRepository == null)
+                {
+                    this.tariefRepository = new GenericRepository<Tarief>(_context);
+                }
+                return tariefRepository;
             }
         }
 

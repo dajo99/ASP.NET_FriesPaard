@@ -123,11 +123,17 @@
   <data name="Hallo" xml:space="preserve">
     <value>Hallo</value>
   </data>
+  <data name="Helpdesk" xml:space="preserve">
+    <value>Helpdesk</value>
+  </data>
   <data name="Inloggen" xml:space="preserve">
     <value>Inloggen</value>
   </data>
   <data name="Ledenbeheer" xml:space="preserve">
     <value>Ledenbeheer</value>
+  </data>
+  <data name="MijnAccount" xml:space="preserve">
+    <value>Mijn account</value>
   </data>
   <data name="Registreren" xml:space="preserve">
     <value>Registreren</value>

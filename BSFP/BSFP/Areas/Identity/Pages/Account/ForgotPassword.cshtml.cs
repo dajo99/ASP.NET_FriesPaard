@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using BSFP.Areas.Identity.Data;
 using BSFP.Areas.Identity.Email;
+using System.Globalization;
 
 namespace BSFP.Areas.Identity.Pages.Account
 {
@@ -54,7 +55,20 @@ namespace BSFP.Areas.Identity.Pages.Account
                 var callbackUrl = Url.Page("/Account/ResetPassword", pageHandler: null, values: new { area = "Identity", code }, protocol: Request.Scheme);
 
                 EmailHelper emailHelper = new EmailHelper();
-                bool emailResponse = emailHelper.SendEmailPasswordReset(user.Email, callbackUrl);
+                string subject = string.Empty;
+                string body = string.Empty;
+
+                if (CultureInfo.CurrentCulture.Name == "nl")
+                {
+                    subject = "Wachtwoord herstellen";
+                    body = "Klik op de link om je wachtwoord te herstellen.";
+                }
+                if (CultureInfo.CurrentCulture.Name == "fr")
+                {
+                    subject = "Réinitialiser le mot de passe";
+                    body = "Cliquez sur le lien pour récupérer votre mot de passe.";
+                }
+                bool emailResponse = emailHelper.SendEmail(user.Email, callbackUrl, subject, body);
 
 
                 return RedirectToPage("./ForgotPasswordConfirmation");

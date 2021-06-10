@@ -1,4 +1,5 @@
 ﻿@model BSFP.Models.Agenda
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
 @using System.Globalization;
 
 @{
@@ -53,7 +54,7 @@
     <div class="overlay"></div>
     <div class="intro-content">
         <div class="container">
-            <h1>Agenda</h1>
+            <h1>@localizer["String1"]</h1>
         </div>
     </div>
 
@@ -79,21 +80,30 @@
                     </div>
                     <div class="col-lg-6 dataAgenda" style="background-color:#caa500">
                         <div class="row ml-3">
-                            <p class="col-6">Startdatum:  <span>@Convert.ToDateTime(Model.Datum).ToString("d", dutch)</span> </p>
-                            <p class="col-6">Starttijd:  <span>@Convert.ToDateTime(Model.Starttijd).ToString("t", dutch)</span> </p>
-                            <p class="col-6">Locatie:  <span>@Html.DisplayFor(model => model.Locatie)</span> </p>
-                            <p class="col-6">Eindtijd:  <span>@Convert.ToDateTime(Model.Eindtijd).ToString("t", dutch)</span> </p>
+                            <p class="col-6">@localizer["String2"]:  <span>@Convert.ToDateTime(Model.Datum).ToString("d", dutch)</span> </p>
+                            <p class="col-6">@localizer["String4"]:  <span>@Convert.ToDateTime(Model.Starttijd).ToString("t", dutch)</span> </p>
+                            <p class="col-6">@localizer["String3"]:  <span>@Html.DisplayFor(model => model.Locatie)</span> </p>
+                            <p class="col-6">@localizer["String5"]:  <span>@Convert.ToDateTime(Model.Eindtijd).ToString("t", dutch)</span> </p>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="row py-4">
-                <div class="col-12 mt-2">
-                    <h5 style="font-weight:bold;">@Html.DisplayNameFor(model => model.Omschrijving_nl)</h5>
-                    @Html.Raw(Model.Omschrijving_nl);
+                @if (Model.Omschrijving_nl != null && Model.Omschrijving_fr != null)
+                {
+                    <div class="col-12 mt-2">
+                        <h5 style="font-weight:bold;">@localizer["String6"]</h5>
+                        @if (CultureInfo.CurrentCulture.Name == "nl")
+                        {
+                            @Html.Raw(Model.Omschrijving_nl);
+                        }
+                        @if (CultureInfo.CurrentCulture.Name == "fr")
+                        {
+                            @Html.Raw(Model.Omschrijving_fr);
+                        }
+                    </div>
+                    }
                 </div>
-            </div>
         </div>
         <div class="text-center">
             @if (this.User.IsInRole("Admin"))
@@ -102,7 +112,7 @@
             }
             else
             {
-                <a class="btn btn-primary" style="background-color: #1C3153; border: 1px solid #147e9e; color: #fff;" asp-action="Index">Terug naar Overzicht</a>
+                <a class="btn btn-primary" style="background-color: #1C3153; border: 1px solid #147e9e; color: #fff;" asp-action="Index">@localizer["String7"]</a>
             }
 
 

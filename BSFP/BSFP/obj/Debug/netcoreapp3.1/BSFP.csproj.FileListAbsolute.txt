@@ -1852,14 +1852,10 @@ C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Reglementen.Registratiereglement.nl.resources
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Reglementen.Statuten.fr.resources
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Reglementen.Statuten.nl.resources
-C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Reglementen.Tarieven.fr.resources
-C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Reglementen.Tarieven.nl.resources
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Reglementen.VaststellenRegistrerenValideren.fr.resources
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Reglementen.VaststellenRegistrerenValideren.nl.resources
-C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Shared._Layout.en.resources
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Shared._Layout.fr.resources
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Shared._Layout.nl.resources
-C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Shared._LoginPartial.en.resources
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Shared._LoginPartial.fr.resources
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Shared._LoginPartial.nl.resources
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.csproj.GenerateResource.cache
@@ -1966,7 +1962,6 @@ C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Reglementen\ProtocolAankoopPaard.cshtml.g.cs
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Reglementen\Registratiereglement.cshtml.g.cs
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Reglementen\Statuten.cshtml.g.cs
-C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Reglementen\Tarieven.cshtml.g.cs
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Reglementen\VaststellenRegistrerenValideren.cshtml.g.cs
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CulturePartial.cshtml.g.cs
@@ -1999,3 +1994,10 @@ C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Agenda.Details.nl.resources
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Agenda.Index.fr.resources
 C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Agenda.Index.nl.resources
+C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Tarief.Index.fr.resources
+C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\BSFP.Resources.Views.Tarief.Index.nl.resources
+C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Tarief\Create.cshtml.g.cs
+C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Tarief\Delete.cshtml.g.cs
+C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Tarief\Details.cshtml.g.cs
+C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Tarief\Edit.cshtml.g.cs
+C:\Users\home\Documents\BSFP\ASP.NET_FriesPaard\BSFP\BSFP\obj\Debug\netcoreapp3.1\Razor\Views\Tarief\Index.cshtml.g.cs

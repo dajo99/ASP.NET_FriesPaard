@@ -20,6 +20,7 @@ namespace BSFP.Data
         public DbSet<Nieuws> Nieuws { get; set; }
         public DbSet<Sponsor> Sponsors { get; set; }
         public DbSet<Paard> Paarden { get; set; }
+        public DbSet<Tarief> Tarieven { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -29,6 +30,7 @@ namespace BSFP.Data
             modelBuilder.Entity<Sponsor>().ToTable("Sponsors");
             modelBuilder.Entity<Nieuws>().ToTable("Nieuws");
             modelBuilder.Entity<Paard>().ToTable("Paarden");
+            modelBuilder.Entity<Tarief>().ToTable("Tarieven");
 
         }
 

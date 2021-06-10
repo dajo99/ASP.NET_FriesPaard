@@ -123,6 +123,9 @@
   <data name="String10" xml:space="preserve">
     <value>Zoek op Locatie</value>
   </data>
+  <data name="String11" xml:space="preserve">
+    <value>Bekijk Details</value>
+  </data>
   <data name="String2" xml:space="preserve">
     <value>Datum</value>
   </data>
